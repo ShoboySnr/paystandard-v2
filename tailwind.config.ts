@@ -1,25 +1,34 @@
-import type { Config } from "tailwindcss";
+import type { Config } from 'tailwindcss';
 
 const config: Config = {
-  content: [
-    "./src/components/**/*.{js,ts,jsx,tsx,mdx}",
-    "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
-  ],
+  prefix: 'tw-',
+  content: ['./src/components/**/*.{js,ts,jsx,tsx,mdx}', './src/app/**/*.{js,ts,jsx,tsx,mdx}'],
   theme: {
+    screens: {
+      xs: '0',
+      sm: '600',
+      md: '900',
+      lg: '1248',
+      xl: '1536',
+      '2xl': '1536px',
+    },
     extend: {
       colors: {
-        blue: "#3760ff",
-        "deep-blue": "#152461",
-        "dark-gray": "#505069",
-        "light-blue": "#88A0FF",
-        "light-gray": "#DCDCE1",
-        black: "#090C1A",
-        white: "#FFFFFF",
+        blue: '#3860FF',
+        'deep-blue': '#152461',
+        'dark-gray': '#505069',
+        'light-blue': '#88A0FF',
+        'light-gray': '#DCDCE1',
+        black: '#090C1A',
+        white: '#FFFFFF',
+        // buttons
+        'btn-outline-text': '#1C3080',
       },
       backgroundImage: {
-        "gradient-blue-deep-blue": "linear-gradient(to right, #3860FF, #152461)",
-        "gradient-light-blue-deep-blue": "linear-gradient(to right, #88A0FF, #152461)",
-        "gradient-blue-black": "linear-gradient(to right, #3860FF, #090C1A)",
+        'gradient-blue-deep-blue': 'linear-gradient(to right, #3860FF, #152461)',
+        'gradient-light-blue-deep-blue': 'linear-gradient(to right, #88A0FF, #152461)',
+        'gradient-blue-black': 'linear-gradient(to right, #3860FF, #090C1A)',
+        'footer-gradient': 'linear-gradient(0deg, #152461 0%, #090C1A 100%)',
       },
       // backgroundImage: {
       //   "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
