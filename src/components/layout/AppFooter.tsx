@@ -67,7 +67,7 @@ const AppFooter = () => {
             }}
           >
             <Image
-              className={'tw-h-[40px] tw-w-auto md:tw-h-[75px]'}
+              className={'tw-h-[40px] tw-w-auto md:tw-h-[50px]'}
               priority
               src={AppLogo}
               alt="Pay Standards"
@@ -91,7 +91,11 @@ const AppFooter = () => {
           }}
         >
           <Grid size={{ xs: 7, md: 'auto' }}>
-            <List>
+            <List
+              sx={{
+                py: '0',
+              }}
+            >
               {FooterMenu.filter((page) => page.id === 'company').map((page, index) => (
                 <React.Fragment key={index}>
                   <ListItem sx={listItemHeadingStyle}>{page.name}</ListItem>
@@ -109,7 +113,11 @@ const AppFooter = () => {
             </List>
           </Grid>
           <Grid size={{ xs: 5, md: 'auto' }}>
-            <List>
+            <List
+              sx={{
+                py: '0',
+              }}
+            >
               {FooterMenu.filter((page) => page.id === 'solutions').map((page, index) => (
                 <React.Fragment key={index}>
                   <ListItem sx={listItemHeadingStyle}>{page.name}</ListItem>
@@ -127,7 +135,11 @@ const AppFooter = () => {
             </List>
           </Grid>
           <Grid size={{ xs: 12, md: 'auto' }}>
-            <List>
+            <List
+              sx={{
+                py: '0',
+              }}
+            >
               {FooterMenu.filter((page) => page.id === 'legal').map((page, index) => (
                 <React.Fragment key={index}>
                   <ListItem sx={listItemHeadingStyle}>{page.name}</ListItem>
@@ -191,7 +203,7 @@ const AppFooter = () => {
           >
             <Image priority height={80} src={BrandingLogo} alt="Pay Standards" />
             <p className={'tw-text-center md:tw-text-left'}>
-              PayStandards' successful SOC 2 Type II report was issued by Prescient Assurance
+              PayStandards&#39; successful SOC 2 Type II report was issued by Prescient Assurance
               <br /> and is actively monitored by Vanta. PayStandards is also GDPR Compliant.
             </p>
           </Box>

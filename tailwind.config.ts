@@ -5,11 +5,11 @@ const config: Config = {
   content: ['./src/components/**/*.{js,ts,jsx,tsx,mdx}', './src/app/**/*.{js,ts,jsx,tsx,mdx}'],
   theme: {
     screens: {
-      xs: '0',
-      sm: '600',
-      md: '900',
-      lg: '1248',
-      xl: '1536',
+      xs: '0px',
+      sm: '600px',
+      md: '900px',
+      lg: '1248px',
+      xl: '1536px',
       '2xl': '1536px',
     },
     extend: {

@@ -57,7 +57,7 @@ const AppHeader = () => {
   };
   return (
     <header>
-      <AppBar position="static">
+      <AppBar position="fixed" sx={{ backgroundColor: 'transparent' }}>
         <Container
           maxWidth="lg"
           sx={{
@@ -84,6 +84,7 @@ const AppHeader = () => {
                 border: '1px solid gray',
                 borderRadius: '38px',
                 pl: { xs: '20px', md: '40px' },
+                backgroundColor: '#FAFAFA',
               }}
               disableGutters
             >
@@ -325,7 +326,7 @@ const AppHeader = () => {
                 aria-label="open drawer"
                 onClick={toggleDrawer(true)}
               >
-                <MenuIcon />
+                <MenuIcon fontSize="small" />
               </IconButton>
             </Box>
           </Box>

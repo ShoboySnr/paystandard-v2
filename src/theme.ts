@@ -29,7 +29,8 @@ const theme = createTheme({
     // @ts-ignore
     white: palette.augmentColor({ color: { main: '#FFFFFF' } }),
     black: palette.augmentColor({ color: { main: '#090C1A' } }),
-    'deep-blue': palette.augmentColor({ color: { main: '#152461' } }),
+    red: palette.augmentColor({ color: { main: '#F22C2C' } }),
+    'deep-blue': palette.augmentColor({ color: { main: '#152461', secondary: '#283167' } }),
     'light-blue': palette.augmentColor({ color: { main: '#88A0FF' } }),
   },
   components: {
@@ -54,6 +55,24 @@ const theme = createTheme({
         root: {
           minHeight: '55px',
         },
+      },
+    },
+    MuiTextField: {
+      styleOverrides: {
+        root: {
+          '& .MuiOutlinedInput-notchedOutline': {
+            border: '1px solid rgba(80, 80, 105, 0.50)',
+            boxShadow: '0px 1px 2px 0px rgba(16, 24, 40, 0.05)',
+          },
+          '& .MuiOutlinedInput-root': {
+            borderRadius: '8px',
+          },
+        },
+      },
+    },
+    MuiFormLabel: {
+      styleOverrides: {
+        asterisk: { color: '#F22C2C' },
       },
     },
   },

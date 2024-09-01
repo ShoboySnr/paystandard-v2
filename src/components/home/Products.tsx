@@ -1,13 +1,30 @@
 import { Box, Typography } from '@mui/material';
 import Image from 'next/image';
-import exp from 'node:constants';
+import IndexImage from '~/assets/home/index.svg';
+import AuditImage from '~/assets/home/audit.svg';
+import PilotImage from '~/assets/home/pilot.svg';
+
+const imageSectionStyling = {
+  display: 'flex',
+  flexDirection: 'column',
+  justifyContent: 'center',
+  alignItems: 'center',
+  gap: '5px',
+};
 
 const Products = () => {
   return (
     <Box
       sx={{
         display: 'flex',
-        padding: '35px 45px',
+        flexDirection: {
+          xs: 'column',
+          md: 'row',
+        },
+        padding: {
+          md: '35px 45px',
+          xs: '15px 15px 35px 15px',
+        },
         borderRadius: '25px',
         background: 'linear-gradient(180deg, #2641B0 0%, #152461 99.27%)',
       }}
@@ -22,7 +39,10 @@ const Products = () => {
       <Box
         sx={{
           flex: '4',
-          p: '10px 22px',
+          p: {
+            md: '10px 22px',
+            xs: '40px 0 0 0',
+          },
         }}
       >
         <Box
@@ -30,7 +50,16 @@ const Products = () => {
             color: '#FFF',
           }}
         >
-          <Typography sx={{ fontSize: '40px', lineHeight: '125%', fontWeight: '400' }}>
+          <Typography
+            sx={{
+              fontSize: {
+                md: '40px',
+                xs: '32px',
+              },
+              lineHeight: '125%',
+              fontWeight: '400',
+            }}
+          >
             Raise the Standard
             <br /> of Your Pay
           </Typography>
@@ -42,41 +71,32 @@ const Products = () => {
           </Typography>
         </Box>
         <Box sx={{ mt: '36px', display: 'flex', justifyContent: 'space-around', color: '#fff' }}>
-          <Box
-            sx={{
-              display: 'flex',
-              flexDirection: 'column',
-              justifyContent: 'center',
-              gap: '5px',
-            }}
-          >
-            <Image height={70} width={70} src="/assets/home/index.svg" alt="image" />
+          <Box sx={imageSectionStyling}>
+            <Image
+              className={'tw-h-[50px] tw-w-[50px] md:tw-h-[70px] md:tw-w-[70px]'}
+              src={IndexImage}
+              alt="image"
+            />
             <Typography sx={{ fontSize: '18px', fontWeight: '500', mt: '10px' }}>
               Pay Index
             </Typography>
           </Box>
-          <Box
-            sx={{
-              display: 'flex',
-              flexDirection: 'column',
-              justifyContent: 'center',
-              gap: '5px',
-            }}
-          >
-            <Image height={70} width={70} src="/assets/home/audit.svg" alt="image" />
+          <Box sx={imageSectionStyling}>
+            <Image
+              className={'tw-h-[50px] tw-w-[50px] md:tw-h-[70px] md:tw-w-[70px]'}
+              src={AuditImage}
+              alt="image"
+            />
             <Typography sx={{ fontSize: '18px', fontWeight: '500', mt: '10px' }}>
               Pay Audit
             </Typography>
           </Box>
-          <Box
-            sx={{
-              display: 'flex',
-              flexDirection: 'column',
-              justifyContent: 'center',
-              gap: '5px',
-            }}
-          >
-            <Image height={70} width={70} src="/assets/home/pilot.svg" alt="image" />
+          <Box sx={imageSectionStyling}>
+            <Image
+              className={'tw-h-[50px] tw-w-[50px] md:tw-h-[70px] md:tw-w-[70px]'}
+              src={PilotImage}
+              alt="image"
+            />
             <Typography sx={{ fontSize: '18px', fontWeight: '500', mt: '10px' }}>
               Pay pilot
             </Typography>
