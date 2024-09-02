@@ -19,7 +19,7 @@ const Demo = () => {
   return (
     <Box
       sx={{
-        color: 'deep-blue.secondary',
+        color: 'deep-blue-secondary.main',
       }}
     >
       <AppContainer>

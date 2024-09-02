@@ -14,6 +14,7 @@ const BookDemo = () => {
         container
         size={12}
         columnSpacing={4}
+        rowSpacing={4}
       >
         <Grid
           container
@@ -21,19 +22,21 @@ const BookDemo = () => {
             md: 6,
             xs: 12,
           }}
-          justifyContent={'flex-end'}
+          justifyContent={{ md: 'flex-end', xs: 'center' }}
         >
           <Box
             sx={{
               display: 'flex',
               flexDirection: 'column',
+              alignItems: { md: 'flex-start', xs: 'center' },
               gap: '29px',
-              width: 'fit-content',
+              width: { md: 'fit-content', xs: '230px' },
             }}
           >
             <Typography
               sx={{
-                fontSize: '32px',
+                fontSize: { md: '32px', xs: '28px' },
+                textAlign: { md: 'left', xs: 'center' },
                 fontWeight: '700',
                 color: 'deep-blue.main',
               }}

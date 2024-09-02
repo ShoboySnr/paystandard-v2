@@ -17,7 +17,7 @@ const cardStyling = {
   borderRadius: '35px',
   backgroundBlendMode: 'hard-light',
   backgroundSize: 'cover',
-  padding: '45px',
+  padding: { md: '45px', xs: '20px' },
   // '&:hover': {
   //   backgroundColor: 'primary.main',
   //   boxShadow: '0px 0px 20px 0px rgba(0,0,0,0.2)',
@@ -36,7 +36,8 @@ const Pillars = () => {
       <Grid size={12}>
         <Typography
           sx={{
-            fontSize: '32px',
+            fontSize: { md: '32px', xs: '28px' },
+            px: { md: '0', xs: '18px' },
             fontWeight: '500',
           }}
         >
@@ -46,7 +47,8 @@ const Pillars = () => {
           sx={{
             my: '5px',
             borderColor: 'primary.main',
-            width: '100%',
+            width: { md: '100%', xs: '95%' },
+            mx: { xs: 'auto', md: '0' },
             borderWidth: '2px',
             borderRadius: '5px',
           }}
@@ -60,6 +62,10 @@ const Pillars = () => {
           my: {
             md: '50px',
           },
+          px: {
+            xs: '15px',
+            md: '0',
+          },
         }}
       >
         <Grid
@@ -68,6 +74,7 @@ const Pillars = () => {
           sx={{
             ...cardStyling,
             background: 'url(assets/home/pillars/bg1.png) lightgray 50% / cover no-repeat;',
+            marginTop: { xs: '40px', md: '0' },
           }}
           size={{
             md: 4,
@@ -76,36 +83,42 @@ const Pillars = () => {
         >
           <Grid
             size={12}
-            justifyContent={'center'}
+            justifyContent={'space-between'}
             alignItems={'center'}
             container
             direction={'row'}
           >
             <Grid size={'auto'} alignSelf={'center'}>
               <Image height={50} src={leadingOrg1} alt={'Leading Org'} />
+              {/*<Image height={50} src={leadingOrg1Dark} alt={'Leading Org'} />*/}
             </Grid>
             <Grid size={'auto'} alignSelf={'center'}>
-              <Image height={46} src={leadingOrg6} alt={'Leading Org'} />
+              <Image height={46} src={leadingOrg2} alt={'Leading Org'} />
+              {/*<Image height={46} src={leadingOrg2Dark} alt={'Leading Org'} />*/}
             </Grid>
             <Grid size={'auto'} alignSelf={'center'}>
-              <Image height={30} src={leadingOrg2} alt={'Leading Org'} />
+              <Image height={30} src={leadingOrg3} alt={'Leading Org'} />
+              {/*<Image height={30} src={leadingOrg3Dark} alt={'Leading Org'} />*/}
             </Grid>
           </Grid>
           <Grid
             size={12}
-            justifyContent={'center'}
+            justifyContent={'space-between'}
             alignItems={'center'}
             container
             alignSelf={'center'}
           >
             <Grid size={'auto'} alignSelf={'center'}>
-              <Image height={35} src={leadingOrg3} alt={'Leading Org'} />
-            </Grid>
-            <Grid size={'auto'} alignSelf={'center'}>
-              <Image height={30} src={leadingOrg4} alt={'Leading Org'} />
+              <Image height={35} src={leadingOrg4} alt={'Leading Org'} />
+              {/*<Image height={35} src={leadingOrg4Dark} alt={'Leading Org'} />*/}
             </Grid>
             <Grid size={'auto'} alignSelf={'center'}>
               <Image height={30} src={leadingOrg5} alt={'Leading Org'} />
+              {/*<Image height={30} src={leadingOrg5Dark} alt={'Leading Org'} />*/}
+            </Grid>
+            <Grid size={'auto'} alignSelf={'center'}>
+              <Image height={30} src={leadingOrg6} alt={'Leading Org'} />
+              {/*<Image height={30} src={leadingOrg6Dark} alt={'Leading Org'} />*/}
             </Grid>
           </Grid>
           <Grid
@@ -140,6 +153,7 @@ const Pillars = () => {
           sx={{
             ...cardStyling,
             background: 'url(assets/home/pillars/bg2.png) lightgray 50% / cover no-repeat;',
+            marginTop: { xs: '40px', md: '0' },
           }}
           size={{
             md: 4,
@@ -180,6 +194,7 @@ const Pillars = () => {
           sx={{
             ...cardStyling,
             background: 'url(assets/home/pillars/bg3.png) lightgray 50% / cover no-repeat;',
+            marginTop: { xs: '40px', md: '0' },
           }}
           size={{
             md: 4,

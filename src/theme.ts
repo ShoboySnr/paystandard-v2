@@ -30,7 +30,8 @@ const theme = createTheme({
     white: palette.augmentColor({ color: { main: '#FFFFFF' } }),
     black: palette.augmentColor({ color: { main: '#090C1A' } }),
     red: palette.augmentColor({ color: { main: '#F22C2C' } }),
-    'deep-blue': palette.augmentColor({ color: { main: '#152461', secondary: '#283167' } }),
+    'deep-blue': palette.augmentColor({ color: { main: '#152461' } }),
+    'deep-blue-secondary': palette.augmentColor({ color: { main: '#283167' } }),
     'light-blue': palette.augmentColor({ color: { main: '#88A0FF' } }),
   },
   components: {

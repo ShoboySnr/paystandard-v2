@@ -17,6 +17,7 @@ const AppContainer = ({
   return (
     <Container
       maxWidth="lg"
+      disableGutters
       sx={{
         ...baseSx,
         ...sx,

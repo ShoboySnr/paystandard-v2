@@ -1,4 +1,3 @@
-import '@/scss/home.scss';
 import { Box } from '@mui/material';
 import Banner from '@/components/home/Banner';
 import Products from '@/components/home/Products';
@@ -21,6 +20,7 @@ const Home = () => {
         sx={{
           my: {
             md: '100px',
+            xs: '60px',
           },
         }}
       >
@@ -34,7 +34,7 @@ const Home = () => {
       </AppContainer>
       <AppContainer
         sx={{
-          padding: '50px 0 100px 0',
+          padding: { md: '50px 0 100px 0', xs: '90px 0 70px 0' },
         }}
       >
         <BookDemo />

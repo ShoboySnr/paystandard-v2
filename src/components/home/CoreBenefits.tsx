@@ -51,9 +51,106 @@ const CoreBenefits = () => {
         sx={{
           pb: {
             md: '50px',
+            xs: '55px',
           },
         }}
       >
+        <Grid
+          sx={{
+            color: 'deep-blue.main',
+            display: {
+              xs: 'block',
+              md: 'none',
+            },
+          }}
+          rowSpacing={5}
+          container
+          size={12}
+        >
+          <Grid size={12}>
+            <Box
+              sx={{
+                height: { md: '360px', xs: '235px' },
+                position: 'relative',
+              }}
+            >
+              <Box
+                sx={{
+                  display: 'flex',
+                  flexDirection: 'column',
+                  justifyContent: 'center',
+                  textAlign: 'center',
+                  alignItems: 'center',
+                  height: '100%',
+                  width: '100%',
+                }}
+              >
+                <Typography
+                  sx={{
+                    fontSize: { md: '16px', xs: '10px' },
+                    lineHeight: '140%',
+                    fontWeight: '500',
+                  }}
+                >
+                  Outperforms
+                  <br />
+                  Traditional Approaches With
+                </Typography>
+                <Box
+                  sx={{
+                    fontSize: { md: '22px', xs: '14px' },
+                    lineHeight: '140%',
+                    fontWeight: '700',
+                    display: 'flex',
+                  }}
+                >
+                  Up to{' '}
+                  <Typography
+                    sx={{
+                      fontSize: { md: '140px', xs: '67px' },
+                      lineHeight: '80%',
+                      fontWeight: '900',
+                    }}
+                  >
+                    40
+                  </Typography>{' '}
+                  %
+                </Box>
+                <Typography
+                  sx={{
+                    fontSize: { md: '28px', xs: '18px' },
+                    lineHeight: '140%',
+                    fontWeight: '900',
+                  }}
+                >
+                  Pay Gap Reduction
+                  <br />
+                  in the First Year
+                  <br />
+                  Alone
+                </Typography>
+                <Divider
+                  sx={{
+                    my: '5px',
+                    borderColor: 'primary.main',
+                    width: { md: '100px', xs: '70px' },
+                    mx: { xs: 'auto', md: '0' },
+                    borderWidth: '3px',
+                    borderRadius: '5px',
+                  }}
+                />
+              </Box>
+              <img
+                src={'/assets/home/circle2.png'}
+                alt={'image.png'}
+                className={
+                  'tw-absolute tw-left-0 tw-right-0 tw-top-0 tw-mx-auto tw-w-[235px] md:tw-w-[360px]'
+                }
+              />
+            </Box>
+          </Grid>
+        </Grid>
+
         <Grid
           container
           alignSelf="center"
@@ -62,7 +159,7 @@ const CoreBenefits = () => {
             md: 8,
           }}
           sx={{
-            padding: '25px',
+            padding: { md: '25px', xs: '18px' },
           }}
         >
           <Grid size={12}>
@@ -70,9 +167,9 @@ const CoreBenefits = () => {
               <Image src={'/assets/home/circle1.svg'} alt="image.png" height={70} width={70} />
               <Typography
                 sx={{
-                  fontSize: '24px',
+                  fontSize: { md: '32px', xs: '28px' },
                   lineHeight: '140%',
-                  fontWeight: '500',
+                  fontWeight: '400',
                   width: '100%',
                   borderBottom: '4px solid',
                   borderColor: 'primary.main',
@@ -91,6 +188,7 @@ const CoreBenefits = () => {
               color: 'deep-blue.main',
               py: {
                 md: '75px',
+                xs: '40px',
               },
               borderBottom: '4px solid',
               borderColor: 'primary.main',
@@ -146,10 +244,18 @@ const CoreBenefits = () => {
             md: 4,
           }}
         >
-          <Grid size={12}>
+          <Grid
+            size={12}
+            sx={{
+              display: {
+                xs: 'none',
+                md: 'block',
+              },
+            }}
+          >
             <Box
               sx={{
-                height: '360px',
+                height: { lg: '360px', md: '330px' },
                 position: 'relative',
               }}
             >
@@ -173,12 +279,24 @@ const CoreBenefits = () => {
                   sx={{ fontSize: '22px', lineHeight: '140%', fontWeight: '700', display: 'flex' }}
                 >
                   Up to{' '}
-                  <Typography sx={{ fontSize: '140px', lineHeight: '80%', fontWeight: '900' }}>
+                  <Typography
+                    sx={{
+                      fontSize: { lg: '140px', md: '100px' },
+                      lineHeight: '80%',
+                      fontWeight: '900',
+                    }}
+                  >
                     40
                   </Typography>{' '}
                   %
                 </Box>
-                <Typography sx={{ fontSize: '28px', lineHeight: '140%', fontWeight: '900' }}>
+                <Typography
+                  sx={{
+                    fontSize: { lg: '28px', md: '20px' },
+                    lineHeight: '140%',
+                    fontWeight: '900',
+                  }}
+                >
                   Pay Gap Reduction
                   <br />
                   in the First Year
@@ -189,7 +307,7 @@ const CoreBenefits = () => {
                   sx={{
                     my: '5px',
                     borderColor: 'primary.main',
-                    width: '100px',
+                    width: { lg: '100px', md: '90px' },
                     borderWidth: '3px',
                     borderRadius: '5px',
                   }}
@@ -205,7 +323,7 @@ const CoreBenefits = () => {
           <Grid size={12}>
             <Box
               sx={{
-                height: '360px',
+                height: { lg: '360px', md: '330px', xs: '235px' },
                 position: 'relative',
               }}
             >
@@ -220,16 +338,34 @@ const CoreBenefits = () => {
                   width: '100%',
                 }}
               >
-                <Box sx={{ fontSize: '22px', lineHeight: '140%', fontWeight: '700' }}>
+                <Box
+                  sx={{
+                    fontSize: { md: '22px', xs: '14px' },
+                    lineHeight: '140%',
+                    fontWeight: '700',
+                  }}
+                >
                   Up to{' '}
                   <Box sx={{ display: 'flex' }}>
-                    <Typography sx={{ fontSize: '140px', lineHeight: '80%', fontWeight: '900' }}>
+                    <Typography
+                      sx={{
+                        fontSize: { lg: '140px', md: '100px', xs: '78px' },
+                        lineHeight: '80%',
+                        fontWeight: '900',
+                      }}
+                    >
                       70
                     </Typography>{' '}
                     %
                   </Box>
                 </Box>
-                <Typography sx={{ fontSize: '28px', lineHeight: '140%', fontWeight: '900' }}>
+                <Typography
+                  sx={{
+                    fontSize: { lg: '28px', md: '20px', xs: '18px' },
+                    lineHeight: '140%',
+                    fontWeight: '900',
+                  }}
+                >
                   Remediation
                   <br /> Cost Reduction
                 </Typography>
@@ -237,7 +373,8 @@ const CoreBenefits = () => {
                   sx={{
                     my: '5px',
                     borderColor: 'primary.main',
-                    width: '100px',
+                    width: { md: '100px', xs: '70px' },
+                    mx: { xs: 'auto', md: '0' },
                     borderWidth: '3px',
                     borderRadius: '5px',
                   }}
@@ -250,7 +387,9 @@ const CoreBenefits = () => {
               <img
                 src={'/assets/home/circle3.png'}
                 alt={'image.png'}
-                className={'tw-absolute tw-left-0 tw-right-0 tw-top-0 tw-mx-auto tw-w-[360px]'}
+                className={
+                  'tw-absolute tw-left-0 tw-right-0 tw-top-0 tw-mx-auto tw-w-[235px] md:tw-w-[360px]'
+                }
               />
             </Box>
           </Grid>
