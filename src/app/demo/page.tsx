@@ -25,25 +25,25 @@ const Demo = () => {
       <AppContainer sx={{ px: { md: '45px', xs: '0' } }}>
         <Box
           sx={{
-            pt: { xs: 6, lg: 8 },
-            px: { xs: 0, lg: 10 },
+            pt: { xs: '50px', md: '60px' },
+            px: { xs: '0', md: '80px' },
           }}
         >
           <Box
             sx={{
-              fontSize: { xs: '32px', lg: '40px' },
+              fontSize: { xs: '32px', md: '40px' },
               fontWeight: 'bold',
-              px: { xs: 6, lg: 0 },
-              textAlign: { xs: 'center', lg: 'left' },
+              px: { xs: 6, md: 0 },
+              textAlign: { xs: 'center', md: 'left' },
             }}
           >
             Schedule a Personalized Demo
           </Box>
           <Box
             sx={{
-              fontSize: { xs: '18px', lg: '20px' },
-              fontWeight: { xs: '400', lg: '600' },
-              textAlign: { xs: 'center', lg: 'left' },
+              fontSize: { xs: '18px', md: '20px' },
+              fontWeight: { xs: '400', md: '600' },
+              textAlign: { xs: 'center', md: 'left' },
               my: 2,
             }}
           >

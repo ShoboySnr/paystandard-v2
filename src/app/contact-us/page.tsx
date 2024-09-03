@@ -27,11 +27,8 @@ export default function Contact() {
       <AppContainer sx={{ px: { md: '45px', xs: '0' } }}>
         <Box
           sx={{
-            pt: { xs: 1, md: 5 },
-            pb: { xs: 7.5 },
-            // px: { xs: 2, md: 7 },
-            mt: { xs: 4, md: 6 },
-            mb: 7.5,
+            pb: { xs: '60px', md: '30px' },
+            mb: '30px',
             borderRadius: '35px',
             position: 'relative',
             overflow: 'hidden',
