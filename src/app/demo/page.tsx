@@ -22,7 +22,7 @@ const Demo = () => {
         color: 'deep-blue-secondary.main',
       }}
     >
-      <AppContainer>
+      <AppContainer sx={{ px: { md: '45px', xs: '0' } }}>
         <Box
           sx={{
             pt: { xs: 6, lg: 8 },
@@ -204,10 +204,7 @@ const Demo = () => {
                       fontSize: '14px',
                     }}
                   >
-                    <Typography variant="span" sx={{ color: 'red.main' }}>
-                      *
-                    </Typography>{' '}
-                    Indicates a required field.
+                    <span className={'tw-text-red'}>*</span> Indicates a required field.
                   </Typography>
                 </Box>
                 <Box>
@@ -259,7 +256,6 @@ const Demo = () => {
                   }}
                 >
                   <Typography
-                    variant="span"
                     sx={{
                       fontSize: '16px',
                       fontWeight: '500',
@@ -269,7 +265,6 @@ const Demo = () => {
                   </Typography>
                   <br />
                   <Typography
-                    variant="span"
                     sx={{
                       fontSize: '16px',
                       fontWeight: '400',

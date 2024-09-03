@@ -21,6 +21,7 @@ const config: Config = {
         'light-gray': '#DCDCE1',
         black: '#090C1A',
         white: '#FFFFFF',
+        red: '#F22C2C',
         // buttons
         'btn-outline-text': '#1C3080',
       },

@@ -66,7 +66,7 @@ const AboutUs = () => {
               fontWeight: '400',
               margin: 'auto 2px 2px 2px',
               lineHeight: '33.6px',
-              color: '#283167',
+              color: 'deep-blue-secondary.main',
             }}
           >
             PayStandards is the bottom line-driven compensation software platform that delivers true
@@ -140,7 +140,7 @@ const AboutUs = () => {
                     fontWeight: '400',
                     margin: 'auto 0 2px 0',
                     lineHeight: '39.2px',
-                    color: '#283167',
+                    color: 'deep-blue-secondary.main',
                   }}
                 >
                   From Leading Organizations
@@ -169,7 +169,6 @@ const AboutUs = () => {
                     justifyContent={'center'}
                   >
                     <Image height={70} src={leadingOrg1} alt={'Leading Org'} />
-                    {/*<Image height={50} src={leadingOrg1Dark} alt={'Leading Org'} />*/}
                   </Grid>
                   <Grid
                     size={{
@@ -179,7 +178,6 @@ const AboutUs = () => {
                     justifyContent={'center'}
                   >
                     <Image height={60} src={leadingOrg2} alt={'Leading Org'} />
-                    {/*<Image height={46} src={leadingOrg2Dark} alt={'Leading Org'} />*/}
                   </Grid>
                   <Grid
                     size={{
@@ -189,7 +187,6 @@ const AboutUs = () => {
                     justifyContent={'center'}
                   >
                     <Image height={45} src={leadingOrg3} alt={'Leading Org'} />
-                    {/*<Image height={30} src={leadingOrg3Dark} alt={'Leading Org'} />*/}
                   </Grid>
                   <Grid
                     size={{
@@ -199,7 +196,6 @@ const AboutUs = () => {
                     justifyContent={'center'}
                   >
                     <Image height={45} src={leadingOrg4} alt={'Leading Org'} />
-                    {/*<Image height={50} src={leadingOrg1Dark} alt={'Leading Org'} />*/}
                   </Grid>
                   <Grid
                     size={{
@@ -210,7 +206,6 @@ const AboutUs = () => {
                     justifyContent={'center'}
                   >
                     <Image height={50} src={leadingOrg5} alt={'Leading Org'} />
-                    {/*<Image height={46} src={leadingOrg2Dark} alt={'Leading Org'} />*/}
                   </Grid>
                   <Grid
                     size={{
@@ -220,7 +215,6 @@ const AboutUs = () => {
                     justifyContent={'center'}
                   >
                     <Image height={70} src={leadingOrg6} alt={'Leading Org'} />
-                    {/*<Image height={30} src={leadingOrg3Dark} alt={'Leading Org'} />*/}
                   </Grid>
                 </Grid>
               </Grid>
@@ -251,7 +245,7 @@ const AboutUs = () => {
                   fontWeight: '700',
                   margin: 'auto 0 4px 0',
                   lineHeight: '44px',
-                  color: '#283167',
+                  color: 'deep-blue-secondary.main',
                 }}
               >
                 Join Our
@@ -262,7 +256,7 @@ const AboutUs = () => {
                   fontSize: '24px',
                   fontWeight: '400',
                   margin: 'auto 0 4px 0',
-                  color: '#283167',
+                  color: 'deep-blue-secondary.main',
                   mt: '16px',
                 }}
               >

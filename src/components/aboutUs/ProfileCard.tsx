@@ -109,7 +109,7 @@ const ProfileCard = () => {
                   fontWeight: '700',
                   margin: 'auto 0 2px 0',
                   lineHeight: '39.2px',
-                  color: '#283167',
+                  color: 'deep-blue-secondary.main',
                 }}
               >
                 {profile.title}
@@ -121,7 +121,7 @@ const ProfileCard = () => {
                   margin: '0 0 4px 0',
                   marginBottom: '10px',
                   lineHeight: '20.3px',
-                  color: '#283167',
+                  color: 'deep-blue-secondary.main',
                   width: {
                     md: '200px',
                     xs: '170px',

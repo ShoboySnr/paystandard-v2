@@ -1,5 +1,6 @@
 import { Box, Button } from '@mui/material';
 import Image from 'next/image';
+import Link from 'next/link';
 
 const Banner = () => {
   return (
@@ -62,13 +63,15 @@ const Banner = () => {
           }}
         >
           <Box>
-            <Button
-              className={'!tw-rounded-full'}
-              variant="contained"
-              sx={{ height: '44px', width: '160px' }}
-            >
-              Book a Demo
-            </Button>
+            <Link href={'/demo'}>
+              <Button
+                className={'!tw-rounded-full'}
+                variant="contained"
+                sx={{ height: '44px', width: '160px' }}
+              >
+                Book a Demo
+              </Button>
+            </Link>
           </Box>
           <Box>
             <Button
