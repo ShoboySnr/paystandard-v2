@@ -67,7 +67,7 @@ export default function Contact() {
                     fontWeight: '700',
                     px: { xs: 6, lg: 0 },
                     textAlign: { xs: 'center', lg: 'left' },
-                    color: '#283167',
+                    color: 'deep-blue-secondary.main',
                   }}
                 >
                   Let’s Connect
@@ -77,7 +77,7 @@ export default function Contact() {
                     fontSize: { xs: '18px' },
                     fontWeight: { xs: '400' },
                     textAlign: { xs: 'center', lg: 'left' },
-                    color: '#505069',
+                    color: 'dark-gray.main',
                     my: { md: '16px', xs: '70px' },
                   }}
                 >
@@ -90,7 +90,7 @@ export default function Contact() {
 
               <Box
                 component="form"
-                sx={{ '& .MuiTextField-root': { mb: 2.5 } }}
+                sx={{ '& .MuiTextField-root': { mb: '20px' } }}
                 noValidate
                 autoComplete="off"
               >
@@ -150,7 +150,7 @@ export default function Contact() {
                   </Button>
                   <Typography
                     sx={{
-                      mb: 2.5,
+                      mb: '20px',
                       fontSize: '18px',
                       color: '#7B83B2',
                     }}
@@ -193,7 +193,7 @@ export default function Contact() {
 
               <Box
                 sx={{
-                  mt: 3,
+                  mt: '24px',
                   color: 'black.main',
                 }}
               >
@@ -211,7 +211,7 @@ export default function Contact() {
                 <div className="tw-flex tw-justify-center">
                   <Button
                     sx={{
-                      mt: 2.5,
+                      mt: '20px',
                       fontSize: '16px',
                       px: '16px',
                       py: 'md:10px md,v-12',
