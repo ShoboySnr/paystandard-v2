@@ -1,0 +1,7 @@
+.gradientCardLeftToRight {
+    background: rgba(250,250,250,1);
+    background: linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(250,250,250,1) 100%) !important;
+    @media screen and (max-width: 900px) {
+        background: linear-gradient(0deg, rgba(255,255,255,1) 0%, rgba(250,250,250,1) 100%) !important;
+    }
+}

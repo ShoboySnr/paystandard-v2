@@ -34,6 +34,8 @@ const theme = createTheme({
     'deep-blue': palette.augmentColor({ color: { main: '#152461' } }),
     'deep-blue-secondary': palette.augmentColor({ color: { main: '#283167' } }),
     'light-blue': palette.augmentColor({ color: { main: '#88A0FF' } }),
+    'dark-purple': palette.augmentColor({ color: { main: '#240642' } }),
+    gray: palette.augmentColor({ color: { main: '#505069' } }),
   },
   components: {
     MuiButton: {
