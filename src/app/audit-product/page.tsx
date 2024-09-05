@@ -15,6 +15,7 @@ import Icon8 from '~/assets/icons-common/core-benefits/icon_8.svg';
 import Icon9 from '~/assets/icons-common/core-benefits/icon_9.svg';
 import Icon10 from '~/assets/icons-common/core-benefits/icon_10.svg';
 import CoreBenefits from '@/components/product/CoreBenefits';
+import styles from '@/app/_scss/global.module.scss';
 
 const bannerCardContent: { title: string; paragraph: string } = {
   title: 'Power Your Year-End Pay Process',
@@ -58,29 +59,18 @@ const coreBenifits = [
 
 const AuditProduct = () => {
   return (
-    <Box>
+    <Box className={styles.removeHeaderMargin}>
       <Box
+        className={styles.addHeaderPadding}
         sx={{
-          mt: '-115px',
-          height: '990px',
-          background: `linear-gradient(
-      to bottom, 
-      rgba(255, 255, 255, 0) 0%,
-      rgba(255, 255, 255, 0.2) 75%,
-      rgba(255, 255, 255, 0.5) 95%, 
-      rgba(255, 255, 255, 1) 100%
-    ), 
-    url('/assets/audit-product/audit-product-bg.png')`,
+          height: '1130px',
+          backgroundImage: `url('/assets/audit-product/audit-product-bg.png')`,
           backgroundSize: { xs: '250%', md: 'cover' },
           backgroundPosition: { xs: 'center top', md: 'center' },
           zIndex: 1,
         }}
       >
-        <AppContainer
-          sx={{
-            pt: '115px',
-          }}
-        >
+        <AppContainer>
           <Box
             sx={{
               textAlign: 'center',
@@ -127,11 +117,7 @@ const AuditProduct = () => {
           </Box>
         </AppContainer>
       </Box>
-      <AppContainer
-        sx={{
-          mt: 12,
-        }}
-      >
+      <AppContainer>
         <AuditBannerCard title={bannerCardContent.title} paragraph={bannerCardContent.paragraph} />
         <Box>
           <Typography

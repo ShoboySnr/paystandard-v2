@@ -1,13 +1,13 @@
 import { Box, Divider, Paper, Typography } from '@mui/material';
 import { Grid } from '@mui/system';
-import Rating from '~/assets/audit-product/rating.png';
-import Equity from '~/assets/audit-product/equity.png';
-import Strategy from '~/assets/audit-product/strategy.png';
-import Decision from '~/assets/audit-product/decision.png';
+import Offer from '~/assets/products/dashboard/offer.svg';
+import Range from '~/assets/products/dashboard/range.svg';
+import Manage from '~/assets/products/dashboard/manage.svg';
+import Graph from '~/assets/products/dashboard/decisions.svg';
 import Image from 'next/image';
 import React from 'react';
 
-const AuditKeyFeatures = () => {
+const KeyFeatures = () => {
   return (
     <Box
       sx={{
@@ -17,7 +17,7 @@ const AuditKeyFeatures = () => {
       <Paper
         elevation={0}
         sx={{
-          mt: { xs: 10, md: 12 },
+          mt: { xs: 5, md: 8.5 },
           border: '1px solid #525252',
           borderTop: { xs: '0', md: '1px solid #525252' },
           borderLeft: { xs: '0', md: '1px solid #525252' },
@@ -32,10 +32,11 @@ const AuditKeyFeatures = () => {
             size={{ xs: 12, md: 6 }}
             order={{ xs: 2, md: 1 }}
             sx={{
-              pt: { xs: 0, md: 7.5 },
-              pb: 7.5,
+              pt: { xs: 0, md: 7 },
+              pb: 7,
               pl: { xs: 0, md: 6.5 },
               pr: { xs: 0, md: 0 },
+              color: 'deep-blue-secondary.main',
             }}
           >
             <Typography
@@ -44,24 +45,23 @@ const AuditKeyFeatures = () => {
                 fontWeight: '700',
                 mb: 2.5,
                 mt: 1.5,
-                color: 'black',
               }}
             >
-              Know Where You Stand
+              A New Way to Pay
             </Typography>
             <Typography
               sx={{
                 fontSize: '20px',
                 fontWeight: '400',
                 color: 'black',
+                mb: 3.5,
               }}
             >
-              Transcend summary statistics and get pay equity right for your employees.
+              Go beyond market data with a new way to value your employees – PayStandards predicted
+              pay.
             </Typography>
-
             <Divider
               sx={{
-                mt: 2,
                 borderColor: 'primary.main',
                 borderRadius: '40px',
                 width: '134px',
@@ -81,18 +81,19 @@ const AuditKeyFeatures = () => {
             }}
           >
             <Box
-              className="tw-relative tw-h-[214px] tw-w-full tw-rounded-[35px] md:tw-h-[278px] md:tw-w-full"
+              className="tw-h-[214px] tw-w-full tw-rounded-[35px] md:tw-h-[319px] md:tw-w-full"
               sx={{
                 display: 'flex',
                 justifyContent: 'center',
-                background: 'linear-gradient(162deg, #3860FF 6.11%, #090C1A 95.04%)',
-                mb: -1.5,
+                background: 'linear-gradient(250deg, #3860FF 45.87%, #090C1A 96.34%)',
+                mb: -2.5,
               }}
             >
               <Image
-                src={Rating}
+                src={Offer}
+                height={370}
                 alt="standard rating"
-                className="tw-absolute tw-top-[-30px] tw-h-[245px] md:tw-top-[-68px] md:tw-h-[347px] tw-w-full"
+                className="tw-absolute tw-top-[-15px] tw-h-[245px] md:tw-top-[-17px] md:tw-h-[346px]"
               />
             </Box>
           </Grid>
@@ -116,28 +117,22 @@ const AuditKeyFeatures = () => {
           <Grid size={{ xs: 12, md: 6 }}>
             <Box
               sx={{
-                background: 'linear-gradient(243deg, #88A0FF 9.96%, #152461 97.23%)',
+                background: 'linear-gradient(117deg, #88A0FF 7.12%, #152461 90.58%)',
                 borderRadius: '35px',
-                height: { xs: '260px', md: '115%' },
-                width: '80%',
-                mt: { md: -3, xs: 0 },
-                position: 'relative',
+                height: { xs: '253px', md: '108%' },
+                display: 'flex',
+                justifyContent: 'center',
               }}
             >
               <Box
+                className="tw-h-[227px] tw-w-[325px] tw-rounded-[35px] md:tw-h-[310px] lg:tw-h-[300px] lg:tw-w-[422px]"
                 sx={{
-                  // background: 'linear-gradient(257deg, #FFF 63.83%, #CCCBCB 96.92%)',
-                  position: 'absolute',
-                  left: 0,
-                  top: {
-                    md: '-32%',
-                    xs: '-36%',
-                  },
-                  right: '-40px',
-                  transform: { xs: 'translateY(50%)' },
+                  display: 'flex',
+                  justifyContent: 'center',
+                  mt: -2.5,
                 }}
               >
-                <Image src={Strategy} alt="standard rating" className="tw-w-full tw-h-full" />
+                <Image src={Range} alt="range" className="tw-w-full md:tw-w-[450px]" />
               </Box>
             </Box>
           </Grid>
@@ -157,7 +152,7 @@ const AuditKeyFeatures = () => {
                 color: 'black',
               }}
             >
-              Choose A Strategy
+              Master Pay Transparency
             </Typography>
             <Typography
               sx={{
@@ -166,8 +161,8 @@ const AuditKeyFeatures = () => {
                 color: 'black',
               }}
             >
-              Leverage your data to go beyond market comps with a new way to value your employees –
-              PayStandards predicted pay.
+              Create tailored pay ranges that meet pay transparency standards and that employees can
+              easily understand.
             </Typography>
 
             <Divider
@@ -214,7 +209,7 @@ const AuditKeyFeatures = () => {
                 color: 'black',
               }}
             >
-              Make Better Pay Decisions
+              Manage Pay Equity Continuously
             </Typography>
             <Typography
               sx={{
@@ -223,7 +218,8 @@ const AuditKeyFeatures = () => {
                 color: 'black',
               }}
             >
-              Value your employees appropriately – and mitigate your legal risk.
+              From new hires to promotions to off-cycle salary increases, generate a fine-tuned pay
+              recommendation that considers only the right things.
             </Typography>
             <Divider
               sx={{
@@ -238,37 +234,27 @@ const AuditKeyFeatures = () => {
           <Grid size={{ xs: 12, md: 6 }} order={{ xs: 1, md: 2 }}>
             <Box
               sx={{
-                mt: { md: '-30px', xs: '-15px' },
-                height: { xs: '250px', md: '125%' },
-                mr: -1,
+                background: 'linear-gradient(135deg, #3860FF 0%, #090C1A 100%)',
+                borderRadius: '35px',
+                mt: -1,
+                height: { xs: '215px', md: '95%' },
                 position: 'relative',
               }}
             >
               <Box
                 sx={{
-                  background: 'linear-gradient(108deg, #3860FF 0%, #152461 100%)',
+                  display: 'flex',
+                  justifyContent: 'center',
+                  height: { xs: '215px', md: '95%' },
                   borderRadius: '35px',
-                  height: { xs: '250px', md: '105%' },
-                  width: '80%',
-                  position: 'absolute',
-                  top: '49%',
-                  right: -1,
-                  transform: 'translateY(-50%)',
-                  zIndex: 1,
-                }}
-              />
-              <Box
-                sx={{
-                  zIndex: 2,
-                  position: 'absolute',
-                  top: { md: '-3%', xs: '5%' },
-                  right: -3,
+                  background: 'linear-gradient(135deg, #3860FF 0%, #090C1A 100%)',
+                  position: 'relative',
                 }}
               >
                 <Image
-                  src={Decision}
+                  src={Manage}
                   alt="standard rating"
-                  className="tw-w-[366px] md:tw-w-[476px] md:tw-h-[343px] tw-h-[217px]"
+                  className="tw-absolute tw-bottom-0 tw-h-[200px] tw-w-[441px] tw-rounded-bl-[18px] tw-rounded-br-[25px] md:tw-bottom-[-18px] md:tw-h-full"
                 />
               </Box>
             </Box>
@@ -286,56 +272,34 @@ const AuditKeyFeatures = () => {
           borderRight: { xs: '0', md: '1px solid #525252' },
           backgroundColor: '#FFFFFF',
           borderRadius: '35px',
-          px: { xs: 2, md: 0 },
+          p: { xs: 2, md: 0 },
         }}
       >
         <Grid container spacing={6}>
-          <Grid
-            size={{ xs: 12, md: 6 }}
-            sx={{
-              display: 'flex',
-              flexDirection: 'column',
-              justifyContent: 'end',
-              pt: { xs: '16px', md: '0' },
-            }}
-          >
+          <Grid size={{ xs: 12, md: 6 }}>
             <Box
-              className="tw-h-[214px] tw-w-full tw-rounded-[35px] md:tw-h-[320px] md:tw-w-full md:tw-top-[-10px] tw-relative"
               sx={{
-                display: 'flex',
-                justifyContent: 'center',
-                background: 'linear-gradient(133deg, #88A0FF 3.98%, #152461 96.46%)',
-                mb: -1.5,
+                background: 'linear-gradient(242deg, #88A0FF 5.89%, #152461 95.38%)',
+                borderRadius: '35px',
+                height: { xs: '246px', md: '95%' },
+                width: { xs: '90%', md: '95%' },
+                mt: -4,
+                position: 'relative',
               }}
             >
-              {/*<Box*/}
-              {/*  className={*/}
-              {/*    'tw-h-[245px] md:tw-h-[365px] tw-w-[80%] tw-absolute tw-border tw-border-deep-blue'*/}
-              {/*  }*/}
-              {/*  sx={{*/}
-              {/*    bottom: '-13px',*/}
-              {/*    background: '#fff',*/}
-              {/*    borderRadius: '35px',*/}
-              {/*    pt: {*/}
-              {/*      xs: 2,*/}
-              {/*      lg: 0,*/}
-              {/*    },*/}
-              {/*    pb: {*/}
-              {/*      xs: 2,*/}
-              {/*      lg: 4,*/}
-              {/*    },*/}
-              {/*    px: {*/}
-              {/*      xs: 2,*/}
-              {/*      lg: 4,*/}
-              {/*    },*/}
-              {/*  }}*/}
-              {/*>*/}
-              <Image
-                src={Equity}
-                alt="Equity"
-                className="tw-w-[310px] tw-bottom-[-1px] md:tw-w-[405px] tw-h-[250px] md:tw-h-[335px] tw-absolute"
-              />
-              {/*</Box>*/}
+              <Box
+                sx={{
+                  position: 'absolute',
+                  left: 15,
+                  right: '-50px',
+                }}
+              >
+                <Image
+                  src={Graph}
+                  alt="standard rating"
+                  className="tw-mt-[11px] tw-h-[224px] tw-w-full md:tw-mt-[14px] lg:tw-h-[292px]"
+                />
+              </Box>
             </Box>
           </Grid>
           <Grid
@@ -354,7 +318,7 @@ const AuditKeyFeatures = () => {
                 color: 'black',
               }}
             >
-              Achieve True Pay Equity
+              Monitor the Impact of Pay Decisions in Real-Time
             </Typography>
             <Typography
               sx={{
@@ -363,8 +327,8 @@ const AuditKeyFeatures = () => {
                 color: 'black',
               }}
             >
-              Understand your legal risk posture how decisions are affecting your legal risk –
-              across jurisdictions.
+              Assess how pay practices are affecting your pay equity position – and tracking against
+              your budget.
             </Typography>
 
             <Divider
@@ -383,4 +347,4 @@ const AuditKeyFeatures = () => {
   );
 };
 
-export default AuditKeyFeatures;
+export default KeyFeatures;

@@ -10,6 +10,7 @@ import leadingOrg5 from '~/assets/leading-organizations/image5.svg';
 import leadingOrg6 from '~/assets/leading-organizations/image6.svg';
 import Icon2 from '~/assets/home/pillars/icon2.svg';
 import Icon3 from '~/assets/home/pillars/icon3.svg';
+import Link from 'next/link';
 
 const cardStyling = {
   minHeight: '200px',
@@ -33,11 +34,10 @@ const Pillars = () => {
         color: '#283167',
       }}
     >
-      <Grid size={12}>
+      <Grid size={12} sx={{ px: { md: '0', xs: '15px' } }}>
         <Typography
           sx={{
             fontSize: { md: '32px', xs: '28px' },
-            px: { md: '0', xs: '18px' },
             fontWeight: '500',
           }}
         >
@@ -47,8 +47,7 @@ const Pillars = () => {
           sx={{
             my: '5px',
             borderColor: 'primary.main',
-            width: { md: '100%', xs: '95%' },
-            mx: { xs: 'auto', md: '0' },
+            width: '100%',
             borderWidth: '2px',
             borderRadius: '5px',
           }}
@@ -141,10 +140,12 @@ const Pillars = () => {
               </Typography>
             </Box>
             <Grid size={12} alignSelf={'self-end'} sx={{ mt: '20px' }}>
-              <Typography sx={{ fontSize: '18px', fontWeight: '500', display: 'flex' }}>
-                <span className={'tw-mr-2'}>Trust Center</span>
-                <Image src={ArrowRight} alt={'arrow-right'} />
-              </Typography>
+              <Link href={'/about-us'}>
+                <Typography sx={{ fontSize: '18px', fontWeight: '500', display: 'flex' }}>
+                  <span className={'tw-mr-2'}>About Us</span>
+                  <Image src={ArrowRight} alt={'arrow-right'} />
+                </Typography>
+              </Link>
             </Grid>
           </Grid>
         </Grid>
@@ -183,10 +184,12 @@ const Pillars = () => {
             </Box>
           </Grid>
           <Grid size={12} alignSelf={'self-end'} sx={{ mt: '20px' }}>
-            <Typography sx={{ fontSize: '18px', fontWeight: '500', display: 'flex' }}>
-              <span className={'tw-mr-2'}>Learn More</span>
-              <Image src={ArrowRight} alt={'arrow-right'} />
-            </Typography>
+            <Link href={'/about-us'}>
+              <Typography sx={{ fontSize: '18px', fontWeight: '500', display: 'flex' }}>
+                <span className={'tw-mr-2'}>Learn More</span>
+                <Image src={ArrowRight} alt={'arrow-right'} />
+              </Typography>
+            </Link>
           </Grid>
         </Grid>
         <Grid
@@ -224,10 +227,12 @@ const Pillars = () => {
             </Box>
           </Grid>
           <Grid size={12} alignSelf={'self-end'} sx={{ mt: '20px' }}>
-            <Typography sx={{ fontSize: '18px', fontWeight: '500', display: 'flex' }}>
-              <span className={'tw-mr-2'}>Trust Center</span>
-              <Image src={ArrowRight} alt={'arrow-right'} />
-            </Typography>
+            <Link href={'/trust-center'}>
+              <Typography sx={{ fontSize: '18px', fontWeight: '500', display: 'flex' }}>
+                <span className={'tw-mr-2'}>Trust Center</span>
+                <Image src={ArrowRight} alt={'arrow-right'} />
+              </Typography>
+            </Link>
           </Grid>
         </Grid>
       </Grid>

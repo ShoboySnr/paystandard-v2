@@ -1,7 +1,8 @@
 import { Box, Button, Paper, Typography } from '@mui/material';
 import { Grid } from '@mui/system';
 import Image from 'next/image';
-import BannerImage from '~/assets/audit-product/audit-banner-image.png';
+import BannerImage from '~/assets/audit-product/employee-for-review.png';
+import Link from 'next/link';
 
 const src = 'https://www.youtube.com/embed/x91MPoITQ3I?si=6WdYf-CPNY0pQoqh';
 const AuditBannerCard = ({ title, paragraph }: { title: string; paragraph: string }) => {
@@ -26,32 +27,14 @@ const AuditBannerCard = ({ title, paragraph }: { title: string; paragraph: strin
               className="tw-absolute tw-z-0 tw-h-[214px] tw-w-[360px] tw-rounded-[24px] tw-bg-gradient-to-r tw-from-[#3860FF] tw-to-[#090C1A] lg:tw-h-[300px] lg:tw-w-[538px]"
               sx={{ background: 'linear-gradient(108deg, #3860FF 0%, #152461 100%)' }}
             />
-            <Box
+            <Image
+              src={BannerImage}
+              alt="emplyees for review"
               className={
-                'tw-absolute tw-left-1/2 tw-top-[39.8%] tw-z-10 tw-h-[195px] tw-w-[360px] tw--translate-x-1/2 tw--translate-y-1/2 tw-transform tw-rounded-[35px] tw-border tw-border-deep-blue lg:tw-h-[345px] lg:tw-w-[505px]'
+                'tw-absolute tw-left-1/2 md:tw-top-[39.6%] tw-top-[46%] tw-z-10 tw-h-[230px] tw-w-[320px] md:tw-w-[505px]  tw--translate-x-1/2 tw--translate-y-1/2 md:tw-h-[345px]'
               }
-              sx={{
-                pt: {
-                  xs: 2,
-                  lg: 4,
-                },
-                pb: {
-                  xs: 2,
-                  lg: 0,
-                },
-                px: {
-                  xs: 2,
-                  lg: 4,
-                },
-                background: '#FFF',
-              }}
-            >
-              <Image
-                src={BannerImage}
-                alt="emplyees for review"
-                className={'tw-h-full tw-w-full'}
-              />
-            </Box>
+            />
+            {/*</Box>*/}
           </Box>
         </Grid>
         <Grid size={{ xs: 12, md: 6 }}>
@@ -74,12 +57,20 @@ const AuditBannerCard = ({ title, paragraph }: { title: string; paragraph: strin
           >
             {paragraph}
           </Typography>
-          <Button
-            variant="contained"
-            sx={{ height: '44px', width: '160px', borderRadius: '33px', fontSize: '16px', mt: 3.5 }}
-          >
-            Book a Demo
-          </Button>
+          <Link href={'/demo'}>
+            <Button
+              variant="contained"
+              sx={{
+                height: '44px',
+                width: '160px',
+                borderRadius: '33px',
+                fontSize: '16px',
+                mt: 3.5,
+              }}
+            >
+              Book a Demo
+            </Button>
+          </Link>
         </Grid>
       </Grid>
     </Paper>

@@ -1,9 +1,19 @@
+'use client';
 import React from 'react';
 import { Box, Typography } from '@mui/material';
 import AppContainer from '@/components/layout/AppContainer';
 import { Grid } from '@mui/system';
 
 export default function PrivacyPolicy() {
+  const handleScroll = (id: string) => {
+    const element = document.getElementById(id);
+    if (element) {
+      const yOffset = -150;
+      const y = element.getBoundingClientRect().top + window.pageYOffset + yOffset;
+      window.scrollTo({ top: y, behavior: 'smooth' });
+    }
+  };
+
   return (
     <Box
       sx={{
@@ -714,52 +724,134 @@ export default function PrivacyPolicy() {
                   className="tw-list-disc"
                 >
                   <li>
-                    <a href="#introduction">Introduction</a>
+                    <a
+                      href="#introduction"
+                      onClick={(e) => {
+                        e.preventDefault();
+                        handleScroll('introduction');
+                      }}
+                    >
+                      Introduction
+                    </a>
                   </li>
                   <li>
-                    <a href="#data-protection-officer">Data Protection Officer</a>
+                    <a
+                      href="#data-protection-officer"
+                      onClick={(e) => {
+                        e.preventDefault();
+                        handleScroll('data-protection-officer');
+                      }}
+                    >
+                      Data Protection Officer
+                    </a>
                   </li>
                   <li>
-                    <a href="#how-we-collect-and-use-your-personal-info">
+                    <a
+                      href="#how-we-collect-and-use-your-personal-info"
+                      onClick={(e) => {
+                        e.preventDefault();
+                        handleScroll('how-we-collect-and-use-your-personal-info');
+                      }}
+                    >
                       How we collect and use (process) your personal information
                     </a>
                   </li>
                   <li>
-                    <a href="#use-of-the-paystandards-website">
+                    <a
+                      href="#use-of-the-paystandards-website"
+                      onClick={(e) => {
+                        e.preventDefault();
+                        handleScroll('use-of-the-paystandards-website');
+                      }}
+                    >
                       Use of the paystandards.com website
                     </a>
                   </li>
                   <li>
-                    <a href="#cookies-and-tracking-technologies">
+                    <a
+                      href="#cookies-and-tracking-technologies"
+                      onClick={(e) => {
+                        e.preventDefault();
+                        handleScroll('cookies-and-tracking-technologies');
+                      }}
+                    >
                       Cookies and tracking technologies
                     </a>
                   </li>
                   <li>
-                    <a href="#use-of-the-paystandards-website">
+                    <a
+                      href="#use-of-the-paystandards-website"
+                      onClick={(e) => {
+                        e.preventDefault();
+                        handleScroll('use-of-the-paystandards-website');
+                      }}
+                    >
                       Use of the PayStandards Inc. services
                     </a>
                   </li>
                   <li>
-                    <a href="#sharing-information-with-third-parties">
+                    <a
+                      href="#sharing-information-with-third-parties"
+                      onClick={(e) => {
+                        e.preventDefault();
+                        handleScroll('sharing-information-with-third-parties');
+                      }}
+                    >
                       When and how we share information with third parties
                     </a>
                   </li>
                   <li>
-                    <a href="#transferring-personal-data-to-the-us">
+                    <a
+                      href="#transferring-personal-data-to-the-us"
+                      onClick={(e) => {
+                        e.preventDefault();
+                        handleScroll('transferring-personal-data-to-the-us');
+                      }}
+                    >
                       Transferring personal data to the U.S.
                     </a>
                   </li>
                   <li>
-                    <a href="#data-subject-rights">Data Subject rights</a>
+                    <a
+                      href="#data-subject-rights"
+                      onClick={(e) => {
+                        e.preventDefault();
+                        handleScroll('transferring-personal-data-to-the-us');
+                      }}
+                    >
+                      Data Subject rights
+                    </a>
                   </li>
                   <li>
-                    <a href="#data-subject-rights">Security of your information</a>
+                    <a
+                      href="#data-subject-rights"
+                      onClick={(e) => {
+                        e.preventDefault();
+                        handleScroll('data-subject-rights');
+                      }}
+                    >
+                      Security of your information
+                    </a>
                   </li>
                   <li>
-                    <a href="#data-storage-and-retention">Data storage and retention</a>
+                    <a
+                      href="#data-storage-and-retention"
+                      onClick={(e) => {
+                        e.preventDefault();
+                        handleScroll('data-storage-and-retention');
+                      }}
+                    >
+                      Data storage and retention
+                    </a>
                   </li>
                   <li>
-                    <a href="#question-concerns-or-complaints">
+                    <a
+                      href="#question-concerns-or-complaints"
+                      onClick={(e) => {
+                        e.preventDefault();
+                        handleScroll('question-concerns-or-complaints');
+                      }}
+                    >
                       Questions, concerns, or complaints
                     </a>
                   </li>

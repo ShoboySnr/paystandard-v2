@@ -34,7 +34,7 @@ const CoreBenefits: React.FC<Benefits> = ({ data }) => {
         borderRadius: { xs: '25px', lg: '35px' },
         background: 'linear-gradient(180deg, #2641B0 0%, #152461 99.27%)',
         border: '1px solid #525252',
-        my: { xs: 12, lg: 8 },
+        my: 8,
         py: { xs: 4, lg: 5 },
         px: { xs: 2, lg: 5 },
         pb: { xs: 6, lg: 9 },

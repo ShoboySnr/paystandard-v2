@@ -17,7 +17,7 @@ const KeyFeatures = () => {
       <Paper
         elevation={0}
         sx={{
-          mt: { xs: 10, md: 0 },
+          mt: { xs: 5, md: 8.5 },
           border: '1px solid #525252',
           borderTop: { xs: '0', md: '1px solid #525252' },
           borderLeft: { xs: '0', md: '1px solid #525252' },

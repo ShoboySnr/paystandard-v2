@@ -6,6 +6,7 @@ import Image from 'next/image';
 import React from 'react';
 import { Box, List, ListItem, ListItemButton, ListItemText, Typography } from '@mui/material';
 import { FooterMenu } from '@/utils/jsons/LayoutData';
+import Link from 'next/link';
 
 const listItemButtonStyle = {
   fontSize: '16px',
@@ -100,13 +101,15 @@ const AppFooter = () => {
                 <React.Fragment key={index}>
                   <ListItem sx={listItemHeadingStyle}>{page.name}</ListItem>
                   {page.menuItems.map((item, i) => (
-                    <ListItemButton sx={itemSpacing} key={i} component="a" href={item.link}>
-                      <ListItemText
-                        sx={listItemButtonStyle}
-                        primary={item.label}
-                        className="tw-text-dark-gray"
-                      />
-                    </ListItemButton>
+                    <Link key={i} href={item.link} passHref>
+                      <ListItemButton sx={itemSpacing}>
+                        <ListItemText
+                          sx={listItemButtonStyle}
+                          primary={item.label}
+                          className="tw-text-dark-gray"
+                        />
+                      </ListItemButton>
+                    </Link>
                   ))}
                 </React.Fragment>
               ))}
@@ -122,13 +125,15 @@ const AppFooter = () => {
                 <React.Fragment key={index}>
                   <ListItem sx={listItemHeadingStyle}>{page.name}</ListItem>
                   {page.menuItems.map((item, i) => (
-                    <ListItemButton key={i} component="a" href={item.link} sx={itemSpacing}>
-                      <ListItemText
-                        sx={listItemButtonStyle}
-                        primary={item.label}
-                        className="tw-text-dark-gray"
-                      />
-                    </ListItemButton>
+                    <Link key={i} href={item.link} passHref>
+                      <ListItemButton sx={itemSpacing}>
+                        <ListItemText
+                          sx={listItemButtonStyle}
+                          primary={item.label}
+                          className="tw-text-dark-gray"
+                        />
+                      </ListItemButton>
+                    </Link>
                   ))}
                 </React.Fragment>
               ))}
@@ -144,13 +149,15 @@ const AppFooter = () => {
                 <React.Fragment key={index}>
                   <ListItem sx={listItemHeadingStyle}>{page.name}</ListItem>
                   {page.menuItems.map((item, i) => (
-                    <ListItemButton key={i} component="a" href={item.link} sx={itemSpacing}>
-                      <ListItemText
-                        sx={listItemButtonStyle}
-                        primary={item.label}
-                        className="tw-text-dark-gray"
-                      />
-                    </ListItemButton>
+                    <Link key={i} href={item.link} passHref>
+                      <ListItemButton sx={itemSpacing}>
+                        <ListItemText
+                          sx={listItemButtonStyle}
+                          primary={item.label}
+                          className="tw-text-dark-gray"
+                        />
+                      </ListItemButton>
+                    </Link>
                   ))}
                 </React.Fragment>
               ))}
@@ -171,7 +178,9 @@ const AppFooter = () => {
               >
                 Follow Us:
               </Typography>
-              <Image height={20} priority src={LinkedInLogo} alt="Pay Standards" />
+              <Link href="https://www.linkedin.com/company/paystandards/" target="_blank">
+                <Image height={20} priority src={LinkedInLogo} alt="Pay Standards" />
+              </Link>
             </Box>
           </Grid>
         </Grid>

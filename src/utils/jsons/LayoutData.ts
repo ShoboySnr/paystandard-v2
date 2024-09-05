@@ -5,7 +5,7 @@ export const HeaderMenu = [
     menuItems: [
       { label: 'Pay Index', link: '/index-product' },
       { label: 'Pay Audit', link: '/audit-product' },
-      { label: 'Pay Pilot', link: '/pilot-product' },
+      { label: 'Pay Pilot', link: '/dashboard-product' },
     ],
   },
   {
@@ -27,7 +27,7 @@ export const FooterMenu = [
     menuItems: [
       { label: 'Pay Index', link: '/index-product' },
       { label: 'Pay Audit', link: '/audit-product' },
-      { label: 'Pay Pilot', link: '/pilot-product' },
+      { label: 'Pay Pilot', link: '/dashboard-product' },
     ],
   },
   {

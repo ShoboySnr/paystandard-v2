@@ -14,6 +14,7 @@ import Icon2 from '~/assets/icons-common/core-benefits/icon_2.svg';
 import Icon3 from '~/assets/icons-common/core-benefits/icon_3.svg';
 import Icon4 from '~/assets/icons-common/core-benefits/icon_4.svg';
 import Icon5 from '~/assets/icons-common/core-benefits/icon_5.svg';
+import styles from '@/app/_scss/global.module.scss';
 
 const bannerCardContent: { title: string; paragraph: string } = {
   title: 'Understand Your Pay with Acuity',
@@ -51,14 +52,16 @@ const coreBenefits = [
     text: 'Harness Your Data',
   },
 ];
+const IframeSrc = 'https://www.youtube.com/embed/x91MPoITQ3I?si=6WdYf-CPNY0pQoqh';
 
 const IndexProduct = () => {
   return (
     <>
-      <Box>
+      <Box className={styles.removeHeaderMargin}>
         <Box
+          className={styles.addHeaderPadding}
           sx={{
-            height: '990px',
+            height: '1130px',
             backgroundImage: `url('/assets/products/index-product-bg.png')`,
             backgroundSize: { xs: '250%', md: 'cover' },
             backgroundPosition: { xs: 'center top', md: 'center' },
@@ -112,7 +115,11 @@ const IndexProduct = () => {
           </AppContainer>
         </Box>
         <AppContainer>
-          <BannerCard title={bannerCardContent.title} paragraph={bannerCardContent.paragraph} />
+          <BannerCard
+            title={bannerCardContent.title}
+            paragraph={bannerCardContent.paragraph}
+            src={IframeSrc}
+          />
           <Box>
             <Typography
               sx={{
@@ -138,10 +145,7 @@ const IndexProduct = () => {
           </Box>
 
           <KeyFeatures />
-
-          <Box sx={{ mt: 12 }}>
-            <CoreBenefits data={coreBenefits} />
-          </Box>
+          <CoreBenefits data={coreBenefits} />
         </AppContainer>
         <Box>
           <AppContainer>

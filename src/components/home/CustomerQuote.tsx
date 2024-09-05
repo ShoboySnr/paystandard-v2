@@ -60,7 +60,7 @@ const CustomerQuote = () => {
       >
         {customerQuotes.map((quote, index) => (
           <React.Fragment key={index}>
-            <SwiperSlide className={'tw-w-[825px] tw-px-[20px] md:tw-px-0'}>
+            <SwiperSlide className={'tw-w-[825px] tw-px-[20px] md:tw-px-0'} key={index}>
               <Box
                 sx={{
                   display: 'flex',

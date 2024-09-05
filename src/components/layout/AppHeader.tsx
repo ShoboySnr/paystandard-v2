@@ -118,23 +118,25 @@ const AppHeader = () => {
                     >
                       <Image height={18} priority src={AppLogo} alt="Pay Standards" />
                       <Box>
-                        <Button
-                          sx={{
-                            height: {
-                              xs: '30px',
-                              md: '62px',
-                            },
-                            fontSize: {
-                              xs: '12px',
-                              md: '20px',
-                            },
-                            mr: 1.5,
-                          }}
-                          variant="contained"
-                          className={'!tw-rounded-full'}
-                        >
-                          Book a Demo
-                        </Button>
+                        <Link href={'/demo'}>
+                          <Button
+                            sx={{
+                              height: {
+                                xs: '30px',
+                                md: '62px',
+                              },
+                              fontSize: {
+                                xs: '12px',
+                                md: '20px',
+                              },
+                              mr: 1.5,
+                            }}
+                            variant="contained"
+                            className={'!tw-rounded-full'}
+                          >
+                            Book a Demo
+                          </Button>
+                        </Link>
                         <IconButton
                           sx={{
                             height: '30px',
@@ -168,20 +170,22 @@ const AppHeader = () => {
                                   {page.name}
                                 </ListItem>
                                 {page.menuItems.map((item, i) => (
-                                  <ListItemButton
-                                    sx={{
-                                      paddingLeft: '0',
-                                    }}
+                                  <Link
                                     key={i}
-                                    component="a"
                                     href={item.link}
                                     onClick={() => handleMenuItemClick(item.link)}
                                   >
-                                    <ListItemText
-                                      primary={item.label}
-                                      className="tw-text-dark-gray"
-                                    />
-                                  </ListItemButton>
+                                    <ListItemButton
+                                      sx={{
+                                        paddingLeft: '0',
+                                      }}
+                                    >
+                                      <ListItemText
+                                        primary={item.label}
+                                        className="tw-text-dark-gray"
+                                      />
+                                    </ListItemButton>
+                                  </Link>
                                 ))}
                               </React.Fragment>
                             ))}
@@ -204,20 +208,23 @@ const AppHeader = () => {
                                   {page.name}
                                 </ListItem>
                                 {page.menuItems.map((item, i) => (
-                                  <ListItemButton
-                                    sx={{
-                                      paddingLeft: '0',
-                                    }}
-                                    key={i}
-                                    component="a"
+                                  <Link
                                     href={item.link}
                                     onClick={() => handleMenuItemClick(item.link)}
+                                    key={i}
                                   >
-                                    <ListItemText
-                                      primary={item.label}
-                                      className="tw-text-dark-gray"
-                                    />
-                                  </ListItemButton>
+                                    <ListItemButton
+                                      sx={{
+                                        paddingLeft: '0',
+                                      }}
+                                      component="a"
+                                    >
+                                      <ListItemText
+                                        primary={item.label}
+                                        className="tw-text-dark-gray"
+                                      />
+                                    </ListItemButton>
+                                  </Link>
                                 ))}
                               </React.Fragment>
                             ))}
@@ -264,20 +271,18 @@ const AppHeader = () => {
                       }}
                     >
                       {page.menuItems.map((item, i) => (
-                        <MenuItem
-                          key={i}
-                          onClick={handleMenuClose}
-                          component="a"
-                          href={item.link}
-                          sx={{
-                            '&:hover': {
-                              fontWeight: 'bold',
-                              color: 'black.main',
-                            },
-                          }}
-                        >
-                          {item.label}
-                        </MenuItem>
+                        <Link href={item.link} key={i} onClick={handleMenuClose}>
+                          <MenuItem
+                            sx={{
+                              '&:hover': {
+                                fontWeight: 'bold',
+                                color: 'black.main',
+                              },
+                            }}
+                          >
+                            {item.label}
+                          </MenuItem>
+                        </Link>
                       ))}
                     </Menu>
                   </React.Fragment>
@@ -302,17 +307,19 @@ const AppHeader = () => {
                 >
                   Log In
                 </Button>
-                <Button
-                  sx={{
-                    height: '100%',
-                    px: { xs: '20px', md: '40px' },
-                    fontSize: { xs: '12px', md: '20px' },
-                  }}
-                  className={'!tw-rounded-full'}
-                  variant="contained"
-                >
-                  Book a Demo
-                </Button>
+                <Link href={'/demo'}>
+                  <Button
+                    sx={{
+                      height: '100%',
+                      px: { xs: '20px', md: '40px' },
+                      fontSize: { xs: '12px', md: '20px' },
+                    }}
+                    className={'!tw-rounded-full'}
+                    variant="contained"
+                  >
+                    Book a Demo
+                  </Button>
+                </Link>
               </Box>
             </Toolbar>
             <Box sx={{ display: { xs: 'block', md: 'none' } }}>

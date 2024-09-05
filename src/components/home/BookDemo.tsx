@@ -2,6 +2,7 @@ import { Grid } from '@mui/system';
 import { Box, Button, Typography } from '@mui/material';
 import ImageCover from '~/assets/home/book-demo/image1.png';
 import Image from 'next/image';
+import Link from 'next/link';
 
 const BookDemo = () => {
   return (
@@ -46,13 +47,15 @@ const BookDemo = () => {
               <br /> – without the headache.
             </Typography>
             <Box>
-              <Button
-                className={'!tw-rounded-full'}
-                variant="contained"
-                sx={{ height: '44px', px: '25px' }}
-              >
-                Book a Demo
-              </Button>
+              <Link href="/demo">
+                <Button
+                  className={'!tw-rounded-full'}
+                  variant="contained"
+                  sx={{ height: '44px', px: '25px' }}
+                >
+                  Book a Demo
+                </Button>
+              </Link>
             </Box>
           </Box>
         </Grid>

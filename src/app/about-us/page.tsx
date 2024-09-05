@@ -10,21 +10,19 @@ import leadingOrg4 from '~/assets/leading-organizations/image4.svg';
 import leadingOrg5 from '~/assets/leading-organizations/image5.svg';
 import leadingOrg6 from '~/assets/leading-organizations/image6.svg';
 import AppContainer from '@/components/layout/AppContainer';
+import styles from '@/app/_scss/global.module.scss';
 
 const AboutUs = () => {
   return (
     <>
       {/*  heading and subtitle */}
       <Grid
+        className={styles.removeHeaderMargin}
         container
         size={12}
         sx={{
           background:
             'linear-gradient(180deg, rgba(56, 96, 255, 0.20) 0%, rgba(56, 96, 255, 0.00) 100%)',
-          mt: {
-            md: '-115px',
-            xs: '-50px',
-          },
         }}
       >
         <Grid

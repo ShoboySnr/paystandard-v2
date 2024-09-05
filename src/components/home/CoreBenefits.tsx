@@ -48,6 +48,10 @@ const CoreBenefits = () => {
       <Grid
         container
         spacing={2}
+        direction={{
+          xs: 'column-reverse',
+          md: 'row',
+        }}
         sx={{
           pb: {
             md: '50px',
@@ -56,102 +60,6 @@ const CoreBenefits = () => {
         }}
       >
         <Grid
-          sx={{
-            color: 'deep-blue.main',
-            display: {
-              xs: 'block',
-              md: 'none',
-            },
-          }}
-          rowSpacing={5}
-          container
-          size={12}
-        >
-          <Grid size={12}>
-            <Box
-              sx={{
-                height: { md: '360px', xs: '235px' },
-                position: 'relative',
-              }}
-            >
-              <Box
-                sx={{
-                  display: 'flex',
-                  flexDirection: 'column',
-                  justifyContent: 'center',
-                  textAlign: 'center',
-                  alignItems: 'center',
-                  height: '100%',
-                  width: '100%',
-                }}
-              >
-                <Typography
-                  sx={{
-                    fontSize: { md: '16px', xs: '10px' },
-                    lineHeight: '140%',
-                    fontWeight: '500',
-                  }}
-                >
-                  Outperforms
-                  <br />
-                  Traditional Approaches With
-                </Typography>
-                <Box
-                  sx={{
-                    fontSize: { md: '22px', xs: '14px' },
-                    lineHeight: '140%',
-                    fontWeight: '700',
-                    display: 'flex',
-                  }}
-                >
-                  Up to{' '}
-                  <Typography
-                    sx={{
-                      fontSize: { md: '140px', xs: '67px' },
-                      lineHeight: '80%',
-                      fontWeight: '900',
-                    }}
-                  >
-                    40
-                  </Typography>{' '}
-                  %
-                </Box>
-                <Typography
-                  sx={{
-                    fontSize: { md: '28px', xs: '18px' },
-                    lineHeight: '140%',
-                    fontWeight: '900',
-                  }}
-                >
-                  Pay Gap Reduction
-                  <br />
-                  in the First Year
-                  <br />
-                  Alone
-                </Typography>
-                <Divider
-                  sx={{
-                    my: '5px',
-                    borderColor: 'primary.main',
-                    width: { md: '100px', xs: '70px' },
-                    mx: { xs: 'auto', md: '0' },
-                    borderWidth: '3px',
-                    borderRadius: '5px',
-                  }}
-                />
-              </Box>
-              <img
-                src={'/assets/home/circle2.png'}
-                alt={'image.png'}
-                className={
-                  'tw-absolute tw-left-0 tw-right-0 tw-top-0 tw-mx-auto tw-w-[235px] md:tw-w-[360px]'
-                }
-              />
-            </Box>
-          </Grid>
-        </Grid>
-
-        <Grid
           container
           alignSelf="center"
           size={{
@@ -159,26 +67,40 @@ const CoreBenefits = () => {
             md: 8,
           }}
           sx={{
-            padding: { md: '25px', xs: '18px' },
+            padding: { md: '25px', xs: '15px' },
           }}
         >
           <Grid size={12}>
             <Box sx={{ display: 'flex', gap: '26px' }}>
               <Image src={'/assets/home/circle1.svg'} alt="image.png" height={70} width={70} />
-              <Typography
+              <Box
                 sx={{
-                  fontSize: { md: '32px', xs: '28px' },
-                  lineHeight: '140%',
-                  fontWeight: '400',
                   width: '100%',
-                  borderBottom: '4px solid',
-                  borderColor: 'primary.main',
-                  margin: 'auto 0 2px 0',
-                  paddingBottom: '20px',
+                  alignSelf: 'flex-end',
                 }}
               >
-                Core Benefits
-              </Typography>
+                <Typography
+                  sx={{
+                    fontSize: { md: '32px', xs: '28px' },
+                    lineHeight: '140%',
+                    fontWeight: '400',
+                    width: '100%',
+                    margin: 'auto 0 2px 0',
+                    paddingBottom: '20px',
+                  }}
+                >
+                  Core Benefits
+                </Typography>
+                <Divider
+                  sx={{
+                    mb: '3px',
+                    borderColor: 'primary.main',
+                    width: '100%',
+                    borderWidth: '2px',
+                    borderRadius: '5px',
+                  }}
+                />
+              </Box>
             </Box>
           </Grid>
           <Grid
@@ -190,8 +112,6 @@ const CoreBenefits = () => {
                 md: '75px',
                 xs: '40px',
               },
-              borderBottom: '4px solid',
-              borderColor: 'primary.main',
             }}
           >
             {corebenefits.map((benefit, index) => (
@@ -232,6 +152,15 @@ const CoreBenefits = () => {
               </React.Fragment>
             ))}
           </Grid>
+          <Divider
+            sx={{
+              mb: '3px',
+              borderColor: 'primary.main',
+              width: '100%',
+              borderWidth: '2px',
+              borderRadius: '5px',
+            }}
+          />
         </Grid>
         <Grid
           sx={{
@@ -245,80 +174,95 @@ const CoreBenefits = () => {
           }}
         >
           <Grid
-            size={12}
             sx={{
-              display: {
-                xs: 'none',
-                md: 'block',
-              },
+              color: 'deep-blue.main',
             }}
+            rowSpacing={5}
+            container
+            size={12}
           >
-            <Box
-              sx={{
-                height: { lg: '360px', md: '330px' },
-                position: 'relative',
-              }}
-            >
+            <Grid size={12}>
               <Box
                 sx={{
-                  display: 'flex',
-                  flexDirection: 'column',
-                  justifyContent: 'center',
-                  textAlign: 'center',
-                  alignItems: 'center',
-                  height: '100%',
-                  width: '100%',
+                  height: { md: '360px', xs: '235px' },
+                  position: 'relative',
                 }}
               >
-                <Typography sx={{ fontSize: '16px', lineHeight: '140%', fontWeight: '500' }}>
-                  Outperforms
-                  <br />
-                  Traditional Approaches With
-                </Typography>
                 <Box
-                  sx={{ fontSize: '22px', lineHeight: '140%', fontWeight: '700', display: 'flex' }}
+                  sx={{
+                    display: 'flex',
+                    flexDirection: 'column',
+                    justifyContent: 'center',
+                    textAlign: 'center',
+                    alignItems: 'center',
+                    height: '100%',
+                    width: '100%',
+                  }}
                 >
-                  Up to{' '}
                   <Typography
                     sx={{
-                      fontSize: { lg: '140px', md: '100px' },
-                      lineHeight: '80%',
+                      fontSize: { md: '16px', xs: '10px' },
+                      lineHeight: '140%',
+                      fontWeight: '500',
+                    }}
+                  >
+                    Outperforms
+                    <br />
+                    Traditional Approaches With
+                  </Typography>
+                  <Box
+                    sx={{
+                      fontSize: { md: '22px', xs: '14px' },
+                      lineHeight: '140%',
+                      fontWeight: '700',
+                      display: 'flex',
+                    }}
+                  >
+                    Up to{' '}
+                    <Typography
+                      sx={{
+                        fontSize: { md: '140px', xs: '67px' },
+                        lineHeight: '80%',
+                        fontWeight: '900',
+                      }}
+                    >
+                      40
+                    </Typography>{' '}
+                    %
+                  </Box>
+                  <Typography
+                    sx={{
+                      fontSize: { md: '28px', xs: '18px' },
+                      lineHeight: '140%',
                       fontWeight: '900',
                     }}
                   >
-                    40
-                  </Typography>{' '}
-                  %
+                    Pay Gap Reduction
+                    <br />
+                    in the First Year
+                    <br />
+                    Alone
+                  </Typography>
+                  <Divider
+                    sx={{
+                      my: '5px',
+                      borderColor: 'primary.main',
+                      width: { md: '100px', xs: '70px' },
+                      mx: { xs: 'auto', md: '0' },
+                      borderWidth: '3px',
+                      borderRadius: '5px',
+                    }}
+                  />
                 </Box>
-                <Typography
-                  sx={{
-                    fontSize: { lg: '28px', md: '20px' },
-                    lineHeight: '140%',
-                    fontWeight: '900',
-                  }}
-                >
-                  Pay Gap Reduction
-                  <br />
-                  in the First Year
-                  <br />
-                  Alone
-                </Typography>
-                <Divider
-                  sx={{
-                    my: '5px',
-                    borderColor: 'primary.main',
-                    width: { lg: '100px', md: '90px' },
-                    borderWidth: '3px',
-                    borderRadius: '5px',
-                  }}
+                <img
+                  src={'/assets/home/circle2.png'}
+                  alt={'image.png'}
+                  className={
+                    'tw-absolute tw-left-0 tw-right-0 tw-top-0 tw-mx-auto tw-w-[235px] md:tw-w-[360px]'
+                  }
                 />
               </Box>
-              <img
-                src={'/assets/home/circle2.png'}
-                alt={'image.png'}
-                className={'tw-absolute tw-left-0 tw-right-0 tw-top-0 tw-mx-auto tw-w-[360px]'}
-              />
-            </Box>
+            </Grid>
           </Grid>
           <Grid size={12}>
             <Box
