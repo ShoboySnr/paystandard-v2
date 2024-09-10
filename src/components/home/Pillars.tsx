@@ -282,7 +282,7 @@ const Pillars = () => {
             </Box>
           </Grid>
           <Grid size={12} alignSelf={'self-end'} sx={{ mt: '20px' }}>
-            <Link href={'/about-us'}>
+            <Link href={'/audit-product'}>
               <Typography sx={{ fontSize: '18px', fontWeight: '500', display: 'flex' }}>
                 <span className={'tw-mr-2'}>Learn More</span>
                 <HoverableImage
