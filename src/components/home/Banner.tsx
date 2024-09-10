@@ -156,10 +156,10 @@ const Banner = () => {
           position: 'absolute',
           overflow: 'hidden',
           right: {
-            md: '0',
+            md: '-90px',
           },
           top: {
-            md: '-90px',
+            md: '-110px',
             xs: 'unset',
           },
           bottom: {
