@@ -1,14 +1,13 @@
 import { Grid } from '@mui/system';
 import { Box, Button, Typography } from '@mui/material';
-import Image from 'next/image';
-import React from 'react';
+import Image, { StaticImageData } from 'next/image';
 import ProfileCard from '@/components/aboutUs/ProfileCard';
-import leadingOrg1 from '~/assets/leading-organizations/image1.svg';
-import leadingOrg2 from '~/assets/leading-organizations/image2.svg';
-import leadingOrg3 from '~/assets/leading-organizations/image3.svg';
-import leadingOrg4 from '~/assets/leading-organizations/image4.svg';
-import leadingOrg5 from '~/assets/leading-organizations/image5.svg';
-import leadingOrg6 from '~/assets/leading-organizations/image6.svg';
+import leadingOrg1 from '~/assets/leading-organizations/image1_dark.png';
+import leadingOrg2 from '~/assets/leading-organizations/image2_dark.png';
+import leadingOrg3 from '~/assets/leading-organizations/image3_dark.png';
+import leadingOrg4 from '~/assets/leading-organizations/image4_dark.png';
+import leadingOrg5 from '~/assets/leading-organizations/image5_dark.png';
+import leadingOrg6 from '~/assets/leading-organizations/image6_dark.png';
 import AppContainer from '@/components/layout/AppContainer';
 import styles from '@/app/_scss/global.module.scss';
 
@@ -101,6 +100,8 @@ const AboutUs = () => {
                   WebkitMask: 'linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0)',
                   WebkitMaskComposite: 'destination-out',
                   maskComposite: 'exclude',
+                  zIndex: 0,
+                  pointerEvents: 'none',
                 },
                 backgroundColor: '#FAFAFA',
               }}

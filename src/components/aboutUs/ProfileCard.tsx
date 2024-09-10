@@ -16,36 +16,42 @@ const profiles = [
     title: 'Joe Davolio',
     subtitle: 'Co-Chief Executive Officer',
     profile_picture: Client1,
+    tailwindClass: 'tw-mt-2 md:tw-mt-4',
   },
   {
     icon: LinkedInLogo,
     title: 'Todd Gershkowitz',
     subtitle: 'Co-Chief Executive Officer',
     profile_picture: Client2,
+    tailwindClass: 'tw-mt-2',
   },
   {
     icon: LinkedInLogo,
     title: 'Beth Kovaly',
     subtitle: 'Chief Legal Officer',
     profile_picture: Client3,
+    tailwindClass: 'tw-mt-1.5 md:tw-mt-3',
   },
   {
     icon: LinkedInLogo,
     title: 'Leigh Heyman',
     subtitle: 'Chief Technology Officer',
     profile_picture: Client4,
+    tailwindClass: 'tw-mt-1.5',
   },
   {
     icon: LinkedInLogo,
     title: 'Darren Lubotsky',
     subtitle: 'Chief Economist',
     profile_picture: Client5,
+    tailwindClass: 'tw-mt-1',
   },
   {
     icon: LinkedInLogo,
     title: 'Kevin Hallock',
     subtitle: 'Senior Advisor',
     profile_picture: Client6,
+    tailwindClass: 'mt-1',
   },
 ];
 
@@ -97,7 +103,7 @@ const ProfileCard = () => {
                 <Image
                   src={profile.profile_picture}
                   alt="image.png"
-                  className={'tw-mx-auto tw-h-[100px] tw-w-auto tw-object-cover md:tw-h-[200px]'}
+                  className={`tw-mx-auto tw-h-[100px] tw-w-auto tw-content-center  md:tw-h-[200px] tw-object-cover ${profile.tailwindClass}`}
                 />
               </Box>
               <Typography

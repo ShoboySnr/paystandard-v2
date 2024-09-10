@@ -9,9 +9,10 @@ import 'swiper/css';
 import 'swiper/css/free-mode';
 import 'swiper/css/pagination';
 import '../home/customerQuote.scss';
+import 'swiper/css/navigation';
 
 // import required modules
-import { FreeMode, Pagination } from 'swiper/modules';
+import { FreeMode, Pagination, Navigation } from 'swiper/modules';
 import { Box, Divider, Typography, useMediaQuery } from '@mui/material';
 
 import CustomerImage from '~/assets/home/customer-quotes/image1.png';
@@ -48,19 +49,20 @@ const CustomerQuote = () => {
   return (
     <>
       <Swiper
-        slidesPerView={useMediaQuery(theme.breakpoints.up('md')) ? 2 : 1}
+        slidesPerView={useMediaQuery(theme.breakpoints.up('md')) ? 2 : 1.5}
         spaceBetween={30}
         centeredSlides={true}
         loop={true}
         pagination={{
           clickable: true,
         }}
-        modules={[FreeMode, Pagination]}
+        navigation={true}
+        modules={[FreeMode, Pagination, Navigation]}
         className={'tw-w-full tw-px-5'}
       >
         {customerQuotes.map((quote, index) => (
           <React.Fragment key={index}>
-            <SwiperSlide className={'tw-w-[825px] tw-px-[20px] md:tw-px-0'} key={index}>
+            <SwiperSlide className={'tw-w-[825px] tw-px-0 md:tw-px-[20px]'} key={index}>
               <Box
                 sx={{
                   display: 'flex',

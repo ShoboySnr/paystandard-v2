@@ -53,6 +53,7 @@ const coreBenefits = [
   },
 ];
 const IframeSrc = 'https://www.youtube.com/embed/x91MPoITQ3I?si=6WdYf-CPNY0pQoqh';
+import image from '~/assets/products/video-image.png';
 
 const IndexProduct = () => {
   return (
@@ -118,6 +119,7 @@ const IndexProduct = () => {
           <BannerCard
             title={bannerCardContent.title}
             paragraph={bannerCardContent.paragraph}
+            image={image}
             src={IframeSrc}
           />
           <Box>
@@ -184,6 +186,7 @@ const IndexProduct = () => {
           </Box>
         </Box>
         <ScheduleDemoForm
+          hubspotFormId={'0eb98f1b-af62-4c4e-8677-5c24f7b36041'}
           titleText={
             <Typography
               sx={{

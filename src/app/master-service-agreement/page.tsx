@@ -29,6 +29,7 @@ export default function MasterSubscriptionAgreement() {
 
           <Typography
             sx={{
+              mb: '20px',
               fontSize: '18px',
               fontWeight: 400,
               color: 'dark-purple.main',
@@ -38,6 +39,7 @@ export default function MasterSubscriptionAgreement() {
             <span className="tw-font-[700]">Last revised: </span>
             December 19, 2022
           </Typography>
+
           <Typography
             sx={{
               fontSize: '18px',
@@ -46,10 +48,14 @@ export default function MasterSubscriptionAgreement() {
               textAlign: 'center',
             }}
           >
-            <span className="tw-font-[700]">Last revised: </span>
-            October 27, 2023
+            You can find our previous terms as of December 19, 2022
+            <span>
+              {' '}
+              <a className="tw-text-blue tw-underline" href="#">
+                here
+              </a>
+            </span>
           </Typography>
-
           <Typography
             sx={{
               mb: '20px',
@@ -59,7 +65,7 @@ export default function MasterSubscriptionAgreement() {
               textAlign: 'center',
             }}
           >
-            You can find our previous terms as of December 19, 2022
+            You can find our previous terms as of October 27, 2023
             <span>
               {' '}
               <a className="tw-text-blue tw-underline" href="#">
@@ -101,6 +107,7 @@ export default function MasterSubscriptionAgreement() {
             </Typography>
             <Typography
               sx={{
+                mt: '80px',
                 mb: '20px',
                 fontSize: '18px',
                 fontWeight: 400,
@@ -120,6 +127,7 @@ export default function MasterSubscriptionAgreement() {
           <Box>
             <Typography
               sx={{
+                mt: '80px',
                 mb: '20px',
                 fontSize: '18px',
                 fontWeight: 700,
@@ -252,6 +260,7 @@ export default function MasterSubscriptionAgreement() {
           <Box>
             <Typography
               sx={{
+                mt: '80px',
                 mb: '20px',
                 fontSize: '18px',
                 fontWeight: 700,
@@ -325,6 +334,7 @@ export default function MasterSubscriptionAgreement() {
           <Box>
             <Typography
               sx={{
+                mt: '80px',
                 mb: '20px',
                 fontSize: '18px',
                 fontWeight: 700,
@@ -363,7 +373,7 @@ export default function MasterSubscriptionAgreement() {
                 color: 'dark-purple.main',
               }}
             >
-              <span className="tw-font-[700]">4.3. Licenses. </span>
+              <span className="tw-font-[700]">4.2. Licenses. </span>
               Vanta hereby grants Customer a non-exclusive, non-transferable, non-sublicensable
               right to and license to access and use the Services as set forth in the Order Form or
               on a Trial Services basis all subject to the terms and conditions of this MSA and the
@@ -380,7 +390,7 @@ export default function MasterSubscriptionAgreement() {
                 color: 'dark-purple.main',
               }}
             >
-              <span className="tw-font-[700]">4.4. Authorized Users. </span>Customer may designate
+              <span className="tw-font-[700]">4.3. Authorized Users. </span>Customer may designate
               and provide access to the Services to employees, agents, or authorized contractors
               (each an “Authorized User”). Customer is responsible for all use and misuse of the
               Services by Authorized Users and for adherence to all terms of this MSA by any
@@ -399,7 +409,7 @@ export default function MasterSubscriptionAgreement() {
                 color: 'dark-purple.main',
               }}
             >
-              <span className="tw-font-[700]">4.5. Prohibited Uses. </span>Customer and Authorized
+              <span className="tw-font-[700]">4.4. Prohibited Uses. </span>Customer and Authorized
               Users will not: (a) “frame,” distribute, resell, or permit access to the Services by
               any third party other than as allowed by the features and functionality of the
               Services; (b) use the Services in violation of applicable laws; (c) interfere with,
@@ -433,6 +443,7 @@ export default function MasterSubscriptionAgreement() {
           <Box>
             <Typography
               sx={{
+                mt: '80px',
                 mb: '20px',
                 fontSize: '18px',
                 fontWeight: 400,
@@ -474,6 +485,7 @@ export default function MasterSubscriptionAgreement() {
           <Box>
             <Typography
               sx={{
+                mt: '80px',
                 mb: '20px',
                 fontSize: '18px',
                 fontWeight: 400,
@@ -491,6 +503,7 @@ export default function MasterSubscriptionAgreement() {
           <Box>
             <Typography
               sx={{
+                mt: '80px',
                 mb: '20px',
                 fontSize: '18px',
                 fontWeight: 700,
@@ -558,6 +571,7 @@ export default function MasterSubscriptionAgreement() {
           <Box>
             <Typography
               sx={{
+                mt: '80px',
                 mb: '20px',
                 fontSize: '18px',
                 fontWeight: 700,
@@ -592,6 +606,7 @@ export default function MasterSubscriptionAgreement() {
           <Box>
             <Typography
               sx={{
+                mt: '80px',
                 mb: '20px',
                 fontSize: '18px',
                 fontWeight: 400,
@@ -631,6 +646,7 @@ export default function MasterSubscriptionAgreement() {
           <Box>
             <Typography
               sx={{
+                mt: '80px',
                 mb: '20px',
                 fontSize: '18px',
                 fontWeight: 700,

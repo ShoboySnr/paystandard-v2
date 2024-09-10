@@ -3,6 +3,7 @@ import Image from 'next/image';
 import IndexImage from '~/assets/home/index.svg';
 import AuditImage from '~/assets/home/audit.svg';
 import PilotImage from '~/assets/home/pilot.svg';
+import Link from 'next/link';
 
 const imageSectionStyling = {
   display: 'flex',
@@ -60,11 +61,10 @@ const Products = () => {
               fontWeight: '400',
             }}
           >
-            Raise the Standard
-            <br /> of Your Pay
+            Raise the Standard <br /> of Pay at Your Company
           </Typography>
           <Typography sx={{ fontSize: '18px', mt: '22px', fontWeight: '400' }}>
-            Powered by the market-leading pay algorithm, real-time analytics, and an easy-to-use
+            Powered by a market-leading pay algorithm, real-time analytics, and an easy-to-use
             software platform, PayStandards makes pay recommendations that consider only the right
             things. PayStandards delivers true pay equity and pay transparency – without the
             headache.
@@ -72,34 +72,40 @@ const Products = () => {
         </Box>
         <Box sx={{ mt: '36px', display: 'flex', justifyContent: 'space-around', color: '#fff' }}>
           <Box sx={imageSectionStyling}>
-            <Image
-              className={'tw-h-[50px] tw-w-[50px] md:tw-h-[70px] md:tw-w-[70px]'}
-              src={IndexImage}
-              alt="image"
-            />
-            <Typography sx={{ fontSize: '18px', fontWeight: '500', mt: '10px' }}>
-              Pay Index
-            </Typography>
+            <Link href={'/index-product'}>
+              <Image
+                className={'tw-h-[50px] tw-w-[50px] md:tw-h-[70px] md:tw-w-[70px]'}
+                src={IndexImage}
+                alt="image"
+              />
+              <Typography sx={{ fontSize: '18px', fontWeight: '500', mt: '10px' }}>
+                Pay Index
+              </Typography>
+            </Link>
           </Box>
           <Box sx={imageSectionStyling}>
-            <Image
-              className={'tw-h-[50px] tw-w-[50px] md:tw-h-[70px] md:tw-w-[70px]'}
-              src={AuditImage}
-              alt="image"
-            />
-            <Typography sx={{ fontSize: '18px', fontWeight: '500', mt: '10px' }}>
-              Pay Audit
-            </Typography>
+            <Link href={'/audit-product'}>
+              <Image
+                className={'tw-h-[50px] tw-w-[50px] md:tw-h-[70px] md:tw-w-[70px]'}
+                src={AuditImage}
+                alt="image"
+              />
+              <Typography sx={{ fontSize: '18px', fontWeight: '500', mt: '10px' }}>
+                Pay Audit
+              </Typography>
+            </Link>
           </Box>
           <Box sx={imageSectionStyling}>
-            <Image
-              className={'tw-h-[50px] tw-w-[50px] md:tw-h-[70px] md:tw-w-[70px]'}
-              src={PilotImage}
-              alt="image"
-            />
-            <Typography sx={{ fontSize: '18px', fontWeight: '500', mt: '10px' }}>
-              Pay pilot
-            </Typography>
+            <Link href={'/dashboard-product'}>
+              <Image
+                className={'tw-h-[50px] tw-w-[50px] md:tw-h-[70px] md:tw-w-[70px]'}
+                src={PilotImage}
+                alt="image"
+              />
+              <Typography sx={{ fontSize: '18px', fontWeight: '500', mt: '10px' }}>
+                Pay Pilot
+              </Typography>
+            </Link>
           </Box>
         </Box>
       </Box>

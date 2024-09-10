@@ -23,11 +23,21 @@ import { Close, KeyboardArrowDown, Menu as MenuIcon } from '@mui/icons-material'
 import { HeaderMenu as pages } from '@/utils/jsons/LayoutData';
 import { Grid } from '@mui/system';
 import Link from 'next/link';
+import HubspotForm from '@/components/models/HubspotFormDialog';
 
 const AppHeader = () => {
   const [anchorElDropdown, setAnchorElDropdown] = useState(null);
   const [selectedMenuIndex, setSelectedMenuIndex] = useState<number | null>(null);
   const [drawerOpen, setDrawerOpen] = useState<boolean | undefined>(false);
+  const [dialogOpen, setDialogOpen] = useState<boolean>(false);
+
+  const handleDialogClose = () => {
+    setDialogOpen(false);
+  };
+
+  const handleDialogOpen = () => {
+    setDialogOpen(true);
+  };
 
   const handleMenuOpen = (event: React.BaseSyntheticEvent, index: number) => {
     setAnchorElDropdown(event.currentTarget);
@@ -81,7 +91,8 @@ const AppHeader = () => {
                 my: { xs: '10px', md: '20px' },
                 minHeight: { xs: '30px', md: '75px' },
                 height: { xs: '30px', md: '75px' },
-                border: '1px solid gray',
+                border: '1px solid transparent',
+                borderColor: 'gray.main',
                 borderRadius: '38px',
                 pl: { xs: '20px', md: '40px' },
                 backgroundColor: '#FAFAFA',
@@ -118,25 +129,24 @@ const AppHeader = () => {
                     >
                       <Image height={18} priority src={AppLogo} alt="Pay Standards" />
                       <Box>
-                        <Link href={'/demo'}>
-                          <Button
-                            sx={{
-                              height: {
-                                xs: '30px',
-                                md: '62px',
-                              },
-                              fontSize: {
-                                xs: '12px',
-                                md: '20px',
-                              },
-                              mr: 1.5,
-                            }}
-                            variant="contained"
-                            className={'!tw-rounded-full'}
-                          >
-                            Book a Demo
-                          </Button>
-                        </Link>
+                        <Button
+                          onClick={handleDialogOpen}
+                          sx={{
+                            height: {
+                              xs: '30px',
+                              md: '62px',
+                            },
+                            fontSize: {
+                              xs: '12px',
+                              md: '20px',
+                            },
+                            mr: 1.5,
+                          }}
+                          variant="contained"
+                          className={'!tw-rounded-full'}
+                        >
+                          Book a Demo
+                        </Button>
                         <IconButton
                           sx={{
                             height: '30px',
@@ -240,10 +250,10 @@ const AppHeader = () => {
                     <Button
                       onClick={(event) => handleMenuOpen(event, index)}
                       disableRipple
-                      className={`tw-flex !tw-text-lg !tw-text-dark-gray hover:tw-bg-transparent focus:tw-outline-none ${selectedMenuIndex === index ? '!tw-text-blue' : ''}`}
+                      className={`tw-flex !tw-text-[22px] !tw-text-dark-gray hover:tw-bg-transparent focus:tw-outline-none ${selectedMenuIndex === index ? '!tw-text-blue' : ''}`}
                     >
                       {page.name}
-                      <KeyboardArrowDown className="tw-ml-5" />
+                      <KeyboardArrowDown className="tw-ml-3" />
                     </Button>
                     <Menu
                       anchorEl={anchorElDropdown}
@@ -307,19 +317,18 @@ const AppHeader = () => {
                 >
                   Log In
                 </Button>
-                <Link href={'/demo'}>
-                  <Button
-                    sx={{
-                      height: '100%',
-                      px: { xs: '20px', md: '40px' },
-                      fontSize: { xs: '12px', md: '20px' },
-                    }}
-                    className={'!tw-rounded-full'}
-                    variant="contained"
-                  >
-                    Book a Demo
-                  </Button>
-                </Link>
+                <Button
+                  onClick={handleDialogOpen}
+                  sx={{
+                    height: '100%',
+                    px: { xs: '20px', md: '40px' },
+                    fontSize: { xs: '12px', md: '20px' },
+                  }}
+                  className={'!tw-rounded-full'}
+                  variant="contained"
+                >
+                  Book a Demo
+                </Button>
               </Box>
             </Toolbar>
             <Box sx={{ display: { xs: 'block', md: 'none' } }}>
@@ -337,6 +346,13 @@ const AppHeader = () => {
               </IconButton>
             </Box>
           </Box>
+          <HubspotForm
+            formId={'a52edf55-e04d-4292-9d7a-432a85a1026d'}
+            portalId={'46454267'}
+            isOpen={dialogOpen}
+            handleClose={handleDialogClose}
+            uniqueId={'hubspot-form-header'}
+          />
         </Container>
       </AppBar>
     </header>

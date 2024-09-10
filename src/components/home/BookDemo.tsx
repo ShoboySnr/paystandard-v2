@@ -1,10 +1,23 @@
+'use client';
 import { Grid } from '@mui/system';
 import { Box, Button, Typography } from '@mui/material';
 import ImageCover from '~/assets/home/book-demo/image1.png';
 import Image from 'next/image';
 import Link from 'next/link';
+import HubspotForm from '@/components/models/HubspotFormDialog';
+import { useState } from 'react';
 
 const BookDemo = () => {
+  const [dialogOpen, setDialogOpen] = useState<boolean>(false);
+
+  const handleDialogClose = () => {
+    setDialogOpen(false);
+  };
+
+  const handleDialogOpen = () => {
+    setDialogOpen(true);
+  };
+
   return (
     <>
       <Grid
@@ -47,15 +60,14 @@ const BookDemo = () => {
               <br /> – without the headache.
             </Typography>
             <Box>
-              <Link href="/demo">
-                <Button
-                  className={'!tw-rounded-full'}
-                  variant="contained"
-                  sx={{ height: '44px', px: '25px' }}
-                >
-                  Book a Demo
-                </Button>
-              </Link>
+              <Button
+                onClick={handleDialogOpen}
+                className={'!tw-rounded-full'}
+                variant="contained"
+                sx={{ height: '44px', px: '25px' }}
+              >
+                Book a Demo
+              </Button>
             </Box>
           </Box>
         </Grid>
@@ -77,7 +89,7 @@ const BookDemo = () => {
             <Image
               className={'tw-rounded-[35px]'}
               src={ImageCover}
-              height={320}
+              height={280}
               alt="Book a Demo"
             />
             <Box
@@ -95,6 +107,13 @@ const BookDemo = () => {
             ></Box>
           </Box>
         </Grid>
+        <HubspotForm
+          formId={'0cd9751e-4f6c-4943-862f-79bb61e9f746'}
+          portalId={'46454267'}
+          isOpen={dialogOpen}
+          handleClose={handleDialogClose}
+          uniqueId={'hubspot-form-demo-section'}
+        />
       </Grid>
     </>
   );

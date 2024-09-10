@@ -1,11 +1,24 @@
+'use client';
 import { Box, Button, Paper, Typography } from '@mui/material';
 import { Grid } from '@mui/system';
 import Image from 'next/image';
 import BannerImage from '~/assets/audit-product/employee-for-review.png';
 import Link from 'next/link';
+import React, { useState } from 'react';
+import HubspotForm from '@/components/models/HubspotFormDialog';
 
 const src = 'https://www.youtube.com/embed/x91MPoITQ3I?si=6WdYf-CPNY0pQoqh';
 const AuditBannerCard = ({ title, paragraph }: { title: string; paragraph: string }) => {
+  const [dialogOpen, setDialogOpen] = useState<boolean>(false);
+
+  const handleDialogClose = () => {
+    setDialogOpen(false);
+  };
+
+  const handleDialogOpen = () => {
+    setDialogOpen(true);
+  };
+
   return (
     <Paper
       elevation={0}
@@ -57,22 +70,28 @@ const AuditBannerCard = ({ title, paragraph }: { title: string; paragraph: strin
           >
             {paragraph}
           </Typography>
-          <Link href={'/demo'}>
-            <Button
-              variant="contained"
-              sx={{
-                height: '44px',
-                width: '160px',
-                borderRadius: '33px',
-                fontSize: '16px',
-                mt: 3.5,
-              }}
-            >
-              Book a Demo
-            </Button>
-          </Link>
+          <Button
+            onClick={handleDialogOpen}
+            variant="contained"
+            sx={{
+              height: '44px',
+              width: '160px',
+              borderRadius: '33px',
+              fontSize: '16px',
+              mt: 3.5,
+            }}
+          >
+            Book a Demo
+          </Button>
         </Grid>
       </Grid>
+      <HubspotForm
+        formId={'92923574-35b8-4773-8407-99bb806c9530'}
+        portalId={'46454267'}
+        isOpen={dialogOpen}
+        handleClose={handleDialogClose}
+        uniqueId={'hubspot-form-audit-button'}
+      />
     </Paper>
   );
 };

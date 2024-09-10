@@ -26,6 +26,7 @@ const TitleAndSubtitle: React.FC<TitleAndSubtitleProps> = ({
       <Typography
         sx={{
           fontSize: {
+            xs: '24px',
             md: titleSize ? titleSize : '24px',
           },
           fontWeight: titleWeight ? titleWeight : '700',

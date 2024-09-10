@@ -78,10 +78,13 @@ const productSecurity = () => {
         size={12}
         container
         columnSpacing={{
-          xs: 1,
-          md: 2,
+          xs: '10px',
+          md: '20px',
         }}
-        rowSpacing={1}
+        rowSpacing={{
+          xs: '20px',
+          md: '12px',
+        }}
         sx={{
           mt: '20px',
         }}

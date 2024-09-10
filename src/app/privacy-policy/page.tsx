@@ -264,7 +264,7 @@ export default function PrivacyPolicy() {
                       color: 'dark-purple.main',
                     }}
                   >
-                    automatically and stores it in log files. The information may include internet
+                    Automatically and stores it in log files. The information may include internet
                     protocol (IP) addresses, the region or general location where your computer or
                     device is accessing the internet, browser type, operating system and other usage
                     information about the use of PayStandards Inc.’s website, including a history of

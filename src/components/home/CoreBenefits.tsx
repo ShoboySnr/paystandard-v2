@@ -1,8 +1,8 @@
 import { Box, Divider, Typography } from '@mui/material';
-import Icon1 from '~/assets/home/benefits/icon1.svg';
+import Icon1 from '~/assets/home/benefits/icon1.png';
 import Icon2 from '~/assets/home/benefits/icon2.svg';
 import Icon3 from '~/assets/home/benefits/icon3.svg';
-import Icon4 from '~/assets/home/benefits/icon4.svg';
+import Icon4 from '~/assets/home/benefits/icon4.png';
 import Icon5 from '~/assets/home/benefits/icon5.svg';
 import Icon6 from '~/assets/home/benefits/icon6.svg';
 import Image from 'next/image';
@@ -62,6 +62,7 @@ const CoreBenefits = () => {
         <Grid
           container
           alignSelf="center"
+          rowSpacing={0}
           size={{
             xs: 12,
             md: 8,
@@ -109,7 +110,7 @@ const CoreBenefits = () => {
             sx={{
               color: 'deep-blue.main',
               py: {
-                md: '75px',
+                md: '40px',
                 xs: '40px',
               },
             }}
@@ -129,16 +130,24 @@ const CoreBenefits = () => {
                       gap: '18px',
                       alignItems: 'center',
                       textAlign: 'center',
+                      py: {
+                        md: '15px',
+                        xs: '10px',
+                      },
                     }}
                   >
-                    <Image src={benefit.icon} alt="image.png" className={'h-[60px] w-[60px]'} />
+                    <Image
+                      src={benefit.icon}
+                      alt="image.png"
+                      className={'tw-h-[60px] tw-w-[60px]'}
+                    />
                     <Box>
                       <Typography sx={{ fontSize: '20px', lineHeight: '140%', fontWeight: '700' }}>
                         {benefit.title}
                       </Typography>
                       <Typography
                         sx={{
-                          fontSize: '16px',
+                          fontSize: '20px',
                           lineHeight: '140%',
                           fontWeight: '400',
                           whiteSpace: 'pre-line',
@@ -218,7 +227,7 @@ const CoreBenefits = () => {
                       display: 'flex',
                     }}
                   >
-                    Up to{' '}
+                    <span style={{ marginRight: '-10px' }}>Up to</span>
                     <Typography
                       sx={{
                         fontSize: { md: '140px', xs: '67px' },
@@ -228,7 +237,7 @@ const CoreBenefits = () => {
                     >
                       40
                     </Typography>{' '}
-                    %
+                    <span style={{ fontSize: '28px' }}>%</span>
                   </Box>
                   <Typography
                     sx={{
@@ -289,7 +298,7 @@ const CoreBenefits = () => {
                     fontWeight: '700',
                   }}
                 >
-                  Up to{' '}
+                  <span>Up to</span>
                   <Box sx={{ display: 'flex' }}>
                     <Typography
                       sx={{
@@ -300,7 +309,7 @@ const CoreBenefits = () => {
                     >
                       70
                     </Typography>{' '}
-                    %
+                    <span style={{ fontSize: '28px' }}>%</span>
                   </Box>
                 </Box>
                 <Typography

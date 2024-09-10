@@ -96,12 +96,7 @@ const EnterpriseSecurity = () => {
               titleColor={'gray.main'}
             />
           </Grid>
-          <Grid
-            size={12}
-            sx={{
-              pb: '40px',
-            }}
-          >
+          <Grid size={12}>
             <TitleAndSubtitle
               title={'Identity and access management'}
               subtitle={
@@ -148,13 +143,13 @@ const EnterpriseSecurity = () => {
           <Grid
             container
             size={12}
-            rowSpacing={{
-              md: 2,
-              xs: 1,
-            }}
             columnSpacing={{
-              md: 2,
-              xs: 1,
+              xs: '10px',
+              md: '20px',
+            }}
+            rowSpacing={{
+              xs: '20px',
+              md: '20px',
             }}
             alignItems={'center'}
           >
@@ -172,7 +167,10 @@ const EnterpriseSecurity = () => {
                 width: '100%',
               }}
             >
-              <BorderedText text={'Access to customer and corporate data'} textWeight={'500'} />
+              <BorderedText
+                text={'Potential damage to the PayStandards brand'}
+                textWeight={'500'}
+              />
             </Grid>
             <Grid
               size={12}
@@ -180,7 +178,7 @@ const EnterpriseSecurity = () => {
                 width: '100%',
               }}
             >
-              <BorderedText text={'Integration with production environments'} textWeight={'500'} />
+              <BorderedText text={'Access to customer and corporate data'} textWeight={'500'} />
             </Grid>
           </Grid>
           <Grid

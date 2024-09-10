@@ -1,6 +1,7 @@
 import React from 'react';
 import AppContainer from '@/components/layout/AppContainer';
 import { Box, Typography } from '@mui/material';
+import Link from 'next/link';
 
 export default function TermsOfService() {
   return (
@@ -148,6 +149,7 @@ export default function TermsOfService() {
           <Box>
             <Typography
               sx={{
+                mt: '80px',
                 mb: '20px',
                 fontSize: '18px',
                 fontWeight: 700,
@@ -199,6 +201,7 @@ export default function TermsOfService() {
           <Box>
             <Typography
               sx={{
+                mt: '80px',
                 mb: '20px',
                 fontSize: '18px',
                 fontWeight: 700,
@@ -241,6 +244,7 @@ export default function TermsOfService() {
           <Box>
             <Typography
               sx={{
+                mt: '80px',
                 mb: '20px',
                 fontSize: '18px',
                 fontWeight: 700,
@@ -259,7 +263,7 @@ export default function TermsOfService() {
                 color: 'dark-purple.main',
               }}
             >
-              account information for all purchases made via the Site. You further agree to promptly
+              Account information for all purchases made via the Site. You further agree to promptly
               update account and payment information, including email address, payment method, and
               payment card expiration date, so that we can complete your transactions and contact
               you as needed. We bill you through an online billing account for purchases made via
@@ -298,6 +302,7 @@ export default function TermsOfService() {
           <Box>
             <Typography
               sx={{
+                mt: '80px',
                 mb: '20px',
                 fontSize: '18px',
                 fontWeight: 700,
@@ -335,6 +340,7 @@ export default function TermsOfService() {
           <Box>
             <Typography
               sx={{
+                mt: '80px',
                 mb: '20px',
                 fontSize: '18px',
                 fontWeight: 700,
@@ -470,6 +476,7 @@ export default function TermsOfService() {
           <Box>
             <Typography
               sx={{
+                mt: '80px',
                 mb: '20px',
                 fontSize: '18px',
                 fontWeight: 700,
@@ -573,6 +580,7 @@ export default function TermsOfService() {
           <Box>
             <Typography
               sx={{
+                mt: '80px',
                 mb: '20px',
                 fontSize: '18px',
                 fontWeight: 700,
@@ -626,6 +634,7 @@ export default function TermsOfService() {
           <Box>
             <Typography
               sx={{
+                mt: '80px',
                 mb: '20px',
                 fontSize: '18px',
                 fontWeight: 700,
@@ -659,6 +668,7 @@ export default function TermsOfService() {
           <Box>
             <Typography
               sx={{
+                mt: '80px',
                 mb: '20px',
                 fontSize: '18px',
                 fontWeight: 700,
@@ -693,6 +703,7 @@ export default function TermsOfService() {
           <Box>
             <Typography
               sx={{
+                mt: '80px',
                 mb: '20px',
                 fontSize: '18px',
                 fontWeight: 700,
@@ -737,6 +748,7 @@ export default function TermsOfService() {
           <Box>
             <Typography
               sx={{
+                mt: '80px',
                 mb: '20px',
                 fontSize: '18px',
                 fontWeight: 700,
@@ -783,6 +795,7 @@ export default function TermsOfService() {
           <Box>
             <Typography
               sx={{
+                mt: '80px',
                 mb: '20px',
                 fontSize: '18px',
                 fontWeight: 700,
@@ -827,37 +840,11 @@ export default function TermsOfService() {
               corrections, updates, or releases in connection therewith.
             </Typography>
           </Box>
-          <Box>
-            <Typography
-              sx={{
-                mb: '20px',
-                fontSize: '18px',
-                fontWeight: 700,
-                color: 'dark-purple.main',
-                textAlign: 'left',
-              }}
-            >
-              14. GOVERNING LAW{' '}
-            </Typography>
-
-            <Typography
-              sx={{
-                mb: '20px',
-                fontSize: '18px',
-                fontWeight: 400,
-                color: 'dark-purple.main',
-              }}
-            >
-              These Terms shall be governed by and defined following the laws of the United States.
-              and yourself irrevocably consent that the courts of the United States shall have
-              exclusive jurisdiction to resolve any dispute which may arise in connection with these
-              terms.
-            </Typography>
-          </Box>
 
           <Box>
             <Typography
               sx={{
+                mt: '80px',
                 mb: '20px',
                 fontSize: '18px',
                 fontWeight: 700,
@@ -886,6 +873,7 @@ export default function TermsOfService() {
           <Box>
             <Typography
               sx={{
+                mt: '80px',
                 mb: '20px',
                 fontSize: '18px',
                 fontWeight: 700,
@@ -917,6 +905,7 @@ export default function TermsOfService() {
           <Box>
             <Typography
               sx={{
+                mt: '80px',
                 mb: '20px',
                 fontSize: '18px',
                 fontWeight: 700,
@@ -990,6 +979,8 @@ export default function TermsOfService() {
           <Box>
             <Typography
               sx={{
+                mt: '80px',
+
                 mb: '20px',
                 fontSize: '18px',
                 fontWeight: 700,
@@ -1019,6 +1010,7 @@ export default function TermsOfService() {
           <Box>
             <Typography
               sx={{
+                mt: '80px',
                 mb: '20px',
                 fontSize: '18px',
                 fontWeight: 700,
@@ -1052,6 +1044,7 @@ export default function TermsOfService() {
           <Box>
             <Typography
               sx={{
+                mt: '80px',
                 mb: '20px',
                 fontSize: '18px',
                 fontWeight: 700,
@@ -1079,6 +1072,7 @@ export default function TermsOfService() {
           <Box>
             <Typography
               sx={{
+                mt: '80px',
                 mb: '20px',
                 fontSize: '18px',
                 fontWeight: 700,
@@ -1107,6 +1101,7 @@ export default function TermsOfService() {
           <Box>
             <Typography
               sx={{
+                mt: '80px',
                 mb: '20px',
                 fontSize: '18px',
                 fontWeight: 700,
@@ -1144,6 +1139,7 @@ export default function TermsOfService() {
           <Box>
             <Typography
               sx={{
+                mt: '80px',
                 mb: '20px',
                 fontSize: '18px',
                 fontWeight: 700,
@@ -1174,6 +1170,7 @@ export default function TermsOfService() {
           <Box>
             <Typography
               sx={{
+                mt: '80px',
                 mb: '20px',
                 fontSize: '18px',
                 fontWeight: 700,
@@ -1208,6 +1205,7 @@ export default function TermsOfService() {
           <Box>
             <Typography
               sx={{
+                mt: '80px',
                 mb: '20px',
                 fontSize: '18px',
                 fontWeight: 700,
@@ -1247,6 +1245,7 @@ export default function TermsOfService() {
           <Box>
             <Typography
               sx={{
+                mt: '80px',
                 mb: '20px',
                 fontSize: '18px',
                 fontWeight: 700,
@@ -1267,9 +1266,13 @@ export default function TermsOfService() {
             >
               In order to resolve a complaint regarding the Site or to receive further information
               regarding use of the Site, please contact us at:
-              <span>
-                Email: <a href="mailto:help@paystandards.com">help@paystandards.com</a>
-              </span>
+              <span className="tw-font-[700]"> Email: </span>
+              <Link
+                href="mailto:help@paystandards.com"
+                className="tw-text-blue tw-underline tw-font-[700] "
+              >
+                help@paystandards.com
+              </Link>
             </Typography>
           </Box>
         </Box>

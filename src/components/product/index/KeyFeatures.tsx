@@ -1,11 +1,13 @@
 import { Box, Divider, Paper, Typography } from '@mui/material';
 import { Grid } from '@mui/system';
-import Rating from '~/assets/products/rating.svg';
-import Disclosure from '~/assets/products/disclosure.svg';
+import Rating from '~/assets/audit-product/rating.png';
+import Disclosure from '~/assets/products/disclosure.png';
 import Graphs from '~/assets/products/graphs.png';
 import Analysis from '~/assets/products/analysis.png';
 import Image from 'next/image';
 import React from 'react';
+// import ArrowRight from '~/assets/icons-common/arrow-right-blue.svg';
+// import Link from 'next/link';
 
 const KeyFeatures = () => {
   return (
@@ -22,7 +24,10 @@ const KeyFeatures = () => {
           borderTop: { xs: '0', md: '1px solid #525252' },
           borderLeft: { xs: '0', md: '1px solid #525252' },
           borderRight: { xs: '0', md: '1px solid #525252' },
-          backgroundColor: '#FFFFFF',
+          backgroundColor: {
+            md: 'linear-gradient(90deg, #FFF 0%, rgba(255, 255, 255, 0.00) 100%)',
+            xs: 'linear-gradient(0deg, #FFF -0.33%, rgba(255, 255, 255, 0.00) 100.81%)',
+          },
           borderRadius: '35px',
           p: { xs: 2, md: 0 },
         }}
@@ -62,6 +67,22 @@ const KeyFeatures = () => {
               rating.
             </Typography>
 
+            {/*<Link href={'/about-us'}>*/}
+            {/*  <Typography*/}
+            {/*    sx={{*/}
+            {/*      display: 'flex',*/}
+            {/*      fontSize: '20px',*/}
+            {/*      fontWeight: '400',*/}
+            {/*      color: 'black',*/}
+            {/*      mt: 2,*/}
+            {/*      mb: 2,*/}
+            {/*      color: 'light-blue-link.main',*/}
+            {/*    }}*/}
+            {/*  >*/}
+            {/*    <span className={'tw-mr-2'}>Why This Matters </span>*/}
+            {/*    <Image src={ArrowRight} alt={'arrow-right'} />*/}
+            {/*  </Typography>*/}
+            {/*</Link>*/}
             <Divider
               sx={{
                 borderColor: 'primary.main',
@@ -83,7 +104,7 @@ const KeyFeatures = () => {
             }}
           >
             <Box
-              className="tw-relative tw-h-[214px] tw-w-full tw-rounded-[35px] md:tw-h-[278px] md:tw-w-full"
+              className="tw-relative tw-h-[214px] tw-w-full tw-rounded-[35px] md:tw-h-[300px] md:tw-w-full"
               sx={{
                 display: 'flex',
                 justifyContent: 'center',
@@ -94,7 +115,7 @@ const KeyFeatures = () => {
               <Image
                 src={Rating}
                 alt="standard rating"
-                className="tw-absolute tw-bottom-0 tw-h-[120%]"
+                className="tw-absolute tw-bottom-[-1px] tw-h-[242px] tw-w-auto md:tw-h-[347px]"
               />
             </Box>
           </Grid>
@@ -109,7 +130,10 @@ const KeyFeatures = () => {
           borderTop: { xs: '0', md: '1px solid #525252' },
           borderLeft: { xs: '0' },
           borderRight: { xs: '0', md: '1px solid #525252' },
-          backgroundColor: '#FFFFFF',
+          backgroundColor: {
+            md: 'linear-gradient(90deg, rgba(255, 255, 255, 0.00) 0%, #FFF 100%)',
+            xs: 'linear-gradient(0deg, #FFF -0.33%, rgba(255, 255, 255, 0.00) 100.81%)',
+          },
           borderRadius: '35px',
           p: { xs: 2, md: 0 },
         }}
@@ -191,7 +215,10 @@ const KeyFeatures = () => {
           borderTop: { xs: '0', md: '1px solid #525252' },
           borderLeft: { xs: '0', md: '1px solid #525252' },
           borderRight: { xs: '0', md: '1px solid #525252' },
-          backgroundColor: '#FFFFFF',
+          backgroundColor: {
+            md: 'linear-gradient(90deg, #FFF 0%, rgba(255, 255, 255, 0.00) 100%)    ',
+            xs: 'linear-gradient(0deg, #FFF -0.33%, rgba(255, 255, 255, 0.00) 100.81%)',
+          },
           borderRadius: '35px',
           p: { xs: 2, md: 0 },
         }}
@@ -272,7 +299,10 @@ const KeyFeatures = () => {
           borderTop: { xs: '0', md: '1px solid #525252' },
           borderLeft: { xs: '0' },
           borderRight: { xs: '0', md: '1px solid #525252' },
-          backgroundColor: '#FFFFFF',
+          backgroundColor: {
+            md: 'linear-gradient(90deg, rgba(255, 255, 255, 0.00) 0%, #FFF 100%)',
+            xs: 'linear-gradient(0deg, #FFF -0.33%, rgba(255, 255, 255, 0.00) 100.81%)',
+          },
           borderRadius: '35px',
           p: { xs: 2, md: 0 },
         }}
@@ -289,7 +319,7 @@ const KeyFeatures = () => {
               }}
             >
               <Box
-                className="tw-h-[227px] tw-w-[360px] tw-rounded-[35px] md:tw-h-[310px] lg:tw-h-[278px] lg:tw-w-full"
+                className="tw-h-[250px] tw-w-[330px] tw-rounded-[35px] md:tw-h-[310px] lg:tw-h-[278px] lg:tw-w-[420px]"
                 sx={{
                   display: 'flex',
                   justifyContent: 'center',

@@ -7,6 +7,7 @@ import { ThemeProvider } from '@mui/material/styles';
 import theme from '@/theme';
 import React from 'react';
 import { Box } from '@mui/material';
+import Script from 'next/script';
 
 export const metadata: Metadata = {
   title: 'PayStandards',
@@ -20,6 +21,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      <Script src="https://js.hsforms.net/forms/v2.js" />
       <body className={'tw-bg-[#FAFAFA]'}>
         <AppRouterCacheProvider>
           <ThemeProvider theme={theme}>

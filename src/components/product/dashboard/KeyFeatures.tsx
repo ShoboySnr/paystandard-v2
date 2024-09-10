@@ -22,7 +22,10 @@ const KeyFeatures = () => {
           borderTop: { xs: '0', md: '1px solid #525252' },
           borderLeft: { xs: '0', md: '1px solid #525252' },
           borderRight: { xs: '0', md: '1px solid #525252' },
-          backgroundColor: '#FFFFFF',
+          backgroundColor: {
+            md: 'linear-gradient(90deg, #FFF 0%, rgba(255, 255, 255, 0.00) 100%)',
+            xs: 'linear-gradient(0deg, #FFF -0.33%, rgba(255, 255, 255, 0.00) 100.81%)',
+          },
           borderRadius: '35px',
           p: { xs: 2, md: 0 },
         }}
@@ -108,7 +111,10 @@ const KeyFeatures = () => {
           borderTop: { xs: '0', md: '1px solid #525252' },
           borderLeft: { xs: '0' },
           borderRight: { xs: '0', md: '1px solid #525252' },
-          backgroundColor: '#FFFFFF',
+          backgroundColor: {
+            md: 'linear-gradient(90deg, rgba(255, 255, 255, 0.00) 0%, #FFF 100%)',
+            xs: 'linear-gradient(0deg, #FFF -0.33%, rgba(255, 255, 255, 0.00) 100.81%)',
+          },
           borderRadius: '35px',
           p: { xs: 2, md: 0 },
         }}
@@ -186,7 +192,10 @@ const KeyFeatures = () => {
           borderTop: { xs: '0', md: '1px solid #525252' },
           borderLeft: { xs: '0', md: '1px solid #525252' },
           borderRight: { xs: '0', md: '1px solid #525252' },
-          backgroundColor: '#FFFFFF',
+          backgroundColor: {
+            md: 'linear-gradient(90deg, #FFF 0%, rgba(255, 255, 255, 0.00) 100%)',
+            xs: 'linear-gradient(0deg, #FFF -0.33%, rgba(255, 255, 255, 0.00) 100.81%)',
+          },
           borderRadius: '35px',
           p: { xs: 2, md: 0 },
         }}
@@ -270,7 +279,10 @@ const KeyFeatures = () => {
           borderTop: { xs: '0', md: '1px solid #525252' },
           borderLeft: { xs: '0' },
           borderRight: { xs: '0', md: '1px solid #525252' },
-          backgroundColor: '#FFFFFF',
+          backgroundColor: {
+            md: 'linear-gradient(90deg, rgba(255, 255, 255, 0.00) 0%, #FFF 100%)',
+            xs: 'linear-gradient(0deg, #FFF -0.33%, rgba(255, 255, 255, 0.00) 100.81%)',
+          },
           borderRadius: '35px',
           p: { xs: 2, md: 0 },
         }}

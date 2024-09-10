@@ -1,8 +1,20 @@
-import { Box, Button } from '@mui/material';
+'use client';
+import { Box, Button, Typography } from '@mui/material';
 import Image from 'next/image';
 import Link from 'next/link';
+import HubspotForm from '@/components/models/HubspotFormDialog';
+import { useState } from 'react';
 
 const Banner = () => {
+  const [open, setOpen] = useState<boolean>(false);
+  const handleClickOpen = () => {
+    setOpen(true);
+  };
+
+  const handleClose = () => {
+    setOpen(false);
+  };
+
   return (
     <Box
       sx={{
@@ -31,7 +43,7 @@ const Banner = () => {
             fontWeight: 'bold',
           }}
         >
-          Make Pay Decisions With Your <u>Bottom Line</u> In Mind.
+          Pay for the Right Things. Drive the <u> Bottom Line. </u>
         </Box>
         <Box
           sx={{
@@ -41,14 +53,32 @@ const Banner = () => {
             color: 'black',
           }}
         >
-          <Box>
-            From pay equity and pay transparency to employee engagement and retention, Total Rewards
-            professionals have a lot at stake.
+          <Box
+            sx={{
+              mb: '14px',
+            }}
+          >
+            <Typography
+              sx={{
+                fontSize: '18px',
+                lineHeight: '150%',
+              }}
+            >
+              From pay equity and pay transparency to employee engagement and retention, Total
+              Rewards professionals have a lot at stake.
+            </Typography>
           </Box>
           <Box>
-            The PayStandards platform gives you pay recommendations that consider the right things,
-            while helping you save time, stay compliant, optimize your company’s #1 expense, and
-            prioritize your biggest asset – your people.
+            <Typography
+              sx={{
+                fontSize: '18px',
+                lineHeight: '150%',
+              }}
+            >
+              The PayStandards platform gives you pay recommendations that consider the right
+              things, while helping you save time, stay compliant, optimize your company’s #1
+              expense, and prioritize your biggest asset – your people.
+            </Typography>
           </Box>
         </Box>
         <Box
@@ -63,20 +93,19 @@ const Banner = () => {
           }}
         >
           <Box>
-            <Link href={'/demo'}>
-              <Button
-                className={'!tw-rounded-full'}
-                variant="contained"
-                sx={{ height: '44px', width: '160px' }}
-              >
-                Book a Demo
-              </Button>
-            </Link>
+            <Button
+              onClick={handleClickOpen}
+              className={'!tw-rounded-full'}
+              variant="contained"
+              sx={{ height: '44px', width: '160px', fontSize: '16px' }}
+            >
+              Book a Demo
+            </Button>
           </Box>
           <Box>
             <Button
               className={'!tw-rounded-full !tw-text-btn-outline-text'}
-              sx={{ height: '44px', width: '160px' }}
+              sx={{ height: '44px', width: '160px', fontSize: '16px' }}
               variant="outlined"
             >
               Take a Tour
@@ -155,6 +184,13 @@ const Banner = () => {
           alt="banner.png"
         />
       </Box>
+      <HubspotForm
+        formId={'0cd9751e-4f6c-4943-862f-79bb61e9f746'}
+        portalId={'46454267'}
+        isOpen={open}
+        handleClose={handleClose}
+        uniqueId={'hubspot-form-banner'}
+      />
     </Box>
   );
 };

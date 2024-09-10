@@ -38,13 +38,10 @@ const BannerCard = ({
                 sx={{ background: 'linear-gradient(162deg, #3860FF 6.11%, #090C1A 95.04%)' }}
               />
 
-              <iframe
-                width="100%"
-                src={src}
-                title="Youtube Player"
-                frameBorder="0"
-                allowFullScreen
-                className="tw-absolute tw-left-1/2 tw-top-1/2 tw-z-10 tw-h-[210px] tw-w-[110%] tw--translate-x-1/2 tw--translate-y-1/2 tw-transform tw-rounded-[20px] tw-border tw-border-deep-blue lg:tw-h-[294px] lg:tw-w-[530px]"
+              <Image
+                src={image}
+                alt="Youtube Player"
+                className="tw-absolute tw-left-1/2 tw-top-1/2 tw-z-10 tw-h-[210px] tw-min-w-[110%] tw--translate-x-1/2 tw--translate-y-1/2 tw-transform lg:tw-h-[294px] lg:tw-min-w-[530px]"
               />
             </Box>
           ) : image ? (

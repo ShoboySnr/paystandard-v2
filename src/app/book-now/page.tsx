@@ -13,8 +13,8 @@ const BookNow = () => {
           container
           sx={{
             pb: {
-              md: '50px',
-              xs: '30px',
+              md: '60px',
+              xs: '60px',
             },
             pt: {
               md: '120px',
@@ -41,6 +41,8 @@ const BookNow = () => {
                   WebkitMask: 'linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0)',
                   WebkitMaskComposite: 'destination-out',
                   maskComposite: 'exclude',
+                  zIndex: 0,
+                  pointerEvents: 'none',
                 },
                 backgroundColor: '#FAFAFA',
               }}
@@ -79,7 +81,7 @@ const BookNow = () => {
                       },
                       fontWeight: '700',
                       margin: '0 0 2px 0',
-                      marginBottom: '20px',
+                      marginBottom: { md: '36px', xs: '40px' },
                     }}
                   >
                     Ready to <br className={'md:tw-hidden'} /> Schedule

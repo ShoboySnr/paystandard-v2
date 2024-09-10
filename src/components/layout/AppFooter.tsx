@@ -75,7 +75,7 @@ const AppFooter = () => {
             />
 
             <p>Built in New York, New York</p>
-            <p>©PayStandards, Inc. 2024</p>
+            <p>©PayStandards Inc. 2024</p>
           </Box>
         </Grid>
         <Grid

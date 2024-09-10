@@ -6,6 +6,8 @@ import Strategy from '~/assets/audit-product/strategy.png';
 import Decision from '~/assets/audit-product/decision.png';
 import Image from 'next/image';
 import React from 'react';
+// import ArrowRight from '~/assets/icons-common/arrow-right-blue.svg';
+// import Link from 'next/link';
 
 const AuditKeyFeatures = () => {
   return (
@@ -22,7 +24,10 @@ const AuditKeyFeatures = () => {
           borderTop: { xs: '0', md: '1px solid #525252' },
           borderLeft: { xs: '0', md: '1px solid #525252' },
           borderRight: { xs: '0', md: '1px solid #525252' },
-          backgroundColor: '#FFFFFF',
+          backgroundColor: {
+            md: 'linear-gradient(90deg, #FFF 0%, rgba(255, 255, 255, 0.00) 100%)',
+            xs: 'linear-gradient(0deg, #FFF -0.33%, rgba(255, 255, 255, 0.00) 100.81%)',
+          },
           borderRadius: '35px',
           p: { xs: 2, md: 0 },
         }}
@@ -58,6 +63,22 @@ const AuditKeyFeatures = () => {
             >
               Transcend summary statistics and get pay equity right for your employees.
             </Typography>
+            {/*<Link href={'/about-us'}>*/}
+            {/*  <Typography*/}
+            {/*    sx={{*/}
+            {/*      display: 'flex',*/}
+            {/*      fontSize: '20px',*/}
+            {/*      fontWeight: '400',*/}
+            {/*      color: 'black',*/}
+            {/*      mt: 2,*/}
+            {/*      mb: 2,*/}
+            {/*      color: 'light-blue-link.main',*/}
+            {/*    }}*/}
+            {/*  >*/}
+            {/*    <span className={'tw-mr-2'}>Why This Matters </span>*/}
+            {/*    <Image src={ArrowRight} alt={'arrow-right'} />*/}
+            {/*  </Typography>*/}
+            {/*</Link>*/}
 
             <Divider
               sx={{
@@ -92,7 +113,7 @@ const AuditKeyFeatures = () => {
               <Image
                 src={Rating}
                 alt="standard rating"
-                className="tw-absolute tw-top-[-30px] tw-h-[245px] md:tw-top-[-68px] md:tw-h-[347px] tw-w-full"
+                className="tw-absolute tw-bottom-[-1px] tw-h-[245px] md:tw-h-[317px] tw-w-full"
               />
             </Box>
           </Grid>
@@ -107,7 +128,10 @@ const AuditKeyFeatures = () => {
           borderTop: { xs: '0', md: '1px solid #525252' },
           borderLeft: { xs: '0' },
           borderRight: { xs: '0', md: '1px solid #525252' },
-          backgroundColor: '#FFFFFF',
+          backgroundColor: {
+            md: 'linear-gradient(90deg, rgba(255, 255, 255, 0.00) 0%, #FFF 100%)',
+            xs: 'linear-gradient(0deg, #FFF -0.33%, rgba(255, 255, 255, 0.00) 100.81%)',
+          },
           borderRadius: '35px',
           p: { xs: 2, md: 0 },
         }}
@@ -191,7 +215,10 @@ const AuditKeyFeatures = () => {
           borderTop: { xs: '0', md: '1px solid #525252' },
           borderLeft: { xs: '0', md: '1px solid #525252' },
           borderRight: { xs: '0', md: '1px solid #525252' },
-          backgroundColor: '#FFFFFF',
+          backgroundColor: {
+            md: 'linear-gradient(90deg, #FFF 0%, rgba(255, 255, 255, 0.00) 100%)',
+            xs: 'linear-gradient(0deg, #FFF -0.33%, rgba(255, 255, 255, 0.00) 100.81%)',
+          },
           borderRadius: '35px',
           p: { xs: 2, md: 0 },
         }}
@@ -284,7 +311,10 @@ const AuditKeyFeatures = () => {
           borderTop: { xs: '0', md: '1px solid #525252' },
           borderLeft: { xs: '0' },
           borderRight: { xs: '0', md: '1px solid #525252' },
-          backgroundColor: '#FFFFFF',
+          backgroundColor: {
+            md: 'linear-gradient(90deg, rgba(255, 255, 255, 0.00) 0%, #FFF 100%)',
+            xs: 'linear-gradient(0deg, #FFF -0.33%, rgba(255, 255, 255, 0.00) 100.81%)',
+          },
           borderRadius: '35px',
           px: { xs: 2, md: 0 },
         }}
@@ -333,7 +363,7 @@ const AuditKeyFeatures = () => {
               <Image
                 src={Equity}
                 alt="Equity"
-                className="tw-w-[310px] tw-bottom-[-1px] md:tw-w-[405px] tw-h-[250px] md:tw-h-[335px] tw-absolute"
+                className="tw-w-auto tw-bottom-[-1px] tw-h-[250px] md:tw-h-[335px] tw-absolute"
               />
               {/*</Box>*/}
             </Box>

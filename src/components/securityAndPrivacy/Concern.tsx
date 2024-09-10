@@ -1,6 +1,7 @@
 import { Grid } from '@mui/system';
 import { Typography } from '@mui/material';
 import React from 'react';
+import Link from 'next/link';
 
 const Concern = () => {
   return (
@@ -11,20 +12,12 @@ const Concern = () => {
           xs: '10px',
         },
         pb: {
-          md: '30px',
+          md: '0',
           xs: '10px',
         },
       }}
     >
-      <Grid
-        container
-        size={12}
-        textAlign={'center'}
-        justifyContent={'center'}
-        sx={{
-          pb: '24px',
-        }}
-      >
+      <Grid container size={12} textAlign={'center'} justifyContent={'center'} sx={{}}>
         <Grid size={12}>
           <Typography
             sx={{
@@ -34,7 +27,7 @@ const Concern = () => {
               },
               fontWeight: '400',
               margin: 'auto 0 2px 0',
-              padding: '0 0 10px 0',
+              padding: '0 0 0 0',
               color: 'gray.main',
             }}
           >
@@ -66,11 +59,12 @@ const Concern = () => {
               color: 'gray.main',
             }}
           >
-            Please visit our{' '}
-            <a href={'/about-us'} className={'tw-text-blue tw-underline'}>
+            <span>Please visit our</span>&nbsp;
+            <Link href="/contact-us" className={'tw-text-blue tw-underline'}>
               Contact Us
-            </a>{' '}
-            page.
+            </Link>
+            &nbsp;
+            <span>page.</span>
           </Typography>
         </Grid>
       </Grid>

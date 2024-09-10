@@ -65,10 +65,10 @@ const CoreBenefits: React.FC<Benefits> = ({ data }) => {
       <Box
         sx={{
           display: 'flex',
-          justifyContent: { xs: 'center', lg: 'space-between' },
+          justifyContent: { xs: 'center', md: 'space-between' },
           flexWrap: 'wrap',
           alignItems: 'start',
-          gap: { xs: '30px 20px', lg: '30px' },
+          gap: { xs: '30px 20px', md: '40px' },
         }}
       >
         {data.map((item, index) => (

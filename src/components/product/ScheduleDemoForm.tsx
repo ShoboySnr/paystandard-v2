@@ -1,10 +1,32 @@
+'use client';
 import { Box, Button, TextField, Typography } from '@mui/material';
-import React from 'react';
+import React, { useEffect } from 'react';
 import AppContainer from '@/components/layout/AppContainer';
 import Image from 'next/image';
 import LaptopIcon from '~/assets/icons-common/laptop.svg';
 
-const ScheduleDemoForm = ({ titleText }: { titleText?: React.JSX.Element }) => {
+const ScheduleDemoForm = ({
+  titleText,
+  hubspotFormId,
+}: {
+  titleText?: React.JSX.Element;
+  hubspotFormId: string;
+}) => {
+  useEffect(() => {
+    setTimeout(() => {
+      // @ts-ignore
+      if (window.hbspt) {
+        // @ts-ignore
+        window.hbspt.forms.create({
+          region: 'na1',
+          portalId: '46454267',
+          formId: hubspotFormId,
+          target: `#product-page-form`,
+        });
+      }
+    });
+  }, []);
+
   return (
     <Box
       sx={{
@@ -44,92 +66,10 @@ const ScheduleDemoForm = ({ titleText }: { titleText?: React.JSX.Element }) => {
           </Typography>
 
           <Box
+            id={'product-page-form'}
             component="form"
             sx={{ '& .MuiTextField-root': { mb: 2.5 }, px: { xs: 0, md: 7 } }}
-            noValidate
-            autoComplete="off"
-          >
-            <div>
-              <TextField
-                fullWidth
-                required
-                id="outlined-required"
-                label="Full Name"
-                sx={{
-                  '& .MuiOutlinedInput-root': {
-                    backgroundColor: '#FFFFFF', // Set the input field background to white
-                  },
-                }}
-              />
-            </div>
-            <div>
-              <TextField
-                fullWidth
-                required
-                id="outlined-required"
-                label="Work Email"
-                sx={{
-                  '& .MuiOutlinedInput-root': {
-                    backgroundColor: '#FFFFFF', // Set the input field background to white
-                  },
-                }}
-              />
-            </div>
-            <div>
-              <TextField
-                fullWidth
-                required
-                id="outlined-required"
-                label="Company"
-                sx={{
-                  '& .MuiOutlinedInput-root': {
-                    backgroundColor: '#FFFFFF', // Set the input field background to white
-                  },
-                }}
-              />
-            </div>
-
-            <Box
-              sx={{
-                display: { xs: 'block', md: 'flex' },
-                mt: 2,
-                justifyContent: 'space-between',
-                alignItems: 'center',
-              }}
-            >
-              <Button
-                sx={{
-                  mb: 2.5,
-                  fontSize: '16px',
-                  px: '16px',
-                  py: '10px',
-                }}
-                className={'!tw-rounded-full'}
-                variant="contained"
-              >
-                Next Step: Pick a Date & Time
-              </Button>
-              <Typography
-                sx={{
-                  mb: 2.5,
-                  color: '#7B83B2',
-                  fontSize: '14px',
-                }}
-              >
-                <span className={'tw-text-red'}>*</span> Indicates a required field.
-              </Typography>
-            </Box>
-            <Box
-              sx={{
-                mt: 3,
-              }}
-            >
-              <Typography sx={{ color: '#7B83B2' }}>
-                By submitting the form you agree to the PayStandards terms of use and master service
-                agreement.
-              </Typography>
-            </Box>
-          </Box>
+          ></Box>
         </Box>
       </AppContainer>
     </Box>

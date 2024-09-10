@@ -58,9 +58,7 @@ const Governance = () => {
         >
           <Typography
             sx={{
-              fontSize: {
-                md: '24px',
-              },
+              fontSize: '24px',
               fontWeight: '400',
               margin: 'auto 0 2px 0',
               color: 'deep-blue-secondary.main',
@@ -134,7 +132,7 @@ const Governance = () => {
               <TitleAndSubtitle
                 title={'02'}
                 subtitle={
-                  'Access should be limited to only those with a legitimate business need and granted based on the principle of least privilege.'
+                  'Security controls should be implemented and layered according to the principle of defense-in-depth.'
                 }
               />
             </Grid>
@@ -147,7 +145,7 @@ const Governance = () => {
               <TitleAndSubtitle
                 title={'03'}
                 subtitle={
-                  'Access should be limited to only those with a legitimate business need and granted based on the principle of least privilege.'
+                  'Security controls should be applied consistently across all areas of the enterprise.'
                 }
               />
             </Grid>
@@ -160,7 +158,7 @@ const Governance = () => {
               <TitleAndSubtitle
                 title={'04'}
                 subtitle={
-                  'Access should be limited to only those with a legitimate business need and granted based on the principle of least privilege.'
+                  'The implementation of controls should be iterative, continuously maturing across the dimensions of improved effectiveness, increased auditability, and decreased friction.'
                 }
               />
             </Grid>
@@ -182,6 +180,7 @@ const Governance = () => {
             <Typography
               sx={{
                 fontSize: {
+                  xs: '18px',
                   md: '20px',
                 },
                 fontWeight: '600',
