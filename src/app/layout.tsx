@@ -21,7 +21,6 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <Script src="https://js.hsforms.net/forms/v2.js" />
       <body className={'tw-bg-[#FAFAFA]'}>
         <AppRouterCacheProvider>
           <ThemeProvider theme={theme}>
@@ -39,6 +38,7 @@ export default function RootLayout({
             <AppFooter />
           </ThemeProvider>
         </AppRouterCacheProvider>
+        <Script src="https://js.hsforms.net/forms/v2.js" strategy={'beforeInteractive'} />
       </body>
     </html>
   );
