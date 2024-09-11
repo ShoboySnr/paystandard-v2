@@ -1,19 +1,18 @@
-'use client';
 import { Box, Button, Typography } from '@mui/material';
 import Image from 'next/image';
 import Link from 'next/link';
-import HubspotForm from '@/components/models/HubspotFormDialog';
-import { useState } from 'react';
+// import HubspotForm from '@/components/models/HubspotFormDialog';
+// import { useState } from 'react';
 
 const Banner = () => {
-  const [open, setOpen] = useState<boolean>(false);
-  const handleClickOpen = () => {
-    setOpen(true);
-  };
+  // const [open, setOpen] = useState<boolean>(false);
+  // const handleClickOpen = () => {
+  //   setOpen(true);
+  // };
 
-  const handleClose = () => {
-    setOpen(false);
-  };
+  // const handleClose = () => {
+  //   setOpen(false);
+  // };
 
   return (
     <Box
@@ -93,14 +92,16 @@ const Banner = () => {
           }}
         >
           <Box>
-            <Button
-              onClick={handleClickOpen}
-              className={'!tw-rounded-full'}
-              variant="contained"
-              sx={{ height: '44px', width: '160px', fontSize: '16px' }}
-            >
-              Book a Demo
-            </Button>
+            <Link href={'/demo'}>
+              <Button
+                // onClick={handleClickOpen}
+                className={'!tw-rounded-full'}
+                variant="contained"
+                sx={{ height: '44px', width: '160px', fontSize: '16px' }}
+              >
+                Book a Demo
+              </Button>
+            </Link>
           </Box>
           <Box>
             <Button
@@ -184,13 +185,13 @@ const Banner = () => {
           alt="banner.png"
         />
       </Box>
-      <HubspotForm
-        formId={'0cd9751e-4f6c-4943-862f-79bb61e9f746'}
-        portalId={'46454267'}
-        isOpen={open}
-        handleClose={handleClose}
-        uniqueId={'hubspot-form-banner'}
-      />
+      {/*<HubspotForm*/}
+      {/*  formId={'0cd9751e-4f6c-4943-862f-79bb61e9f746'}*/}
+      {/*  portalId={'46454267'}*/}
+      {/*  isOpen={open}*/}
+      {/*  handleClose={handleClose}*/}
+      {/*  uniqueId={'hubspot-form-banner'}*/}
+      {/*/>*/}
     </Box>
   );
 };
