@@ -9,3 +9,8 @@
     /*//background: rgb(255,255,255) !important;*/
     /*//background: linear-gradient(0deg, rgba(255,255,255,1) 0%, rgba(250,250,250,1) 43%) !important;*/
 }
+
+.swiper-pagination-bullet-active {
+
+    background: linear-gradient(108deg, #3860FF 0%, #152461 100%) !important;
+}

@@ -19,7 +19,7 @@ import styles from '@/app/_scss/global.module.scss';
 const bannerCardContent: { title: string; paragraph: string } = {
   title: 'Understand Your Pay with Acuity',
   paragraph:
-    'Go beyond the traditional average-based pay gap metrics and understand your true pay equity. Gaining a real-time understanding of your pay equity position beyond the enterprise level – looking across different geographies, job levels, business, units, and more – will not only supercharge your disclosure, but also help you understand where to take action.',
+    'Go beyond the traditional pay gap metrics and understand your true pay equity position. Assess pay equity beyond the enterprise level – looking across different geographies, job levels, business units, and more. A comprehensive view which will not only supercharge your disclosure, but also help you identify where to take action.',
 };
 
 const quoteCardContent = {
@@ -149,59 +149,62 @@ const IndexProduct = () => {
           <KeyFeatures />
           <CoreBenefits data={coreBenefits} />
         </AppContainer>
-        <Box>
-          <AppContainer>
-            <Box
-              sx={{
-                position: 'relative', // Ensures the card can position its children correctly
-                px: { xs: 9.5, md: 18 },
-                zIndex: 1, // Ensure the card is above the dividers
-              }}
-            >
-              <QuoteCard content={quoteCardContent} />
-            </Box>
-          </AppContainer>
-          <Box
-            sx={{
-              position: 'relative', // Ensures positioning of the dividers relative to this Box
-              zIndex: 0, // Places the dividers below the card
-              mt: { xs: -32.5, lg: -22 }, // Adjust as needed to align with card
-            }}
-          >
-            <Divider
-              sx={{
-                mx: { xs: 'auto', md: '0' },
-                borderColor: 'primary.main',
-                borderWidth: '2px',
-              }}
-            />
-            <Divider
-              sx={{
-                mt: 4.5,
-                mx: { xs: 'auto', md: '0' },
-                borderColor: 'primary.main',
-                borderWidth: '2px',
-              }}
-            />
-          </Box>
+        {/*<Box>*/}
+        {/*<AppContainer>*/}
+        {/*  <Box*/}
+        {/*    sx={{*/}
+        {/*      position: 'relative', // Ensures the card can position its children correctly*/}
+        {/*      px: { xs: 9.5, md: 18 },*/}
+        {/*      zIndex: 1, // Ensure the card is above the dividers*/}
+        {/*    }}*/}
+        {/*  >*/}
+        {/*    <QuoteCard content={quoteCardContent} />*/}
+        {/*  </Box>*/}
+        {/*</AppContainer>*/}
+        {/*<Box*/}
+        {/*  sx={{*/}
+        {/*    position: 'relative', // Ensures positioning of the dividers relative to this Box*/}
+        {/*    zIndex: 0, // Places the dividers below the card*/}
+        {/*    mt: { xs: -32.5, lg: -22 }, // Adjust as needed to align with card*/}
+        {/*  }}*/}
+        {/*>*/}
+        {/*  <Divider*/}
+        {/*    sx={{*/}
+        {/*      mx: { xs: 'auto', md: '0' },*/}
+        {/*      borderColor: 'primary.main',*/}
+        {/*      borderWidth: '2px',*/}
+        {/*    }}*/}
+        {/*  />*/}
+        {/*  <Divider*/}
+        {/*    sx={{*/}
+        {/*      mt: 4.5,*/}
+        {/*      mx: { xs: 'auto', md: '0' },*/}
+        {/*      borderColor: 'primary.main',*/}
+        {/*      borderWidth: '2px',*/}
+        {/*    }}*/}
+        {/*  />*/}
+        {/*</Box>*/}
+        {/*</Box>*/}
+        <Box sx={{ mt: { xs: -28, md: -14 } }}>
+          <ScheduleDemoForm
+            hubspotFormId={'0eb98f1b-af62-4c4e-8677-5c24f7b36041'}
+            titleText={
+              <Typography
+                sx={{
+                  fontSize: { xs: '28px', md: '32px' },
+                  fontWeight: '700',
+                  textAlign: 'center',
+                  lineHeight: '140%',
+                  pt: 2,
+                }}
+              >
+                Learn How Pay Index Can Bring You Clear <br /> Pay Analytics and Actionable Insight
+                {/*Learn How the Pay Index<span className={'tw-size-32 tw-font-normal'}>™ </span> Can*/}
+                {/*Bring Clear Pay Analytics and Actionable Insight*/}
+              </Typography>
+            }
+          />
         </Box>
-        <ScheduleDemoForm
-          hubspotFormId={'0eb98f1b-af62-4c4e-8677-5c24f7b36041'}
-          titleText={
-            <Typography
-              sx={{
-                fontSize: { xs: '28px', md: '32px' },
-                fontWeight: '700',
-                textAlign: 'center',
-                lineHeight: '140%',
-                pt: 2,
-              }}
-            >
-              Learn How the Pay Index<span className={'tw-size-32 tw-font-normal'}>™ </span> Can
-              Bring Clear Pay Analytics and Actionable Insight
-            </Typography>
-          }
-        />
       </Box>
     </>
   );

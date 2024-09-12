@@ -27,7 +27,7 @@ const Demo = () => {
         <Box
           sx={{
             pt: { xs: '50px', md: '60px' },
-            px: { xs: '0', md: '80px' },
+            px: { xs: '0', md: '50px' },
           }}
         >
           <Box
@@ -78,7 +78,7 @@ const Demo = () => {
                     fontWeight: '500',
                   }}
                 >
-                  Reduce pay gaps by 40% or more in the first year alone
+                  Improve pay gaps by 40% or more in the first year alone
                 </Typography>
               </ListItemText>
             </ListItem>
@@ -128,7 +128,7 @@ const Demo = () => {
                     fontWeight: '500',
                   }}
                 >
-                  Save 6-8 weeks of pay equity analysis
+                  Reduce your pay equity analysis timeline by 6-8 weeks or more
                 </Typography>
               </ListItemText>
             </ListItem>

@@ -21,26 +21,22 @@ import Image from 'next/image';
 const customerQuotes = [
   {
     title: 'PayStandards is a huge unlock.',
-    description:
-      'It’s a game changer for us. It’s a game changer for our clients. It’s a game changer for the industry.',
+    description: 'Head of Total Rewards,  Fortune 100 Industrial Company',
     image: CustomerImage,
   },
   {
     title: 'PayStandards is a huge unlock.',
-    description:
-      'It’s a game changer for us. It’s a game changer for our clients. It’s a game changer for the industry.',
+    description: 'Head of Total Rewards,  Fortune 100 Industrial Company',
     image: CustomerImage,
   },
   {
     title: 'PayStandards is a huge unlock.',
-    description:
-      'It’s a game changer for us. It’s a game changer for our clients. It’s a game changer for the industry.',
+    description: 'Head of Total Rewards,  Fortune 100 Industrial Company',
     image: CustomerImage,
   },
   {
     title: 'PayStandards is a huge unlock.',
-    description:
-      'It’s a game changer for us. It’s a game changer for our clients. It’s a game changer for the industry.',
+    description: 'Head of Total Rewards,  Fortune 100 Industrial Company',
     image: CustomerImage,
   },
 ];
@@ -86,7 +82,7 @@ const CustomerQuote = () => {
                   src={quote.image}
                   alt="image.png"
                   className={
-                    'tw-h-[150px] tw-w-full tw-rounded-[10px] tw-object-cover md:tw-h-[300px] md:tw-w-[196px] md:tw-rounded-[35px]'
+                    'tw-h-[210px] tw-mt-0 tw-w-full tw-rounded-[10px] tw-object-contain md:tw-h-[300px] md:tw-w-[196px] md:tw-rounded-[35px]'
                   }
                 />
                 <Box

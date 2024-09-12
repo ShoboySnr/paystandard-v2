@@ -84,9 +84,24 @@ const BookNow = () => {
                       marginBottom: { md: '36px', xs: '40px' },
                     }}
                   >
-                    Ready to <br className={'md:tw-hidden'} /> Schedule
-                    <br /> a Call Now?
+                    Booking a Discovery Call and Demo is Quick and Easy
+                    {/*Ready to <br className={'md:tw-hidden'} /> Schedule*/}
+                    {/*<br /> a Call Now?*/}
                   </Typography>
+                  {/*<Typography*/}
+                  {/*  sx={{*/}
+                  {/*    fontSize: {*/}
+                  {/*      md: '20px',*/}
+                  {/*      xs: '18px',*/}
+                  {/*    },*/}
+                  {/*    fontWeight: '400',*/}
+                  {/*    margin: 'auto 0 2px 0',*/}
+                  {/*    marginBottom: '20px',*/}
+                  {/*  }}*/}
+                  {/*>*/}
+                  {/*  We’d love to learn more about your compensation program and how we can help you*/}
+                  {/*  optimize your #1 expense.*/}
+                  {/*</Typography>*/}
                   <Typography
                     sx={{
                       fontSize: {
@@ -98,22 +113,8 @@ const BookNow = () => {
                       marginBottom: '20px',
                     }}
                   >
-                    We’d love to learn more about your compensation program and how we can help you
-                    optimize your #1 expense.
-                  </Typography>
-                  <Typography
-                    sx={{
-                      fontSize: {
-                        md: '20px',
-                        xs: '18px',
-                      },
-                      fontWeight: '400',
-                      margin: 'auto 0 2px 0',
-                      marginBottom: '20px',
-                    }}
-                  >
-                    Our goal is to help you deliver equitable, sustainable, efficient pay for your
-                    employees.
+                    Learn how PayStandards can help you optimize your company’s most important
+                    expense and asset—your people!
                   </Typography>
                   <Typography
                     sx={{

@@ -65,12 +65,11 @@ const Products = () => {
           </Typography>
           <Typography sx={{ fontSize: '18px', mt: '22px', fontWeight: '400' }}>
             Powered by a market-leading pay algorithm, real-time analytics, and an easy-to-use
-            software platform, PayStandards makes pay recommendations that consider only the right
-            things. PayStandards delivers true pay equity and pay transparency – without the
-            headache.
+            software platform, PayStandards helps you deliver true pay equity and achieve pay
+            transparency—without the headache.
           </Typography>
         </Box>
-        <Box sx={{ mt: '36px', display: 'flex', justifyContent: 'space-around', color: '#fff' }}>
+        <Box sx={{ mt: '66px', display: 'flex', justifyContent: 'space-around', color: '#fff' }}>
           <Box sx={imageSectionStyling}>
             <Link href={'/index-product'}>
               <Image

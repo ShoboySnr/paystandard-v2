@@ -18,7 +18,7 @@ import styles from '@/app/_scss/global.module.scss';
 const bannerCardContent: { title: string; paragraph: string } = {
   title: 'Power Your Year-Round Pay',
   paragraph:
-    'Your one-stop-shop to pay transparency, the PayPilot helps you to publish pay ranges that are tailored to the job and empowers you to make better pay decisions from day one – including hiring, promotions, off-cycle salary increases, and spot bonuses.',
+    'Your one-stop-shop to pay transparency, the Pay Pilot helps you to publish pay ranges that are tailored to the job and empowers you to make better pay decisions from day one – including hiring, promotions, off-cycle salary increases, spot bonuses, and special incentives.',
 };
 
 const coreBenifits: { icon: string; text: string }[] = [
@@ -98,8 +98,8 @@ const IndexProduct = () => {
                   fontSize: { xs: '18px', lg: '24px' },
                 }}
               >
-                The PayStandards PayPilot is an easy-to-use software platform to help you make
-                better everyday pay decisions to sustain your pay equity progress.
+                Pay Pilot helps you make better everyday pay decisions to sustain your pay equity
+                progress through an easy-to-use software platform.
               </Box>
             </Box>
           </AppContainer>
@@ -150,9 +150,11 @@ const IndexProduct = () => {
                   pt: 2,
                 }}
               >
-                Learn How to Leverage the Pay Pilot
-                <span className={'tw-size-32 tw-font-normal'}>™ </span> <br />
-                at Your Company
+                Learn How Pay Pilot Will Empower Year-Round Pay <br /> Decisions and Facilitate Pay
+                Transparency For Your Company
+                {/*  Learn How to Leverage the Pay Pilot*/}
+                {/*<span className={'tw-size-32 tw-font-normal'}>™ </span> <br />*/}
+                {/*at Your Company*/}
               </Typography>
             }
           />

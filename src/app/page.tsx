@@ -1,4 +1,4 @@
-import { Box } from '@mui/material';
+import { Box, useMediaQuery } from '@mui/material';
 import Banner from '@/components/home/Banner';
 import Products from '@/components/home/Products';
 import CoreBenefits from '@/components/home/CoreBenefits';
@@ -6,6 +6,10 @@ import CustomerQuote from '@/components/home/CustomerQuote';
 import AppContainer from '@/components/layout/AppContainer';
 import Pillars from '@/components/home/Pillars';
 import BookDemo from '@/components/home/BookDemo';
+import CustomerQuoteUpdated from '@/components/home/CustomerQuoteUpdated';
+import theme from '@/theme';
+import showCustomerQuote from '@/components/home/CustomerQuote/showCustomerQuote';
+import ShowCustomerQuote from '@/components/home/CustomerQuote/showCustomerQuote';
 
 const Home = () => {
   return (
@@ -24,7 +28,8 @@ const Home = () => {
           },
         }}
       >
-        <CustomerQuote />
+        {/*<CustomerQuoteUpdated />*/}
+        <ShowCustomerQuote />
       </Box>
       <AppContainer>
         <CoreBenefits />

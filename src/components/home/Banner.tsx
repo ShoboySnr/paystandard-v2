@@ -74,9 +74,9 @@ const Banner = () => {
                 lineHeight: '150%',
               }}
             >
-              The PayStandards platform gives you pay recommendations that consider the right
-              things, while helping you save time, stay compliant, optimize your company’s #1
-              expense, and prioritize your biggest asset – your people.
+              The PayStandards platform gives you pay recommendations that consider only the right
+              things, like performance, while helping you save time, stay compliant, optimize your
+              company’s most important expense and asset – your people.
             </Typography>
           </Box>
         </Box>
@@ -103,15 +103,15 @@ const Banner = () => {
               </Button>
             </Link>
           </Box>
-          <Box>
-            <Button
-              className={'!tw-rounded-full !tw-text-btn-outline-text'}
-              sx={{ height: '44px', width: '160px', fontSize: '16px' }}
-              variant="outlined"
-            >
-              Take a Tour
-            </Button>
-          </Box>
+          {/*<Box>*/}
+          {/*  <Button*/}
+          {/*    className={'!tw-rounded-full !tw-text-btn-outline-text'}*/}
+          {/*    sx={{ height: '44px', width: '160px', fontSize: '16px' }}*/}
+          {/*    variant="outlined"*/}
+          {/*  >*/}
+          {/*    Take a Tour*/}
+          {/*  </Button>*/}
+          {/*</Box>*/}
         </Box>
         <Box
           sx={{

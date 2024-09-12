@@ -38,6 +38,10 @@ const AboutUs = () => {
               md: '235px',
               xs: '100px',
             },
+            px: {
+              md: '40px',
+              xs: '10px',
+            },
           }}
         >
           <Typography

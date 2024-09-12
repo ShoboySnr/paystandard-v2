@@ -60,19 +60,19 @@ export default function Contact() {
               <Grid
                 size={{ xs: 12, md: 6 }}
                 sx={{
-                  px: { md: '60px', xs: '15px' },
+                  px: { md: '40px', xs: '15px' },
                 }}
               >
                 <Box
                   sx={{
-                    pt: { xs: 6, lg: 8 },
+                    pt: { xs: 6, lg: 2 },
                   }}
                 >
                   <Box
                     sx={{
                       fontSize: { xs: '32px' },
                       fontWeight: '700',
-                      px: { xs: 6, lg: 0 },
+                      px: { xs: 6, md: 0 },
                       textAlign: { xs: 'center', lg: 'left' },
                       color: 'deep-blue-secondary.main',
                     }}
@@ -83,15 +83,16 @@ export default function Contact() {
                     sx={{
                       fontSize: { xs: '18px' },
                       fontWeight: { xs: '400' },
-                      textAlign: { xs: 'center', lg: 'left' },
+                      textAlign: { xs: 'center', md: 'left' },
                       color: 'dark-gray.main',
                       my: { md: '16px', xs: '70px' },
                     }}
                   >
-                    Have questions? Need support? Curious about PayStandards? <br />
-                    <br />
-                    We’d love to find out more about your unique compensation situation - and how we
-                    can help you attain and sustain pay equity.
+                    Have questions? Need support? Curious about PayStandards?
+                    {/*<br />*/}
+                    {/*<br />*/}
+                    {/*We’d love to find out more about your unique compensation situation - and how we*/}
+                    {/*can help you attain and sustain pay equity.*/}
                   </Box>
                 </Box>
 
@@ -131,8 +132,8 @@ export default function Contact() {
                       color: '#283167',
                     }}
                   >
-                    Looking for partnership opportunities? Think PayStandards would be a great
-                    complement to your solution or service?{' '}
+                    Let’s talk about how we might work together! PayStandards can be a great
+                    compliment to your solution or existing services.
                   </Typography>
 
                   <div className="tw-flex tw-justify-center">
@@ -194,10 +195,11 @@ export default function Contact() {
                   textAlign: { xs: 'center', md: 'left' },
                 }}
               >
-                Join the growing PayStandards
-                <br className={'tw-block md:tw-hidden'} /> community
-                <br className={'tw-hidden md:tw-block'} /> and be the first to
-                <br className={'tw-block md:tw-hidden'} /> access new insight.
+                Join our newsletter and be the first to access insights from PayStandards.
+                {/*Join the growing PayStandards*/}
+                {/*<br className={'tw-block md:tw-hidden'} /> community*/}
+                {/*<br className={'tw-hidden md:tw-block'} /> and be the first to*/}
+                {/*<br className={'tw-block md:tw-hidden'} /> access new insight.*/}
               </Typography>
             </Grid>
             <Grid
