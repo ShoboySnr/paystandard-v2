@@ -70,7 +70,7 @@ const CustomerQuote = () => {
                   border: '1px solid black',
                   borderRadius: {
                     md: '35px',
-                    xs: '10px',
+                    xs: '12px',
                   },
                   height: {
                     md: '300px',
@@ -82,7 +82,7 @@ const CustomerQuote = () => {
                   src={quote.image}
                   alt="image.png"
                   className={
-                    'tw-h-[210px] tw-mt-0 tw-w-full tw-rounded-[10px] tw-object-contain md:tw-h-[300px] md:tw-w-[196px] md:tw-rounded-[35px]'
+                    'tw-h-[170px] tw-object-cover tw-mt-0 tw-w-full tw-rounded-[10px] md:tw-h-[300px] md:tw-w-[196px] md:tw-rounded-[35px]'
                   }
                 />
                 <Box
