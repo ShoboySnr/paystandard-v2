@@ -20,23 +20,15 @@ import Image from 'next/image';
 
 const customerQuotes = [
   {
-    title: 'PayStandards is a huge unlock.',
-    description: 'Head of Total Rewards,  Fortune 100 Industrial Company',
+    title: 'The user experience is seamless.',
+    description: 'Head of Compensation',
+    subtitle: 'Private Technology Company',
     image: CustomerImage,
   },
   {
-    title: 'PayStandards is a huge unlock.',
-    description: 'Head of Total Rewards,  Fortune 100 Industrial Company',
-    image: CustomerImage,
-  },
-  {
-    title: 'PayStandards is a huge unlock.',
-    description: 'Head of Total Rewards,  Fortune 100 Industrial Company',
-    image: CustomerImage,
-  },
-  {
-    title: 'PayStandards is a huge unlock.',
-    description: 'Head of Total Rewards,  Fortune 100 Industrial Company',
+    title: 'This is the nirvana of pay.',
+    description: 'Head of Total Rewards',
+    subtitle: 'Fortune 100 200 Financial Company',
     image: CustomerImage,
   },
 ];
@@ -121,7 +113,7 @@ const CustomerQuote = () => {
                       fontWeight: '400',
                     }}
                   >
-                    {quote.description}
+                    {quote.description}, <br /> {quote.subtitle}
                   </Typography>
                 </Box>
               </Box>

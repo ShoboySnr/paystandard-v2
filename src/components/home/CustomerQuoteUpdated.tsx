@@ -21,25 +21,14 @@ import Image from 'next/image';
 
 const customerQuotes = [
   {
-    title: 'PayStandards is a huge unlock.',
-    designation: 'Head of Total Rewards',
-    subtitle: 'Fortune 100 Industrial Company',
+    title: 'The user experience is seamless.',
+    designation: 'Head of Compensation',
+    subtitle: 'Private Technology Company',
   },
   {
-    title: 'PayStandards is a huge unlock.',
-
+    title: 'This is the nirvana of pay.',
     designation: 'Head of Total Rewards',
-    subtitle: 'Fortune 100 Industrial Company',
-  },
-  {
-    title: 'PayStandards is a huge unlock.',
-    designation: 'Head of Total Rewards',
-    subtitle: 'Fortune 100 Industrial Company',
-  },
-  {
-    title: 'PayStandards is a huge unlock.',
-    designation: 'Head of Total Rewards',
-    subtitle: 'Fortune 100 Industrial Company',
+    subtitle: 'Fortune 100 200 Financial Company',
   },
 ];
 
