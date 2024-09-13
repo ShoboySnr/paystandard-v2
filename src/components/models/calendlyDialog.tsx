@@ -12,7 +12,6 @@ const CalendlyDialog = ({
   isOpen: boolean;
   handleClose: () => void;
 }) => {
-
   return (
     <>
       <Dialog
@@ -23,7 +22,7 @@ const CalendlyDialog = ({
         PaperProps={{
           component: 'form',
           sx: {
-            width: '80%', 
+            width: '80%',
             height: '100%',
             maxWidth: 'none',
           },
@@ -52,20 +51,20 @@ const CalendlyDialog = ({
           <CloseIcon />
         </IconButton>
         <DialogContent
-             sx={{
-                height: '100%', // Ensures the content takes the full height of the screen
-                padding: 0, // Remove padding from the DialogContent
-                display: 'flex',
-                justifyContent: 'center',
-                alignItems: 'center',
-              }}
-            dividers
+          sx={{
+            height: '100%',
+            padding: 0,
+            display: 'flex',
+            justifyContent: 'center',
+            alignItems: 'center',
+          }}
+          dividers
         >
           {/* Embed Calendly iframe */}
           <iframe
             src="https://calendly.com/paystandards/demo"
             width="100%"
-            height="600px"
+            height="100%"
             frameBorder="0"
             scrolling="no"
             style={{ border: 'none' }}

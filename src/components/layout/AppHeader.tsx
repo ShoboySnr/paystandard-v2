@@ -1,6 +1,7 @@
 'use client';
 
 import React, { useEffect, useState } from 'react';
+import { useSearchParams, usePathname, useRouter } from 'next/navigation';
 import Image from 'next/image';
 import AppLogo from '../../../public/logos/logo.svg';
 import {
@@ -32,9 +33,26 @@ const AppHeader = () => {
   const [drawerOpen, setDrawerOpen] = useState<boolean | undefined>(false);
   const [dialogOpen, setDialogOpen] = useState<boolean>(false);
   const [isFloating, setIsFloating] = useState<boolean>(false);
+  const searchParams = useSearchParams();
+  const pathname = usePathname();
+  const router = useRouter();
+
+
+  useEffect(() => {
+    const calendly_callback = searchParams.get('calendly_callback')
+    if (calendly_callback) {
+      setDialogOpen(true);
+    } else {
+      setDialogOpen(false);
+    }
+  }, [searchParams]);
 
   const handleDialogClose = () => {
     setDialogOpen(false);
+    const params = new URLSearchParams(searchParams.toString());
+    params.delete('calendly_callback');
+    
+    router.push(`${pathname}?${params.toString()}`);
   };
 
   const handleDialogOpen = () => {
@@ -393,7 +411,7 @@ const AppHeader = () => {
               </IconButton>
             </Box>
           </Box>
-          <CalendlyDialog isOpen={dialogOpen}  handleClose={handleDialogClose} />
+          <CalendlyDialog isOpen={dialogOpen} handleClose={handleDialogClose} />
         </Container>
       </AppBar>
     </header>

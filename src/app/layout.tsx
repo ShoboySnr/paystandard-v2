@@ -1,4 +1,5 @@
 import type { Metadata } from 'next';
+import { useSearchParams, usePathname, useRouter } from 'next/navigation';
 import './globals.css';
 import AppHeader from '@/components/layout/AppHeader';
 import AppFooter from '@/components/layout/AppFooter';

@@ -143,10 +143,7 @@ const ProfileCard = () => {
               >
                 {profile.subtitle}
               </Typography>
-              <Link
-                href={profile.linkedin_url}
-                target='_blank'
-              >
+              <Link href={profile.linkedin_url} target="_blank">
                 <Image src={profile.icon} height={20} alt={profile.title} />
               </Link>
             </Grid>
