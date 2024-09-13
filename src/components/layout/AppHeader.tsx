@@ -1,7 +1,6 @@
 'use client';
 
 import React, { useEffect, useState } from 'react';
-import { useSearchParams, usePathname, useRouter } from 'next/navigation';
 import Image from 'next/image';
 import AppLogo from '../../../public/logos/logo.svg';
 import {
@@ -24,38 +23,12 @@ import { Close, KeyboardArrowDown, Menu as MenuIcon } from '@mui/icons-material'
 import { HeaderMenu as pages } from '@/utils/jsons/LayoutData';
 import { Grid } from '@mui/system';
 import Link from 'next/link';
-import CalendlyDialog from '../models/calendlyDialog';
 
 const AppHeader = () => {
   const [anchorElDropdown, setAnchorElDropdown] = useState(null);
   const [selectedMenuIndex, setSelectedMenuIndex] = useState<number | null>(null);
   const [drawerOpen, setDrawerOpen] = useState<boolean | undefined>(false);
-  const [dialogOpen, setDialogOpen] = useState<boolean>(false);
   const [isFloating, setIsFloating] = useState<boolean>(false);
-  const searchParams = useSearchParams();
-  const pathname = usePathname();
-  const router = useRouter();
-
-  useEffect(() => {
-    const calendly_callback = searchParams.get('calendly_callback');
-    if (calendly_callback) {
-      setDialogOpen(true);
-    } else {
-      setDialogOpen(false);
-    }
-  }, [searchParams]);
-
-  const handleDialogClose = () => {
-    setDialogOpen(false);
-    const params = new URLSearchParams(searchParams.toString());
-    params.delete('calendly_callback');
-
-    router.push(`${pathname}?${params.toString()}`);
-  };
-
-  const handleDialogOpen = () => {
-    setDialogOpen(true);
-  };
 
   const handleMenuOpen = (event: React.BaseSyntheticEvent, index: number) => {
     setAnchorElDropdown(event.currentTarget);
@@ -409,7 +382,6 @@ const AppHeader = () => {
               </IconButton>
             </Box>
           </Box>
-          <CalendlyDialog isOpen={dialogOpen} handleClose={handleDialogClose} />
         </Container>
       </AppBar>
     </header>

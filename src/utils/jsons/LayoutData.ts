@@ -56,7 +56,6 @@ export const FooterMenu = [
     menuItems: [
       { label: 'Privacy Policy', link: '/privacy-policy' },
       { label: 'Terms of Service', link: '/terms-of-service' },
-      // { label: 'Master Service Agreement', link: '/master-service-agreement' },
     ],
   },
 ];

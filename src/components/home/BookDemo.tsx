@@ -97,7 +97,7 @@ const BookDemo = () => {
                 zIndex: -10,
                 borderRadius: '35px',
                 position: 'absolute',
-                height: 'fill-available',
+                height: '60%',
                 width: 'fill-available',
                 background:
                   'radial-gradient(184.83% 144.26% at 27.98% -27.37%, #3860FF 0%, #152461 100%)',
@@ -107,13 +107,6 @@ const BookDemo = () => {
             ></Box>
           </Box>
         </Grid>
-        {/*<HubspotForm*/}
-        {/*  formId={'0cd9751e-4f6c-4943-862f-79bb61e9f746'}*/}
-        {/*  portalId={'46454267'}*/}
-        {/*  isOpen={dialogOpen}*/}
-        {/*  handleClose={handleDialogClose}*/}
-        {/*  uniqueId={'hubspot-form-demo-section'}*/}
-        {/*/>*/}
       </Grid>
     </>
   );

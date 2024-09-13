@@ -1,12 +1,16 @@
+'use client';
+
+import { useSearchParams, usePathname, useRouter } from 'next/navigation';
 import { Grid } from '@mui/system';
 import AppLogo from '~/logos/logo-dark.svg';
 import LinkedInLogo from '~/logos/linkedin.svg';
 import BrandingLogo from '~/assets/header/branding.png';
 import Image from 'next/image';
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import { Box, List, ListItem, ListItemButton, ListItemText, Typography } from '@mui/material';
 import { FooterMenu } from '@/utils/jsons/LayoutData';
 import Link from 'next/link';
+import CalendlyDialog from '../models/calendlyDialog';
 
 const listItemButtonStyle = {
   fontSize: '16px',
@@ -33,6 +37,28 @@ const descriptionStyle = {
 };
 
 const AppFooter = () => {
+  const [dialogOpen, setDialogOpen] = useState<boolean>(false);
+
+  const searchParams = useSearchParams();
+  const pathname = usePathname();
+  const router = useRouter();
+
+  useEffect(() => {
+    const calendly_callback = searchParams.get('calendly_callback');
+    setDialogOpen(calendly_callback ? true : false);
+  }, [searchParams]);
+
+  const handleDialogClose = () => {
+    setDialogOpen(false);
+    const params = new URLSearchParams(searchParams.toString());
+    params.delete('calendly_callback');
+    router.push(`${pathname}?${params.toString()}`);
+  };
+
+  const handleDialogOpen = () => {
+    setDialogOpen(true);
+  };
+
   return (
     <footer className="!tw-bg-footer-gradient">
       <Grid
@@ -218,6 +244,7 @@ const AppFooter = () => {
           </Box>
         </Grid>
       </Grid>
+      <CalendlyDialog isOpen={dialogOpen} handleClose={handleDialogClose} />
     </footer>
   );
 };

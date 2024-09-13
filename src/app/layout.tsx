@@ -1,5 +1,6 @@
 import type { Metadata } from 'next';
-import { useSearchParams, usePathname, useRouter } from 'next/navigation';
+import { Suspense } from 'react';
+import Head from 'next/head';
 import './globals.css';
 import AppHeader from '@/components/layout/AppHeader';
 import AppFooter from '@/components/layout/AppFooter';
@@ -22,6 +23,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      <Head>
+        <link rel="icon" href="/favicon.ico" />
+      </Head>
       <body className={'tw-bg-[#FAFAFA]'}>
         <AppRouterCacheProvider>
           <ThemeProvider theme={theme}>
@@ -38,7 +42,9 @@ export default function RootLayout({
             >
               <main>{children}</main>
             </Box>
-            <AppFooter />
+            <Suspense fallback={''}>
+              <AppFooter />
+            </Suspense>
           </ThemeProvider>
         </AppRouterCacheProvider>
         <Script src="https://js.hsforms.net/forms/v2.js" strategy={'beforeInteractive'} />
