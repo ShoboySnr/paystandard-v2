@@ -217,10 +217,8 @@ export default function Contact() {
                 }}
                 className="tw-h-full"
               >
-                <div className="tw-flex tw-w-full tw-justify-center">
-                <NewsletterForm
-                  hubspotFormId={'016bb2fc-a1f1-4005-a8e0-bc1ca5f2cac7'}
-                 />
+                <div className="tw-w-full tw-justify-center">
+                  <NewsletterForm hubspotFormId={'016bb2fc-a1f1-4005-a8e0-bc1ca5f2cac7'} />
                 </div>
               </Box>
             </Grid>
