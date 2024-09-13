@@ -143,7 +143,7 @@ const IndexProduct = () => {
             titleText={
               <Typography
                 sx={{
-                  fontSize: { xs: '28px', md: '32px' },
+                  fontSize: { xs: '25px', md: '28px' },
                   fontWeight: '700',
                   textAlign: 'center',
                   lineHeight: '140%',

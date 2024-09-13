@@ -179,9 +179,8 @@ const Demo = () => {
                 >
                   <HubspotDemoForm />
                   <Box>
-                    <Typography sx={{ color: '#7B83B2' }}>
-                      By submitting the form you agree to the PayStandards terms of use and master
-                      service agreement.
+                    <Typography sx={{ color: '#d3d3d3', fontSize: '10px' }}>
+                      By submitting the form you agree to the PayStandards terms of use.
                     </Typography>
                   </Box>
                 </Box>

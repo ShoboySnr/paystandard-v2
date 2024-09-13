@@ -3,9 +3,9 @@ export const HeaderMenu = [
     name: 'Solutions',
     id: 'solutions',
     menuItems: [
-      { label: 'Pay Index', link: '/index-product' },
-      { label: 'Pay Audit', link: '/audit-product' },
-      { label: 'Pay Pilot', link: '/dashboard-product' },
+      { label: 'Pay Index', link: '/pay-index' },
+      { label: 'Pay Audit', link: '/pay-audit' },
+      { label: 'Pay Pilot', link: '/pay-pilot' },
     ],
   },
   {
@@ -30,9 +30,9 @@ export const FooterMenu = [
     name: 'Solutions',
     id: 'solutions',
     menuItems: [
-      { label: 'Pay Index', link: '/index-product' },
-      { label: 'Pay Audit', link: '/audit-product' },
-      { label: 'Pay Pilot', link: '/dashboard-product' },
+      { label: 'Pay Index', link: '/pay-index' },
+      { label: 'Pay Audit', link: '/pay-audit' },
+      { label: 'Pay Pilot', link: '/pay-pilot' },
     ],
   },
   {

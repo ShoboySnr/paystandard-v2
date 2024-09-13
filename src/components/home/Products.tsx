@@ -116,7 +116,7 @@ const Products = () => {
         <Box sx={{ mt: '66px', display: 'flex', justifyContent: 'space-around', color: '#fff' }}>
           <Box sx={imageSectionStyling}>
             <Link
-              href={'/index-product'}
+              href={'/pay-index'}
               onMouseEnter={() => setIsHovered(1)}
               onMouseLeave={() => setIsHovered(null)}
             >
@@ -131,7 +131,7 @@ const Products = () => {
           </Box>
           <Box sx={imageSectionStyling}>
             <Link
-              href={'/audit-product'}
+              href={'/pay-audit'}
               onMouseEnter={() => setIsHovered(2)}
               onMouseLeave={() => setIsHovered(null)}
             >
@@ -146,7 +146,7 @@ const Products = () => {
           </Box>
           <Box sx={imageSectionStyling}>
             <Link
-              href={'/dashboard-product'}
+              href={'/pay-pilot'}
               onMouseEnter={() => setIsHovered(3)}
               onMouseLeave={() => setIsHovered(null)}
             >

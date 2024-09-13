@@ -9,6 +9,7 @@ import Client3 from '~/assets/about-us/client_3.png';
 import Client4 from '~/assets/about-us/client_4.png';
 import Client5 from '~/assets/about-us/client_5.png';
 import Client6 from '~/assets/about-us/client_6.png';
+import Link from 'next/link';
 
 const profiles = [
   {
@@ -17,6 +18,7 @@ const profiles = [
     subtitle: 'Co-Chief Executive Officer',
     profile_picture: Client1,
     tailwindClass: 'tw-mt-2 md:tw-mt-4',
+    linkedin_url: 'https://www.linkedin.com/in/joedavolio/',
   },
   {
     icon: LinkedInLogo,
@@ -24,6 +26,7 @@ const profiles = [
     subtitle: 'Co-Chief Executive Officer',
     profile_picture: Client2,
     tailwindClass: 'tw-mt-2',
+    linkedin_url: 'https://www.linkedin.com/in/todd-gershkowitz/',
   },
   {
     icon: LinkedInLogo,
@@ -31,6 +34,7 @@ const profiles = [
     subtitle: 'Chief Legal Officer',
     profile_picture: Client3,
     tailwindClass: 'tw-mt-1.5 md:tw-mt-3',
+    linkedin_url: 'https://www.linkedin.com/in/beth-kovaly-b3601815/',
   },
   {
     icon: LinkedInLogo,
@@ -38,6 +42,7 @@ const profiles = [
     subtitle: 'Chief Technology Officer',
     profile_picture: Client4,
     tailwindClass: 'tw-mt-1.5',
+    linkedin_url: 'https://www.linkedin.com/in/leighheyman/',
   },
   {
     icon: LinkedInLogo,
@@ -45,6 +50,7 @@ const profiles = [
     subtitle: 'Chief Economist',
     profile_picture: Client5,
     tailwindClass: 'tw-mt-1',
+    linkedin_url: 'https://www.linkedin.com/in/darren-lubotsky-425864a/',
   },
   {
     icon: LinkedInLogo,
@@ -52,6 +58,7 @@ const profiles = [
     subtitle: 'Senior Advisor',
     profile_picture: Client6,
     tailwindClass: 'mt-1',
+    linkedin_url: 'https://www.linkedin.com/in/kevin-hallock-a276616/',
   },
 ];
 
@@ -136,7 +143,12 @@ const ProfileCard = () => {
               >
                 {profile.subtitle}
               </Typography>
-              <Image src={profile.icon} height={20} alt="linkedIn-profile" />
+              <Link
+                href={profile.linkedin_url}
+                target='_blank'
+              >
+                <Image src={profile.icon} height={20} alt={profile.title} />
+              </Link>
             </Grid>
           </React.Fragment>
         ))}

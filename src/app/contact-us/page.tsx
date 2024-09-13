@@ -192,7 +192,7 @@ export default function Contact() {
                   fontSize: '24px',
                   fontWeight: '400',
                   margin: '0 0 4px 0',
-                  color: '#283167',
+                  color: '#090C1A',
                   textAlign: { xs: 'center', md: 'left' },
                 }}
               >

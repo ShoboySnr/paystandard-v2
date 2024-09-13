@@ -24,6 +24,7 @@ import { HeaderMenu as pages } from '@/utils/jsons/LayoutData';
 import { Grid } from '@mui/system';
 import Link from 'next/link';
 import HubspotForm from '@/components/models/HubspotFormDialog';
+import CalendlyDialog from '../models/calendlyDialog';
 
 const AppHeader = () => {
   const [anchorElDropdown, setAnchorElDropdown] = useState(null);
@@ -392,13 +393,7 @@ const AppHeader = () => {
               </IconButton>
             </Box>
           </Box>
-          <HubspotForm
-            formId={'a52edf55-e04d-4292-9d7a-432a85a1026d'}
-            portalId={'46454267'}
-            isOpen={dialogOpen}
-            handleClose={handleDialogClose}
-            uniqueId={'hubspot-form-header'}
-          />
+          <CalendlyDialog isOpen={dialogOpen}  handleClose={handleDialogClose} />
         </Container>
       </AppBar>
     </header>
