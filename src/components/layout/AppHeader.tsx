@@ -1,6 +1,6 @@
 'use client';
 
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import Image from 'next/image';
 import AppLogo from '../../../public/logos/logo.svg';
 import {
@@ -30,6 +30,7 @@ const AppHeader = () => {
   const [selectedMenuIndex, setSelectedMenuIndex] = useState<number | null>(null);
   const [drawerOpen, setDrawerOpen] = useState<boolean | undefined>(false);
   const [dialogOpen, setDialogOpen] = useState<boolean>(false);
+  const [isFloating, setIsFloating] = useState<boolean>(false);
 
   const handleDialogClose = () => {
     setDialogOpen(false);
@@ -65,9 +66,36 @@ const AppHeader = () => {
       setDrawerOpen(false);
     }
   };
+
+  const handleScroll = () => {
+    if (window.scrollY > 100) {
+      setIsFloating(true);
+    } else {
+      setIsFloating(false);
+    }
+  };
+
+  useEffect(() => {
+    window.addEventListener('scroll', handleScroll);
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
+
   return (
     <header>
-      <AppBar position="static" sx={{ backgroundColor: 'transparent' }}>
+      <AppBar
+        position={isFloating ? 'fixed' : 'static'}
+        sx={{
+          backgroundColor: isFloating ? '#FFF' : 'transparent',
+          transform: isFloating ? 'translateX(-50%)' : 'none',
+          transition: 'top 0.5s ease',
+          width: isFloating ? '100%' : '100%',
+          top: isFloating ? '0px' : '-100px',
+          left: '50%',
+          zIndex: 1300,
+        }}
+      >
         <Container
           maxWidth="lg"
           sx={{
@@ -88,7 +116,7 @@ const AppHeader = () => {
             <Toolbar
               sx={{
                 width: '100%',
-                my: { xs: '10px', md: '20px' },
+                my: { xs: '10px', md: isFloating ? '10px' : '20px' },
                 minHeight: { xs: '30px', md: '75px' },
                 height: { xs: '30px', md: '75px' },
                 border: '1px solid transparent',
