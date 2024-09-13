@@ -1,12 +1,15 @@
+'use client';
 import { Grid } from '@mui/system';
-import { Box, Button, Typography } from '@mui/material';
+import { Box, Button, Typography, useMediaQuery } from '@mui/material';
 import ImageCover from '~/assets/home/book-demo/image1.png';
 import Image from 'next/image';
 import Link from 'next/link';
+import theme from '@/theme';
 // import HubspotForm from '@/components/models/HubspotFormDialog';
 // import { useState } from 'react';
 
 const BookDemo = () => {
+  const isMobile = useMediaQuery(theme.breakpoints.down('md'));
   // const [dialogOpen, setDialogOpen] = useState<boolean>(false);
 
   // const handleDialogClose = () => {
@@ -43,7 +46,7 @@ const BookDemo = () => {
               flexDirection: 'column',
               alignItems: { md: 'flex-start', xs: 'center' },
               gap: '29px',
-              width: { md: 'fit-content', xs: '230px' },
+              width: { md: 'fit-content', xs: '240px' },
             }}
           >
             <Typography
@@ -55,8 +58,8 @@ const BookDemo = () => {
               }}
             >
               Learn how you can achieve true
-              <br /> pay equity and pay transparency
-              <br /> – without the headache.
+              {!isMobile && <br />} pay equity and pay transparency
+              {!isMobile && <br />} – without the headache.
             </Typography>
             <Box>
               <Link href={'/demo'}>
@@ -97,12 +100,12 @@ const BookDemo = () => {
                 zIndex: -10,
                 borderRadius: '35px',
                 position: 'absolute',
-                height: '60%',
+                height: '70%',
                 width: 'fill-available',
                 background:
                   'radial-gradient(184.83% 144.26% at 27.98% -27.37%, #3860FF 0%, #152461 100%)',
                 top: 0,
-                margin: '63px -43px 25px -43px',
+                margin: '40px -43px 25px -43px',
               }}
             ></Box>
           </Box>

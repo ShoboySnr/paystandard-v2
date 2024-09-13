@@ -11,7 +11,7 @@ import 'swiper/css/pagination';
 import '../home/customerQuote.scss';
 
 // import required modules
-import { FreeMode, Pagination } from 'swiper/modules';
+import { Autoplay, FreeMode, Pagination } from 'swiper/modules';
 import { Box, Divider, Typography, useMediaQuery } from '@mui/material';
 import InvertedComma1 from '~/assets/home/customer-quotes/quotation-sign-inverted.svg';
 import InvertedComma2 from '~/assets/home/customer-quotes/quotation-sign.svg';
@@ -46,13 +46,13 @@ const CustomerQuoteUpdated = () => {
         centeredSlides={true}
         loop={true}
         autoplay={{
-          delay: 2000,
+          delay: 3000,
           disableOnInteraction: false,
         }}
         pagination={{
           clickable: true,
         }}
-        modules={[FreeMode, Pagination]}
+        modules={[FreeMode, Pagination, Autoplay]}
         className={'tw-w-full tw-px-5 tw-flex tw-justify-center tw-items-center'}
       >
         {customerQuotes.map((quote, index) => (
