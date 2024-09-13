@@ -37,9 +37,8 @@ const AppHeader = () => {
   const pathname = usePathname();
   const router = useRouter();
 
-
   useEffect(() => {
-    const calendly_callback = searchParams.get('calendly_callback')
+    const calendly_callback = searchParams.get('calendly_callback');
     if (calendly_callback) {
       setDialogOpen(true);
     } else {
@@ -51,7 +50,7 @@ const AppHeader = () => {
     setDialogOpen(false);
     const params = new URLSearchParams(searchParams.toString());
     params.delete('calendly_callback');
-    
+
     router.push(`${pathname}?${params.toString()}`);
   };
 

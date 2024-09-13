@@ -76,7 +76,7 @@ const CustomerQuoteUpdated = () => {
                     },
                     height: {
                       md: '300px',
-                      xs: '340px',
+                      xs: '200px',
                     },
                     width: { md: '745px', xs: '100%' },
                   }}
@@ -85,14 +85,14 @@ const CustomerQuoteUpdated = () => {
                   {/*commas and border work */}
                   <Image
                     className={
-                      'tw-absolute tw-top-0 tw-left-6 md:tw-top-[-10px] md:tw-left-[10px] md:tw-ml-1.5 md:tw-mt-1.5 md:tw-h-[60px] xs:tw-h-[22px] '
+                      'tw-absolute tw-top-0 tw-left-3 md:tw-top-[-10px] md:tw-left-[10px] md:tw-ml-1.5 md:tw-mt-1.5 md:tw-h-[60px] xs:tw-h-[52px] '
                     }
                     src={InvertedComma1}
                     alt={'Inverted Comma'}
                   />
                   <Image
                     className={
-                      'tw-absolute tw-bottom-0 tw-right-6 md:tw-bottom-[-10px] md:tw-right-[10px] tw-mr-1.5 tw-mb-1.5 md:tw-h-[60px] xs:tw-h-[22px]'
+                      'tw-absolute tw-bottom-0 tw-right-6 md:tw-bottom-[-10px] md:tw-right-[10px] tw-mr-[-12px] md:tw-mr-1.5 tw-mb-0 md:tw-mb-1.5 md:tw-h-[60px] xs:tw-h-[52px] '
                     }
                     src={InvertedComma2}
                     alt={'Inverted Comma'}
@@ -100,14 +100,14 @@ const CustomerQuoteUpdated = () => {
 
                   <Image
                     className={
-                      'tw-absolute tw-top-1 md:tw-top-0 md:tw-right-3 -tw-right-10 md:tw-mr-1.5 md:tw-mt-1.5 md:tw-h-[220px] xs:tw-h-[80px]'
+                      'tw-absolute tw-top-1 md:tw-top-0 md:tw-right-3 -tw-right-10 md:tw-mr-1.5 md:tw-mt-1.5 md:tw-h-[220px] xs:tw-h-[100px]'
                     }
                     src={RightTopCornerBorder}
                     alt={'Right Top Corner Border'}
                   />
                   <Image
                     className={
-                      'tw-absolute tw-bottom-1 md:tw-bottom-0 md:tw-left-3 -tw-left-10 md:tw-ml-1.5 md:tw-mb-1.5 md:tw-h-[220px] xs:tw-h-[80px]'
+                      'tw-absolute tw-bottom-1 md:tw-bottom-0 md:tw-left-3 -tw-left-10 md:tw-ml-1.5 md:tw-mb-1.5 md:tw-h-[220px] xs:tw-h-[100px]'
                     }
                     src={LeftBottomCornerBorder}
                     alt={'Left Bottom Corner Border'}
