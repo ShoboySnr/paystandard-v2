@@ -61,7 +61,6 @@ const BookDemo = () => {
             <Box>
               <Link href={'/demo'}>
                 <Button
-                  // onClick={handleDialogOpen}
                   className={'!tw-rounded-full'}
                   variant="contained"
                   sx={{ height: '44px', px: '25px' }}

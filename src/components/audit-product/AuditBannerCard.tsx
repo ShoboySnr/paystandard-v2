@@ -70,19 +70,22 @@ const AuditBannerCard = ({ title, paragraph }: { title: string; paragraph: strin
           >
             {paragraph}
           </Typography>
-          <Button
-            onClick={handleDialogOpen}
-            variant="contained"
-            sx={{
-              height: '44px',
-              width: '160px',
-              borderRadius: '33px',
-              fontSize: '16px',
-              mt: 3.5,
-            }}
-          >
-            Book a Demo
-          </Button>
+          <Link href={'#demo'}>
+            <Button
+              variant="contained"
+              sx={{
+                height: '44px',
+                width: '160px',
+                borderRadius: '33px',
+                fontSize: '16px',
+                mt: 3.5,
+              }}
+            >
+              Book a Demo
+            </Button>
+          </Link>
+          
+          
         </Grid>
       </Grid>
       <HubspotForm

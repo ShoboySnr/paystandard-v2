@@ -185,7 +185,7 @@ const IndexProduct = () => {
         {/*  />*/}
         {/*</Box>*/}
         {/*</Box>*/}
-        <Box sx={{ mt: { xs: -28, md: -14 } }}>
+        <Box sx={{ mt: { xs: -28, md: -14 } }} id="demo">
           <ScheduleDemoForm
             hubspotFormId={'0eb98f1b-af62-4c4e-8677-5c24f7b36041'}
             titleText={

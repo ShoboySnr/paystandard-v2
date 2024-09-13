@@ -83,7 +83,7 @@ const BannerCard = ({
           >
             {paragraph}
           </Typography>
-          <Link href={'/demo'}>
+          <Link href={'#demo'}>
             <Button
               variant="contained"
               sx={{

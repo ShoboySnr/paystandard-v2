@@ -137,7 +137,7 @@ const IndexProduct = () => {
           <KeyFeatures />
           <CoreBenefits data={coreBenifits} />
         </AppContainer>
-        <Box sx={{ mt: { xs: -28, md: -14 } }}>
+        <Box sx={{ mt: { xs: -28, md: -14 } }} id="demo">
           <ScheduleDemoForm
             hubspotFormId={'451c25dc-4078-4874-9318-7e7f1fa7dda5'}
             titleText={

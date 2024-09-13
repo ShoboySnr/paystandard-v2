@@ -1,6 +1,7 @@
 import { Grid } from '@mui/system';
 import { Box, Button, Typography } from '@mui/material';
 import Image, { StaticImageData } from 'next/image';
+import Link from 'next/link';
 import ProfileCard from '@/components/aboutUs/ProfileCard';
 import leadingOrg1 from '~/assets/leading-organizations/image1_dark.png';
 import leadingOrg2 from '~/assets/leading-organizations/image2_dark.png';
@@ -269,13 +270,16 @@ const AboutUs = () => {
                 pay worldwide.
               </Typography>
               <Box sx={{ mt: '60px' }}>
+              <Link href={'mailto: hello@paystandards.com'}>
                 <Button
-                  className={'!tw-rounded-full'}
-                  variant="contained"
-                  sx={{ height: '44px', px: '25px' }}
-                >
-                  Explore Openings
-                </Button>
+                    className={'!tw-rounded-full'}
+                    variant="contained"
+                    sx={{ height: '44px', px: '25px' }}
+                  >
+                    Explore Openings
+                  </Button>
+              </Link>
+                
               </Box>
             </Grid>
           </Grid>
