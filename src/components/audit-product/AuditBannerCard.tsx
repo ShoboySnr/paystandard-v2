@@ -70,7 +70,7 @@ const AuditBannerCard = ({ title, paragraph }: { title: string; paragraph: strin
           >
             {paragraph}
           </Typography>
-          <Link href={'#demo'}>
+          <Link href={'demo'}>
             <Button
               variant="contained"
               sx={{
@@ -84,8 +84,6 @@ const AuditBannerCard = ({ title, paragraph }: { title: string; paragraph: strin
               Book a Demo
             </Button>
           </Link>
-          
-          
         </Grid>
       </Grid>
       <HubspotForm

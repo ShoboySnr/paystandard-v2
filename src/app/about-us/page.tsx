@@ -270,16 +270,15 @@ const AboutUs = () => {
                 pay worldwide.
               </Typography>
               <Box sx={{ mt: '60px' }}>
-              <Link href={'mailto: hello@paystandards.com'}>
-                <Button
+                <Link href={'mailto: hello@paystandards.com'}>
+                  <Button
                     className={'!tw-rounded-full'}
                     variant="contained"
                     sx={{ height: '44px', px: '25px' }}
                   >
                     Explore Openings
                   </Button>
-              </Link>
-                
+                </Link>
               </Box>
             </Grid>
           </Grid>

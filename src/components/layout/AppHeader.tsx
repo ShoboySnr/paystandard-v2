@@ -129,26 +129,25 @@ const AppHeader = () => {
                     >
                       <Image height={18} priority src={AppLogo} alt="Pay Standards" />
                       <Box>
-                      <Link href={'/demo'}>
-                        <Button
-                          sx={{
-                            height: {
-                              xs: '30px',
-                              md: '62px',
-                            },
-                            fontSize: {
-                              xs: '12px',
-                              md: '20px',
-                            },
-                            mr: 1.5,
-                          }}
-                          variant="contained"
-                          className={'!tw-rounded-full'}
-                        >
-                          Book a Demo
-                        </Button>
-                      </Link>
-                        
+                        <Link href={'/demo'}>
+                          <Button
+                            sx={{
+                              height: {
+                                xs: '30px',
+                                md: '62px',
+                              },
+                              fontSize: {
+                                xs: '12px',
+                                md: '20px',
+                              },
+                              mr: 1.5,
+                            }}
+                            variant="contained"
+                            className={'!tw-rounded-full'}
+                          >
+                            Book a Demo
+                          </Button>
+                        </Link>
                         <IconButton
                           sx={{
                             height: '30px',
@@ -321,18 +320,17 @@ const AppHeader = () => {
                 </Button>
                 <Link href={'/demo'}>
                   <Button
-                      sx={{
-                        height: '100%',
-                        px: { xs: '20px', md: '40px' },
-                        fontSize: { xs: '12px', md: '20px' },
-                      }}
-                      className={'!tw-rounded-full'}
-                      variant="contained"
-                    >
-                      Book a Demo
+                    sx={{
+                      height: '100%',
+                      px: { xs: '20px', md: '40px' },
+                      fontSize: { xs: '12px', md: '20px' },
+                    }}
+                    className={'!tw-rounded-full'}
+                    variant="contained"
+                  >
+                    Book a Demo
                   </Button>
                 </Link>
-                
               </Box>
             </Toolbar>
             <Box sx={{ display: { xs: 'block', md: 'none' } }}>
