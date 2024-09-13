@@ -47,7 +47,8 @@ const coreBenifits: { icon: string; text: string }[] = [
 
 export const metadata: Metadata = {
   title: 'Pay Pilot',
-  description: 'Pay Pilot helps you make better everyday pay decisions to sustain your pay equity progress through an easy-to-use software platform',
+  description:
+    'Pay Pilot helps you make better everyday pay decisions to sustain your pay equity progress through an easy-to-use software platform',
 };
 
 const IndexProduct = () => {

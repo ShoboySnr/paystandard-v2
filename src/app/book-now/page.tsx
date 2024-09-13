@@ -11,7 +11,6 @@ export const metadata: Metadata = {
   description: 'Booking a Discovery Call and Demo is Quick and Easy',
 };
 
-
 const BookNow = () => {
   return (
     <>

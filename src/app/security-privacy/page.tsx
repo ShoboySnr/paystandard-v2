@@ -12,7 +12,8 @@ import Concern from '@/components/securityAndPrivacy/Concern';
 
 export const metadata: Metadata = {
   title: 'Security and Privacy at PayStandards',
-  description: 'Security is at the heart of what we do—our security and compliance posture is critical to our business',
+  description:
+    'Security is at the heart of what we do—our security and compliance posture is critical to our business',
 };
 
 const SecurityAndPrivacy = () => {

@@ -21,7 +21,7 @@ import HubspotContactUs from '@/components/contact-us/HubspotContactUs';
 import NewsletterForm from './NewsletterForm';
 
 export const metadata: Metadata = {
-  title: 'Let\'s Connect',
+  title: `"Let's·Connect"`,
   description: 'Have questions? Need support? Curious about PayStandards?',
 };
 

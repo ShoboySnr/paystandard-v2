@@ -60,7 +60,8 @@ const coreBenifits = [
 
 export const metadata: Metadata = {
   title: 'Pay Audit',
-  description: 'Pay Audit empowers you to make data-driven pay decisions during your annual year-end compensation process, optimizing your compensation budget.',
+  description:
+    'Pay Audit empowers you to make data-driven pay decisions during your annual year-end compensation process, optimizing your compensation budget.',
 };
 
 const AuditProduct = () => {

@@ -58,9 +58,9 @@ import image from '~/assets/products/video-image.png';
 
 export const metadata: Metadata = {
   title: 'Pay Index',
-  description: 'Pay Index gives you standardized ratings, trends, and root-cause analytics that illuminate your company’s pay equity position.',
+  description:
+    'Pay Index gives you standardized ratings, trends, and root-cause analytics that illuminate your company’s pay equity position.',
 };
-
 
 const IndexProduct = () => {
   return (

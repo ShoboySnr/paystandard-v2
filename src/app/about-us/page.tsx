@@ -18,7 +18,6 @@ export const metadata: Metadata = {
   description: 'Pay for the Right Things. Drive the Bottom Line',
 };
 
-
 const AboutUs = () => {
   return (
     <>

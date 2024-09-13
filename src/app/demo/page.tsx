@@ -19,7 +19,8 @@ import HubspotDemoForm from '@/components/demo/HubspotDemoForm';
 
 export const metadata: Metadata = {
   title: 'Schedule a Demo',
-  description: 'Get a live look into the PayStandards platform and learn how your organization can leverage real-time analytics',
+  description:
+    'Get a live look into the PayStandards platform and learn how your organization can leverage real-time analytics',
 };
 
 const Demo = () => {
