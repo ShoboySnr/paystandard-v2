@@ -9,10 +9,9 @@ import 'swiper/css';
 import 'swiper/css/free-mode';
 import 'swiper/css/pagination';
 import '../home/customerQuote.scss';
-import 'swiper/css/navigation';
 
 // import required modules
-import { FreeMode, Pagination, Navigation } from 'swiper/modules';
+import { FreeMode, Pagination } from 'swiper/modules';
 import { Box, Divider, Typography, useMediaQuery } from '@mui/material';
 
 import CustomerImage from '~/assets/home/customer-quotes/image1.png';
@@ -20,15 +19,21 @@ import Image from 'next/image';
 
 const customerQuotes = [
   {
-    title: 'The user experience is seamless.',
-    description: 'Head of Compensation',
-    subtitle: 'Private Technology Company',
+    title: 'This is a huge unlock.',
+    description: 'Head of Total Rewards',
+    subtitle: 'Fortune 100 Industrial Company',
     image: CustomerImage,
   },
   {
-    title: 'This is the nirvana of pay.',
+    title: 'The user experience is seamless.',
+    description: 'Head of Compensation',
+    subtitle: 'Fortune 500 services company',
+    image: CustomerImage,
+  },
+  {
+    title: 'PayStandards is the nirvana of pay.',
     description: 'Head of Total Rewards',
-    subtitle: 'Fortune 100 200 Financial Company',
+    subtitle: 'Fortune 200 Financial Company',
     image: CustomerImage,
   },
 ];
@@ -44,8 +49,7 @@ const CustomerQuote = () => {
         pagination={{
           clickable: true,
         }}
-        navigation={true}
-        modules={[FreeMode, Pagination, Navigation]}
+        modules={[FreeMode, Pagination]}
         className={'tw-w-full tw-px-5'}
       >
         {customerQuotes.map((quote, index) => (
@@ -74,12 +78,12 @@ const CustomerQuote = () => {
                   src={quote.image}
                   alt="image.png"
                   className={
-                    'tw-h-[170px] tw-object-cover tw-mt-0 tw-w-full tw-rounded-[10px] md:tw-h-[300px] md:tw-w-[196px] md:tw-rounded-[35px]'
+                    'tw-h-[160px] tw-object-cover tw-mt-0 tw-w-full tw-rounded-[10px] md:tw-h-[300px] md:tw-w-[196px] md:tw-rounded-[35px]'
                   }
                 />
                 <Box
                   sx={{
-                    padding: { lg: '50px', md: '20px', xs: '20px 22px 0px' },
+                    padding: { lg: '50px', md: '20px', xs: '15px 22px 0px' },
                     // minWidth: {
                     //   md: '500px',
                     // },
@@ -97,7 +101,7 @@ const CustomerQuote = () => {
                   </Typography>
                   <Divider
                     sx={{
-                      my: { md: '10px', xs: '14px' },
+                      my: { md: '10px', xs: '10px' },
                       mx: { xs: 'auto', md: '0' },
                       borderColor: 'primary.main',
                       width: { md: '100px', xs: '134px' },

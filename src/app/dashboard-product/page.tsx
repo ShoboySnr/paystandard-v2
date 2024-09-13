@@ -63,7 +63,7 @@ const IndexProduct = () => {
               sx={{
                 textAlign: 'center',
                 pt: { xs: 6, lg: 12 },
-                color: '#283167',
+                color: 'black.main',
               }}
             >
               <Image width={71} src={PayPilotIcon} alt="Pay Index" className="tw-m-auto" />

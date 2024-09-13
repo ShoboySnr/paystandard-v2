@@ -49,16 +49,16 @@ const KeyFeatures = () => {
                 fontWeight: '700',
                 mb: 2.5,
                 mt: 1.5,
-                color: 'black',
+                color: 'black.main',
               }}
             >
-              Standardized Rating
+              Access Standardized Rating
             </Typography>
             <Typography
               sx={{
                 fontSize: '20px',
                 fontWeight: '400',
-                color: 'black',
+                color: 'black.main',
                 mt: 2,
                 mb: 2,
               }}
@@ -115,7 +115,7 @@ const KeyFeatures = () => {
               <Image
                 src={Rating}
                 alt="standard rating"
-                className="tw-absolute tw-bottom-[-1px] tw-h-[242px] tw-w-auto md:tw-h-[347px]"
+                className="tw-absolute tw-bottom-[0px] tw-h-[242px] tw-w-auto md:tw-h-[347px]"
               />
             </Box>
           </Grid>
@@ -179,16 +179,16 @@ const KeyFeatures = () => {
                 fontSize: '28px',
                 fontWeight: '700',
                 mb: 3,
-                color: 'black',
+                color: 'black.main',
               }}
             >
-              Graphical Representation
+              Assess Trends
             </Typography>
             <Typography
               sx={{
                 fontSize: '20px',
                 fontWeight: '400',
-                color: 'black',
+                color: 'black.main',
               }}
             >
               Visualize the current and future state of pay equity across a company’s workforce.
@@ -238,16 +238,16 @@ const KeyFeatures = () => {
                 fontSize: '28px',
                 fontWeight: '700',
                 mb: 3,
-                color: 'black',
+                color: 'black.main',
               }}
             >
-              Root Cause Analysis
+              Diagnose Root Cause
             </Typography>
             <Typography
               sx={{
                 fontSize: '20px',
                 fontWeight: '400',
-                color: 'black',
+                color: 'black.main',
               }}
             >
               See and assess root causes to identify specific actions to take.
@@ -343,7 +343,7 @@ const KeyFeatures = () => {
                 fontSize: '28px',
                 fontWeight: '700',
                 mb: 3,
-                color: 'black',
+                color: 'black.main',
               }}
             >
               Facilitate Disclosure
@@ -352,7 +352,7 @@ const KeyFeatures = () => {
               sx={{
                 fontSize: '20px',
                 fontWeight: '400',
-                color: 'black',
+                color: 'black.main',
               }}
             >
               Automate your pay gap reporting for your Board and the public.

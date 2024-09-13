@@ -8,10 +8,9 @@ import theme from '@/theme';
 import 'swiper/css';
 import 'swiper/css/pagination';
 import '../home/customerQuote.scss';
-import 'swiper/css/navigation';
 
 // import required modules
-import { FreeMode, Pagination, Navigation } from 'swiper/modules';
+import { FreeMode, Pagination } from 'swiper/modules';
 import { Box, Divider, Typography, useMediaQuery } from '@mui/material';
 import InvertedComma1 from '~/assets/home/customer-quotes/quotation-sign-inverted.svg';
 import InvertedComma2 from '~/assets/home/customer-quotes/quotation-sign.svg';
@@ -21,14 +20,19 @@ import Image from 'next/image';
 
 const customerQuotes = [
   {
-    title: 'The user experience is seamless.',
-    designation: 'Head of Compensation',
-    subtitle: 'Private Technology Company',
+    title: 'This is a huge unlock.',
+    designation: 'Head of Total Rewards',
+    subtitle: 'Fortune 100 Industrial Company',
   },
   {
-    title: 'This is the nirvana of pay.',
+    title: 'The user experience is seamless.',
+    designation: 'Head of Compensation',
+    subtitle: 'Fortune 500 services company',
+  },
+  {
+    title: 'PayStandards is the nirvana of pay.',
     designation: 'Head of Total Rewards',
-    subtitle: 'Fortune 100 200 Financial Company',
+    subtitle: 'Fortune 200 Financial Company',
   },
 ];
 
@@ -43,8 +47,7 @@ const CustomerQuoteUpdated = () => {
         pagination={{
           clickable: true,
         }}
-        navigation={true}
-        modules={[FreeMode, Pagination, Navigation]}
+        modules={[FreeMode, Pagination]}
         className={'tw-w-full tw-px-5 tw-flex tw-justify-center tw-items-center'}
       >
         {customerQuotes.map((quote, index) => (
@@ -82,14 +85,14 @@ const CustomerQuoteUpdated = () => {
                   {/*commas and border work */}
                   <Image
                     className={
-                      'tw-absolute tw-top-0 tw-left-6 md:tw-top-0 md:tw-left-0 md:tw-ml-1.5 md:tw-mt-1.5 md:tw-h-[60px] xs:tw-h-[22px] '
+                      'tw-absolute tw-top-0 tw-left-6 md:tw-top-[-10px] md:tw-left-[10px] md:tw-ml-1.5 md:tw-mt-1.5 md:tw-h-[60px] xs:tw-h-[22px] '
                     }
                     src={InvertedComma1}
                     alt={'Inverted Comma'}
                   />
                   <Image
                     className={
-                      'tw-absolute tw-bottom-0 tw-right-6 md:tw-bottom-0 md:tw-right-0 tw-mr-1.5 tw-mb-1.5 md:tw-h-[60px] xs:tw-h-[22px]'
+                      'tw-absolute tw-bottom-0 tw-right-6 md:tw-bottom-[-10px] md:tw-right-[10px] tw-mr-1.5 tw-mb-1.5 md:tw-h-[60px] xs:tw-h-[22px]'
                     }
                     src={InvertedComma2}
                     alt={'Inverted Comma'}

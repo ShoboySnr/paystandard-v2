@@ -18,7 +18,7 @@ import CoreBenefits from '@/components/product/CoreBenefits';
 import styles from '@/app/_scss/global.module.scss';
 
 const bannerCardContent: { title: string; paragraph: string } = {
-  title: 'Power Your Year-End Pay Process',
+  title: 'Power Your Year–End Pay Process',
   paragraph:
     'Pay Audit is your go-to solution for the year-end compensation review process - including all features and benefits from the Pay Index and more. It empowers you to take action to make better pay decisions at year-end, protecting you with legal safeguards along the way, helping you to mitigate your legal risk, and optimizing your spend.',
 };
@@ -33,7 +33,7 @@ const quoteCardContent = {
 const coreBenifits = [
   {
     icon: Icon6,
-    text: 'Make Better Overall Pay Decisions at Year-End',
+    text: 'Make Better Overall Pay Decisions at Year–End',
   },
   {
     icon: Icon7,
@@ -75,7 +75,7 @@ const AuditProduct = () => {
             sx={{
               textAlign: 'center',
               pt: { xs: 6, lg: 12 },
-              color: 'deep-blue-secondary.main',
+              color: 'black.main',
             }}
           >
             <Image width={71} src={IndexIcon} alt="Pay Index" className="tw-m-auto" />
@@ -110,9 +110,8 @@ const AuditProduct = () => {
                 fontSize: { xs: '18px', lg: '24px' },
               }}
             >
-              Pay Audit lets you make smarter, more empowered pay decisions during your annual
-              year-end compensation review process - closing pay gaps with greater insight and
-              visibility.
+              Pay Audit empowers you to make data-driven pay decisions during your annual year-end
+              compensation process, optimizing your compensation budget.
             </Box>
           </Box>
         </AppContainer>
@@ -198,7 +197,7 @@ const AuditProduct = () => {
                 pt: 2,
               }}
             >
-              Learn How to Leverage Pay Audit to Simplify the <br /> Year-End Pay Process at Your
+              Learn How to Leverage Pay Audit to Simplify the <br /> Year–End Pay Process at Your
               Company
               {/*Learn How to Leverage the Pay Audit*/}
               {/*<span className={'tw-size-32 tw-font-normal'}>™ </span> <br /> at Your Company*/}

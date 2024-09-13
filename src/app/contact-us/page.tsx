@@ -84,7 +84,7 @@ export default function Contact() {
                       fontSize: { xs: '18px' },
                       fontWeight: { xs: '400' },
                       textAlign: { xs: 'center', md: 'left' },
-                      color: 'dark-gray.main',
+                      color: 'black.main',
                       my: { md: '16px', xs: '70px' },
                     }}
                   >
@@ -129,7 +129,6 @@ export default function Contact() {
                     sx={{
                       fontSize: '18px',
                       fontWeight: '400',
-                      color: '#283167',
                     }}
                   >
                     Let’s talk about how we might work together! PayStandards can be a great
@@ -148,7 +147,7 @@ export default function Contact() {
                         startIcon={<MailOutlineIcon />}
                         // @ts-ignore
                         color="black.main"
-                        className={'!tw-rounded-full tw-text-black tw-border-pink'}
+                        className={'!tw-rounded-full tw-border-pink'}
                         variant="outlined"
                       >
                         partner@paystandards.com
@@ -191,7 +190,7 @@ export default function Contact() {
                   fontSize: '24px',
                   fontWeight: '400',
                   margin: 'auto 0 4px 0',
-                  color: '#283167',
+                  color: 'black.main',
                   textAlign: { xs: 'center', md: 'left' },
                 }}
               >

@@ -51,7 +51,7 @@ const BookDemo = () => {
                 fontSize: { md: '32px', xs: '28px' },
                 textAlign: { md: 'left', xs: 'center' },
                 fontWeight: '700',
-                color: 'deep-blue.main',
+                color: 'black.main',
               }}
             >
               Learn how you can achieve true

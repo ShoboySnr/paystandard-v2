@@ -29,7 +29,7 @@ const listItemHeadingStyle = {
 const descriptionStyle = {
   fontSize: '14px',
   fontWeight: '400',
-  color: 'rgba(255, 255, 255, 0.60)',
+  color: 'white.main',
 };
 
 const AppFooter = () => {
@@ -101,7 +101,7 @@ const AppFooter = () => {
                 <React.Fragment key={index}>
                   <ListItem sx={listItemHeadingStyle}>{page.name}</ListItem>
                   {page.menuItems.map((item, i) => (
-                    <Link key={i} href={item.link} passHref>
+                    <Link key={i} href={item.link} passHref target={item?.target} rel={item?.rel}>
                       <ListItemButton sx={itemSpacing}>
                         <ListItemText
                           sx={listItemButtonStyle}
@@ -213,7 +213,7 @@ const AppFooter = () => {
             <Image priority height={80} src={BrandingLogo} alt="Pay Standards" />
             <p className={'tw-text-center md:tw-text-left'}>
               PayStandards&#39; successful SOC 2 Type II report was issued by Prescient Assurance
-              <br /> and is actively monitored by Vanta. PayStandards is also GDPR Compliant.
+              <br /> and is actively monitored by Vanta.
             </p>
           </Box>
         </Grid>

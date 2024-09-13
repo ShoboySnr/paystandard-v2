@@ -15,7 +15,12 @@ export const HeaderMenu = [
       { label: 'About PayStandards', link: '/about-us' },
       { label: 'Contact Us', link: '/contact-us' },
       { label: 'Security & Privacy', link: '/security-privacy' },
-      { label: 'Trust Center', link: '/trust-center' },
+      {
+        label: 'Trust Center',
+        link: 'https://trust.paystandards.com/',
+        target: '_blank',
+        rel: 'noopener noreferrer',
+      },
     ],
   },
 ];
@@ -37,7 +42,12 @@ export const FooterMenu = [
       { label: 'About PayStandards', link: '/about-us' },
       { label: 'Contact Us', link: '/contact-us' },
       { label: 'Security & Privacy', link: '/security-privacy' },
-      { label: 'Trust Center', link: '/trust-center' },
+      {
+        label: 'Trust Center',
+        link: 'https://trust.paystandards.com/',
+        target: '_blank',
+        rel: 'noopener noreferrer',
+      },
     ],
   },
   {
@@ -46,7 +56,7 @@ export const FooterMenu = [
     menuItems: [
       { label: 'Privacy Policy', link: '/privacy-policy' },
       { label: 'Terms of Service', link: '/terms-of-service' },
-      { label: 'Master Service Agreement', link: '/master-service-agreement' },
+      // { label: 'Master Service Agreement', link: '/master-service-agreement' },
     ],
   },
 ];

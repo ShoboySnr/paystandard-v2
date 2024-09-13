@@ -18,7 +18,7 @@ export default function TermsOfService() {
               mb: { xs: '15px', md: '0' },
               fontSize: { md: '40px', xs: '32px' },
               fontWeight: 400,
-              color: 'dark-purple.main',
+              color: 'black.main',
               textAlign: 'center',
             }}
           >

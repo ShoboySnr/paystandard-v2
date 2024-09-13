@@ -63,7 +63,7 @@ const Pillars = () => {
     <Grid
       container
       sx={{
-        color: '#283167',
+        color: 'black.main',
       }}
     >
       <Grid size={12} sx={{ px: { md: '0', xs: '15px' } }}>
@@ -342,7 +342,11 @@ const Pillars = () => {
             </Box>
           </Grid>
           <Grid size={12} alignSelf={'self-end'} sx={{ mt: '20px' }}>
-            <Link href={'/trust-center'}>
+            <Link
+              href={'https://trust.paystandards.com/'}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               <Typography sx={{ fontSize: '18px', fontWeight: '500', display: 'flex' }}>
                 <span className={'tw-mr-2'}>Trust Center</span>
                 <HoverableImage

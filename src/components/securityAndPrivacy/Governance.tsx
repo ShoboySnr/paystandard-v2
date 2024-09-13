@@ -43,6 +43,7 @@ const Governance = () => {
               fontWeight: '400',
               margin: 'auto 0 2px 0',
               padding: '0 0 10px 0',
+              color: 'black.main',
             }}
           >
             Governance

@@ -56,6 +56,7 @@ const AuditBannerCard = ({ title, paragraph }: { title: string; paragraph: strin
               fontSize: '32px',
               fontWeight: '400',
               lineHeight: '125%',
+              color: 'black.main',
             }}
           >
             {title}
@@ -66,6 +67,7 @@ const AuditBannerCard = ({ title, paragraph }: { title: string; paragraph: strin
               fontSize: { xs: '18px', md: '20px' },
               fontWeight: '400',
               lineHeight: '150%',
+              color: 'black.main',
             }}
           >
             {paragraph}

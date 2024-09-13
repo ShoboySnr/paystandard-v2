@@ -26,12 +26,14 @@ export default function RootLayout({
           <ThemeProvider theme={theme}>
             <AppHeader />
             <Box
-              sx={{
-                mt: {
-                  md: '115px',
-                  xs: '50px',
-                },
-              }}
+            // sx={
+            //   {
+            //     mt: {
+            //       md: '115px',
+            //       xs: '50px',
+            //     },
+            //   }
+            // }
             >
               <main>{children}</main>
             </Box>

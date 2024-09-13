@@ -58,10 +58,11 @@ const AuditKeyFeatures = () => {
               sx={{
                 fontSize: '20px',
                 fontWeight: '400',
-                color: 'black',
+                color: 'black.main',
               }}
             >
-              Transcend summary statistics and get pay equity right for your employees.
+              Transcend average-based summary statistics and view outlier-resistant metrics to get
+              pay equity right for your employees.
             </Typography>
             {/*<Link href={'/about-us'}>*/}
             {/*  <Typography*/}
@@ -102,18 +103,18 @@ const AuditKeyFeatures = () => {
             }}
           >
             <Box
-              className="tw-relative tw-h-[214px] tw-w-full tw-rounded-[35px] md:tw-h-[278px] md:tw-w-full"
+              className="tw-relative tw-h-[214px] tw-w-full tw-rounded-[35px] md:tw-h-[300px] md:tw-w-full"
               sx={{
                 display: 'flex',
                 justifyContent: 'center',
                 background: 'linear-gradient(162deg, #3860FF 6.11%, #090C1A 95.04%)',
-                mb: -1.5,
+                mb: -0.5,
               }}
             >
               <Image
                 src={Rating}
                 alt="standard rating"
-                className="tw-absolute tw-bottom-[-1px] tw-h-[245px] md:tw-h-[317px] tw-w-full"
+                className="tw-absolute tw-bottom-0 tw-h-[265px] md:tw-h-[339px] tw-w-full"
               />
             </Box>
           </Grid>
@@ -178,7 +179,7 @@ const AuditKeyFeatures = () => {
                 fontSize: '28px',
                 fontWeight: '700',
                 mb: 3,
-                color: 'black',
+                color: 'black.main',
               }}
             >
               Choose A Strategy
@@ -187,7 +188,7 @@ const AuditKeyFeatures = () => {
               sx={{
                 fontSize: '20px',
                 fontWeight: '400',
-                color: 'black',
+                color: 'black.main',
               }}
             >
               Leverage your data to go beyond market comps with a new way to value your employees –
@@ -238,7 +239,7 @@ const AuditKeyFeatures = () => {
                 fontSize: '28px',
                 fontWeight: '700',
                 mb: 3,
-                color: 'black',
+                color: 'black.main',
               }}
             >
               Make Better Pay Decisions
@@ -247,10 +248,11 @@ const AuditKeyFeatures = () => {
               sx={{
                 fontSize: '20px',
                 fontWeight: '400',
-                color: 'black',
+                color: 'black.main',
               }}
             >
-              Value your employees appropriately – and mitigate your legal risk.
+              View discrepancies at the individual employee level – value your employees
+              appropriately while mitigating your legal risk.
             </Typography>
             <Divider
               sx={{
@@ -275,10 +277,10 @@ const AuditKeyFeatures = () => {
                 sx={{
                   background: 'linear-gradient(108deg, #3860FF 0%, #152461 100%)',
                   borderRadius: '35px',
-                  height: { xs: '250px', md: '105%' },
+                  height: { xs: '250px', md: '345px' },
                   width: '80%',
                   position: 'absolute',
-                  top: '49%',
+                  top: '43.2%',
                   right: -1,
                   transform: 'translateY(-50%)',
                   zIndex: 1,
@@ -288,14 +290,14 @@ const AuditKeyFeatures = () => {
                 sx={{
                   zIndex: 2,
                   position: 'absolute',
-                  top: { md: '-3%', xs: '5%' },
-                  right: -3,
+                  top: { md: '-3%', xs: '-4%' },
+                  right: { xs: -1, md: -2 },
                 }}
               >
                 <Image
                   src={Decision}
                   alt="standard rating"
-                  className="tw-w-[366px] md:tw-w-[476px] md:tw-h-[343px] tw-h-[217px]"
+                  className="tw-w-[366px] md:tw-w-[476px] md:tw-h-[343px] tw-h-[235px] "
                 />
               </Box>
             </Box>
@@ -393,8 +395,8 @@ const AuditKeyFeatures = () => {
                 color: 'black',
               }}
             >
-              Understand your legal risk posture how decisions are affecting your legal risk –
-              across jurisdictions.
+              Close the gap while driving the bottom line by making overall better pay decisions
+              that create pay equity.
             </Typography>
 
             <Divider

@@ -40,6 +40,7 @@ const Banner = () => {
               xs: '32px',
             },
             fontWeight: 'bold',
+            color: 'black.main',
           }}
         >
           Pay for the Right Things. Drive the <u> Bottom Line. </u>
@@ -49,7 +50,7 @@ const Banner = () => {
             fontSize: '18px',
             fontWeight: 'normal',
             mt: '16px',
-            color: 'black',
+            color: 'black.main',
           }}
         >
           <Box
@@ -75,7 +76,7 @@ const Banner = () => {
               }}
             >
               The PayStandards platform gives you pay recommendations that consider only the right
-              things, like performance, while helping you save time, stay compliant, optimize your
+              things, like performance, helping you save time, stay compliant, and optimize your
               company’s most important expense and asset – your people.
             </Typography>
           </Box>
@@ -132,6 +133,7 @@ const Banner = () => {
             },
             mt: '50px',
             borderRadius: '25px',
+            color: 'black.main',
             backgroundColor: 'rgba(255, 255, 255, 0.80)',
           }}
         >

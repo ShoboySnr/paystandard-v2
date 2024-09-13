@@ -74,7 +74,7 @@ const IndexProduct = () => {
               sx={{
                 textAlign: 'center',
                 pt: { xs: 6, lg: 12 },
-                color: '#283167',
+                color: 'black.main',
               }}
             >
               <Image width={71} src={IndexIcon} alt="Pay Index" className="tw-m-auto" />
@@ -109,8 +109,8 @@ const IndexProduct = () => {
                   fontSize: { xs: '18px', lg: '24px' },
                 }}
               >
-                Access standardized ratings, trends, and root-cause analytics that guide you through
-                your company’s current pay equity position.
+                Pay Index gives you standardized ratings, trends, and root-cause analytics that
+                illuminate your company’s pay equity position.
               </Box>
             </Box>
           </AppContainer>
@@ -195,6 +195,7 @@ const IndexProduct = () => {
                   fontWeight: '700',
                   textAlign: 'center',
                   lineHeight: '140%',
+                  color: 'black.main',
                   pt: 2,
                 }}
               >

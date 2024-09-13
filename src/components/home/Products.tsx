@@ -1,9 +1,15 @@
+'use client';
 import { Box, Typography } from '@mui/material';
-import Image from 'next/image';
+import Image, { StaticImageData } from 'next/image';
 import IndexImage from '~/assets/home/index.svg';
+import IndexImageHovered from '~/assets/home/indexHovered.svg';
 import AuditImage from '~/assets/home/audit.svg';
+import AuditImageHovered from '~/assets/home/auditHovered.svg';
 import PilotImage from '~/assets/home/pilot.svg';
+import PilotImageHovered from '~/assets/home/pilotHovered.svg';
+
 import Link from 'next/link';
+import { useState } from 'react';
 
 const imageSectionStyling = {
   display: 'flex',
@@ -13,7 +19,45 @@ const imageSectionStyling = {
   gap: '5px',
 };
 
+interface HoverableIconProps {
+  lightImage: StaticImageData;
+  hoveredImage: StaticImageData;
+  altText: string;
+  isHovered: Boolean;
+  title: string;
+}
+
+const HoveredIcon: React.FC<HoverableIconProps> = ({
+  lightImage,
+  hoveredImage,
+  altText,
+  isHovered,
+  title,
+}) => {
+  return (
+    <>
+      <Image
+        className={'tw-h-[50px] tw-w-[50px] md:tw-h-[70px] md:tw-w-[70px] tw-mx-auto'}
+        src={isHovered ? hoveredImage : lightImage}
+        alt={altText}
+      />
+      <Typography
+        sx={{
+          fontSize: '18px',
+          fontWeight: '500',
+          mt: '10px',
+          color: isHovered ? '#3860FF' : 'white',
+        }}
+      >
+        {title}
+      </Typography>
+    </>
+  );
+};
+
 const Products = () => {
+  const [isHovered, setIsHovered] = useState<number | null>(null);
+
   return (
     <Box
       sx={{
@@ -35,7 +79,7 @@ const Products = () => {
           flex: '6',
         }}
       >
-        <img src="/assets/home/portal-ss.png" alt="portal-ss.png" />
+        <img src="/assets/home/portal-ss-updated.png" alt="portal-ss.png" />
       </Box>
       <Box
         sx={{
@@ -71,39 +115,48 @@ const Products = () => {
         </Box>
         <Box sx={{ mt: '66px', display: 'flex', justifyContent: 'space-around', color: '#fff' }}>
           <Box sx={imageSectionStyling}>
-            <Link href={'/index-product'}>
-              <Image
-                className={'tw-h-[50px] tw-w-[50px] md:tw-h-[70px] md:tw-w-[70px]'}
-                src={IndexImage}
-                alt="image"
+            <Link
+              href={'/index-product'}
+              onMouseEnter={() => setIsHovered(1)}
+              onMouseLeave={() => setIsHovered(null)}
+            >
+              <HoveredIcon
+                lightImage={IndexImage}
+                hoveredImage={IndexImageHovered}
+                altText="image"
+                isHovered={isHovered === 1}
+                title="Pay Index"
               />
-              <Typography sx={{ fontSize: '18px', fontWeight: '500', mt: '10px' }}>
-                Pay Index
-              </Typography>
             </Link>
           </Box>
           <Box sx={imageSectionStyling}>
-            <Link href={'/audit-product'}>
-              <Image
-                className={'tw-h-[50px] tw-w-[50px] md:tw-h-[70px] md:tw-w-[70px]'}
-                src={AuditImage}
-                alt="image"
+            <Link
+              href={'/audit-product'}
+              onMouseEnter={() => setIsHovered(2)}
+              onMouseLeave={() => setIsHovered(null)}
+            >
+              <HoveredIcon
+                lightImage={AuditImage}
+                hoveredImage={AuditImageHovered}
+                altText="image"
+                isHovered={isHovered === 2}
+                title="Pay Audit"
               />
-              <Typography sx={{ fontSize: '18px', fontWeight: '500', mt: '10px' }}>
-                Pay Audit
-              </Typography>
             </Link>
           </Box>
           <Box sx={imageSectionStyling}>
-            <Link href={'/dashboard-product'}>
-              <Image
-                className={'tw-h-[50px] tw-w-[50px] md:tw-h-[70px] md:tw-w-[70px]'}
-                src={PilotImage}
-                alt="image"
+            <Link
+              href={'/dashboard-product'}
+              onMouseEnter={() => setIsHovered(3)}
+              onMouseLeave={() => setIsHovered(null)}
+            >
+              <HoveredIcon
+                lightImage={PilotImage}
+                hoveredImage={PilotImageHovered}
+                altText="image"
+                isHovered={isHovered === 3}
+                title="Pay Pilot"
               />
-              <Typography sx={{ fontSize: '18px', fontWeight: '500', mt: '10px' }}>
-                Pay Pilot
-              </Typography>
             </Link>
           </Box>
         </Box>

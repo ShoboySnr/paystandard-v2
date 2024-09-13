@@ -52,7 +52,7 @@ const AboutUs = () => {
                 xs: '32px',
               },
               fontWeight: '700',
-              color: 'deep-blue-secondary.main',
+              color: 'black.main',
             }}
           >
             Our Mission is to
@@ -68,7 +68,7 @@ const AboutUs = () => {
               fontWeight: '400',
               margin: 'auto 2px 2px 2px',
               lineHeight: '33.6px',
-              color: 'deep-blue-secondary.main',
+              color: 'black.main',
             }}
           >
             PayStandards is the bottom line-driven compensation software platform that delivers true

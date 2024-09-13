@@ -39,7 +39,7 @@ const KeyFeatures = () => {
               pb: 7,
               pl: { xs: 0, md: 6.5 },
               pr: { xs: 0, md: 0 },
-              color: 'deep-blue-secondary.main',
+              color: 'black.main',
             }}
           >
             <Typography

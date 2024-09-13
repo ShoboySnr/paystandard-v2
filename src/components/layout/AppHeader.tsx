@@ -67,7 +67,7 @@ const AppHeader = () => {
   };
   return (
     <header>
-      <AppBar position="fixed" sx={{ backgroundColor: 'transparent' }}>
+      <AppBar position="static" sx={{ backgroundColor: 'transparent' }}>
         <Container
           maxWidth="lg"
           sx={{
@@ -95,7 +95,7 @@ const AppHeader = () => {
                 borderColor: 'gray.main',
                 borderRadius: '38px',
                 pl: { xs: '20px', md: '40px' },
-                backgroundColor: '#FAFAFA',
+                backgroundColor: '#FFF',
               }}
               disableGutters
             >
@@ -193,7 +193,10 @@ const AppHeader = () => {
                                     >
                                       <ListItemText
                                         primary={item.label}
-                                        className="tw-text-dark-gray"
+                                        sx={{
+                                          color: 'black.main',
+                                        }}
+                                        className="tw-text-black"
                                       />
                                     </ListItemButton>
                                   </Link>
@@ -227,12 +230,16 @@ const AppHeader = () => {
                                     <ListItemButton
                                       sx={{
                                         paddingLeft: '0',
+                                        color: 'black.main',
                                       }}
                                       component="a"
                                     >
                                       <ListItemText
                                         primary={item.label}
-                                        className="tw-text-dark-gray"
+                                        sx={{
+                                          color: 'black.main',
+                                        }}
+                                        className="tw-text-black"
                                       />
                                     </ListItemButton>
                                   </Link>
@@ -251,7 +258,8 @@ const AppHeader = () => {
                     <Button
                       onClick={(event) => handleMenuOpen(event, index)}
                       disableRipple
-                      className={`tw-flex !tw-text-[22px] !tw-text-dark-gray hover:tw-bg-transparent focus:tw-outline-none ${selectedMenuIndex === index ? '!tw-text-blue' : ''}`}
+                      style={{ minWidth: '150px' }}
+                      className={`tw-flex !tw-text-[20px] hover:tw-bg-transparent focus:tw-outline-none ${selectedMenuIndex === index ? '!tw-text-blue !tw-font-[600]' : '!tw-text-black'}`}
                     >
                       {page.name}
                       <KeyboardArrowDown className="tw-ml-3" />
@@ -282,7 +290,13 @@ const AppHeader = () => {
                       }}
                     >
                       {page.menuItems.map((item, i) => (
-                        <Link href={item.link} key={i} onClick={handleMenuClose}>
+                        <Link
+                          href={item.link}
+                          key={i}
+                          onClick={handleMenuClose}
+                          target={item?.target}
+                          rel={item?.rel}
+                        >
                           <MenuItem
                             sx={{
                               '&:hover': {
@@ -300,24 +314,26 @@ const AppHeader = () => {
                 ))}
               </Box>
               <Box className="tw-h-full">
-                <Button
-                  sx={{
-                    display: {
-                      xs: 'none',
-                      md: 'inline-block',
-                    },
-                    height: '75%',
-                    border: 'none',
-                    borderRadius: '50px',
-                    px: '40px',
-                    mr: '20px',
-                    fontSize: '20px',
-                  }}
-                  className={'!tw-bg-[#88A0FF1A] !tw-text-dark-gray'}
-                  variant="outlined"
-                >
-                  Log In
-                </Button>
+                <Link href={'https://login.paystandards.com/login'}>
+                  <Button
+                    sx={{
+                      display: {
+                        xs: 'none',
+                        md: 'inline-block',
+                      },
+                      height: '75%',
+                      border: 'none',
+                      borderRadius: '50px',
+                      px: '40px',
+                      mr: '20px',
+                      fontSize: '20px',
+                    }}
+                    className={'!tw-bg-[#88A0FF1A] !tw-text-dark-gray'}
+                    variant="outlined"
+                  >
+                    Log In
+                  </Button>
+                </Link>
                 <Link href={'/demo'}>
                   <Button
                     sx={{
