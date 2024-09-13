@@ -1,3 +1,4 @@
+import type { Metadata } from 'next';
 import { Box, Divider, Typography } from '@mui/material';
 import AppContainer from '@/components/layout/AppContainer';
 import Image from 'next/image';
@@ -20,7 +21,7 @@ import styles from '@/app/_scss/global.module.scss';
 const bannerCardContent: { title: string; paragraph: string } = {
   title: 'Power Your Year–End Pay Process',
   paragraph:
-    'Pay Audit is your go-to solution for the year-end compensation review process - including all features and benefits from the Pay Index and more. It empowers you to take action to make better pay decisions at year-end, protecting you with legal safeguards along the way, helping you to mitigate your legal risk, and optimizing your spend.',
+    'Pay Audit is your go-to solution for the year-end compensation review process - including all features and benefits from the Pay Index and more. It empowers you to take action to make better pay decisions at year-end, protecting you with legal safeguards along the way, helping you to mitigate your legal risk, and optimizing your spend',
 };
 
 const quoteCardContent = {
@@ -56,6 +57,11 @@ const coreBenifits = [
     text: 'See Where You’re Out of Compliance',
   },
 ];
+
+export const metadata: Metadata = {
+  title: 'Pay Audit',
+  description: 'Pay Audit empowers you to make data-driven pay decisions during your annual year-end compensation process, optimizing your compensation budget.',
+};
 
 const AuditProduct = () => {
   return (

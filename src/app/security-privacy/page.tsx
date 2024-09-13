@@ -1,6 +1,7 @@
 import { Typography } from '@mui/material';
 import { Grid } from '@mui/system';
 import React from 'react';
+import type { Metadata } from 'next';
 import AppContainer from '@/components/layout/AppContainer';
 import Governance from '@/components/securityAndPrivacy/Governance';
 import DataProtection from '@/components/securityAndPrivacy/DataProtection';
@@ -8,6 +9,11 @@ import ProductSecurity from '@/components/securityAndPrivacy/ProductSecurity';
 import EnterpriseSecurity from '@/components/securityAndPrivacy/EnterpriseSecurity';
 import DataPrivacy from '@/components/securityAndPrivacy/DataPrivacy';
 import Concern from '@/components/securityAndPrivacy/Concern';
+
+export const metadata: Metadata = {
+  title: 'Security and Privacy at PayStandards',
+  description: 'Security is at the heart of what we do—our security and compliance posture is critical to our business',
+};
 
 const SecurityAndPrivacy = () => {
   return (

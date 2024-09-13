@@ -1,3 +1,4 @@
+import type { Metadata } from 'next';
 import AppContainer from '@/components/layout/AppContainer';
 import { Box, Divider, Typography } from '@mui/material';
 import IndexIcon from '~/assets/products/pay-index-icon.svg';
@@ -19,7 +20,7 @@ import styles from '@/app/_scss/global.module.scss';
 const bannerCardContent: { title: string; paragraph: string } = {
   title: 'Understand Your Pay with Acuity',
   paragraph:
-    'Go beyond the traditional pay gap metrics and understand your true pay equity position. Assess pay equity beyond the enterprise level – looking across different geographies, job levels, business units, and more. A comprehensive view which will not only supercharge your disclosure, but also help you identify where to take action.',
+    'Go beyond the traditional pay gap metrics and understand your true pay equity position. Assess pay equity beyond the enterprise level – looking across different geographies, job levels, business units, and more. A comprehensive view which will not only supercharge your disclosure, but also help you identify where to take action',
 };
 
 const quoteCardContent = {
@@ -54,6 +55,12 @@ const coreBenefits = [
 ];
 const IframeSrc = 'https://www.youtube.com/embed/x91MPoITQ3I?si=6WdYf-CPNY0pQoqh';
 import image from '~/assets/products/video-image.png';
+
+export const metadata: Metadata = {
+  title: 'Pay Index',
+  description: 'Pay Index gives you standardized ratings, trends, and root-cause analytics that illuminate your company’s pay equity position.',
+};
+
 
 const IndexProduct = () => {
   return (

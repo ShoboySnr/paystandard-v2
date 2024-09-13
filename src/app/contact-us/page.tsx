@@ -1,4 +1,5 @@
 import React from 'react';
+import type { Metadata } from 'next';
 import {
   Box,
   Button,
@@ -18,6 +19,11 @@ import MailFrame from '~/assets/contact/mail.svg';
 import Link from 'next/link';
 import HubspotContactUs from '@/components/contact-us/HubspotContactUs';
 import NewsletterForm from './NewsletterForm';
+
+export const metadata: Metadata = {
+  title: 'Let\'s Connect',
+  description: 'Have questions? Need support? Curious about PayStandards?',
+};
 
 export default function Contact() {
   return (

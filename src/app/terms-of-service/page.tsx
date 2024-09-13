@@ -1,7 +1,13 @@
 import React from 'react';
+import type { Metadata } from 'next';
 import AppContainer from '@/components/layout/AppContainer';
 import { Box, Typography } from '@mui/material';
 import Link from 'next/link';
+
+export const metadata: Metadata = {
+  title: 'PayStandards Terms of Service',
+  description: 'These Terms of Use constitute a legally binding agreement made between you, whether personally or on behalf of an entity (“you”) and PayStandards Inc., “we”, “us”, or “our”), concerning your access to and use of the website as well as any other media form, media channel, mobile website or mobile application related, linked, or otherwise connected thereto (collectively, the “Site”)',
+};
 
 export default function TermsOfService() {
   return (

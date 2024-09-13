@@ -8,6 +8,7 @@ import {
   TextField,
   Typography,
 } from '@mui/material';
+import type { Metadata } from 'next';
 import Image from 'next/image';
 import CheckedBox from '../../../public/assets/demo/checkedbox.png';
 import LiveDemo from '../../../public/assets/demo/live-demo.png';
@@ -15,6 +16,11 @@ import React from 'react';
 import { Grid } from '@mui/system';
 import AppContainer from '@/components/layout/AppContainer';
 import HubspotDemoForm from '@/components/demo/HubspotDemoForm';
+
+export const metadata: Metadata = {
+  title: 'Schedule a Demo',
+  description: 'Get a live look into the PayStandards platform and learn how your organization can leverage real-time analytics',
+};
 
 const Demo = () => {
   return (

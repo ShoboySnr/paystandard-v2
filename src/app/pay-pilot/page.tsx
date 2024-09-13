@@ -1,3 +1,4 @@
+import type { Metadata } from 'next';
 import AppContainer from '@/components/layout/AppContainer';
 import { Box, Divider, Typography } from '@mui/material';
 import PayPilotIcon from '~/assets/products/dashboard/pay-pilot-icon.svg';
@@ -43,6 +44,11 @@ const coreBenifits: { icon: string; text: string }[] = [
     text: 'Reduce Legal and Reputational Risk',
   },
 ];
+
+export const metadata: Metadata = {
+  title: 'Pay Pilot',
+  description: 'Pay Pilot helps you make better everyday pay decisions to sustain your pay equity progress through an easy-to-use software platform',
+};
 
 const IndexProduct = () => {
   return (

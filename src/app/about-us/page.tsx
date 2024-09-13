@@ -1,3 +1,4 @@
+import type { Metadata } from 'next';
 import { Grid } from '@mui/system';
 import { Box, Button, Typography } from '@mui/material';
 import Image, { StaticImageData } from 'next/image';
@@ -11,6 +12,12 @@ import leadingOrg5 from '~/assets/leading-organizations/image5_dark.png';
 import leadingOrg6 from '~/assets/leading-organizations/image6_dark.png';
 import AppContainer from '@/components/layout/AppContainer';
 import styles from '@/app/_scss/global.module.scss';
+
+export const metadata: Metadata = {
+  title: 'About PayStandards',
+  description: 'Pay for the Right Things. Drive the Bottom Line',
+};
+
 
 const AboutUs = () => {
   return (

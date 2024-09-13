@@ -1,6 +1,12 @@
 import React from 'react';
+import type { Metadata } from 'next';
 import { Box, Typography } from '@mui/material';
 import AppContainer from '@/components/layout/AppContainer';
+
+export const metadata: Metadata = {
+  title: 'Release Note Changes',
+  description: 'Read about changes to the release notes, with the most recent changes first',
+};
 
 export default function ReleaseNotes() {
   return (

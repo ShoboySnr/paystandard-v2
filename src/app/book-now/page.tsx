@@ -1,9 +1,16 @@
+import type { Metadata } from 'next';
 import { Grid } from '@mui/system';
 import { Box, Typography } from '@mui/material';
 import React from 'react';
 import AppContainer from '@/components/layout/AppContainer';
 import CalenderImg from '~/assets/book-now/calender.png';
 import Image from 'next/image';
+
+export const metadata: Metadata = {
+  title: 'Book Now',
+  description: 'Booking a Discovery Call and Demo is Quick and Easy',
+};
+
 
 const BookNow = () => {
   return (
