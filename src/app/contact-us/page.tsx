@@ -17,7 +17,6 @@ import LiveDemo from '~/assets/contact/contact-us.jpeg';
 import MailFrame from '~/assets/contact/mail.svg';
 import Link from 'next/link';
 import HubspotContactUs from '@/components/contact-us/HubspotContactUs';
-import ScheduleDemoForm from '@/components/product/ScheduleDemoForm';
 import NewsletterForm from './NewsletterForm';
 
 export default function Contact() {
@@ -25,7 +24,7 @@ export default function Contact() {
     <Box
       sx={{
         color: 'deep-blue.secondary',
-        marginTop: { md: '200px' },
+        marginTop: { md: '44px' },
       }}
     >
       <AppContainer sx={{ px: { md: '45px', xs: '0' } }}>
