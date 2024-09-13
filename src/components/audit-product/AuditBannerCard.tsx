@@ -72,7 +72,7 @@ const AuditBannerCard = ({ title, paragraph }: { title: string; paragraph: strin
           >
             {paragraph}
           </Typography>
-          <Link href={'demo'}>
+          <Link href={'#demo'}>
             <Button
               variant="contained"
               sx={{

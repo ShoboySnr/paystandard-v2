@@ -17,6 +17,8 @@ import LiveDemo from '~/assets/contact/contact-us.jpeg';
 import MailFrame from '~/assets/contact/mail.svg';
 import Link from 'next/link';
 import HubspotContactUs from '@/components/contact-us/HubspotContactUs';
+import ScheduleDemoForm from '@/components/product/ScheduleDemoForm';
+import NewsletterForm from './NewsletterForm';
 
 export default function Contact() {
   return (
@@ -189,8 +191,8 @@ export default function Contact() {
                 sx={{
                   fontSize: '24px',
                   fontWeight: '400',
-                  margin: 'auto 0 4px 0',
-                  color: 'black.main',
+                  margin: '0 0 4px 0',
+                  color: '#283167',
                   textAlign: { xs: 'center', md: 'left' },
                 }}
               >
@@ -208,41 +210,17 @@ export default function Contact() {
               }}
             >
               <Box
-                component="form"
                 sx={{
-                  '& .MuiTextField-root': { mb: 2.5 },
-                  display: 'flex',
-                  alignItems: 'center',
-                  gap: '10px',
-                  flexDirection: { xs: 'column', md: 'row' },
+                  padding: {
+                    md: 0,
+                  },
                 }}
-                noValidate
-                autoComplete="off"
                 className="tw-h-full"
               >
                 <div className="tw-flex tw-w-full tw-justify-center">
-                  <TextField
-                    fullWidth
-                    size="small"
-                    required
-                    id="outlined-required"
-                    label="Email"
-                    className="!tw-m-0"
-                    sx={{ width: { xs: '80%', md: '100%' } }}
-                  />
-                </div>
-                <div>
-                  <Button
-                    sx={{
-                      fontSize: '16px',
-                      px: '16px',
-                      py: 'md:10px md,v-12',
-                    }}
-                    className={'!tw-rounded-full'}
-                    variant="contained"
-                  >
-                    Subscribe
-                  </Button>
+                <NewsletterForm
+                  hubspotFormId={'016bb2fc-a1f1-4005-a8e0-bc1ca5f2cac7'}
+                 />
                 </div>
               </Box>
             </Grid>
