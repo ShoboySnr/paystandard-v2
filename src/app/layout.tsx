@@ -47,6 +47,17 @@ export default function RootLayout({
             </Suspense>
           </ThemeProvider>
         </AppRouterCacheProvider>
+        <Script id="clarity-script" strategy="afterInteractive">
+          {`
+            (function(c,l,a,r,i,t,y){
+              if (window.location.hostname === 'www.paystandards.com') {
+                c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+                t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+                y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+              }
+            })(window, document, "clarity", "script", "o485wd6p6d");
+          `}
+        </Script>
         <Script src="https://js.hsforms.net/forms/v2.js" strategy={'beforeInteractive'} />
       </body>
     </html>
