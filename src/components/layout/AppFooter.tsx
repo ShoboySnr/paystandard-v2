@@ -100,8 +100,11 @@ const AppFooter = () => {
               alt="Pay Standards"
             />
 
-            <p>Built in New York, New York</p>
-            <p>©PayStandards Inc. 2024</p>
+            <Box>
+              <p className="tw-mt-2">Built in New York, New York</p>
+              <p className="tw-mt-2">©PayStandards Inc. 2024</p>
+              <p className="tw-mt-2">All rights reserved.</p>
+            </Box>
           </Box>
         </Grid>
         <Grid

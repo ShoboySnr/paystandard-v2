@@ -32,7 +32,7 @@ const ScheduleDemoForm = ({
       sx={{
         pt: 7.5,
         pb: 11,
-        mt: { xs: 38, lg: 25 },
+        mt: { xs: 38, md: 25 },
         px: { xs: 1.5, md: 0 },
         background:
           'radial-gradient(100% 100% at 50% 100%, rgba(255, 255, 255, 0.50) 0%, rgba(255, 255, 255, 0.00) 100%), radial-gradient(100% 100% at 50% 0%, #FFF 0%, #CCD6FF 100%)',
@@ -41,7 +41,7 @@ const ScheduleDemoForm = ({
       <AppContainer>
         <Box
           sx={{
-            maxWidth: '830px',
+            maxWidth: { sm: '600px', md: '830px' },
             mx: 'auto',
           }}
         >

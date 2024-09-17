@@ -11,7 +11,7 @@ const CoreBenefitTypography = {
 };
 const CoreBenefitStyle = {
   display: 'flex',
-  flex: { xs: 2, lg: 1 },
+  flex: { xs: 2, md: 1 },
   minWidth: '150px',
   flexDirection: 'column',
   alignItems: 'center',
@@ -22,7 +22,7 @@ const CoreBenefitStyle = {
 interface Benefits {
   data: {
     icon: string;
-    text: string;
+    text: string | React.ReactElement;
   }[];
 }
 
@@ -31,18 +31,18 @@ const CoreBenefits: React.FC<Benefits> = ({ data }) => {
     <Paper
       elevation={0}
       sx={{
-        borderRadius: { xs: '25px', lg: '35px' },
+        borderRadius: { xs: '25px', md: '35px' },
         background: 'linear-gradient(180deg, #2641B0 0%, #152461 99.27%)',
         border: '1px solid #525252',
-        my: 8,
-        py: { xs: 4, lg: 5 },
-        px: { xs: 2, lg: 5 },
-        pb: { xs: 6, lg: 9 },
+        my: { xs: 8, md: 12 },
+        py: { xs: 4, md: 5 },
+        px: { xs: 2, md: 5 },
+        pb: { xs: 6, md: 9 },
       }}
     >
       <Typography
         sx={{
-          fontSize: { xs: '32px', lg: '40px' },
+          fontSize: { xs: '32px', md: '40px' },
           fontWeight: '400',
           color: '#fff',
           textAlign: 'center',
@@ -57,7 +57,7 @@ const CoreBenefits: React.FC<Benefits> = ({ data }) => {
           mt: 2.5,
           mb: 5.5,
           borderRadius: '40px',
-          width: { xs: '100%', lg: '600px' },
+          width: { xs: '100%', md: '600px' },
           borderWidth: '2px',
         }}
       />

@@ -15,15 +15,15 @@ const profiles = [
   {
     icon: LinkedInLogo,
     title: 'Joe Davolio',
-    subtitle: 'Co-Chief Executive Officer',
+    subtitle: 'Co-CEO, Founder',
     profile_picture: Client1,
-    tailwindClass: 'tw-mt-2 md:tw-mt-4',
+    tailwindClass: 'tw-mt-2 md:tw-mt-4 tw-ml-2',
     linkedin_url: 'https://www.linkedin.com/in/joedavolio/',
   },
   {
     icon: LinkedInLogo,
     title: 'Todd Gershkowitz',
-    subtitle: 'Co-Chief Executive Officer',
+    subtitle: 'Co-CEO, Founder',
     profile_picture: Client2,
     tailwindClass: 'tw-mt-2',
     linkedin_url: 'https://www.linkedin.com/in/todd-gershkowitz/',
@@ -33,7 +33,7 @@ const profiles = [
     title: 'Beth Kovaly',
     subtitle: 'Chief Legal Officer',
     profile_picture: Client3,
-    tailwindClass: 'tw-mt-1.5 md:tw-mt-3',
+    tailwindClass: 'tw-mt-1.5 md:tw-mt-3 tw-ml-2.5',
     linkedin_url: 'https://www.linkedin.com/in/beth-kovaly-b3601815/',
   },
   {
@@ -55,7 +55,7 @@ const profiles = [
   {
     icon: LinkedInLogo,
     title: 'Kevin Hallock',
-    subtitle: 'Senior Advisor',
+    subtitle: 'Senior Advisor, Founder',
     profile_picture: Client6,
     tailwindClass: 'mt-1',
     linkedin_url: 'https://www.linkedin.com/in/kevin-hallock-a276616/',
@@ -144,7 +144,7 @@ const ProfileCard = () => {
                 {profile.subtitle}
               </Typography>
               <Link href={profile.linkedin_url} target="_blank">
-                <Image src={profile.icon} height={20} alt={profile.title} />
+                <Image src={profile.icon} height={24} alt={profile.title} />
               </Link>
             </Grid>
           </React.Fragment>

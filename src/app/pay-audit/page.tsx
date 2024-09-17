@@ -19,7 +19,7 @@ import CoreBenefits from '@/components/product/CoreBenefits';
 import styles from '@/app/_scss/global.module.scss';
 
 const bannerCardContent: { title: string; paragraph: string } = {
-  title: 'Power Your Year–End Pay Process',
+  title: 'Power Your Year-End Pay Process',
   paragraph:
     'Pay Audit is your go-to solution for the year-end compensation review process - including all features and benefits from the Pay Index and more. It empowers you to take action to make better pay decisions at year-end, protecting you with legal safeguards along the way, helping you to mitigate your legal risk, and optimizing your spend',
 };
@@ -31,10 +31,10 @@ const quoteCardContent = {
   company: 'The Josh Bersin Company',
 };
 
-const coreBenifits = [
+const coreBenefits = [
   {
     icon: Icon6,
-    text: 'Make Better Overall Pay Decisions at Year–End',
+    text: 'Make Better Overall Pay Decisions at Year-End',
   },
   {
     icon: Icon7,
@@ -42,7 +42,11 @@ const coreBenifits = [
   },
   {
     icon: Icon8,
-    text: 'No Additional Spend Required',
+    text: (
+      <>
+        No Additional <br /> Spend <br /> Required
+      </>
+    ),
   },
   {
     icon: Icon9,
@@ -50,7 +54,11 @@ const coreBenifits = [
   },
   {
     icon: Icon10,
-    text: 'Avoid Reputational Risk',
+    text: (
+      <>
+        Avoid <br /> Reputational <br /> Risk
+      </>
+    ),
   },
   {
     icon: Icon4,
@@ -81,16 +89,16 @@ const AuditProduct = () => {
           <Box
             sx={{
               textAlign: 'center',
-              pt: { xs: 6, lg: 12 },
+              pt: { xs: 6, md: 12 },
               color: 'black.main',
             }}
           >
             <Image width={71} src={IndexIcon} alt="Pay Index" className="tw-m-auto" />
             <Box
               sx={{
-                fontSize: { xs: '32px', lg: '40px' },
+                fontSize: { xs: '32px', md: '40px' },
                 fontWeight: '700',
-                px: { xs: 6, lg: 0 },
+                px: { xs: 6, md: 0 },
                 mt: 5,
                 display: 'flex',
                 justifyContent: 'center',
@@ -152,7 +160,7 @@ const AuditProduct = () => {
         <AuditKeyFeatures />
 
         <Box sx={{ mt: 12 }}>
-          <CoreBenefits data={coreBenifits} />
+          <CoreBenefits data={coreBenefits} />
         </Box>
       </AppContainer>
       {/*<Box>*/}
@@ -204,7 +212,7 @@ const AuditProduct = () => {
                 pt: 2,
               }}
             >
-              Learn How to Leverage Pay Audit to Simplify the <br /> Year–End Pay Process at Your
+              Learn How to Leverage Pay Audit to Simplify the <br /> Year-End Pay Process at Your
               Company
               {/*Learn How to Leverage the Pay Audit*/}
               {/*<span className={'tw-size-32 tw-font-normal'}>™ </span> <br /> at Your Company*/}

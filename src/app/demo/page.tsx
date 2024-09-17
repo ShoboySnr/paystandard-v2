@@ -135,7 +135,7 @@ const Demo = () => {
                     fontWeight: '500',
                   }}
                 >
-                  Reduce your pay equity analysis timeline by 6-8 weeks or more
+                  Reduce your pay equity analysis timeline by 6-8 weeks
                 </Typography>
               </ListItemText>
             </ListItem>

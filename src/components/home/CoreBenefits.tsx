@@ -68,7 +68,7 @@ const CoreBenefits = () => {
             md: 8,
           }}
           sx={{
-            padding: { md: '25px', xs: '15px' },
+            padding: { xs: '15px', md: '0' },
             mt: { xs: '60px', md: '0' },
           }}
         >
@@ -198,7 +198,7 @@ const CoreBenefits = () => {
             <Grid size={12}>
               <Box
                 sx={{
-                  height: { md: '360px', xs: '235px' },
+                  height: { lg: '360px', sm: '300px', xs: '235px' },
                   position: 'relative',
                 }}
               >
@@ -216,7 +216,7 @@ const CoreBenefits = () => {
                 >
                   <Typography
                     sx={{
-                      fontSize: { md: '16px', xs: '10px' },
+                      fontSize: { sm: '14px', lg: '16px', xs: '10px' },
                       lineHeight: '140%',
                       fontWeight: '500',
                     }}
@@ -237,7 +237,7 @@ const CoreBenefits = () => {
                     <span style={{ marginRight: '-10px' }}>Up to</span>
                     <Typography
                       sx={{
-                        fontSize: { md: '140px', xs: '67px' },
+                        fontSize: { sm: '90px', lg: '140px', xs: '67px' },
                         lineHeight: '80%',
                         fontWeight: '900',
                       }}
@@ -248,7 +248,7 @@ const CoreBenefits = () => {
                   </Box>
                   <Typography
                     sx={{
-                      fontSize: { md: '28px', xs: '18px' },
+                      fontSize: { sm: '24px', lg: '28px', xs: '18px' },
                       lineHeight: '140%',
                       fontWeight: '900',
                       color: 'black.main',
@@ -275,7 +275,7 @@ const CoreBenefits = () => {
                   src={'/assets/home/circle2.png'}
                   alt={'image.png'}
                   className={
-                    'tw-absolute tw-left-0 tw-right-0 tw-top-0 tw-mx-auto tw-w-[235px] md:tw-w-[360px]'
+                    'tw-absolute tw-left-0 tw-right-0 tw-top-0 tw-mx-auto tw-w-[235px] sm:tw-w-[300px] lg:tw-w-[360px]'
                   }
                 />
               </Box>
@@ -284,7 +284,7 @@ const CoreBenefits = () => {
           <Grid size={12}>
             <Box
               sx={{
-                height: { lg: '360px', md: '330px', xs: '235px' },
+                height: { lg: '360px', sm: '300px', xs: '235px' },
                 position: 'relative',
               }}
             >
@@ -307,11 +307,19 @@ const CoreBenefits = () => {
                     color: 'black.main',
                   }}
                 >
-                  <span>Up to</span>
+                  <Typography
+                    sx={{
+                      fontSize: { xs: '19px', lg: '20px' },
+                      lineHeight: '140%',
+                      fontWeight: '700',
+                    }}
+                  >
+                    Up to
+                  </Typography>
                   <Box sx={{ display: 'flex' }}>
                     <Typography
                       sx={{
-                        fontSize: { lg: '140px', md: '100px', xs: '78px' },
+                        fontSize: { sm: '90px', lg: '140px', xs: '67px' },
                         lineHeight: '80%',
                         fontWeight: '900',
                       }}
@@ -323,9 +331,10 @@ const CoreBenefits = () => {
                 </Box>
                 <Typography
                   sx={{
-                    fontSize: { lg: '28px', md: '20px', xs: '18px' },
+                    fontSize: { sm: '24px', lg: '28px', xs: '18px' },
                     lineHeight: '140%',
                     fontWeight: '900',
+                    color: 'black.main',
                   }}
                 >
                   Remediation
@@ -341,7 +350,7 @@ const CoreBenefits = () => {
                     borderRadius: '5px',
                   }}
                 />
-                <Typography sx={{ fontSize: '16px', lineHeight: '140%', fontWeight: '500' }}>
+                <Typography sx={{ fontSize: '14px', lineHeight: '140%', fontWeight: '500' }}>
                   Relative to Traditional
                   <br /> Approaches
                 </Typography>
@@ -350,13 +359,13 @@ const CoreBenefits = () => {
                 src={'/assets/home/circle3.png'}
                 alt={'image.png'}
                 className={
-                  'tw-absolute tw-left-0 tw-right-0 tw-top-0 tw-mx-auto tw-w-[235px] md:tw-w-[360px]'
+                  'tw-absolute tw-left-0 tw-right-0 tw-top-0 tw-mx-auto tw-w-[235px] sm:tw-w-[315px] lg:tw-w-[360px]'
                 }
               />
               <Box
                 sx={{
                   fontSize: { xs: '11px', md: '13px' },
-                  my: 3,
+                  my: { xs: 3, sm: 3.5, lg: 3 },
                   justifyContent: 'center',
                   color: 'black.main',
                   fontWeight: '300',

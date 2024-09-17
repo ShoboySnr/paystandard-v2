@@ -19,17 +19,17 @@ const BannerCard = ({
     <Paper
       elevation={0}
       sx={{
-        py: { xs: 2, lg: 7 },
-        px: { xs: 2, lg: 6 },
-        pb: { xs: 7.5, lg: 7 },
+        py: { xs: 2, md: 7 },
+        px: { xs: 2, md: 6 },
+        pb: { xs: 7.5, md: 7 },
         position: 'relative',
-        mt: { xs: -69, lg: -64 },
+        mt: { xs: -69, md: -64 },
         border: '1px solid #525252',
         backgroundColor: '#FFFFFF',
         borderRadius: '35px',
       }}
     >
-      <Grid container spacing={{ xs: 4, lg: 6 }}>
+      <Grid container spacing={{ xs: 4, md: 6 }}>
         <Grid size={{ xs: 12, md: 6 }}>
           {src ? (
             <Box className="tw-relative tw-m-auto tw-h-[235px] tw-w-[330px] lg:tw-h-[325px] lg:tw-w-[440px]">

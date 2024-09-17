@@ -13,7 +13,7 @@ const KeyFeatures = () => {
   return (
     <Box
       sx={{
-        px: { xs: 0, md: 18 },
+        px: { xs: 0, sm: 1, md: 4, lg: 18 },
       }}
     >
       <Paper
@@ -319,7 +319,7 @@ const KeyFeatures = () => {
               }}
             >
               <Box
-                className="tw-h-[250px] tw-w-[330px] tw-rounded-[35px] md:tw-h-[310px] lg:tw-h-[278px] lg:tw-w-[420px]"
+                className="tw-h-[250px] tw-w-[330px] tw-rounded-[35px] md:tw-h-[278px] md:tw-w-[420px]"
                 sx={{
                   display: 'flex',
                   justifyContent: 'center',

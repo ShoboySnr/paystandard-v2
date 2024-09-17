@@ -22,7 +22,7 @@ const bannerCardContent: { title: string; paragraph: string } = {
     'Your one-stop-shop to pay transparency, the Pay Pilot helps you to publish pay ranges that are tailored to the job and empowers you to make better pay decisions from day one – including hiring, promotions, off-cycle salary increases, spot bonuses, and special incentives.',
 };
 
-const coreBenifits: { icon: string; text: string }[] = [
+const coreBenefits: { icon: string; text: string }[] = [
   {
     icon: Icon6,
     text: 'Make Better Overall Pay Decisions Year-Round',
@@ -69,16 +69,16 @@ const IndexProduct = () => {
             <Box
               sx={{
                 textAlign: 'center',
-                pt: { xs: 6, lg: 12 },
+                pt: { xs: 6, md: 12 },
                 color: 'black.main',
               }}
             >
               <Image width={71} src={PayPilotIcon} alt="Pay Index" className="tw-m-auto" />
               <Box
                 sx={{
-                  fontSize: { xs: '32px', lg: '40px' },
+                  fontSize: { xs: '32px', md: '40px' },
                   fontWeight: '700',
-                  px: { xs: 6, lg: 0 },
+                  px: { xs: 6, md: 0 },
                   mt: 5,
                   display: 'flex',
                   justifyContent: 'center',
@@ -102,7 +102,7 @@ const IndexProduct = () => {
                   mt: 3.5,
                   mx: 'auto',
                   fontWeight: '400',
-                  fontSize: { xs: '18px', lg: '24px' },
+                  fontSize: { xs: '18px', md: '24px' },
                 }}
               >
                 Pay Pilot helps you make better everyday pay decisions to sustain your pay equity
@@ -120,7 +120,7 @@ const IndexProduct = () => {
           <Box>
             <Typography
               sx={{
-                fontSize: { xs: '32px', lg: '40px' },
+                fontSize: { xs: '32px', md: '40px' },
                 fontWeight: '400',
                 textAlign: 'center',
                 mt: { xs: 7.5, md: 10 },
@@ -133,7 +133,7 @@ const IndexProduct = () => {
                 mt: 1,
                 borderColor: 'primary.main',
                 borderRadius: '40px',
-                width: { xs: '360px', lg: '500px' },
+                width: { xs: '360px', md: '500px' },
                 borderWidth: '2.5px',
                 mx: 'auto',
                 mb: { xs: 5, md: 6 },
@@ -142,7 +142,7 @@ const IndexProduct = () => {
           </Box>
 
           <KeyFeatures />
-          <CoreBenefits data={coreBenifits} />
+          <CoreBenefits data={coreBenefits} />
         </AppContainer>
         <Box sx={{ mt: { xs: -28, md: -14 } }} id="demo">
           <ScheduleDemoForm

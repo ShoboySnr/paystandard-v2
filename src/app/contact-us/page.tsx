@@ -72,7 +72,7 @@ export default function Contact() {
               >
                 <Box
                   sx={{
-                    pt: { xs: 6, lg: 2 },
+                    pt: { xs: 6, md: 2 },
                   }}
                 >
                   <Box
@@ -80,7 +80,7 @@ export default function Contact() {
                       fontSize: { xs: '32px' },
                       fontWeight: '700',
                       px: { xs: 6, md: 0 },
-                      textAlign: { xs: 'center', lg: 'left' },
+                      textAlign: { xs: 'center', md: 'left' },
                       color: 'deep-blue-secondary.main',
                     }}
                   >

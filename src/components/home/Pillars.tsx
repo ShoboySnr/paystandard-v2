@@ -5,18 +5,18 @@ import Image, { StaticImageData } from 'next/image';
 import { useState } from 'react';
 import ArrowRight from '~/assets/icons-common/arrow-right.svg';
 import ArrowRightLight from '~/assets/icons-common/arrow-right-white.svg';
-import leadingOrg1Light from '~/assets/leading-organizations/image1.png';
-import leadingOrg1 from '~/assets/leading-organizations/image1_dark.png';
-import leadingOrg2Light from '~/assets/leading-organizations/image2.png';
-import leadingOrg2 from '~/assets/leading-organizations/image2_dark.png';
-import leadingOrg3Light from '~/assets/leading-organizations/image3.png';
-import leadingOrg3 from '~/assets/leading-organizations/image3_dark.png';
-import leadingOrg4Light from '~/assets/leading-organizations/image4.png';
-import leadingOrg4 from '~/assets/leading-organizations/image4_dark.png';
-import leadingOrg5Light from '~/assets/leading-organizations/image5.png';
-import leadingOrg5 from '~/assets/leading-organizations/image5_dark.png';
-import leadingOrg6Light from '~/assets/leading-organizations/image6.png';
-import leadingOrg6 from '~/assets/leading-organizations/image6_dark.png';
+import leadingOrg1Light from '~/assets/leading-organizations/image1.svg';
+import leadingOrg1 from '~/assets/leading-organizations/image1_dark.svg';
+import leadingOrg2Light from '~/assets/leading-organizations/image2.svg';
+import leadingOrg2 from '~/assets/leading-organizations/image2_dark.svg';
+import leadingOrg3Light from '~/assets/leading-organizations/image3.svg';
+import leadingOrg3 from '~/assets/leading-organizations/image3_dark.svg';
+import leadingOrg4Light from '~/assets/leading-organizations/image4.svg';
+import leadingOrg4 from '~/assets/leading-organizations/image4_dark.svg';
+import leadingOrg5Light from '~/assets/leading-organizations/image5.svg';
+import leadingOrg5 from '~/assets/leading-organizations/image5_dark.svg';
+import leadingOrg6Light from '~/assets/leading-organizations/image6.svg';
+import leadingOrg6 from '~/assets/leading-organizations/image6_dark.svg';
 import Icon2 from '~/assets/home/pillars/icon2.svg';
 import Icon3 from '~/assets/home/pillars/icon3.svg';
 import Icon2Light from '~/assets/home/pillars/icon2_light.svg';
@@ -29,7 +29,7 @@ const cardStyling = {
   borderRadius: '35px',
   backgroundBlendMode: 'hard-light',
   backgroundSize: 'cover',
-  padding: { md: '45px', xs: '20px' },
+  padding: { sm: '45px', md: '20px', lg: '45px', xs: '20px' },
   transition: 'all 0.3s ease-in-out',
   '&:hover': {
     backgroundColor: 'primary.main',
@@ -66,7 +66,7 @@ const Pillars = () => {
         color: 'black.main',
       }}
     >
-      <Grid size={12} sx={{ px: { md: '0', xs: '15px' } }}>
+      <Grid size={12} sx={{ px: { md: '20px', xs: '15px' } }}>
         <Typography
           sx={{
             fontSize: { md: '32px', xs: '28px' },
@@ -95,13 +95,13 @@ const Pillars = () => {
           },
           px: {
             xs: '15px',
-            md: '0',
+            md: '20px',
           },
         }}
       >
         {/*first*/}
         <Grid
-          spacing={2}
+          spacing={1}
           container
           sx={{
             ...cardStyling,
@@ -116,11 +116,11 @@ const Pillars = () => {
           onMouseLeave={() => setHoveredCard(null)}
         >
           <Grid
-            size={12}
-            justifyContent={'space-between'}
-            alignItems={'center'}
             container
-            direction={'row'}
+            direction="row"
+            justifyContent="space-between"
+            alignItems="center"
+            size={12}
           >
             <Grid size={'auto'} alignSelf={'center'}>
               {/*<Image*/}
@@ -141,7 +141,7 @@ const Pillars = () => {
                 lightImage={leadingOrg2Light}
                 darkImage={leadingOrg2}
                 altText={'Leading Organization 2'}
-                height={46}
+                height={44}
                 isParentHovered={hoveredCard === 1}
               />
               {/*<Image height={46} src={leadingOrg2} alt={'Leading Org'} />*/}
@@ -182,7 +182,7 @@ const Pillars = () => {
                 lightImage={leadingOrg5Light}
                 darkImage={leadingOrg5}
                 altText={'Leading Organization 5'}
-                height={30}
+                height={28}
                 isParentHovered={hoveredCard === 1}
               />
               {/*<Image height={30} src={leadingOrg5} alt={'Leading Org'} />*/}

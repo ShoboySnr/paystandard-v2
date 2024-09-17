@@ -34,23 +34,43 @@ const quoteCardContent = {
 const coreBenefits = [
   {
     icon: Icon1,
-    text: 'Know Where You Stand',
+    text: (
+      <>
+        Know Where <br /> You Stand
+      </>
+    ),
   },
   {
     icon: Icon2,
-    text: 'Automate Pay Gap Disclosure',
+    text: (
+      <>
+        Automate Pay <br /> Gap Disclosure
+      </>
+    ),
   },
   {
     icon: Icon3,
-    text: 'Monitor Trends',
+    text: (
+      <>
+        Monitor <br /> Trends
+      </>
+    ),
   },
   {
     icon: Icon4,
-    text: 'Identify Root Causes',
+    text: (
+      <>
+        Identify Root <br /> Causes
+      </>
+    ),
   },
   {
     icon: Icon5,
-    text: 'Harness Your Data',
+    text: (
+      <>
+        Harness Your <br /> Data
+      </>
+    ),
   },
 ];
 const IframeSrc = 'https://www.youtube.com/embed/x91MPoITQ3I?si=6WdYf-CPNY0pQoqh';
@@ -80,16 +100,16 @@ const IndexProduct = () => {
             <Box
               sx={{
                 textAlign: 'center',
-                pt: { xs: 6, lg: 12 },
+                pt: { xs: 6, md: 12 },
                 color: 'black.main',
               }}
             >
               <Image width={71} src={IndexIcon} alt="Pay Index" className="tw-m-auto" />
               <Box
                 sx={{
-                  fontSize: { xs: '32px', lg: '40px' },
+                  fontSize: { xs: '32px', md: '40px' },
                   fontWeight: '700',
-                  px: { xs: 6, lg: 0 },
+                  px: { xs: 6, md: 0 },
                   mt: 5,
                   display: 'flex',
                   justifyContent: 'center',
@@ -113,7 +133,7 @@ const IndexProduct = () => {
                   mt: 3.5,
                   mx: 'auto',
                   fontWeight: '400',
-                  fontSize: { xs: '18px', lg: '24px' },
+                  fontSize: { xs: '18px', md: '24px' },
                 }}
               >
                 Pay Index gives you standardized ratings, trends, and root-cause analytics that
@@ -132,7 +152,7 @@ const IndexProduct = () => {
           <Box>
             <Typography
               sx={{
-                fontSize: { xs: '32px', lg: '40px' },
+                fontSize: { xs: '32px', md: '40px' },
                 fontWeight: '400',
                 textAlign: 'center',
                 mt: { xs: 10, md: 12 },
@@ -145,7 +165,7 @@ const IndexProduct = () => {
                 mt: 1,
                 borderColor: 'primary.main',
                 borderRadius: '40px',
-                width: { xs: '360px', lg: '500px' },
+                width: { xs: '360px', md: '500px' },
                 borderWidth: '2.5px',
                 mx: 'auto',
                 mb: { xs: 5, md: 6 },

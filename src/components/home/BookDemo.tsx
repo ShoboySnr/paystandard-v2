@@ -1,15 +1,15 @@
 'use client';
 import { Grid } from '@mui/system';
-import { Box, Button, Typography, useMediaQuery } from '@mui/material';
+import { Box, Button, Typography } from '@mui/material';
 import ImageCover from '~/assets/home/book-demo/image1.png';
 import Image from 'next/image';
 import Link from 'next/link';
-import theme from '@/theme';
+import React from 'react';
 // import HubspotForm from '@/components/models/HubspotFormDialog';
 // import { useState } from 'react';
 
 const BookDemo = () => {
-  const isMobile = useMediaQuery(theme.breakpoints.down('md'));
+  // const isMobile = useMediaQuery(theme.breakpoints.down('md'));
   // const [dialogOpen, setDialogOpen] = useState<boolean>(false);
 
   // const handleDialogClose = () => {
@@ -38,6 +38,7 @@ const BookDemo = () => {
             md: 6,
             xs: 12,
           }}
+          sx={{ px: { md: '20px', xs: '10px' } }}
           justifyContent={{ md: 'flex-end', xs: 'center' }}
         >
           <Box
@@ -46,7 +47,7 @@ const BookDemo = () => {
               flexDirection: 'column',
               alignItems: { md: 'flex-start', xs: 'center' },
               gap: '29px',
-              width: { md: 'fit-content', xs: '240px' },
+              width: { md: 'fit-content', xs: '240px', sm: '450px' },
             }}
           >
             <Typography
@@ -58,8 +59,8 @@ const BookDemo = () => {
               }}
             >
               Learn how you can achieve true
-              {!isMobile && <br />} pay equity and pay transparency
-              {!isMobile && <br />} – without the headache.
+              <br className="tw-hidden lg:tw-block" /> pay equity and pay transparency
+              <br className="tw-hidden lg:tw-block" /> – without the headache.
             </Typography>
             <Box>
               <Link href={'/demo'}>
@@ -80,34 +81,26 @@ const BookDemo = () => {
             xs: 12,
           }}
           sx={{
-            px: '50px',
+            pr: '50px',
+            pl: { md: '20px', xs: '50px' },
+            mt: { md: '30px', lg: '0px' },
+            mb: { xs: '30px', md: '0' },
           }}
         >
           <Box
+            className="tw-relative tw-h-[214px] tw-w-full tw-rounded-[35px] md:tw-h-[200px] lg:tw-h-[238px] sm:tw-w-[510px] md:tw-w-[410px] lg:tw-w-[510px] tw-mx-auto"
             sx={{
-              position: 'relative',
-              width: 'fit-content',
+              display: 'flex',
+              justifyContent: 'center',
+              background:
+                'radial-gradient(184.83% 144.26% at 27.98% -27.37%, #3860FF 0%, #152461 100%)',
             }}
           >
             <Image
-              className={'tw-rounded-[35px]'}
               src={ImageCover}
-              height={280}
               alt="Book a Demo"
+              className="tw-absolute md:tw-w-[320px] lg:tw-w-[420px] tw-top-[-35px] tw-rounded-[35px] md:tw-h-[130%]"
             />
-            <Box
-              sx={{
-                zIndex: -10,
-                borderRadius: '35px',
-                position: 'absolute',
-                height: '70%',
-                width: 'fill-available',
-                background:
-                  'radial-gradient(184.83% 144.26% at 27.98% -27.37%, #3860FF 0%, #152461 100%)',
-                top: 0,
-                margin: '40px -43px 25px -43px',
-              }}
-            ></Box>
           </Box>
         </Grid>
       </Grid>

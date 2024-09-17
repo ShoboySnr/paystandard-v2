@@ -18,7 +18,7 @@ export default function PrivacyPolicy() {
     <Box
       sx={{
         color: 'deep-blue.secondary',
-        marginTop: { md: '200px', xs: '120px' },
+        marginTop: { md: '100px', xs: '120px' },
       }}
     >
       <AppContainer>
@@ -52,7 +52,7 @@ export default function PrivacyPolicy() {
 
         <Box
           sx={{
-            mt: { xs: '0', lg: '80px' },
+            mt: { xs: '0', md: '80px' },
           }}
         >
           <Grid container spacing={'20px'}>
@@ -68,7 +68,7 @@ export default function PrivacyPolicy() {
             >
               <Box
                 sx={{
-                  mb: { xs: '80px', lg: '100px' },
+                  mb: { xs: '80px', md: '100px' },
                   padding: { xs: '30px 30px 50px', md: '50px 60px 70px' },
                   color: 'dark-purple.main',
                   backgroundColor: 'white.main',
@@ -694,7 +694,7 @@ export default function PrivacyPolicy() {
             >
               <Box
                 sx={{
-                  mb: { xs: '0', lg: '0' },
+                  mb: { xs: '0', md: '0' },
                   padding: { xs: '30px 30px 50px', md: '50px 40px 60px' },
                   color: 'dark-purple.main',
                   width: '100%',

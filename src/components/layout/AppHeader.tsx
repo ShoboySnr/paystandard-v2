@@ -15,7 +15,6 @@ import {
   ListItem,
   ListItemButton,
   ListItemText,
-  Menu,
   MenuItem,
   Toolbar,
 } from '@mui/material';
@@ -89,7 +88,7 @@ const AppHeader = () => {
           top: isFloating ? '0px' : '-100px',
           left: '50%',
           zIndex: 1300,
-          px: { md: '32px', lg: '0px' },
+          px: { md: '20px', lg: '0px' },
         }}
       >
         <Container

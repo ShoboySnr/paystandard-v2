@@ -13,7 +13,7 @@ const AuditKeyFeatures = () => {
   return (
     <Box
       sx={{
-        px: { xs: 0, md: 18 },
+        px: { xs: 0, sm: 1, md: 4, lg: 18 },
       }}
     >
       <Paper
@@ -151,15 +151,11 @@ const AuditKeyFeatures = () => {
             >
               <Box
                 sx={{
-                  // background: 'linear-gradient(257deg, #FFF 63.83%, #CCCBCB 96.92%)',
                   position: 'absolute',
-                  left: 0,
-                  top: {
-                    md: '-32%',
-                    xs: '-36%',
-                  },
+                  left: '0px',
+                  top: '50%',
+                  transform: 'translate(-0%, -50%)',
                   right: '-40px',
-                  transform: { xs: 'translateY(50%)' },
                 }}
               >
                 <Image src={Strategy} alt="standard rating" className="tw-w-full tw-h-full" />
@@ -224,7 +220,7 @@ const AuditKeyFeatures = () => {
           p: { xs: 2, md: 0 },
         }}
       >
-        <Grid container spacing={6}>
+        <Grid container spacing={{ xs: 6, sm: 1, md: 6 }}>
           <Grid
             size={{ xs: 12, md: 6 }}
             order={{ xs: 2, md: 1 }}
@@ -278,7 +274,7 @@ const AuditKeyFeatures = () => {
                   background: 'linear-gradient(108deg, #3860FF 0%, #152461 100%)',
                   borderRadius: '35px',
                   height: { xs: '250px', md: '345px' },
-                  width: '80%',
+                  width: { xs: '80%', sm: '90%', lg: '80%' },
                   position: 'absolute',
                   top: '43.2%',
                   right: -1,
@@ -332,42 +328,34 @@ const AuditKeyFeatures = () => {
             }}
           >
             <Box
-              className="tw-h-[214px] tw-w-full tw-rounded-[35px] md:tw-h-[320px] md:tw-w-full md:tw-top-[-10px] tw-relative"
+              className="tw-h-[214px] tw-w-full tw-rounded-[35px] md:tw-h-[315px] md:tw-w-[470px] xl:tw-w-full md:tw-top-[-10px] tw-relative"
               sx={{
                 display: 'flex',
                 justifyContent: 'center',
                 background: 'linear-gradient(133deg, #88A0FF 3.98%, #152461 96.46%)',
-                mb: -1.5,
+                mb: -2,
               }}
             >
-              {/*<Box*/}
-              {/*  className={*/}
-              {/*    'tw-h-[245px] md:tw-h-[365px] tw-w-[80%] tw-absolute tw-border tw-border-deep-blue'*/}
-              {/*  }*/}
-              {/*  sx={{*/}
-              {/*    bottom: '-13px',*/}
-              {/*    background: '#fff',*/}
-              {/*    borderRadius: '35px',*/}
-              {/*    pt: {*/}
-              {/*      xs: 2,*/}
-              {/*      lg: 0,*/}
-              {/*    },*/}
-              {/*    pb: {*/}
-              {/*      xs: 2,*/}
-              {/*      lg: 4,*/}
-              {/*    },*/}
-              {/*    px: {*/}
-              {/*      xs: 2,*/}
-              {/*      lg: 4,*/}
-              {/*    },*/}
-              {/*  }}*/}
-              {/*>*/}
-              <Image
-                src={Equity}
-                alt="Equity"
-                className="tw-w-auto tw-bottom-[-1px] tw-h-[250px] md:tw-h-[335px] tw-absolute"
-              />
-              {/*</Box>*/}
+              <Box
+                sx={{
+                  width: { xs: '83%', sm: '50%', md: '87%' },
+                  height: { xs: '110%', sm: '115%', md: '110%' },
+                  background: '#fff',
+                  borderTopLeftRadius: '35px',
+                  borderTopRightRadius: '35px',
+                  overflow: 'hidden',
+                  border: '1px solid #525252',
+                  borderBottom: '0px',
+                  position: 'absolute',
+                  bottom: 0,
+                }}
+              >
+                <Image
+                  src={Equity}
+                  alt="Equity"
+                  className="tw-w-[90%] tw-m-auto tw-h-full tw-px-6 tw-pt-5 tw-pb-0"
+                />
+              </Box>
             </Box>
           </Grid>
           <Grid

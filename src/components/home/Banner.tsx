@@ -18,6 +18,7 @@ const Banner = () => {
     <Box
       sx={{
         position: 'relative',
+        overflow: 'hidden',
         p: {
           md: '70px 50px 42px 50px',
           xs: '40px 0 30px 0',
@@ -41,6 +42,7 @@ const Banner = () => {
             },
             fontWeight: 'bold',
             color: 'black.main',
+            lineHeight: '135%',
           }}
         >
           Pay for the Right Things. Drive the <u> Bottom Line. </u>
@@ -118,26 +120,23 @@ const Banner = () => {
           sx={{
             padding: {
               md: '20px 40px',
-              xs: '10px 40px',
+              xs: '14px 40px',
             },
             display: 'flex',
             flexDirection: {
-              md: 'row',
+              sm: 'row',
               xs: 'column',
             },
             justifyContent: 'space-evenly',
             alignItems: 'center',
-            gap: {
-              md: '20px',
-              xs: '0',
-            },
+            gap: '14px',
             mt: '50px',
             borderRadius: '25px',
             color: 'black.main',
             backgroundColor: 'rgba(255, 255, 255, 0.80)',
           }}
         >
-          <Box>Trusted by industry leaders:</Box>
+          <Box>Trusted by industry leaders</Box>
           <Box
             sx={{
               display: 'flex',
@@ -159,11 +158,12 @@ const Banner = () => {
           position: 'absolute',
           overflow: 'hidden',
           right: {
-            md: '-90px',
+            md: '-150px',
+            lg: '-90px',
           },
           top: {
-            md: '-110px',
-            xs: 'unset',
+            md: '-100px',
+            xs: '50px',
           },
           bottom: {
             md: 'unset',

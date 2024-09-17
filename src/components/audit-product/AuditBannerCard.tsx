@@ -23,29 +23,32 @@ const AuditBannerCard = ({ title, paragraph }: { title: string; paragraph: strin
     <Paper
       elevation={0}
       sx={{
-        py: { xs: 2, lg: 7 },
-        px: { xs: 2, lg: 6 },
-        pb: { xs: 7.5, lg: 7 },
+        py: { xs: 2, md: 7 },
+        px: { xs: 2, md: 6 },
+        pb: { xs: 7.5, md: 7 },
         position: 'relative',
-        mt: { xs: -69, lg: -64 },
+        mt: { xs: -69, md: -64 },
         border: '1px solid #525252',
         backgroundColor: '#FFFFFF',
         borderRadius: '35px',
       }}
     >
-      <Grid container spacing={{ xs: 4, lg: 6 }}>
+      <Grid container spacing={{ xs: 4, md: 6 }}>
         <Grid size={{ xs: 12, md: 6 }}>
-          <Box className="tw-relative tw-m-auto tw-h-[214px] tw-w-[360px] xs:tw-mt-10 lg:tw-h-[321px] lg:tw-w-[538px]">
-            <Box
-              className="tw-absolute tw-z-0 tw-h-[214px] tw-w-[360px] tw-rounded-[24px] tw-bg-gradient-to-r tw-from-[#3860FF] tw-to-[#090C1A] lg:tw-h-[300px] lg:tw-w-[538px]"
-              sx={{ background: 'linear-gradient(108deg, #3860FF 0%, #152461 100%)' }}
-            />
+          <Box
+            className="tw-relative tw-m-auto tw-rounded-[32px] tw-h-[235px] sm:tw-h-[295px] md:tw-h-[265px] tw-w-full sm:tw-mt-10 lg:tw-h-[321px] lg:tw-w-full"
+            sx={{
+              display: 'flex',
+              justifyContent: 'center',
+              background: 'linear-gradient(108deg, #3860FF 0%, #152461 100%)',
+              // mb: -1.5,
+              mt: 5,
+            }}
+          >
             <Image
               src={BannerImage}
               alt="emplyees for review"
-              className={
-                'tw-absolute tw-left-1/2 md:tw-top-[39.6%] tw-top-[46%] tw-z-10 tw-h-[230px] tw-w-[320px] md:tw-w-[505px]  tw--translate-x-1/2 tw--translate-y-1/2 md:tw-h-[345px]'
-              }
+              className={'tw-absolute tw-bottom-0 tw-z-10 tw-w-[85%] lg:tw-w-[90%] tw-h-[110%]'}
             />
             {/*</Box>*/}
           </Box>

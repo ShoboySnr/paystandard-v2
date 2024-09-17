@@ -4,12 +4,12 @@ import { Box, Button, Typography } from '@mui/material';
 import Image, { StaticImageData } from 'next/image';
 import Link from 'next/link';
 import ProfileCard from '@/components/aboutUs/ProfileCard';
-import leadingOrg1 from '~/assets/leading-organizations/image1_dark.png';
-import leadingOrg2 from '~/assets/leading-organizations/image2_dark.png';
-import leadingOrg3 from '~/assets/leading-organizations/image3_dark.png';
-import leadingOrg4 from '~/assets/leading-organizations/image4_dark.png';
-import leadingOrg5 from '~/assets/leading-organizations/image5_dark.png';
-import leadingOrg6 from '~/assets/leading-organizations/image6_dark.png';
+import leadingOrg1 from '~/assets/leading-organizations/image1_dark.svg';
+import leadingOrg2 from '~/assets/leading-organizations/image2_dark.svg';
+import leadingOrg3 from '~/assets/leading-organizations/image3_dark.svg';
+import leadingOrg4 from '~/assets/leading-organizations/image4_dark.svg';
+import leadingOrg5 from '~/assets/leading-organizations/image5_dark.svg';
+import leadingOrg6 from '~/assets/leading-organizations/image6_dark.svg';
 import AppContainer from '@/components/layout/AppContainer';
 import styles from '@/app/_scss/global.module.scss';
 
@@ -244,7 +244,7 @@ const AboutUs = () => {
           >
             <Grid
               size={{
-                md: 6,
+                md: 7,
                 xs: 12,
               }}
               sx={{ textAlign: 'center' }}
@@ -259,7 +259,7 @@ const AboutUs = () => {
                 }}
               >
                 Join Our
-                <br className={'tw-block md:tw-hidden'} /> Growing Team
+                <br className={'tw-block sm:tw-hidden'} /> Growing Team
               </Typography>
               <Typography
                 sx={{
@@ -271,11 +271,11 @@ const AboutUs = () => {
                 }}
               >
                 Passionate about using
-                <br className={'md:tw-hidden'} /> technology to help people?
-                <br /> Join our journey to raise the <br className={'md:tw-hidden'} /> standard of
+                <br className={'sm:tw-hidden'} /> technology to help people?
+                <br /> Join our journey to raise the <br className={'sm:tw-hidden'} /> standard of
                 pay worldwide.
               </Typography>
-              <Box sx={{ mt: '60px' }}>
+              <Box sx={{ mt: '45px' }}>
                 <Link href={'mailto: hello@paystandards.com'}>
                   <Button
                     className={'!tw-rounded-full'}

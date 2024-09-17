@@ -48,8 +48,8 @@ export default function TermsOfService() {
         </Box>
         <Box
           sx={{
-            mt: { xs: '40px', lg: '80px' },
-            mb: { xs: '80px', lg: '100px' },
+            mt: { xs: '40px', md: '80px' },
+            mb: { xs: '80px', md: '100px' },
             padding: { xs: '30px 30px 50px', md: '50px 60px 70px' },
             color: 'dark-purple.main',
             backgroundColor: 'white.main',

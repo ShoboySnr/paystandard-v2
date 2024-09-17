@@ -26,7 +26,13 @@ const Home = () => {
       >
         <CustomerQuoteUpdated />
       </Box>
-      <AppContainer>
+      <AppContainer
+        sx={{
+          px: {
+            md: '20px',
+          },
+        }}
+      >
         <CoreBenefits />
       </AppContainer>
       <AppContainer>

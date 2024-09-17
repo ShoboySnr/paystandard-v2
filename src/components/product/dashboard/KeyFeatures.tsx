@@ -11,7 +11,7 @@ const KeyFeatures = () => {
   return (
     <Box
       sx={{
-        px: { xs: 0, md: 18 },
+        px: { xs: 0, sm: 1, md: 4, lg: 18 },
       }}
     >
       <Paper
@@ -131,7 +131,7 @@ const KeyFeatures = () => {
               }}
             >
               <Box
-                className="tw-h-[227px] tw-w-[325px] tw-rounded-[35px] md:tw-h-[310px] lg:tw-h-[300px] lg:tw-w-[422px]"
+                className="tw-h-[227px] tw-w-[325px] tw-rounded-[35px] md:tw-h-[300px] md:tw-w-[422px]"
                 sx={{
                   display: 'flex',
                   justifyContent: 'center',
@@ -200,7 +200,7 @@ const KeyFeatures = () => {
           p: { xs: 2, md: 0 },
         }}
       >
-        <Grid container spacing={6}>
+        <Grid container spacing={{ md: 1, xs: 6 }}>
           <Grid
             size={{ xs: 12, md: 6 }}
             order={{ xs: 2, md: 1 }}
@@ -228,7 +228,7 @@ const KeyFeatures = () => {
               }}
             >
               From new hires to promotions to off-cycle salary increases, generate a fine-tuned pay
-              recommendation that considers only the right things.
+              recommendation that considers the right things.
             </Typography>
             <Divider
               sx={{
@@ -240,7 +240,7 @@ const KeyFeatures = () => {
               }}
             />
           </Grid>
-          <Grid size={{ xs: 12, md: 6 }} order={{ xs: 1, md: 2 }}>
+          <Grid size={{ xs: 12, md: 6 }} sx={{ pl: { md: 2, xs: 0 } }} order={{ xs: 1, md: 2 }}>
             <Box
               sx={{
                 background: 'linear-gradient(135deg, #3860FF 0%, #090C1A 100%)',
@@ -263,7 +263,7 @@ const KeyFeatures = () => {
                 <Image
                   src={Manage}
                   alt="standard rating"
-                  className="tw-absolute tw-bottom-0 tw-h-[200px] tw-w-[441px] tw-rounded-bl-[18px] tw-rounded-br-[25px] md:tw-bottom-[-18px] md:tw-h-full"
+                  className="tw-absolute tw-bottom-0 tw-h-[200px] md:tw-h-[250px] md:tw-bottom-[-14px] tw-w-[441px] tw-rounded-bl-[18px] tw-rounded-br-[25px] lg:tw-bottom-[-18px] lg:tw-h-full"
                 />
               </Box>
             </Box>
@@ -309,7 +309,7 @@ const KeyFeatures = () => {
                 <Image
                   src={Graph}
                   alt="standard rating"
-                  className="tw-mt-[11px] tw-h-[224px] tw-w-full md:tw-mt-[14px] lg:tw-h-[292px]"
+                  className="tw-mt-[11px] tw-h-[224px] tw-w-full md:tw-mt-[14px] md:tw-h-[292px]"
                 />
               </Box>
             </Box>

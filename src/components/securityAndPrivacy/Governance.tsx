@@ -174,7 +174,7 @@ const Governance = () => {
             <TitleAndSubtitle
               title={'Security and Compliance at PayStandards'}
               subtitle={
-                'PayStandards maintains a SOC 2 Type I attestation and a GDPR compliance certification. Our SOC 2 Type I report and GDPR certificates are available on our Trust Report.'
+                'PayStandards maintains a SOC 2 Type II attestation and a GDPR compliance certification. Our SOC 2 Type II report and GDPR certificates are available on our Trust Report.'
               }
               titleColor={'gray.main'}
             />
