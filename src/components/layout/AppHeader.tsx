@@ -23,20 +23,25 @@ import { Close, KeyboardArrowDown, Menu as MenuIcon } from '@mui/icons-material'
 import { HeaderMenu as pages } from '@/utils/jsons/LayoutData';
 import { Grid } from '@mui/system';
 import Link from 'next/link';
+import { bindHover, bindMenu, PopupState, usePopupState } from 'material-ui-popup-state/hooks';
+import HoverMenu from 'material-ui-popup-state/HoverMenu';
 
 const AppHeader = () => {
-  const [anchorElDropdown, setAnchorElDropdown] = useState(null);
   const [selectedMenuIndex, setSelectedMenuIndex] = useState<number | null>(null);
   const [drawerOpen, setDrawerOpen] = useState<boolean | undefined>(false);
   const [isFloating, setIsFloating] = useState<boolean>(false);
 
-  const handleMenuOpen = (event: React.BaseSyntheticEvent, index: number) => {
-    setAnchorElDropdown(event.currentTarget);
+  const popupState: PopupState[] = [];
+  pages.forEach((page, index) => {
+    // eslint-disable-next-line react-hooks/rules-of-hooks
+    popupState[index] = usePopupState({ variant: 'popover', popupId: `menu-${index}` });
+  });
+
+  const handleMenuOpen = (index: number) => {
     setSelectedMenuIndex(index);
   };
 
   const handleMenuClose = () => {
-    setAnchorElDropdown(null);
     setSelectedMenuIndex(null);
   };
 
@@ -282,7 +287,15 @@ const AppHeader = () => {
                 {pages.map((page, index) => (
                   <React.Fragment key={index}>
                     <Button
-                      onClick={(event) => handleMenuOpen(event, index)}
+                      {...bindHover(popupState[index])}
+                      onMouseOver={(e: React.MouseEvent) => {
+                        bindHover(popupState[index]).onMouseOver(e);
+                        handleMenuOpen(index);
+                      }}
+                      onMouseLeave={(e: React.MouseEvent) => {
+                        bindHover(popupState[index]).onMouseLeave(e);
+                        handleMenuClose();
+                      }}
                       disableRipple
                       style={{ minWidth: '150px' }}
                       className={`tw-flex !tw-text-[20px] hover:tw-bg-transparent focus:tw-outline-none ${selectedMenuIndex === index ? '!tw-text-blue !tw-font-[600]' : '!tw-text-black'}`}
@@ -290,10 +303,8 @@ const AppHeader = () => {
                       {page.name}
                       <KeyboardArrowDown className="tw-ml-3" />
                     </Button>
-                    <Menu
-                      anchorEl={anchorElDropdown}
-                      open={selectedMenuIndex === index}
-                      onClose={handleMenuClose}
+                    <HoverMenu
+                      {...bindMenu(popupState[index])}
                       sx={{ minWidth: '200px' }}
                       MenuListProps={{
                         'aria-labelledby': 'basic-button',
@@ -303,26 +314,22 @@ const AppHeader = () => {
                           borderRadius: '0 0 14px 14px',
                         },
                       }}
-                      PaperProps={{
-                        sx: {
-                          minWidth: '170px',
-                          maxWidth: '250px',
-                          position: 'relative',
-                          padding: '1px', // Adjust based on your border width
-                          borderRadius: '0 0 15px 15px', // Adjust as needed
-                          background: 'linear-gradient(180deg, #FFFFFF, #3860FF)',
-                          boxShadow: 'none',
+                      slotProps={{
+                        paper: {
+                          sx: {
+                            minWidth: '170px !important',
+                            maxWidth: '250px',
+                            position: 'relative',
+                            padding: '1px', // Adjust based on your border width
+                            borderRadius: '0 0 15px 15px', // Adjust as needed
+                            background: 'linear-gradient(180deg, #FFFFFF, #3860FF)',
+                            boxShadow: 'none',
+                          },
                         },
                       }}
                     >
                       {page.menuItems.map((item, i) => (
-                        <Link
-                          href={item.link}
-                          key={i}
-                          onClick={handleMenuClose}
-                          target={item?.target}
-                          rel={item?.rel}
-                        >
+                        <Link href={item.link} key={i} onClick={popupState[index]?.close}>
                           <MenuItem
                             sx={{
                               '&:hover': {
@@ -335,7 +342,7 @@ const AppHeader = () => {
                           </MenuItem>
                         </Link>
                       ))}
-                    </Menu>
+                    </HoverMenu>
                   </React.Fragment>
                 ))}
               </Box>
