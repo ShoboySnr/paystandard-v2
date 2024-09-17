@@ -84,6 +84,7 @@ const AppHeader = () => {
           top: isFloating ? '0px' : '-100px',
           left: '50%',
           zIndex: 1300,
+          px: { md: '32px', lg: '0px' },
         }}
       >
         <Container
@@ -107,19 +108,19 @@ const AppHeader = () => {
               sx={{
                 width: '100%',
                 my: { xs: '10px', md: isFloating ? '10px' : '20px' },
-                minHeight: { xs: '30px', md: '75px' },
-                height: { xs: '30px', md: '75px' },
+                minHeight: { xs: '30px', sm: '60px', md: '75px' },
+                height: { xs: '30px', sm: '60px', md: '75px' },
                 border: '1px solid transparent',
                 borderColor: 'gray.main',
                 borderRadius: '38px',
-                pl: { xs: '20px', md: '40px' },
+                pl: { xs: '20px', lg: '40px' },
                 backgroundColor: '#FFF',
               }}
               disableGutters
             >
               <Link href={'/'}>
                 <Image
-                  className={'tw-h-[18px] tw-w-auto md:tw-h-[40px]'}
+                  className={'tw-h-[18px] tw-w-auto sm:tw-h-[30px] md:tw-h-[35px] lg:tw-h-[40px]'}
                   priority
                   src={AppLogo}
                   alt="Pay Standards"
@@ -270,7 +271,14 @@ const AppHeader = () => {
                   </Box>
                 </Drawer>
               </Box>
-              <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' }, my: 1, ml: 4 }}>
+              <Box
+                sx={{
+                  flexGrow: 1,
+                  display: { xs: 'none', md: 'flex' },
+                  my: 1,
+                  ml: { md: 2, lg: 4 },
+                }}
+              >
                 {pages.map((page, index) => (
                   <React.Fragment key={index}>
                     <Button
@@ -342,9 +350,9 @@ const AppHeader = () => {
                       height: '75%',
                       border: 'none',
                       borderRadius: '50px',
-                      px: '40px',
-                      mr: '20px',
-                      fontSize: '20px',
+                      px: { xs: '30px', md: '20px', lg: '40px' },
+                      mr: { xs: '10px', lg: '20px' },
+                      fontSize: { xs: '18px', md: '18px', lg: '20px' },
                     }}
                     className={'!tw-bg-[#88A0FF1A] !tw-text-dark-gray'}
                     variant="outlined"
@@ -356,8 +364,8 @@ const AppHeader = () => {
                   <Button
                     sx={{
                       height: '100%',
-                      px: { xs: '20px', md: '40px' },
-                      fontSize: { xs: '12px', md: '20px' },
+                      px: { xs: '30px', lg: '40px' },
+                      fontSize: { xs: '12px', sm: '16px', md: '20px' },
                     }}
                     className={'!tw-rounded-full'}
                     variant="contained"
@@ -370,15 +378,19 @@ const AppHeader = () => {
             <Box sx={{ display: { xs: 'block', md: 'none' } }}>
               <IconButton
                 sx={{
-                  height: '30px',
-                  width: '30px',
+                  height: { xs: '30px', sm: '60px' },
+                  width: { xs: '30px', sm: '60px' },
                   padding: '10px',
                 }}
                 className="!tw-bg-light-gray"
                 aria-label="open drawer"
                 onClick={toggleDrawer(true)}
               >
-                <MenuIcon fontSize="small" />
+                <MenuIcon
+                  sx={{
+                    fontSize: { xs: '18px', sm: '20px' },
+                  }}
+                />
               </IconButton>
             </Box>
           </Box>
