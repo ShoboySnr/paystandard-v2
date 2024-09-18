@@ -24,8 +24,8 @@ jobs:
             - name: Configure AWS credentials from AWS account
               uses: aws-actions/configure-aws-credentials@v2
               with:
-                role-to-assume: arn:aws:iam::774305608367:role/pay-standards-github-action-policy
-                aws-region: ${{ env.AWS_REGION }}
+                role-to-assume: arn:aws:iam::774305608367:role/pay-standards-github-actions-role
+                aws-region: ${{ secrets.AWS_REGION }}
 
             - name: Install Dependencies
               run: /
@@ -38,12 +38,12 @@ jobs:
 
             - name: Copy files to the production website with the AWS CLI
               run: /
-                aws s3 sync --delete ${{ env.NEXTJS_DIST }} s3://${{ env.S3_BUCKET }}
+                aws s3 sync --delete ${{ secrets.NEXTJS_DIST }} s3://${{ secrets.S3_BUCKET }}
 
             - name: Copy files to the production website with the AWS CLI
               run: /
                 aws cloudfront create-invalidation \ 
-                --distribution-id ${{ env.CLOUDFRONT_DISTRIBUTION_ID }}
+                --distribution-id ${{ secrets.CLOUDFRONT_DISTRIBUTION_ID }}
                 --path "/*"
 
             
