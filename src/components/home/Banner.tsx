@@ -27,7 +27,7 @@ const Banner = () => {
     >
       <Box
         sx={{
-          maxWidth: '511px',
+          maxWidth: { sm: '65%', md: '511px' },
           px: {
             md: '0',
             xs: '15px',
@@ -53,6 +53,9 @@ const Banner = () => {
             fontWeight: 'normal',
             mt: '16px',
             color: 'black.main',
+            '@media (min-width: 450px) and (max-width: 600px)': {
+              width: '70%',
+            },
           }}
         >
           <Box
@@ -163,7 +166,8 @@ const Banner = () => {
           },
           top: {
             md: '-100px',
-            xs: '50px',
+            xs: 'unset',
+            sm: '50px',
           },
           bottom: {
             md: 'unset',
