@@ -148,7 +148,7 @@ const Banner = () => {
             }}
           >
             <Box>
-              <Image src="/assets/home/fortune500.png" width={57} height={74} alt="fortune500" />
+              <Image src="/assets/home/fortune-500.png" width={57} height={74} alt="fortune500" />
             </Box>
             <Box>
               <Image src="/assets/home/ftse-100.png" width={102} height={19} alt="ftse100" />
