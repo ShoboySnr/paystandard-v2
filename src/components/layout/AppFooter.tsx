@@ -93,12 +93,14 @@ const AppFooter = () => {
               },
             }}
           >
-            <Image
-              className={'tw-h-[40px] tw-w-auto md:tw-h-[50px]'}
-              priority
-              src={AppLogo}
-              alt="Pay Standards"
-            />
+            <div className={'tw-flex'}>
+              <Image
+                className={'tw-h-[40px] tw-w-auto md:tw-h-[50px]'}
+                priority
+                src={AppLogo}
+                alt="Pay Standards"
+              />
+            </div>
 
             <Box>
               <p className="tw-mt-2">Built in New York, New York</p>

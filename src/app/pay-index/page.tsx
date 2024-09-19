@@ -116,16 +116,6 @@ const IndexProduct = () => {
                 }}
               >
                 Pay Index{' '}
-                <Typography
-                  sx={{
-                    mt: 0.8,
-                    fontWeight: '400',
-                    fontSize: '12px',
-                    fontStyle: 'normal',
-                  }}
-                >
-                  TM
-                </Typography>
               </Box>
               <Box
                 sx={{
@@ -226,9 +216,8 @@ const IndexProduct = () => {
                   pt: 2,
                 }}
               >
-                Learn How Pay Index Can Bring You Clear <br /> Pay Analytics and Actionable Insight
-                {/*Learn How the Pay Index<span className={'tw-size-32 tw-font-normal'}>™ </span> Can*/}
-                {/*Bring Clear Pay Analytics and Actionable Insight*/}
+                Learn How Pay Index Can Bring You Clear <br />
+                Pay Analytics and Actionable Insight
               </Typography>
             }
           />

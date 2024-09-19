@@ -24,7 +24,8 @@ jobs:
             - name: Configure AWS credentials from AWS account
               uses: aws-actions/configure-aws-credentials@v2
               with:
-                role-to-assume: arn:aws:iam::774305608367:role/pay-standards-github-actions-role
+                role-to-assume: arn:aws:iam::774305608367:role/GitHubAction-AssumeRoleWithAction
+                role-session-name: GitHub_to_AWS_via_FederatedOIDC
                 aws-region: ${{ secrets.AWS_REGION }}
 
             - name: Install Dependencies

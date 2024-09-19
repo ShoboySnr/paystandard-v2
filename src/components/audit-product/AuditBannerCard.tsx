@@ -72,9 +72,8 @@ const AuditBannerCard = ({ title, paragraph }: { title: string; paragraph: strin
               lineHeight: '150%',
               color: 'black.main',
             }}
-          >
-            {paragraph}
-          </Typography>
+            dangerouslySetInnerHTML={{ __html: paragraph }}
+          />
           <Link href={'#demo'}>
             <Button
               variant="contained"

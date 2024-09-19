@@ -113,7 +113,7 @@ const AuditProduct = () => {
                   fontStyle: 'normal',
                 }}
               >
-                TM
+                &#8482;
               </Typography>
             </Box>
             <Box
@@ -163,42 +163,6 @@ const AuditProduct = () => {
           <CoreBenefits data={coreBenefits} />
         </Box>
       </AppContainer>
-      {/*<Box>*/}
-      {/*  <AppContainer>*/}
-      {/*    <Box*/}
-      {/*      sx={{*/}
-      {/*        position: 'relative', // Ensures the card can position its children correctly*/}
-      {/*        px: { xs: 9.5, md: 18 },*/}
-      {/*        zIndex: 1, // Ensure the card is above the dividers*/}
-      {/*      }}*/}
-      {/*    >*/}
-      {/*      <QuoteCard content={quoteCardContent} />*/}
-      {/*    </Box>*/}
-      {/*  </AppContainer>*/}
-      {/*  <Box*/}
-      {/*    sx={{*/}
-      {/*      position: 'relative', // Ensures positioning of the dividers relative to this Box*/}
-      {/*      zIndex: 0, // Places the dividers below the card*/}
-      {/*      mt: { xs: -32.5, lg: -22 }, // Adjust as needed to align with card*/}
-      {/*    }}*/}
-      {/*  >*/}
-      {/*    <Divider*/}
-      {/*      sx={{*/}
-      {/*        mx: { xs: 'auto', md: '0' },*/}
-      {/*        borderColor: 'primary.main',*/}
-      {/*        borderWidth: '2px',*/}
-      {/*      }}*/}
-      {/*    />*/}
-      {/*    <Divider*/}
-      {/*      sx={{*/}
-      {/*        mt: 4.5,*/}
-      {/*        mx: { xs: 'auto', md: '0' },*/}
-      {/*        borderColor: 'primary.main',*/}
-      {/*        borderWidth: '2px',*/}
-      {/*      }}*/}
-      {/*    />*/}
-      {/*  </Box>*/}
-      {/*</Box>*/}
       <Box sx={{ mt: { xs: -28, md: -14 } }} id="demo">
         <ScheduleDemoForm
           hubspotFormId={'92923574-35b8-4773-8407-99bb806c9530'}
@@ -212,8 +176,8 @@ const AuditProduct = () => {
                 pt: 2,
               }}
             >
-              Learn How to Leverage Pay Audit to Simplify the <br /> Year-End Pay Process at Your
-              Company
+              Learn How to Leverage Pay Audit to Simplify the <br />
+              Year-End Pay Process at Your Company
               {/*Learn How to Leverage the Pay Audit*/}
               {/*<span className={'tw-size-32 tw-font-normal'}>™ </span> <br /> at Your Company*/}
             </Typography>

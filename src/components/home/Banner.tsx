@@ -171,7 +171,7 @@ const Banner = () => {
           },
           bottom: {
             md: 'unset',
-            xs: '-80px',
+            xs: '-20px',
           },
           zIndex: '-10',
         }}

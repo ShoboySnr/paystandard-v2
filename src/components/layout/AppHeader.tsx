@@ -17,6 +17,7 @@ import {
   ListItemText,
   MenuItem,
   Toolbar,
+  Typography,
 } from '@mui/material';
 import { Close, KeyboardArrowDown, Menu as MenuIcon } from '@mui/icons-material';
 import { HeaderMenu as pages } from '@/utils/jsons/LayoutData';
@@ -122,13 +123,15 @@ const AppHeader = () => {
               }}
               disableGutters
             >
-              <Link href={'/'}>
-                <Image
-                  className={'tw-h-[18px] tw-w-auto sm:tw-h-[30px] md:tw-h-[35px] lg:tw-h-[40px]'}
-                  priority
-                  src={AppLogo}
-                  alt="Pay Standards"
-                />
+              <Link href={'/'} className={'tw-flex'}>
+                <>
+                  <Image
+                    className={'tw-h-[18px] tw-w-auto sm:tw-h-[30px] md:tw-h-[35px] lg:tw-h-[40px]'}
+                    priority
+                    src={AppLogo}
+                    alt="Pay Standards"
+                  />
+                </>
               </Link>
 
               <Box sx={{ flexGrow: 1, display: { xs: 'flex', md: 'none' } }}>

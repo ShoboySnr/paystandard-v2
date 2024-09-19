@@ -159,9 +159,6 @@ const IndexProduct = () => {
               >
                 Learn How Pay Pilot Will Empower Year-Round Pay <br /> Decisions and Facilitate Pay
                 Transparency For Your Company
-                {/*  Learn How to Leverage the Pay Pilot*/}
-                {/*<span className={'tw-size-32 tw-font-normal'}>™ </span> <br />*/}
-                {/*at Your Company*/}
               </Typography>
             }
           />

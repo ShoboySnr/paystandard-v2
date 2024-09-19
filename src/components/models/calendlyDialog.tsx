@@ -62,7 +62,7 @@ const CalendlyDialog = ({
         >
           {/* Embed Calendly iframe */}
           <iframe
-            src="https://calendly.com/paystandards/demo"
+            src="https://calendly.com/paystandards/demo?hide_gdpr_banner=1"
             width="100%"
             height="100%"
             frameBorder="0"
