@@ -11,12 +11,6 @@ jobs:
         name: Build and Deploy
         runs-on: ubuntu-latest
 
-        env:
-            NEXTJS_DIST: out
-            AWS_REGION: us-east-1
-            S3_BUCKET: pay-standards-v2
-            CLOUDFRONT_DISTRIBUTION_ID: E2B8OOWFRUM8W8
-
         steps:
             - name: Checkout
               uses: actions/checkout@v3
@@ -41,10 +35,6 @@ jobs:
             - name: Copy files to the production website with the AWS CLI
               run: |
                 aws s3 sync --delete ${{ secrets.NEXTJS_DIST }} s3://${{ secrets.S3_BUCKET }}
-
-            - name: Copy files to the production website with the AWS CLI
-              run: |
-                aws cloudfront create-invalidation --distribution-id ${{ secrets.CLOUDFRONT_DISTRIBUTION_ID }} --path "/*"
 
             
         
