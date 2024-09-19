@@ -1,7 +1,7 @@
 name: Build and Deploy Website to AWS S3 and Cloudfront
 on:
     push:
-        branches: ['design-updates-v2']
+        branches: ['main']
 
 permissions:
     id-token: write
