@@ -95,7 +95,7 @@ export default function Contact() {
                       my: { md: '16px', xs: '70px' },
                     }}
                   >
-                    Have questions? Need supports? Curious about PayStandards?
+                    Have questions? Need support? Curious about PayStandards?
                     {/*<br />*/}
                     {/*<br />*/}
                     {/*We’d love to find out more about your unique compensation situation - and how we*/}
