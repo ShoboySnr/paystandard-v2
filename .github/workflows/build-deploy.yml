@@ -36,7 +36,7 @@ jobs:
                 npm install @types/node
 
             - name: Build Static Website
-              run: npm run export
+              run: npm run build
 
             - name: Copy files to the production website with the AWS CLI
               run: |
