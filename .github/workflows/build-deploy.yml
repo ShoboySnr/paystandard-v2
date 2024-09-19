@@ -29,7 +29,7 @@ jobs:
                 aws-region: ${{ secrets.AWS_REGION }}
 
             - name: Install Dependencies
-              run: /
+              run: |
                 node --version
                 npm ci --production
                 npm install @types/react
@@ -39,11 +39,11 @@ jobs:
               run: npm run export
 
             - name: Copy files to the production website with the AWS CLI
-              run: /
+              run: |
                 aws s3 sync --delete ${{ secrets.NEXTJS_DIST }} s3://${{ secrets.S3_BUCKET }}
 
             - name: Copy files to the production website with the AWS CLI
-              run: /
+              run: |
                 aws cloudfront create-invalidation \ 
                 --distribution-id ${{ secrets.CLOUDFRONT_DISTRIBUTION_ID }}
                 --path "/*"
