@@ -50,8 +50,10 @@ export default function Contact() {
               bottom: 0,
               borderRadius: 'inherit', // Matches the parent border radius
               padding: '1px', // Adjust padding to the border width you want
-              background: 'linear-gradient(0deg, #525252 19.67%, #52525200 100%)',
-              WebkitMask: 'linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0)',
+              background:
+                'linear-gradient(0deg, #525252 19.67%, #52525200 100%)',
+              WebkitMask:
+                'linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0)',
               WebkitMaskComposite: 'destination-out',
               maskComposite: 'exclude',
             },
@@ -138,8 +140,9 @@ export default function Contact() {
                       fontWeight: '400',
                     }}
                   >
-                    Let’s talk about how we might work together! PayStandards can be a great
-                    compliment to your solution or existing services.
+                    Let’s talk about how we might work together! PayStandards
+                    can be a great compliment to your solution or existing
+                    services.
                   </Typography>
 
                   <div className="tw-flex tw-justify-center">
@@ -182,7 +185,11 @@ export default function Contact() {
                 xs: 12,
               }}
             >
-              <Image src={MailFrame} alt="live demo" className="tw-h-[70px] tw-w-[70px]" />
+              <Image
+                src={MailFrame}
+                alt="live demo"
+                className="tw-h-[70px] tw-w-[70px]"
+              />
             </Grid>
             <Grid
               container
@@ -201,7 +208,8 @@ export default function Contact() {
                   textAlign: { xs: 'center', md: 'left' },
                 }}
               >
-                Join our newsletter and be the first to access insights from PayStandards.
+                Join our newsletter and be the first to access insights from
+                PayStandards.
                 {/*Join the growing PayStandards*/}
                 {/*<br className={'tw-block md:tw-hidden'} /> community*/}
                 {/*<br className={'tw-hidden md:tw-block'} /> and be the first to*/}
@@ -223,7 +231,9 @@ export default function Contact() {
                 className="tw-h-full"
               >
                 <div className="tw-w-full tw-justify-center">
-                  <NewsletterForm hubspotFormId={'016bb2fc-a1f1-4005-a8e0-bc1ca5f2cac7'} />
+                  <NewsletterForm
+                    hubspotFormId={'016bb2fc-a1f1-4005-a8e0-bc1ca5f2cac7'}
+                  />
                 </div>
               </Box>
             </Grid>

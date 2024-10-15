@@ -77,8 +77,8 @@ const AboutUs = () => {
               color: 'black.main',
             }}
           >
-            PayStandards is the bottom line-driven compensation software platform that delivers true
-            pay equity and pay transparency.
+            PayStandards is the bottom line-driven compensation software
+            platform that delivers true pay equity and pay transparency.
           </Typography>
         </Grid>
       </Grid>
@@ -107,8 +107,10 @@ const AboutUs = () => {
                   bottom: 0,
                   borderRadius: 'inherit', // Matches the parent border radius
                   padding: '1px', // Adjust padding to the border width you want
-                  background: 'linear-gradient(0deg, #525252 19.67%, #52525200 100%)',
-                  WebkitMask: 'linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0)',
+                  background:
+                    'linear-gradient(0deg, #525252 19.67%, #52525200 100%)',
+                  WebkitMask:
+                    'linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0)',
                   WebkitMaskComposite: 'destination-out',
                   maskComposite: 'exclude',
                   zIndex: 0,
@@ -272,8 +274,8 @@ const AboutUs = () => {
               >
                 Passionate about using
                 <br className={'sm:tw-hidden'} /> technology to help people?
-                <br /> Join our journey to raise the <br className={'sm:tw-hidden'} /> standard of
-                pay worldwide.
+                <br /> Join our journey to raise the{' '}
+                <br className={'sm:tw-hidden'} /> standard of pay worldwide.
               </Typography>
               <Box sx={{ mt: '45px' }}>
                 <Link href={'mailto: hello@paystandards.com'}>

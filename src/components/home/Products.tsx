@@ -37,7 +37,9 @@ const HoveredIcon: React.FC<HoverableIconProps> = ({
   return (
     <>
       <Image
-        className={'tw-h-[50px] tw-w-[50px] md:tw-h-[70px] md:tw-w-[70px] tw-mx-auto'}
+        className={
+          'tw-h-[50px] tw-w-[50px] md:tw-h-[70px] md:tw-w-[70px] tw-mx-auto'
+        }
         src={isHovered ? hoveredImage : lightImage}
         alt={altText}
         loading="eager"
@@ -110,9 +112,9 @@ const Products = () => {
             Raise the Standard <br /> of Pay at Your Company
           </Typography>
           <Typography sx={{ fontSize: '18px', mt: '22px', fontWeight: '400' }}>
-            Powered by a market-leading pay algorithm, real-time analytics, and an easy-to-use
-            software platform, PayStandards helps you deliver true pay equity and achieve pay
-            transparency – without the headache.
+            Powered by a market-leading pay algorithm, real-time analytics, and
+            an easy-to-use software platform, PayStandards helps you deliver
+            true pay equity and achieve pay transparency – without the headache.
           </Typography>
         </Box>
         <Box

@@ -74,7 +74,12 @@ const CoreBenefits = () => {
         >
           <Grid size={12}>
             <Box sx={{ display: 'flex', gap: '26px' }}>
-              <Image src={'/assets/home/circle1.svg'} alt="image.png" height={70} width={70} />
+              <Image
+                src={'/assets/home/circle1.svg'}
+                alt="image.png"
+                height={70}
+                width={70}
+              />
               <Box
                 sx={{
                   width: '100%',
@@ -350,7 +355,13 @@ const CoreBenefits = () => {
                     borderRadius: '5px',
                   }}
                 />
-                <Typography sx={{ fontSize: '14px', lineHeight: '140%', fontWeight: '500' }}>
+                <Typography
+                  sx={{
+                    fontSize: '14px',
+                    lineHeight: '140%',
+                    fontWeight: '500',
+                  }}
+                >
                   Relative to Traditional
                   <br /> Approaches
                 </Typography>

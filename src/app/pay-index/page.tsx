@@ -73,7 +73,8 @@ const coreBenefits = [
     ),
   },
 ];
-const IframeSrc = 'https://www.youtube.com/embed/x91MPoITQ3I?si=6WdYf-CPNY0pQoqh';
+const IframeSrc =
+  'https://www.youtube.com/embed/x91MPoITQ3I?si=6WdYf-CPNY0pQoqh';
 
 export const metadata: Metadata = {
   title: 'Pay Index',
@@ -103,7 +104,12 @@ const IndexProduct = () => {
                 color: 'black.main',
               }}
             >
-              <Image width={71} src={IndexIcon} alt="Pay Index" className="tw-m-auto" />
+              <Image
+                width={71}
+                src={IndexIcon}
+                alt="Pay Index"
+                className="tw-m-auto"
+              />
               <Box
                 sx={{
                   fontSize: { xs: '32px', md: '40px' },
@@ -135,8 +141,8 @@ const IndexProduct = () => {
                   fontSize: { xs: '18px', md: '24px' },
                 }}
               >
-                Pay Index gives you standardized ratings, trends, and root-cause analytics that
-                illuminate your company’s pay equity position.
+                Pay Index gives you standardized ratings, trends, and root-cause
+                analytics that illuminate your company’s pay equity position.
               </Box>
             </Box>
           </AppContainer>
