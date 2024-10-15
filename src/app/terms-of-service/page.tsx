@@ -43,7 +43,7 @@ export default function TermsOfService() {
             }}
           >
             <span className="tw-font-[700]">Last revised: </span>
-            October 27, 2023
+            September 17, 2024
           </Typography>
         </Box>
         <Box
@@ -65,6 +65,7 @@ export default function TermsOfService() {
                 textAlign: 'left',
               }}
             >
+<<<<<<< HEAD
               IMPORTANT – THIS IS A LEGAL AGREEMENT BETWEEN YOU ("You" or the "Authorized User") AND
               PAYSTANDARDS INC. ("PayStandards," "We," or the "Company"). BEFORE ACCESSING OR USING
               ANY PART OF THE www.paystandards.com WEBSITE, YOU SHOULD READ CAREFULLY THE FOLLOWING
@@ -76,6 +77,112 @@ export default function TermsOfService() {
               AGREE TO ALL OF THE TERMS AND CONDITIONS CONTAINED IN THIS TOS. IF YOU DO NOT AGREE
               WITH THIS TOS, YOU ARE NOT GRANTED PERMISSION TO ACCESS OR OTHERWISE USE THE WEBSITE
               AND ARE INSTRUCTED TO EXIT THE WEBSITE IMMEDIATELY.
+=======
+              IMPORTANT – THIS IS A LEGAL AGREEMENT BETWEEN YOU ("You" or the "Authorized User") AND 
+              PAYSTANDARDS INC. ("PayStandards," "We," or the "Company"). 
+              BEFORE ACCESSING OR USING ANY PART OF THE www.paystandards.com WEBSITE, YOU SHOULD READ CAREFULLY 
+              THE FOLLOWING TERMS AND CONDITIONS CONTAINED IN THIS TERMS OF SERVICE AGREEMENT (the or this "TOS") AS 
+              THEY GOVERN YOUR ACCESS TO AND USE OF THIS PAYSTANDARDS WEB SITE AND ANY PROGRAMS, SERVICES, TOOLS, MATERIALS, OR 
+              INFORMATION AVAILABLE THROUGH THE PAYSTANDARDS WEBSITE OR USED IN CONNECTION THEREWITH (collectively, the "WebSite"). 
+              PAYSTANDARDS IS WILLING TO LICENSE AND ALLOW THE USE OF THIS WEBSITE ONLY ON THE CONDITION THAT YOU ACCEPT AND AGREE 
+              TO ALL OF THE TERMS AND CONDITIONS CONTAINED IN THIS TOS.  IF YOU DO NOT AGREE WITH THIS TOS, YOU ARE NOT GRANTED 
+              PERMISSION TO ACCESS OR OTHERWISE USE THE WEBSITE AND ARE INSTRUCTED TO EXIT THE WEBSITE IMMEDIATELY. 
+            </Typography>
+            <Typography
+              sx={{
+                mb: '20px',
+                fontSize: '18px',
+                fontWeight: 700,
+                color: 'dark-purple.main',
+                textAlign: 'left',
+              }}
+            >
+              1. AGREEMENT TO TERMS
+            </Typography>
+
+            <Typography
+              sx={{
+                mb: '20px',
+                fontSize: '18px',
+                fontWeight: 400,
+                color: 'dark-purple.main',
+              }}
+            >
+              These Terms of Use constitute a legally binding agreement made between you, whether
+              personally or on behalf of an entity (“you”) and PayStandards Inc., “we”, “us”, or
+              “our”), concerning your access to and use of the website as well as any other media
+              form, media channel, mobile website or mobile application related, linked, or
+              otherwise connected thereto (collectively, the “Site”). We are registered in Delaware,
+              United States and have our registered office at 40 Wall Street, #2706, New York, NY
+              10005. You agree that by accessing the Site, you have read, understood, and agree to
+              be bound by all of these Terms of Use. IF YOU DO NOT AGREE WITH ALL OF THESE TERMS OF
+              USE, THEN YOU ARE EXPRESSLY PROHIBITED FROM USING THE SITE AND YOU MUST DISCONTINUE
+              USE IMMEDIATELY.
+            </Typography>
+
+            <Typography
+              sx={{
+                mb: '20px',
+                fontSize: '18px',
+                fontWeight: 400,
+                color: 'dark-purple.main',
+              }}
+            >
+              Supplemental terms and conditions or documents that may be posted on the Site from
+              time to time are hereby expressly incorporated herein by reference. We reserve the
+              right, in our sole discretion, to make changes or modifications to these Terms of Use
+              at any time and for any reason. We will alert you about any changes by updating the
+              “Last updated” date of these Terms of Use, and you waive any right to receive specific
+              notice of each such change. Please ensure that you check the applicable Terms every
+              time you use our Site so that you understand which Terms apply. You will be subject
+              to, and will be deemed to have been made aware of and to have accepted, the changes in
+              any revised Terms of Use by your continued use of the Site after the date such revised
+              Terms of Use are posted.
+            </Typography>
+
+            <Typography
+              sx={{
+                mb: '20px',
+                fontSize: '18px',
+                fontWeight: 400,
+                color: 'dark-purple.main',
+              }}
+            >
+              The information provided on the Site is not intended for distribution to or use by any
+              person or entity in any jurisdiction or country where such distribution or use would
+              be contrary to law or regulation or which would subject us to any registration
+              requirement within such jurisdiction or country. Accordingly, those persons who choose
+              to access the Site from other locations do so on their own initiative and are solely
+              responsible for compliance with local laws, if and to the extent local laws are
+              applicable.
+            </Typography>
+
+            <Typography
+              sx={{
+                mb: '20px',
+                fontSize: '18px',
+                fontWeight: 400,
+                color: 'dark-purple.main',
+              }}
+            >
+              The Site is not tailored to comply with industry-specific regulations (Health
+              Insurance Portability and Accountability Act (HIPAA), Federal Information Security
+              Management Act (FISMA), etc.), so if your interactions would be subjected to such
+              laws, you may not use this Site. You may not use the Site in a way that would violate
+              the Gramm-Leach-Bliley Act (GLBA).
+            </Typography>
+
+            <Typography
+              sx={{
+                mb: '20px',
+                fontSize: '18px',
+                fontWeight: 400,
+                color: 'dark-purple.main',
+              }}
+            >
+              The Site is intended for users who are at least 18 years old. Persons under the age of
+              18 are not permitted to use or register for the Site.
+>>>>>>> 9eb1799 (stashed update)
             </Typography>
           </Box>
           <Box>
