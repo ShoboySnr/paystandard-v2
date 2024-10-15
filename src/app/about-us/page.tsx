@@ -34,9 +34,9 @@ const AboutUs = () => {
         <Grid
           justifyContent={'center'}
           alignItems={'center'}
-          offset={{ md: 3 }}
+          offset={{ md: 2 }}
           size={{
-            md: 6,
+            md: 8,
             xs: 12,
           }}
           sx={{

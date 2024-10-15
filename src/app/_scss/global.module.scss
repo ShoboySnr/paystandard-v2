@@ -1,12 +1,12 @@
-.removeHeaderMargin{
+.removeHeaderMargin {
   margin-top: -50px;
   @screen md {
     margin-top: -115px;
   }
 }
-.addHeaderPadding{
-    padding-top: 50px;
-    @screen md {
-        padding-top: 115px;
-    }
+.addHeaderPadding {
+  padding-top: 50px;
+  @screen md {
+    padding-top: 115px;
+  }
 }

@@ -40,6 +40,7 @@ const HoveredIcon: React.FC<HoverableIconProps> = ({
         className={'tw-h-[50px] tw-w-[50px] md:tw-h-[70px] md:tw-w-[70px] tw-mx-auto'}
         src={isHovered ? hoveredImage : lightImage}
         alt={altText}
+        loading="eager"
       />
       <Typography
         sx={{
@@ -62,6 +63,7 @@ const Products = () => {
     <Box
       sx={{
         display: 'flex',
+        gap: '45px',
         flexDirection: {
           xs: 'column',
           md: 'row',
@@ -85,7 +87,7 @@ const Products = () => {
         sx={{
           flex: '4',
           p: {
-            md: '10px 22px',
+            md: '10px 0px',
             xs: '40px 0 0 0',
           },
         }}
@@ -113,7 +115,15 @@ const Products = () => {
             transparency – without the headache.
           </Typography>
         </Box>
-        <Box sx={{ mt: '66px', display: 'flex', justifyContent: 'space-around', color: '#fff' }}>
+        <Box
+          sx={{
+            mt: '66px',
+            display: 'flex',
+            justifyContent: 'space-between',
+            color: '#fff',
+            paddingRight: { md: '30px' },
+          }}
+        >
           <Box sx={imageSectionStyling}>
             <Link
               href={'/pay-index'}

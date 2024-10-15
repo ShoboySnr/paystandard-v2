@@ -64,7 +64,7 @@ const ScheduleDemoForm = ({
           <Typography
             sx={{ fontSize: '24px', textAlign: 'center', pt: 2.5, pb: 4, color: 'black.main' }}
           >
-            Book your demo with PayStandards.&#8482;
+            Book your demo with PayStandards.
           </Typography>
 
           <Box

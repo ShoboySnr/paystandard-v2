@@ -93,7 +93,7 @@ const IndexProduct = () => {
                     fontStyle: 'normal',
                   }}
                 >
-                  TM
+                  &#8482;
                 </Typography>
               </Box>
               <Box

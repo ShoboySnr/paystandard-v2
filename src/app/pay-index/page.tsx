@@ -8,7 +8,6 @@ import BannerCard from '@/components/product/BannerCard';
 import React from 'react';
 import KeyFeatures from '@/components/product/index/KeyFeatures';
 import CoreBenefits from '@/components/product/CoreBenefits';
-import QuoteCard from '@/components/product/QuoteCard';
 import ScheduleDemoForm from '@/components/product/ScheduleDemoForm';
 import Icon1 from '~/assets/icons-common/core-benefits/icon_1.svg';
 import Icon2 from '~/assets/icons-common/core-benefits/icon_2.svg';
@@ -16,11 +15,12 @@ import Icon3 from '~/assets/icons-common/core-benefits/icon_3.svg';
 import Icon4 from '~/assets/icons-common/core-benefits/icon_4.svg';
 import Icon5 from '~/assets/icons-common/core-benefits/icon_5.svg';
 import styles from '@/app/_scss/global.module.scss';
+import image from '~/assets/products/pay-index.png';
 
 const bannerCardContent: { title: string; paragraph: string } = {
   title: 'Understand Your Pay with Acuity',
   paragraph:
-    'Go beyond the traditional pay gap metrics and understand your true pay equity position. Assess pay equity beyond the enterprise level – looking across different geographies, job levels, business units, and more. A comprehensive view which will not only supercharge your disclosure, but also help you identify where to take action',
+    'Go beyond the traditional pay gap metrics and understand your true pay equity position. Assess pay equity beyond the enterprise level – looking across different geographies, job levels, business units, and more. A comprehensive view which will not only supercharge your disclosure, but also help you identify where to take action.',
 };
 
 const quoteCardContent = {
@@ -74,7 +74,6 @@ const coreBenefits = [
   },
 ];
 const IframeSrc = 'https://www.youtube.com/embed/x91MPoITQ3I?si=6WdYf-CPNY0pQoqh';
-import image from '~/assets/products/video-image.png';
 
 export const metadata: Metadata = {
   title: 'Pay Index',
@@ -116,6 +115,16 @@ const IndexProduct = () => {
                 }}
               >
                 Pay Index{' '}
+                <Typography
+                  sx={{
+                    mt: 0.8,
+                    fontWeight: '400',
+                    fontSize: '12px',
+                    fontStyle: 'normal',
+                  }}
+                >
+                  &#8482;
+                </Typography>
               </Box>
               <Box
                 sx={{

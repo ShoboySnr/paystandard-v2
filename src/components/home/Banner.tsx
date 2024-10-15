@@ -80,9 +80,9 @@ const Banner = () => {
                 lineHeight: '150%',
               }}
             >
-              The PayStandards platform gives you pay recommendations that consider only the right
-              things, like performance, helping you save time, stay compliant, and optimize your
-              company’s most important expense and asset – your people.
+              The PayStandards platform gives you pay recommendations based on the right things,
+              like performance, helping you save time, stay compliant, and optimize your company’s
+              most important expense and asset – your people.
             </Typography>
           </Box>
         </Box>

@@ -21,7 +21,7 @@ import styles from '@/app/_scss/global.module.scss';
 const bannerCardContent: { title: string; paragraph: string } = {
   title: 'Power Your Year-End Pay Process',
   paragraph:
-    'Pay Audit is your go-to solution for the year-end compensation review process - including all features and benefits from the Pay Index and more. It empowers you to take action to make better pay decisions at year-end, protecting you with legal safeguards along the way, helping you to mitigate your legal risk, and optimizing your spend',
+    'Pay Audit is your go-to solution for the year-end compensation review process - including all features and benefits from the Pay Index and more. It empowers you to take action to make better pay decisions at year-end, protecting you with legal safeguards along the way, helping you to mitigate your legal risk, and optimizing your spend.',
 };
 
 const quoteCardContent = {

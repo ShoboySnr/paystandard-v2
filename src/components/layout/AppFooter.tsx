@@ -4,6 +4,8 @@ import { useSearchParams, usePathname, useRouter } from 'next/navigation';
 import { Grid } from '@mui/system';
 import AppLogo from '~/logos/logo-dark.svg';
 import LinkedInLogo from '~/logos/linkedin.svg';
+import TwitterLogo from '~/logos/x.svg';
+import YoutubeLogo from '~/logos/youtube.svg';
 import BrandingLogo from '~/assets/header/branding.png';
 import Image from 'next/image';
 import React, { useEffect, useState } from 'react';
@@ -104,8 +106,8 @@ const AppFooter = () => {
 
             <Box>
               <p className="tw-mt-2">Built in New York, New York</p>
-              <p className="tw-mt-2">©PayStandards Inc. 2024</p>
-              <p className="tw-mt-2">All rights reserved.</p>
+              <p className="tw-mt-2">© 2024 PayStandards Inc.</p>
+              {/*<p className="tw-mt-2">All rights reserved.</p>*/}
             </Box>
           </Box>
         </Grid>
@@ -203,14 +205,20 @@ const AppFooter = () => {
               },
             }}
           >
-            <Box sx={{ display: 'flex' }}>
+            <Box sx={{ display: 'flex', gap: '10px' }}>
               <Typography
                 sx={{ color: 'white.main', fontSize: '18px', fontWeight: '700px', mr: '5px' }}
               >
                 Follow Us:
               </Typography>
-              <Link href="https://www.linkedin.com/company/paystandards/" target="_blank">
+              <Link href="https://www.linkedin.com/company/paystandards" target="_blank">
                 <Image height={20} priority src={LinkedInLogo} alt="Pay Standards" />
+              </Link>
+              <Link href="https://x.com/PayStandards" target="_blank">
+                <Image height={20} priority src={TwitterLogo} alt="Pay Standards" />
+              </Link>
+              <Link href="https://www.youtube.com/@PayStandards" target="_blank">
+                <Image height={20} priority src={YoutubeLogo} alt="Pay Standards" />
               </Link>
             </Box>
           </Grid>

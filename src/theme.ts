@@ -35,7 +35,7 @@ const theme = createTheme({
     'deep-blue-secondary': palette.augmentColor({ color: { main: '#090C1A' } }),
     'light-blue': palette.augmentColor({ color: { main: '#88A0FF' } }),
     'light-blue-link': palette.augmentColor({ color: { main: '#3860FF' } }),
-    'dark-purple': palette.augmentColor({ color: { main: '#090C1A' } }),
+    'dark-purple': palette.augmentColor({ color: { main: '#240642' } }),
     gray: palette.augmentColor({ color: { main: '#090C1A' } }),
   },
   components: {
