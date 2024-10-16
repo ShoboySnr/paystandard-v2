@@ -73,7 +73,12 @@ const IndexProduct = () => {
                 color: 'black.main',
               }}
             >
-              <Image width={71} src={PayPilotIcon} alt="Pay Index" className="tw-m-auto" />
+              <Image
+                width={71}
+                src={PayPilotIcon}
+                alt="Pay Index"
+                className="tw-m-auto"
+              />
               <Box
                 sx={{
                   fontSize: { xs: '32px', md: '40px' },
@@ -105,8 +110,9 @@ const IndexProduct = () => {
                   fontSize: { xs: '18px', md: '24px' },
                 }}
               >
-                Pay Pilot helps you make better everyday pay decisions to sustain your pay equity
-                progress through an easy-to-use software platform.
+                Pay Pilot helps you make better everyday pay decisions to
+                sustain your pay equity progress through an easy-to-use software
+                platform.
               </Box>
             </Box>
           </AppContainer>
@@ -157,8 +163,8 @@ const IndexProduct = () => {
                   pt: 2,
                 }}
               >
-                Learn How Pay Pilot Will Empower Year-Round Pay <br /> Decisions and Facilitate Pay
-                Transparency For Your Company
+                Learn How Pay Pilot Will Empower Year-Round Pay <br /> Decisions
+                and Facilitate Pay Transparency For Your Company
               </Typography>
             }
           />

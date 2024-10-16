@@ -69,8 +69,8 @@ const Banner = () => {
                 lineHeight: '150%',
               }}
             >
-              From pay equity and pay transparency to employee engagement and retention, Total
-              Rewards professionals have a lot at stake.
+              From pay equity and pay transparency to employee engagement and
+              retention, Total Rewards professionals have a lot at stake.
             </Typography>
           </Box>
           <Box>
@@ -80,9 +80,10 @@ const Banner = () => {
                 lineHeight: '150%',
               }}
             >
-              The PayStandards platform gives you pay recommendations based on the right things,
-              like performance, helping you save time, stay compliant, and optimize your company’s
-              most important expense and asset – your people.
+              The PayStandards platform gives you pay recommendations based on
+              the right things, like performance, helping you save time, stay
+              compliant, and optimize your company’s most important expense and
+              asset – your people.
             </Typography>
           </Box>
         </Box>
@@ -148,10 +149,20 @@ const Banner = () => {
             }}
           >
             <Box>
-              <Image src="/assets/home/fortune-500.png" width={57} height={74} alt="fortune500" />
+              <Image
+                src="/assets/home/fortune-500.png"
+                width={57}
+                height={74}
+                alt="fortune500"
+              />
             </Box>
             <Box>
-              <Image src="/assets/home/ftse-100.png" width={102} height={19} alt="ftse100" />
+              <Image
+                src="/assets/home/ftse-100.png"
+                width={102}
+                height={19}
+                alt="ftse100"
+              />
             </Box>
           </Box>
         </Box>

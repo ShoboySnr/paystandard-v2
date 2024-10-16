@@ -93,7 +93,12 @@ const AuditProduct = () => {
               color: 'black.main',
             }}
           >
-            <Image width={71} src={IndexIcon} alt="Pay Index" className="tw-m-auto" />
+            <Image
+              width={71}
+              src={IndexIcon}
+              alt="Pay Index"
+              className="tw-m-auto"
+            />
             <Box
               sx={{
                 fontSize: { xs: '32px', md: '40px' },
@@ -125,14 +130,18 @@ const AuditProduct = () => {
                 fontSize: { xs: '18px', lg: '24px' },
               }}
             >
-              Pay Audit empowers you to make data-driven pay decisions during your annual year-end
-              compensation process, optimizing your compensation budget.
+              Pay Audit empowers you to make data-driven pay decisions during
+              your annual year-end compensation process, optimizing your
+              compensation budget.
             </Box>
           </Box>
         </AppContainer>
       </Box>
       <AppContainer>
-        <AuditBannerCard title={bannerCardContent.title} paragraph={bannerCardContent.paragraph} />
+        <AuditBannerCard
+          title={bannerCardContent.title}
+          paragraph={bannerCardContent.paragraph}
+        />
         <Box>
           <Typography
             sx={{
