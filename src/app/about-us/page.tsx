@@ -34,9 +34,9 @@ const AboutUs = () => {
         <Grid
           justifyContent={'center'}
           alignItems={'center'}
-          offset={{ md: 2 }}
+          offset={{ lg: 2 }}
           size={{
-            md: 8,
+            lg: 8,
             xs: 12,
           }}
           sx={{
@@ -61,9 +61,7 @@ const AboutUs = () => {
               color: 'black.main',
             }}
           >
-            Our Mission is to
-            <br className={'md:tw-hidden'} /> Raise the
-            <br className={'md:tw-hidden'} /> Standard of Pay
+            Our Mission is to Raise the Standard of Pay
           </Typography>
           <Typography
             sx={{

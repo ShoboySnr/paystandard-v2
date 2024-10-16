@@ -9,11 +9,13 @@ const BannerCard = ({
   paragraph,
   src,
   image,
+  showBorder = false,
 }: {
   title: string;
   paragraph: string;
   src?: string;
   image?: any;
+  showBorder?: boolean;
 }) => {
   return (
     <Paper
@@ -41,7 +43,7 @@ const BannerCard = ({
               <Image
                 src={image}
                 alt="Youtube Player"
-                className="tw-absolute tw-left-1/2 tw-top-1/2 tw-z-10 tw-h-[210px] tw-min-w-[110%] tw--translate-x-1/2 tw--translate-y-1/2 tw-transform lg:tw-h-[294px] lg:tw-min-w-[530px]"
+                className={`tw-absolute tw-left-1/2 tw-top-1/2 tw-z-10 tw-h-[210px] tw-min-w-[110%] tw--translate-x-1/2 tw--translate-y-1/2 tw-transform lg:tw-h-[294px] lg:tw-min-w-[530px] ${showBorder ? 'tw-border tw-rounded-[25px] tw-border-black md:tw-p-[20px] tw-p-[10px] tw-bg-white' : ''}`}
               />
             </Box>
           ) : image ? (

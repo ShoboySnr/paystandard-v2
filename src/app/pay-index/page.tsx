@@ -147,6 +147,7 @@ const IndexProduct = () => {
             paragraph={bannerCardContent.paragraph}
             image={image}
             src={IframeSrc}
+            showBorder={true}
           />
           <Box>
             <Typography
