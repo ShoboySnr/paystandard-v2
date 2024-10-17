@@ -37,7 +37,10 @@ const BannerCard = ({
             <Box className="tw-relative tw-m-auto tw-h-[235px] tw-w-[330px] lg:tw-h-[325px] lg:tw-w-[440px]">
               <Box
                 className="tw-absolute tw-z-0 tw-h-[235px] tw-w-[330px] tw-rounded-[35px] tw-bg-gradient-to-r tw-from-[#3860FF] tw-to-[#090C1A] lg:tw-h-[325px] lg:tw-w-[440px]"
-                sx={{ background: 'linear-gradient(162deg, #3860FF 6.11%, #090C1A 95.04%)' }}
+                sx={{
+                  background:
+                    'linear-gradient(162deg, #3860FF 6.11%, #090C1A 95.04%)',
+                }}
               />
 
               <Image
@@ -52,7 +55,8 @@ const BannerCard = ({
               sx={{
                 display: 'flex',
                 justifyContent: 'center',
-                background: 'radial-gradient(120.08% 112.73% at 50% 50%, #88A0FF 0%, #152461 100%)',
+                background:
+                  'radial-gradient(120.08% 112.73% at 50% 50%, #88A0FF 0%, #152461 100%)',
                 // mb: -1.5,
                 mt: 3,
               }}

@@ -47,6 +47,19 @@ export default function RootLayout({
             </Suspense>
           </ThemeProvider>
         </AppRouterCacheProvider>
+        <Script
+          async
+          src="https://www.googletagmanager.com/gtag/js?id=G-LESE5JQMGN"
+          strategy="beforeInteractive"
+        />
+        <Script id="gtag-init" strategy="afterInteractive">
+          {`
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'G-LESE5JQMGN');
+          `}
+        </Script>
         <Script id="clarity-script" strategy="afterInteractive">
           {`
             (function(c,l,a,r,i,t,y){
@@ -58,7 +71,10 @@ export default function RootLayout({
             })(window, document, "clarity", "script", "o485wd6p6d");
           `}
         </Script>
-        <Script src="https://js.hsforms.net/forms/v2.js" strategy={'beforeInteractive'} />
+        <Script
+          src="https://js.hsforms.net/forms/v2.js"
+          strategy={'beforeInteractive'}
+        />
       </body>
     </html>
   );
