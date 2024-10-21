@@ -65,9 +65,9 @@ const Governance = () => {
               color: 'deep-blue-secondary.main',
             }}
           >
-            PayStandards’ Security and Privacy teams establish policies and controls, monitor
-            compliance with those controls, and prove our security and compliance to third-party
-            auditors.
+            PayStandards’ Security and Privacy teams establish policies and
+            controls, monitor compliance with those controls, and prove our
+            security and compliance to third-party auditors.
           </Typography>
           <Typography
             sx={{
@@ -202,7 +202,12 @@ const Governance = () => {
                 },
               }}
             >
-              <Image height={100} width={100} src={AICPALogo} alt="AICPA-logo" />
+              <Image
+                height={100}
+                width={100}
+                src={AICPALogo}
+                alt="AICPA-logo"
+              />
               <Image height={100} width={100} src={GDPRLogo} alt="GDPR-logo" />
             </Grid>
           </Grid>

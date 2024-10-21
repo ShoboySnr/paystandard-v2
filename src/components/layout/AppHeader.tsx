@@ -19,22 +19,36 @@ import {
   Toolbar,
   Typography,
 } from '@mui/material';
-import { Close, KeyboardArrowDown, Menu as MenuIcon } from '@mui/icons-material';
+import {
+  Close,
+  KeyboardArrowDown,
+  Menu as MenuIcon,
+} from '@mui/icons-material';
 import { HeaderMenu as pages } from '@/utils/jsons/LayoutData';
 import { Grid } from '@mui/system';
 import Link from 'next/link';
-import { bindHover, bindMenu, PopupState, usePopupState } from 'material-ui-popup-state/hooks';
+import {
+  bindHover,
+  bindMenu,
+  PopupState,
+  usePopupState,
+} from 'material-ui-popup-state/hooks';
 import HoverMenu from 'material-ui-popup-state/HoverMenu';
 
 const AppHeader = () => {
-  const [selectedMenuIndex, setSelectedMenuIndex] = useState<number | null>(null);
+  const [selectedMenuIndex, setSelectedMenuIndex] = useState<number | null>(
+    null,
+  );
   const [drawerOpen, setDrawerOpen] = useState<boolean | undefined>(false);
   const [isFloating, setIsFloating] = useState<boolean>(false);
 
   const popupState: PopupState[] = [];
   pages.forEach((page, index) => {
     // eslint-disable-next-line react-hooks/rules-of-hooks
-    popupState[index] = usePopupState({ variant: 'popover', popupId: `menu-${index}` });
+    popupState[index] = usePopupState({
+      variant: 'popover',
+      popupId: `menu-${index}`,
+    });
   });
 
   const handleMenuOpen = (index: number) => {
@@ -45,16 +59,17 @@ const AppHeader = () => {
     setSelectedMenuIndex(null);
   };
 
-  const toggleDrawer = (open: boolean) => (event: React.KeyboardEvent | React.MouseEvent) => {
-    if (
-      event.type === 'keydown' &&
-      ((event as React.KeyboardEvent).key === 'Tab' ||
-        (event as React.KeyboardEvent).key === 'Shift')
-    ) {
-      return;
-    }
-    setDrawerOpen(open);
-  };
+  const toggleDrawer =
+    (open: boolean) => (event: React.KeyboardEvent | React.MouseEvent) => {
+      if (
+        event.type === 'keydown' &&
+        ((event as React.KeyboardEvent).key === 'Tab' ||
+          (event as React.KeyboardEvent).key === 'Shift')
+      ) {
+        return;
+      }
+      setDrawerOpen(open);
+    };
 
   const handleMenuItemClick = (link: String) => {
     if (link) {
@@ -126,7 +141,9 @@ const AppHeader = () => {
               <Link href={'/'} className={'tw-flex'}>
                 <>
                   <Image
-                    className={'tw-h-[18px] tw-w-auto sm:tw-h-[30px] md:tw-h-[35px] lg:tw-h-[40px]'}
+                    className={
+                      'tw-h-[18px] tw-w-auto sm:tw-h-[30px] md:tw-h-[35px] lg:tw-h-[40px]'
+                    }
                     priority
                     src={AppLogo}
                     alt="Pay Standards"
@@ -145,7 +162,10 @@ const AppHeader = () => {
                     },
                   }}
                 >
-                  <Box sx={{ width: '100%', padding: '16px 40px 40px 40px' }} role="presentation">
+                  <Box
+                    sx={{ width: '100%', padding: '16px 40px 40px 40px' }}
+                    role="presentation"
+                  >
                     <Box
                       sx={{
                         display: 'flex',
@@ -153,7 +173,12 @@ const AppHeader = () => {
                         justifyContent: 'space-between',
                       }}
                     >
-                      <Image height={18} priority src={AppLogo} alt="Pay Standards" />
+                      <Image
+                        height={18}
+                        priority
+                        src={AppLogo}
+                        alt="Pay Standards"
+                      />
                       <Box>
                         <Link href={'/demo'}>
                           <Button
@@ -210,7 +235,9 @@ const AppHeader = () => {
                                   <Link
                                     key={i}
                                     href={item.link}
-                                    onClick={() => handleMenuItemClick(item.link)}
+                                    onClick={() =>
+                                      handleMenuItemClick(item.link)
+                                    }
                                   >
                                     <ListItemButton
                                       sx={{
@@ -250,7 +277,9 @@ const AppHeader = () => {
                                 {page.menuItems.map((item, i) => (
                                   <Link
                                     href={item.link}
-                                    onClick={() => handleMenuItemClick(item.link)}
+                                    onClick={() =>
+                                      handleMenuItemClick(item.link)
+                                    }
                                     key={i}
                                   >
                                     <ListItemButton
@@ -324,14 +353,19 @@ const AppHeader = () => {
                             position: 'relative',
                             padding: '1px', // Adjust based on your border width
                             borderRadius: '0 0 15px 15px', // Adjust as needed
-                            background: 'linear-gradient(180deg, #FFFFFF, #3860FF)',
+                            background:
+                              'linear-gradient(180deg, #FFFFFF, #3860FF)',
                             boxShadow: 'none',
                           },
                         },
                       }}
                     >
                       {page.menuItems.map((item, i) => (
-                        <Link href={item.link} key={i} onClick={popupState[index]?.close}>
+                        <Link
+                          href={item.link}
+                          key={i}
+                          onClick={popupState[index]?.close}
+                        >
                           <MenuItem
                             sx={{
                               '&:hover': {

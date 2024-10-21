@@ -53,7 +53,9 @@ const CustomerQuoteUpdated = () => {
           clickable: true,
         }}
         modules={[FreeMode, Pagination, Autoplay]}
-        className={'tw-w-full tw-px-5 tw-flex tw-justify-center tw-items-center'}
+        className={
+          'tw-w-full tw-px-5 tw-flex tw-justify-center tw-items-center'
+        }
       >
         {customerQuotes.map((quote, index) => (
           <SwiperSlide className={'tw-px-0 md:tw-px-[20px]'} key={index}>

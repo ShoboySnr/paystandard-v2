@@ -17,7 +17,13 @@ const Concern = () => {
         },
       }}
     >
-      <Grid container size={12} textAlign={'center'} justifyContent={'center'} sx={{}}>
+      <Grid
+        container
+        size={12}
+        textAlign={'center'}
+        justifyContent={'center'}
+        sx={{}}
+      >
         <Grid size={12}>
           <Typography
             sx={{

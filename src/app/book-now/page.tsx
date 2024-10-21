@@ -43,8 +43,10 @@ const BookNow = () => {
                   bottom: 0,
                   borderRadius: 'inherit', // Matches the parent border radius
                   padding: '1px', // Adjust padding to the border width you want
-                  background: 'linear-gradient(0deg, #525252 19.67%, #52525200 100%)',
-                  WebkitMask: 'linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0)',
+                  background:
+                    'linear-gradient(0deg, #525252 19.67%, #52525200 100%)',
+                  WebkitMask:
+                    'linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0)',
                   WebkitMaskComposite: 'destination-out',
                   maskComposite: 'exclude',
                   zIndex: 0,
@@ -119,8 +121,8 @@ const BookNow = () => {
                       marginBottom: '20px',
                     }}
                   >
-                    Learn how PayStandards can help you optimize your company’s most important
-                    expense and asset—your people!
+                    Learn how PayStandards can help you optimize your company’s
+                    most important expense and asset—your people!
                   </Typography>
                   <Typography
                     sx={{
@@ -132,7 +134,8 @@ const BookNow = () => {
                       margin: 'auto 0 2px 0',
                     }}
                   >
-                    Please use the calendar to find a meeting time that works for you.
+                    Please use the calendar to find a meeting time that works
+                    for you.
                   </Typography>
                 </Grid>
                 {/*  image area */}

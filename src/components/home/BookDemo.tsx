@@ -59,7 +59,8 @@ const BookDemo = () => {
               }}
             >
               Learn how you can achieve true
-              <br className="tw-hidden lg:tw-block" /> pay equity and pay transparency
+              <br className="tw-hidden lg:tw-block" /> pay equity and pay
+              transparency
               <br className="tw-hidden lg:tw-block" /> – without the headache.
             </Typography>
             <Box>

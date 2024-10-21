@@ -70,9 +70,9 @@ const DataProtection = () => {
               color: 'deep-blue-secondary.main',
             }}
           >
-            This means the data is encrypted even before it hits the database so that neither
-            physical access, nor logical access to the database, is enough to read the most
-            sensitive information.
+            This means the data is encrypted even before it hits the database so
+            that neither physical access, nor logical access to the database, is
+            enough to read the most sensitive information.
           </Typography>
         </Grid>
         <Grid
@@ -112,8 +112,9 @@ const DataProtection = () => {
               color: 'deep-blue-secondary.main',
             }}
           >
-            Application secrets are encrypted and stored securely via AWS Secrets Manager and
-            Parameter Store, and access to these values is strictly limited.
+            Application secrets are encrypted and stored securely via AWS
+            Secrets Manager and Parameter Store, and access to these values is
+            strictly limited.
           </Typography>
         </Grid>
       </Grid>

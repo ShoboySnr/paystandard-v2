@@ -57,8 +57,8 @@ const DataPrivacy = () => {
             color: 'gray.main',
           }}
         >
-          At PayStandards, data privacy is a first-class priority—we strive to be trustworthy
-          stewards of all sensitive data.
+          At PayStandards, data privacy is a first-class priority—we strive to
+          be trustworthy stewards of all sensitive data.
         </Typography>
         <Grid
           container

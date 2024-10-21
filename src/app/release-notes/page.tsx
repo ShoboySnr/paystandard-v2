@@ -5,7 +5,8 @@ import AppContainer from '@/components/layout/AppContainer';
 
 export const metadata: Metadata = {
   title: 'Release Note Changes',
-  description: 'Read about changes to the release notes, with the most recent changes first',
+  description:
+    'Read about changes to the release notes, with the most recent changes first',
 };
 
 export default function ReleaseNotes() {
@@ -40,8 +41,9 @@ export default function ReleaseNotes() {
               textAlign: 'center',
             }}
           >
-            Read about changes to the release notes, <br className={'tw-block md:tw-hidden'} /> with
-            the most recent changes first.
+            Read about changes to the release notes,{' '}
+            <br className={'tw-block md:tw-hidden'} /> with the most recent
+            changes first.
           </Typography>
         </Box>
         <Box
@@ -87,7 +89,9 @@ export default function ReleaseNotes() {
               }}
               className="tw-list-disc"
             >
-              <li>Users can login to the client portal with end-to-end encryption.</li>
+              <li>
+                Users can login to the client portal with end-to-end encryption.
+              </li>
             </Typography>
 
             <Typography
@@ -112,8 +116,8 @@ export default function ReleaseNotes() {
               className="tw-list-disc"
             >
               <li>
-                Users can indicate detail on their pay practices and performance management prior to
-                the launch of the Audit product.
+                Users can indicate detail on their pay practices and performance
+                management prior to the launch of the Audit product.
               </li>
             </Typography>
 
@@ -162,7 +166,10 @@ export default function ReleaseNotes() {
               }}
               className="tw-list-disc"
             >
-              <li>Users can view both enterprise-level and fine-tuned pay equity analytics.</li>
+              <li>
+                Users can view both enterprise-level and fine-tuned pay equity
+                analytics.
+              </li>
             </Typography>
 
             <Typography
@@ -187,7 +194,8 @@ export default function ReleaseNotes() {
               className="tw-list-disc"
             >
               <li>
-                Users can view employee-tailored recommendations based on the predicted pay model.
+                Users can view employee-tailored recommendations based on the
+                predicted pay model.
               </li>
             </Typography>
 
@@ -236,7 +244,9 @@ export default function ReleaseNotes() {
               }}
               className="tw-list-disc"
             >
-              <li>Users can review projected effects and costs of pay decisions.</li>
+              <li>
+                Users can review projected effects and costs of pay decisions.
+              </li>
             </Typography>
 
             <Typography
@@ -260,7 +270,9 @@ export default function ReleaseNotes() {
               }}
               className="tw-list-disc"
             >
-              <li>Users can download the pay adjustment data in XLSX or CSV.</li>
+              <li>
+                Users can download the pay adjustment data in XLSX or CSV.
+              </li>
             </Typography>
           </Box>
         </Box>

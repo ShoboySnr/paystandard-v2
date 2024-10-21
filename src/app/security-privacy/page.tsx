@@ -60,8 +60,9 @@ const SecurityAndPrivacy = () => {
               color: 'deep-blue-secondary.main',
             }}
           >
-            Security is at the heart of what we do—our <br className={'md:tw-hidden'} /> security
-            and compliance <br className={'tw-hidden md:tw-block'} /> posture is critical to{' '}
+            Security is at the heart of what we do—our{' '}
+            <br className={'md:tw-hidden'} /> security and compliance{' '}
+            <br className={'tw-hidden md:tw-block'} /> posture is critical to{' '}
             <br className={'md:tw-hidden'} /> our business.
           </Typography>
         </Grid>

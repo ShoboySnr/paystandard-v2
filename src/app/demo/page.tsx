@@ -55,8 +55,8 @@ const Demo = () => {
               my: 2,
             }}
           >
-            Get a live look into the PayStandards platform and learn how your organization can
-            leverage real-time analytics to:
+            Get a live look into the PayStandards platform and learn how your
+            organization can leverage real-time analytics to:
           </Box>
           <List
             sx={{
@@ -110,7 +110,8 @@ const Demo = () => {
                     fontWeight: '500',
                   }}
                 >
-                  Save up to 70% in remediation expenses compared to traditional approaches
+                  Save up to 70% in remediation expenses compared to traditional
+                  approaches
                 </Typography>
               </ListItemText>
             </ListItem>
@@ -159,8 +160,10 @@ const Demo = () => {
               bottom: 0,
               borderRadius: 'inherit', // Matches the parent border radius
               padding: '1px', // Adjust padding to the border width you want
-              background: 'linear-gradient(0deg, #525252 19.67%, #52525200 100%)',
-              WebkitMask: 'linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0)',
+              background:
+                'linear-gradient(0deg, #525252 19.67%, #52525200 100%)',
+              WebkitMask:
+                'linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0)',
               WebkitMaskComposite: 'destination-out',
               maskComposite: 'exclude',
             },
@@ -187,7 +190,8 @@ const Demo = () => {
                   <HubspotDemoForm />
                   <Box>
                     <Typography sx={{ color: '#d3d3d3', fontSize: '10px' }}>
-                      By submitting the form you agree to the PayStandards terms of use.
+                      By submitting the form you agree to the PayStandards terms
+                      of use.
                     </Typography>
                   </Box>
                 </Box>
@@ -212,7 +216,9 @@ const Demo = () => {
                     color: 'black.main',
                   }}
                 >
-                  <Typography sx={{ fontSize: '25px', fontWeight: '700', mt: 5 }}>
+                  <Typography
+                    sx={{ fontSize: '25px', fontWeight: '700', mt: 5 }}
+                  >
                     “PayStandards is the nirvana of pay.”
                   </Typography>
 

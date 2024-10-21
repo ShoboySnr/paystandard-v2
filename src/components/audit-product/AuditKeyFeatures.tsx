@@ -61,8 +61,9 @@ const AuditKeyFeatures = () => {
                 color: 'black.main',
               }}
             >
-              Transcend average-based summary statistics and view outlier-resistant metrics to get
-              pay equity right for your employees.
+              Transcend average-based summary statistics and view
+              outlier-resistant metrics to get pay equity right for your
+              employees.
             </Typography>
             {/*<Link href={'/about-us'}>*/}
             {/*  <Typography*/}
@@ -107,7 +108,8 @@ const AuditKeyFeatures = () => {
               sx={{
                 display: 'flex',
                 justifyContent: 'center',
-                background: 'linear-gradient(162deg, #3860FF 6.11%, #090C1A 95.04%)',
+                background:
+                  'linear-gradient(162deg, #3860FF 6.11%, #090C1A 95.04%)',
                 mb: -0.5,
               }}
             >
@@ -141,7 +143,8 @@ const AuditKeyFeatures = () => {
           <Grid size={{ xs: 12, md: 6 }}>
             <Box
               sx={{
-                background: 'linear-gradient(243deg, #88A0FF 9.96%, #152461 97.23%)',
+                background:
+                  'linear-gradient(243deg, #88A0FF 9.96%, #152461 97.23%)',
                 borderRadius: '35px',
                 height: { xs: '260px', md: '115%' },
                 width: '80%',
@@ -158,7 +161,11 @@ const AuditKeyFeatures = () => {
                   right: '-40px',
                 }}
               >
-                <Image src={Strategy} alt="standard rating" className="tw-w-full tw-h-full" />
+                <Image
+                  src={Strategy}
+                  alt="standard rating"
+                  className="tw-w-full tw-h-full"
+                />
               </Box>
             </Box>
           </Grid>
@@ -187,8 +194,8 @@ const AuditKeyFeatures = () => {
                 color: 'black.main',
               }}
             >
-              Leverage your data to go beyond market comps with a new way to value your employees –
-              PayStandards predicted pay.
+              Leverage your data to go beyond market comps with a new way to
+              value your employees – PayStandards predicted pay.
             </Typography>
 
             <Divider
@@ -247,8 +254,8 @@ const AuditKeyFeatures = () => {
                 color: 'black.main',
               }}
             >
-              View discrepancies at the individual employee level – value your employees
-              appropriately while mitigating your legal risk.
+              View discrepancies at the individual employee level – value your
+              employees appropriately while mitigating your legal risk.
             </Typography>
             <Divider
               sx={{
@@ -271,7 +278,8 @@ const AuditKeyFeatures = () => {
             >
               <Box
                 sx={{
-                  background: 'linear-gradient(108deg, #3860FF 0%, #152461 100%)',
+                  background:
+                    'linear-gradient(108deg, #3860FF 0%, #152461 100%)',
                   borderRadius: '35px',
                   height: { xs: '250px', md: '345px' },
                   width: { xs: '80%', sm: '90%', lg: '80%' },
@@ -332,7 +340,8 @@ const AuditKeyFeatures = () => {
               sx={{
                 display: 'flex',
                 justifyContent: 'center',
-                background: 'linear-gradient(133deg, #88A0FF 3.98%, #152461 96.46%)',
+                background:
+                  'linear-gradient(133deg, #88A0FF 3.98%, #152461 96.46%)',
                 mb: -2,
               }}
             >
@@ -383,8 +392,8 @@ const AuditKeyFeatures = () => {
                 color: 'black',
               }}
             >
-              Close the gap while driving the bottom line by making overall better pay decisions
-              that create pay equity.
+              Close the gap while driving the bottom line by making overall
+              better pay decisions that create pay equity.
             </Typography>
 
             <Divider

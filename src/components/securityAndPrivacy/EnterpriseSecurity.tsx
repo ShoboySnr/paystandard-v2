@@ -114,9 +114,10 @@ const EnterpriseSecurity = () => {
                 color: 'deep-blue-secondary.main',
               }}
             >
-              PayStandards employees are granted access to applications based on their role, and
-              automatically deprovisioned upon termination of their employment. Further access must
-              be approved according to the policies set for each application.
+              PayStandards employees are granted access to applications based on
+              their role, and automatically deprovisioned upon termination of
+              their employment. Further access must be approved according to the
+              policies set for each application.
             </Typography>
           </Grid>
         </Grid>
@@ -159,7 +160,10 @@ const EnterpriseSecurity = () => {
                 width: '100%',
               }}
             >
-              <BorderedText text={'Integration with production environments'} textWeight={'500'} />
+              <BorderedText
+                text={'Integration with production environments'}
+                textWeight={'500'}
+              />
             </Grid>
             <Grid
               size={12}
@@ -178,7 +182,10 @@ const EnterpriseSecurity = () => {
                 width: '100%',
               }}
             >
-              <BorderedText text={'Access to customer and corporate data'} textWeight={'500'} />
+              <BorderedText
+                text={'Access to customer and corporate data'}
+                textWeight={'500'}
+              />
             </Grid>
           </Grid>
           <Grid
@@ -197,9 +204,9 @@ const EnterpriseSecurity = () => {
                 color: 'deep-blue-secondary.main',
               }}
             >
-              Once the inherent risk rating has been determined, the security of the vendor is
-              evaluated in order to determine a residual risk rating and an approval decision for
-              the vendor.
+              Once the inherent risk rating has been determined, the security of
+              the vendor is evaluated in order to determine a residual risk
+              rating and an approval decision for the vendor.
             </Typography>
           </Grid>
         </Grid>

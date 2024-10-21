@@ -63,8 +63,8 @@ const KeyFeatures = () => {
                 mb: 2,
               }}
             >
-              Quantify company performance into verified metrics with PayStandards’ proprietary pay
-              rating.
+              Quantify company performance into verified metrics with
+              PayStandards’ proprietary pay rating.
             </Typography>
 
             {/*<Link href={'/about-us'}>*/}
@@ -108,7 +108,8 @@ const KeyFeatures = () => {
               sx={{
                 display: 'flex',
                 justifyContent: 'center',
-                background: 'linear-gradient(162deg, #3860FF 6.11%, #090C1A 95.04%)',
+                background:
+                  'linear-gradient(162deg, #3860FF 6.11%, #090C1A 95.04%)',
                 mb: -1.5,
               }}
             >
@@ -142,7 +143,8 @@ const KeyFeatures = () => {
           <Grid size={{ xs: 12, md: 6 }}>
             <Box
               sx={{
-                background: 'linear-gradient(258deg, #3860FF 1.93%, #090C1A 98.15%)',
+                background:
+                  'linear-gradient(258deg, #3860FF 1.93%, #090C1A 98.15%)',
                 borderRadius: '35px',
                 height: { xs: '246px', md: '125%' },
                 width: '90%',
@@ -191,7 +193,8 @@ const KeyFeatures = () => {
                 color: 'black.main',
               }}
             >
-              Visualize the current and future state of pay equity across a company’s workforce.
+              Visualize the current and future state of pay equity across a
+              company’s workforce.
             </Typography>
 
             <Divider
@@ -265,7 +268,8 @@ const KeyFeatures = () => {
           <Grid size={{ xs: 12, md: 6 }} order={{ xs: 1, md: 2 }}>
             <Box
               sx={{
-                background: 'linear-gradient(163deg, #3860FF 6.51%, #090C1A 95.97%)',
+                background:
+                  'linear-gradient(163deg, #3860FF 6.51%, #090C1A 95.97%)',
                 borderRadius: '35px',
                 mt: 1,
                 height: { xs: '215px', md: '112%' },
@@ -311,7 +315,8 @@ const KeyFeatures = () => {
           <Grid size={{ xs: 12, md: 6 }}>
             <Box
               sx={{
-                background: 'linear-gradient(241deg, #88A0FF 12.95%, #152461 95.37%)',
+                background:
+                  'linear-gradient(241deg, #88A0FF 12.95%, #152461 95.37%)',
                 borderRadius: '35px',
                 height: { xs: '253px', md: '112%' },
                 display: 'flex',

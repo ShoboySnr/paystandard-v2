@@ -86,9 +86,10 @@ export default function ResourcesBanner() {
               color: 'dark-gray.main',
             }}
           >
-            Every year on March 12th, the United States recognizes “Equal Pay Day”. That date is
-            meant to represent how far into the year the average woman must work for her earnings to
-            catch up with the average man’s earnings from the year prior ...
+            Every year on March 12th, the United States recognizes “Equal Pay
+            Day”. That date is meant to represent how far into the year the
+            average woman must work for her earnings to catch up with the
+            average man’s earnings from the year prior ...
           </Typography>
           <Link href={'#'}>
             <Box sx={{ display: 'flex', alignItems: 'center', gap: '3px' }}>

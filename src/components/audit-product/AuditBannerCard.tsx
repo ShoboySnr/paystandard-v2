@@ -8,7 +8,13 @@ import React, { useState } from 'react';
 import HubspotForm from '@/components/models/HubspotFormDialog';
 
 const src = 'https://www.youtube.com/embed/x91MPoITQ3I?si=6WdYf-CPNY0pQoqh';
-const AuditBannerCard = ({ title, paragraph }: { title: string; paragraph: string }) => {
+const AuditBannerCard = ({
+  title,
+  paragraph,
+}: {
+  title: string;
+  paragraph: string;
+}) => {
   const [dialogOpen, setDialogOpen] = useState<boolean>(false);
 
   const handleDialogClose = () => {
@@ -48,7 +54,9 @@ const AuditBannerCard = ({ title, paragraph }: { title: string; paragraph: strin
             <Image
               src={BannerImage}
               alt="emplyees for review"
-              className={'tw-absolute tw-bottom-0 tw-z-10 tw-w-[85%] lg:tw-w-[90%] tw-h-[110%]'}
+              className={
+                'tw-absolute tw-bottom-0 tw-z-10 tw-w-[85%] lg:tw-w-[90%] tw-h-[110%]'
+              }
             />
             {/*</Box>*/}
           </Box>

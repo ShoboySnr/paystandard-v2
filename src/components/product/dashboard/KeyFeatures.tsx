@@ -60,8 +60,8 @@ const KeyFeatures = () => {
                 mb: 3.5,
               }}
             >
-              Go beyond market data with a new way to value your employees – PayStandards predicted
-              pay.
+              Go beyond market data with a new way to value your employees –
+              PayStandards predicted pay.
             </Typography>
             <Divider
               sx={{
@@ -88,7 +88,8 @@ const KeyFeatures = () => {
               sx={{
                 display: 'flex',
                 justifyContent: 'center',
-                background: 'linear-gradient(250deg, #3860FF 45.87%, #090C1A 96.34%)',
+                background:
+                  'linear-gradient(250deg, #3860FF 45.87%, #090C1A 96.34%)',
                 mb: -2.5,
               }}
             >
@@ -123,7 +124,8 @@ const KeyFeatures = () => {
           <Grid size={{ xs: 12, md: 6 }}>
             <Box
               sx={{
-                background: 'linear-gradient(117deg, #88A0FF 7.12%, #152461 90.58%)',
+                background:
+                  'linear-gradient(117deg, #88A0FF 7.12%, #152461 90.58%)',
                 borderRadius: '35px',
                 height: { xs: '253px', md: '108%' },
                 display: 'flex',
@@ -138,7 +140,11 @@ const KeyFeatures = () => {
                   mt: -2.5,
                 }}
               >
-                <Image src={Range} alt="range" className="tw-w-full md:tw-w-[450px]" />
+                <Image
+                  src={Range}
+                  alt="range"
+                  className="tw-w-full md:tw-w-[450px]"
+                />
               </Box>
             </Box>
           </Grid>
@@ -167,8 +173,8 @@ const KeyFeatures = () => {
                 color: 'black',
               }}
             >
-              Create tailored pay ranges that meet pay transparency standards and that employees can
-              easily understand.
+              Create tailored pay ranges that meet pay transparency standards
+              and that employees can easily understand.
             </Typography>
 
             <Divider
@@ -227,8 +233,9 @@ const KeyFeatures = () => {
                 color: 'black',
               }}
             >
-              From new hires to promotions to off-cycle salary increases, generate a fine-tuned pay
-              recommendation that considers the right things.
+              From new hires to promotions to off-cycle salary increases,
+              generate a fine-tuned pay recommendation that considers the right
+              things.
             </Typography>
             <Divider
               sx={{
@@ -240,7 +247,11 @@ const KeyFeatures = () => {
               }}
             />
           </Grid>
-          <Grid size={{ xs: 12, md: 6 }} sx={{ pl: { md: 2, xs: 0 } }} order={{ xs: 1, md: 2 }}>
+          <Grid
+            size={{ xs: 12, md: 6 }}
+            sx={{ pl: { md: 2, xs: 0 } }}
+            order={{ xs: 1, md: 2 }}
+          >
             <Box
               sx={{
                 background: 'linear-gradient(135deg, #3860FF 0%, #090C1A 100%)',
@@ -256,7 +267,8 @@ const KeyFeatures = () => {
                   justifyContent: 'center',
                   height: { xs: '215px', md: '95%' },
                   borderRadius: '35px',
-                  background: 'linear-gradient(135deg, #3860FF 0%, #090C1A 100%)',
+                  background:
+                    'linear-gradient(135deg, #3860FF 0%, #090C1A 100%)',
                   position: 'relative',
                 }}
               >
@@ -291,7 +303,8 @@ const KeyFeatures = () => {
           <Grid size={{ xs: 12, md: 6 }}>
             <Box
               sx={{
-                background: 'linear-gradient(242deg, #88A0FF 5.89%, #152461 95.38%)',
+                background:
+                  'linear-gradient(242deg, #88A0FF 5.89%, #152461 95.38%)',
                 borderRadius: '35px',
                 height: { xs: '246px', md: '95%' },
                 width: { xs: '90%', md: '95%' },
@@ -339,8 +352,8 @@ const KeyFeatures = () => {
                 color: 'black',
               }}
             >
-              Assess how pay practices are affecting your pay equity position – and tracking against
-              your budget.
+              Assess how pay practices are affecting your pay equity position –
+              and tracking against your budget.
             </Typography>
 
             <Divider

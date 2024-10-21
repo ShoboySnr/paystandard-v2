@@ -54,7 +54,13 @@ const HoverableImage: React.FC<HoverableImageProps> = ({
   height,
   isParentHovered,
 }) => {
-  return <Image src={isParentHovered ? lightImage : darkImage} alt={altText} height={height} />;
+  return (
+    <Image
+      src={isParentHovered ? lightImage : darkImage}
+      alt={altText}
+      height={height}
+    />
+  );
 };
 
 const Pillars = () => {
@@ -105,7 +111,8 @@ const Pillars = () => {
           container
           sx={{
             ...cardStyling,
-            background: 'url(assets/home/pillars/bg1.png) lightgray 50% / cover no-repeat;',
+            background:
+              'url(assets/home/pillars/bg1.png) lightgray 50% / cover no-repeat;',
             marginTop: { xs: '40px', md: '0' },
           }}
           size={{
@@ -212,16 +219,20 @@ const Pillars = () => {
                 gap: '20px',
               }}
             >
-              <Typography sx={{ fontSize: '28px', fontWeight: '700' }}>Expertise</Typography>
+              <Typography sx={{ fontSize: '28px', fontWeight: '700' }}>
+                Expertise
+              </Typography>
               <Typography sx={{ fontSize: '18px', fontWeight: '400' }}>
-                We are a team of leading compensation practitioners and researchers – the
-                methodologies underlying our software are based on tried and true compensation
-                research and experience.
+                We are a team of leading compensation practitioners and
+                researchers – the methodologies underlying our software are
+                based on tried and true compensation research and experience.
               </Typography>
             </Box>
             <Grid size={12} alignSelf={'self-end'} sx={{ mt: '20px' }}>
               <Link href={'/about-us'}>
-                <Typography sx={{ fontSize: '18px', fontWeight: '500', display: 'flex' }}>
+                <Typography
+                  sx={{ fontSize: '18px', fontWeight: '500', display: 'flex' }}
+                >
                   <span className={'tw-mr-2'}>About Us</span>
                   {/*<Image src={ArrowRight} alt={'arrow-right'} />*/}
                   <HoverableImage
@@ -242,7 +253,8 @@ const Pillars = () => {
           container
           sx={{
             ...cardStyling,
-            background: 'url(assets/home/pillars/bg2.png) lightgray 50% / cover no-repeat;',
+            background:
+              'url(assets/home/pillars/bg2.png) lightgray 50% / cover no-repeat;',
             marginTop: { xs: '40px', md: '0' },
           }}
           size={{
@@ -274,16 +286,21 @@ const Pillars = () => {
                 gap: '20px',
               }}
             >
-              <Typography sx={{ fontSize: '28px', fontWeight: '700' }}>Innovation</Typography>
+              <Typography sx={{ fontSize: '28px', fontWeight: '700' }}>
+                Innovation
+              </Typography>
               <Typography sx={{ fontSize: '18px', fontWeight: '400' }}>
-                We are a technology company at our core. The insights we provide empower you with
-                data-at-your fingertips to optimize your pay decisions.
+                We are a technology company at our core. The insights we provide
+                empower you with data-at-your fingertips to optimize your pay
+                decisions.
               </Typography>
             </Box>
           </Grid>
           <Grid size={12} alignSelf={'self-end'} sx={{ mt: '20px' }}>
             <Link href={'/pay-audit'}>
-              <Typography sx={{ fontSize: '18px', fontWeight: '500', display: 'flex' }}>
+              <Typography
+                sx={{ fontSize: '18px', fontWeight: '500', display: 'flex' }}
+              >
                 <span className={'tw-mr-2'}>Learn More</span>
                 <HoverableImage
                   lightImage={ArrowRightLight}
@@ -302,7 +319,8 @@ const Pillars = () => {
           container
           sx={{
             ...cardStyling,
-            background: 'url(assets/home/pillars/bg3.png) lightgray 50% / cover no-repeat;',
+            background:
+              'url(assets/home/pillars/bg3.png) lightgray 50% / cover no-repeat;',
             marginTop: { xs: '40px', md: '0' },
           }}
           size={{
@@ -334,10 +352,13 @@ const Pillars = () => {
                 gap: '20px',
               }}
             >
-              <Typography sx={{ fontSize: '28px', fontWeight: '700' }}>Security</Typography>
+              <Typography sx={{ fontSize: '28px', fontWeight: '700' }}>
+                Security
+              </Typography>
               <Typography sx={{ fontSize: '18px', fontWeight: '400' }}>
-                We take data security seriously. PayStandards is SOC 2 Type II compliant and takes
-                the necessary precautions to keep your data safe.
+                We take data security seriously. PayStandards is SOC 2 Type II
+                compliant and takes the necessary precautions to keep your data
+                safe.
               </Typography>
             </Box>
           </Grid>
@@ -347,7 +368,9 @@ const Pillars = () => {
               target="_blank"
               rel="noopener noreferrer"
             >
-              <Typography sx={{ fontSize: '18px', fontWeight: '500', display: 'flex' }}>
+              <Typography
+                sx={{ fontSize: '18px', fontWeight: '500', display: 'flex' }}
+              >
                 <span className={'tw-mr-2'}>Trust Center</span>
                 <HoverableImage
                   lightImage={ArrowRightLight}

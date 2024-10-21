@@ -1,7 +1,13 @@
 import { Grid } from '@mui/system';
 import { Typography } from '@mui/material';
 
-const BorderedText = ({ text, textWeight }: { text: string; textWeight?: string }) => {
+const BorderedText = ({
+  text,
+  textWeight,
+}: {
+  text: string;
+  textWeight?: string;
+}) => {
   return (
     <Grid
       size={12}

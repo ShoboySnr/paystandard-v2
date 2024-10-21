@@ -69,8 +69,8 @@ const productSecurity = () => {
             color: 'deep-blue-secondary.main',
           }}
         >
-          PayStandards requires vulnerability scanning at key stages of our Secure Development
-          Lifecycle (SDLC):
+          PayStandards requires vulnerability scanning at key stages of our
+          Secure Development Lifecycle (SDLC):
         </Typography>
       </Grid>
 
@@ -120,7 +120,9 @@ const productSecurity = () => {
             xs: 12,
           }}
         >
-          <BorderedText text={'Network vulnerability scanning on a period basis'} />
+          <BorderedText
+            text={'Network vulnerability scanning on a period basis'}
+          />
         </Grid>
         <Grid
           size={{
@@ -140,7 +142,9 @@ const productSecurity = () => {
             xs: 12,
           }}
         >
-          <BorderedText text={'Dynamic analysis (DAST) of running applications'} />
+          <BorderedText
+            text={'Dynamic analysis (DAST) of running applications'}
+          />
         </Grid>
         <Grid
           size={{
