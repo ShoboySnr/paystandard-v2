@@ -42,8 +42,8 @@ export default function TermsOfService() {
               textAlign: 'center',
             }}
           >
-            <span className="tw-font-[700]">Last revised: </span>
-            October 27, 2023
+            <span className="tw-font-[700]">Effective as of: </span>
+            September 17, 2024
           </Typography>
         </Box>
         <Box
