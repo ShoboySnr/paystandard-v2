@@ -1,5 +1,5 @@
 import type { Metadata } from 'next';
-import { Grid } from '@mui/system';
+import Grid from '@mui/material/Grid2';
 import { Box, Button, Typography } from '@mui/material';
 import Image, { StaticImageData } from 'next/image';
 import Link from 'next/link';

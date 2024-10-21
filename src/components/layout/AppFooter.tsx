@@ -1,7 +1,7 @@
 'use client';
 
 import { useSearchParams, usePathname, useRouter } from 'next/navigation';
-import { Grid } from '@mui/system';
+import Grid from '@mui/material/Grid2';
 import AppLogo from '~/logos/logo-dark.svg';
 import LinkedInLogo from '~/logos/linkedin.svg';
 import TwitterLogo from '~/logos/x.svg';
@@ -72,10 +72,6 @@ const AppFooter = () => {
     <footer className="!tw-bg-footer-gradient">
       <Grid
         container
-        offset={{
-          xs: 0,
-          md: 1,
-        }}
         spacing={2}
         sx={{
           py: {
@@ -88,7 +84,13 @@ const AppFooter = () => {
           },
         }}
       >
-        <Grid size={{ xs: 12, md: 4 }}>
+        <Grid
+          size={{ xs: 12, md: 4 }}
+          offset={{
+            xs: 0,
+            md: 1,
+          }}
+        >
           <Box
             className="tw-my-5"
             sx={{
@@ -271,6 +273,10 @@ const AppFooter = () => {
         <Grid
           container
           size={12}
+          offset={{
+            xs: 0,
+            md: 1,
+          }}
           sx={{
             pt: {
               xs: '80x',

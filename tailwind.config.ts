@@ -26,8 +26,10 @@ const config: Config = {
         'btn-outline-text': '#1C3080',
       },
       backgroundImage: {
-        'gradient-blue-deep-blue': 'linear-gradient(to right, #3860FF, #152461)',
-        'gradient-light-blue-deep-blue': 'linear-gradient(to right, #88A0FF, #152461)',
+        'gradient-blue-deep-blue':
+          'linear-gradient(to right, #3860FF, #152461)',
+        'gradient-light-blue-deep-blue':
+          'linear-gradient(to right, #88A0FF, #152461)',
         'gradient-blue-black': 'linear-gradient(to right, #3860FF, #090C1A)',
         'footer-gradient': 'linear-gradient(0deg, #152461 0%, #090C1A 100%)',
       },
