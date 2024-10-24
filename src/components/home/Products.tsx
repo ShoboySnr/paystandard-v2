@@ -72,7 +72,7 @@ const Products = () => {
         },
         padding: {
           md: '35px 45px',
-          xs: '15px 15px 35px 15px',
+          xs: '25px 20px 35px 20px',
         },
         borderRadius: '25px',
         background: 'linear-gradient(180deg, #2641B0 0%, #152461 99.27%)',

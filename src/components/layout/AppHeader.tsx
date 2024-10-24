@@ -103,7 +103,7 @@ const AppHeader = () => {
           width: isFloating ? '100%' : '100%',
           top: isFloating ? '0px' : '-100px',
           left: '50%',
-          zIndex: 1300,
+          zIndex: 1200,
           px: { md: '20px', lg: '0px' },
         }}
       >
@@ -128,8 +128,8 @@ const AppHeader = () => {
               sx={{
                 width: '100%',
                 my: { xs: '10px', md: isFloating ? '10px' : '20px' },
-                minHeight: { xs: '30px', sm: '60px', md: '75px' },
-                height: { xs: '30px', sm: '60px', md: '75px' },
+                minHeight: { xs: '45px', sm: '60px', md: '75px' },
+                height: { xs: '45px', sm: '60px', md: '75px' },
                 border: '1px solid transparent',
                 borderColor: 'gray.main',
                 borderRadius: '38px',
@@ -163,7 +163,10 @@ const AppHeader = () => {
                   }}
                 >
                   <Box
-                    sx={{ width: '100%', padding: '16px 40px 40px 40px' }}
+                    sx={{
+                      width: '100%',
+                      padding: '16px 30px 30px 30px',
+                    }}
                     role="presentation"
                   >
                     <Box
@@ -180,6 +183,22 @@ const AppHeader = () => {
                         alt="Pay Standards"
                       />
                       <Box>
+                        <Link href={'https://login.paystandards.com/login'}>
+                          <Button
+                            sx={{
+                              height: '75%',
+                              border: 'none',
+                              borderRadius: '50px',
+                              px: { xs: '10px' },
+                              mr: 0.5,
+                              fontSize: { xs: '12px', md: '20px' },
+                            }}
+                            className={'!tw-bg-[#88A0FF1A] !tw-text-dark-gray'}
+                            variant="outlined"
+                          >
+                            Log In
+                          </Button>
+                        </Link>
                         <Link href={'/demo'}>
                           <Button
                             sx={{
@@ -191,7 +210,7 @@ const AppHeader = () => {
                                 xs: '12px',
                                 md: '20px',
                               },
-                              mr: 1.5,
+                              mr: 0.5,
                             }}
                             variant="contained"
                             className={'!tw-rounded-full'}
@@ -208,7 +227,7 @@ const AppHeader = () => {
                           aria-label="open drawer"
                           onClick={toggleDrawer(false)}
                         >
-                          <Close />
+                          <Close fontSize="small" />
                         </IconButton>
                       </Box>
                     </Box>
@@ -280,6 +299,8 @@ const AppHeader = () => {
                                     onClick={() =>
                                       handleMenuItemClick(item.link)
                                     }
+                                    target={item?.target}
+                                    rel={item?.rel}
                                     key={i}
                                   >
                                     <ListItemButton
@@ -365,6 +386,8 @@ const AppHeader = () => {
                           href={item.link}
                           key={i}
                           onClick={popupState[index]?.close}
+                          target={item?.target}
+                          rel={item?.rel}
                         >
                           <MenuItem
                             sx={{
@@ -421,8 +444,8 @@ const AppHeader = () => {
             <Box sx={{ display: { xs: 'block', md: 'none' } }}>
               <IconButton
                 sx={{
-                  height: { xs: '30px', sm: '60px' },
-                  width: { xs: '30px', sm: '60px' },
+                  height: { xs: '45px', sm: '60px' },
+                  width: { xs: '45px', sm: '60px' },
                   padding: '10px',
                 }}
                 className="!tw-bg-light-gray"
@@ -431,7 +454,7 @@ const AppHeader = () => {
               >
                 <MenuIcon
                   sx={{
-                    fontSize: { xs: '18px', sm: '20px' },
+                    fontSize: { xs: '20px', sm: '20px' },
                   }}
                 />
               </IconButton>

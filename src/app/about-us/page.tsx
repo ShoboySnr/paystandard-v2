@@ -174,6 +174,7 @@ const AboutUs = () => {
                   <Grid
                     size={{
                       md: 'auto',
+                      xs: 6,
                     }}
                     container
                     justifyContent={'center'}
@@ -183,6 +184,7 @@ const AboutUs = () => {
                   <Grid
                     size={{
                       md: 'auto',
+                      xs: 6,
                     }}
                     container
                     justifyContent={'center'}
@@ -192,6 +194,7 @@ const AboutUs = () => {
                   <Grid
                     size={{
                       md: 'auto',
+                      xs: 6,
                     }}
                     container
                     justifyContent={'center'}
@@ -201,6 +204,7 @@ const AboutUs = () => {
                   <Grid
                     size={{
                       md: 'auto',
+                      xs: 6,
                     }}
                     container
                     justifyContent={'center'}
@@ -220,6 +224,7 @@ const AboutUs = () => {
                   <Grid
                     size={{
                       md: 'auto',
+                      xs: 6,
                     }}
                     container
                     justifyContent={'center'}

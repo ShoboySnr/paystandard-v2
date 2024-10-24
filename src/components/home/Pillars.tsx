@@ -59,6 +59,7 @@ const HoverableImage: React.FC<HoverableImageProps> = ({
       src={isParentHovered ? lightImage : darkImage}
       alt={altText}
       height={height}
+      style={{ transition: 'opacity 0.3s ease-in-out' }}
     />
   );
 };
@@ -77,6 +78,7 @@ const Pillars = () => {
           sx={{
             fontSize: { md: '32px', xs: '28px' },
             fontWeight: '500',
+            textAlign: { xs: 'center', md: 'left' },
           }}
         >
           The Three Pillars of PayStandards

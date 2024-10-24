@@ -58,13 +58,13 @@ const BannerCard = ({
                 background:
                   'radial-gradient(120.08% 112.73% at 50% 50%, #88A0FF 0%, #152461 100%)',
                 // mb: -1.5,
-                mt: 3,
+                mt: { xs: 6, md: 3 },
               }}
             >
               <Image
                 src={image}
                 alt="standard rating"
-                className="tw-absolute tw-bottom-0 tw-h-[110%]"
+                className="tw-absolute tw-bottom-0 tw-h-[120%] md:tw-h-[110%]"
               />
             </Box>
           ) : null}

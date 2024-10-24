@@ -55,7 +55,7 @@ const CoreBenefits = () => {
         sx={{
           pb: {
             md: '50px',
-            xs: '55px',
+            xs: '0px',
           },
         }}
       >
@@ -69,6 +69,7 @@ const CoreBenefits = () => {
           }}
           sx={{
             padding: { xs: '15px', md: '0' },
+            pb: { xs: '2px' },
             mt: { xs: '60px', md: '0' },
           }}
         >
