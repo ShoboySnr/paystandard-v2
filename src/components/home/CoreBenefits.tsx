@@ -172,19 +172,19 @@ const CoreBenefits = () => {
               </React.Fragment>
             ))}
           </Grid>
-          <Divider
-            sx={{
-              display: {
-                md: 'block',
-                xs: 'none',
-              },
-              mb: '3px',
-              borderColor: 'primary.main',
-              width: '100%',
-              borderWidth: '2px',
-              borderRadius: '5px',
-            }}
-          />
+          {/*<Divider*/}
+          {/*  sx={{*/}
+          {/*    display: {*/}
+          {/*      md: 'block',*/}
+          {/*      xs: 'none',*/}
+          {/*    },*/}
+          {/*    mb: '3px',*/}
+          {/*    borderColor: 'primary.main',*/}
+          {/*    width: '100%',*/}
+          {/*    borderWidth: '2px',*/}
+          {/*    borderRadius: '5px',*/}
+          {/*  }}*/}
+          {/*/>*/}
         </Grid>
         <Grid
           sx={{
