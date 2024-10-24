@@ -98,7 +98,14 @@ const Banner = () => {
             gap: '20px',
           }}
         >
-          <Box>
+          <Box
+            sx={{
+              mb: {
+                xs: '110px',
+                md: '0',
+              },
+            }}
+          >
             <Link href={'/demo'}>
               <Button
                 // onClick={handleClickOpen}

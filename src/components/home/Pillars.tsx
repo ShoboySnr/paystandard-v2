@@ -30,7 +30,7 @@ const cardStyling = {
   backgroundBlendMode: 'hard-light',
   backgroundSize: 'cover',
   padding: { sm: '45px', md: '20px', lg: '45px', xs: '20px' },
-  transition: 'all 0.3s ease-in-out',
+  transition: 'all 0s ease-in-out',
   '&:hover': {
     backgroundColor: 'primary.main',
     boxShadow: '0px 0px 20px 0px rgba(0,0,0,0.2)',
@@ -55,12 +55,25 @@ const HoverableImage: React.FC<HoverableImageProps> = ({
   isParentHovered,
 }) => {
   return (
-    <Image
-      src={isParentHovered ? lightImage : darkImage}
-      alt={altText}
-      height={height}
-      style={{ transition: 'opacity 0.3s ease-in-out' }}
-    />
+    <>
+      {isParentHovered ? (
+        <Image
+          priority={true}
+          src={lightImage}
+          alt={altText}
+          height={height}
+          style={{ transition: 'opacity 0s ease-in-out' }}
+        />
+      ) : (
+        <Image
+          priority={true}
+          src={darkImage}
+          alt={altText}
+          height={height}
+          style={{ transition: 'opacity 0s ease-in-out' }}
+        />
+      )}
+    </>
   );
 };
 

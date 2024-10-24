@@ -174,6 +174,10 @@ const CoreBenefits = () => {
           </Grid>
           <Divider
             sx={{
+              display: {
+                md: 'block',
+                xs: 'none',
+              },
               mb: '3px',
               borderColor: 'primary.main',
               width: '100%',
