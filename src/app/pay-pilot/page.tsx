@@ -22,26 +22,81 @@ const bannerCardContent: { title: string; paragraph: string } = {
     'Your one-stop-shop to pay transparency, the Pay Pilot helps you to publish pay ranges that are tailored to the job and empowers you to make better pay decisions from day one – including hiring, promotions, off-cycle salary increases, spot bonuses, and special incentives.',
 };
 
-const coreBenefits: { icon: string; text: string }[] = [
+const coreBenefits: { icon: string; text: string | React.ReactElement }[] = [
   {
     icon: Icon6,
-    text: 'Make Better Overall Pay Decisions Year-Round',
+    text: (
+      <>
+        <Box sx={{ display: { xs: 'block', md: 'none' } }}>
+          Make Better <br />
+          Overall Pay <br />
+          Decisions Year- <br />
+          Round
+        </Box>
+        <Box sx={{ display: { xs: 'none', md: 'block' } }}>
+          Make Better Overall Pay Decisions Year-Round
+        </Box>
+      </>
+    ),
   },
   {
     icon: Icon11,
-    text: 'Monitor and Sustain Pay Equity',
+    text: (
+      <>
+        <Box sx={{ display: { xs: 'block', md: 'none' } }}>
+          Monitor and <br />
+          Sustain Pay <br />
+          Equity
+        </Box>
+        <Box sx={{ display: { xs: 'none', md: 'block' } }}>
+          Monitor and Sustain Pay Equity
+        </Box>
+      </>
+    ),
   },
   {
     icon: Icon12,
-    text: 'Integrate With Your HCM Platform',
+    text: (
+      <>
+        <Box sx={{ display: { xs: 'block', md: 'none' } }}>
+          Integrate With <br />
+          Your HCM <br />
+          Platform
+        </Box>
+        <Box sx={{ display: { xs: 'none', md: 'block' } }}>
+          Integrate With Your HCM Platform
+        </Box>
+      </>
+    ),
   },
   {
     icon: Icon13,
-    text: 'Leverage a Fine-Tuned Pay Range ',
+    text: (
+      <>
+        <Box sx={{ display: { xs: 'block', md: 'none' } }}>
+          Leverage a Fine- <br />
+          Tuned Pay Range
+        </Box>
+        <Box sx={{ display: { xs: 'none', md: 'block' } }}>
+          Leverage a Fine-Tuned Pay Range
+        </Box>
+      </>
+    ),
   },
   {
     icon: Icon14,
-    text: 'Reduce Legal and Reputational Risk',
+    text: (
+      <>
+        <Box sx={{ display: { xs: 'block', md: 'none' } }}>
+          Reduce <br />
+          Legal and <br />
+          Reputational Risk
+        </Box>
+        <Box sx={{ display: { xs: 'none', md: 'block' } }}>
+          Reduce Legal and Reputational Risk
+        </Box>
+      </>
+    ),
   },
 ];
 
@@ -69,7 +124,7 @@ const IndexProduct = () => {
             <Box
               sx={{
                 textAlign: 'center',
-                pt: { xs: 15, md: 12 },
+                pt: { xs: 10, md: 12 },
                 color: 'black.main',
               }}
             >
@@ -99,6 +154,7 @@ const IndexProduct = () => {
                   mt: { xs: 2, md: 5 },
                   display: 'flex',
                   justifyContent: 'center',
+                  color: { xs: '#283167', md: 'black.main' },
                 }}
               >
                 Pay Pilot{' '}
@@ -119,12 +175,31 @@ const IndexProduct = () => {
                   mt: { xs: 2, md: 3.5 },
                   mx: 'auto',
                   fontWeight: '400',
-                  fontSize: { xs: '18px', md: '24px' },
+                  fontSize: { xs: '20px', md: '24px' },
+                  color: '#283167',
                 }}
               >
-                Pay Pilot helps you make better everyday pay decisions to
-                sustain your pay equity progress through an easy-to-use software
-                platform.
+                <Box
+                  sx={{
+                    display: { xs: 'block', md: 'none' },
+                    textAlign: 'center',
+                  }}
+                >
+                  PayPilot year-round is an <br />
+                  easy-to-use software <br />
+                  platform to help you make <br />
+                  better everyday pay <br />
+                  decisions, including hiring, <br />
+                  promotions, and off-cycle <br />
+                  salary increases to sustain <br />
+                  your pay equity progress.
+                </Box>
+
+                <Box sx={{ display: { xs: 'none', md: 'block' } }}>
+                  Pay Pilot helps you make better everyday pay decisions to
+                  sustain your pay equity progress through an easy-to-use
+                  software platform.
+                </Box>
               </Box>
             </Box>
           </AppContainer>
@@ -168,15 +243,31 @@ const IndexProduct = () => {
             titleText={
               <Typography
                 sx={{
-                  fontSize: { xs: '25px', md: '28px' },
+                  fontSize: { xs: '28px', md: '32px' },
                   fontWeight: '700',
                   textAlign: 'center',
                   lineHeight: '140%',
                   pt: 2,
+                  color: '#283167',
                 }}
               >
-                Learn How Pay Pilot Will Empower Year-Round Pay <br /> Decisions
-                and Facilitate Pay Transparency For Your Company
+                {/* Mobile version */}
+                <Box sx={{ display: { xs: 'block', md: 'none' } }}>
+                  Learn How to Leverage
+                  <br />
+                  the Pay Pilot
+                  <span style={{ fontSize: '16px', verticalAlign: 'super' }}>
+                    ™
+                  </span>
+                  <br />
+                  at Your Company
+                </Box>
+                {/* Desktop version */}
+                <Box sx={{ display: { xs: 'none', md: 'block' } }}>
+                  Learn How Pay Pilot Will Empower Year-Round Pay
+                  <br />
+                  Decisions and Facilitate Pay Transparency For Your Company
+                </Box>
               </Typography>
             }
           />

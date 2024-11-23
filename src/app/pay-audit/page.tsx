@@ -34,35 +34,93 @@ const quoteCardContent = {
 const coreBenefits = [
   {
     icon: Icon6,
-    text: 'Make Better Overall Pay Decisions at Year-End',
+    text: (
+      <>
+        <Box sx={{ display: { xs: 'block', md: 'none' } }}>
+          Make Better <br />
+          Overall Pay <br />
+          Decisions at <br />
+          Year-End
+        </Box>
+        <Box sx={{ display: { xs: 'none', md: 'block' } }}>
+          Make Better Overall Pay Decisions at Year-End
+        </Box>
+      </>
+    ),
   },
   {
     icon: Icon7,
-    text: 'Improve Your Company’s Pay Equity',
+    text: (
+      <>
+        <Box sx={{ display: { xs: 'block', md: 'none' } }}>
+          Improve Your <br />
+          Company&apos;s Pay <br />
+          Equity
+        </Box>
+        <Box sx={{ display: { xs: 'none', md: 'block' } }}>
+          Improve Your Company&apos;s Pay Equity
+        </Box>
+      </>
+    ),
   },
   {
     icon: Icon8,
     text: (
       <>
-        No Additional <br /> Spend <br /> Required
+        <Box sx={{ display: { xs: 'block', md: 'none' } }}>
+          No Additional <br />
+          Spend Required
+        </Box>
+        <Box sx={{ display: { xs: 'none', md: 'block' } }}>
+          No Additional Spend Required
+        </Box>
       </>
     ),
   },
   {
     icon: Icon9,
-    text: 'Reduce Legal Fees and Remediation ',
+    text: (
+      <>
+        <Box sx={{ display: { xs: 'block', md: 'none' } }}>
+          Reduce Legal <br />
+          Fees and <br />
+          Remediation
+        </Box>
+        <Box sx={{ display: { xs: 'none', md: 'block' } }}>
+          Reduce Legal Fees and Remediation
+        </Box>
+      </>
+    ),
   },
   {
     icon: Icon10,
     text: (
       <>
-        Avoid <br /> Reputational <br /> Risk
+        <Box sx={{ display: { xs: 'block', md: 'none' } }}>
+          Avoid <br />
+          Reputational <br />
+          Risk
+        </Box>
+        <Box sx={{ display: { xs: 'none', md: 'block' } }}>
+          Avoid Reputational Risk
+        </Box>
       </>
     ),
   },
   {
     icon: Icon4,
-    text: 'See Where You’re Out of Compliance',
+    text: (
+      <>
+        <Box sx={{ display: { xs: 'block', md: 'none' } }}>
+          See Where <br />
+          You&apos;re Out of <br />
+          Compliance
+        </Box>
+        <Box sx={{ display: { xs: 'none', md: 'block' } }}>
+          See Where You&apos;e Out of Compliance
+        </Box>
+      </>
+    ),
   },
 ];
 
@@ -89,7 +147,7 @@ const AuditProduct = () => {
           <Box
             sx={{
               textAlign: 'center',
-              pt: { xs: 15, md: 12 },
+              pt: { xs: 10, md: 12 },
               color: { xs: '#283167', md: 'black.main' },
             }}
           >
@@ -119,6 +177,7 @@ const AuditProduct = () => {
                 mt: { xs: 2, md: 5 },
                 display: 'flex',
                 justifyContent: 'center',
+                color: { xs: '#283167', md: 'black.main' },
               }}
             >
               Pay Audit{' '}
@@ -140,11 +199,30 @@ const AuditProduct = () => {
                 mx: 'auto',
                 fontWeight: '400',
                 fontSize: { xs: '18px', lg: '24px' },
+                color: { xs: '#283167', md: 'black.main' },
               }}
             >
-              Pay Audit empowers you to make data-driven pay decisions during
-              your annual year-end compensation process, optimizing your
-              compensation budget.
+              <Box
+                sx={{
+                  display: { xs: 'block', md: 'none' },
+                  textAlign: 'center',
+                }}
+              >
+                Pay Audit lets you make <br />
+                smarter, more empowered <br />
+                pay decisions during your <br />
+                annual year-end <br />
+                compensation review <br />
+                process – closing pay gaps <br />
+                with greater insight and <br />
+                visibility.
+              </Box>
+
+              <Box sx={{ display: { xs: 'none', md: 'block' } }}>
+                Pay Audit empowers you to make data-driven pay decisions during
+                your annual year-end compensation process, optimizing your
+                compensation budget.
+              </Box>
             </Box>
           </Box>
         </AppContainer>
@@ -195,12 +273,24 @@ const AuditProduct = () => {
                 textAlign: 'center',
                 lineHeight: '140%',
                 pt: 2,
+                color: '#283167',
               }}
             >
-              Learn How to Leverage Pay Audit to Simplify the <br />
-              Year-End Pay Process at Your Company
-              {/*Learn How to Leverage the Pay Audit*/}
-              {/*<span className={'tw-size-32 tw-font-normal'}>™ </span> <br /> at Your Company*/}
+              <Box sx={{ display: { xs: 'block', md: 'none' } }}>
+                Learn How to Leverage
+                <br />
+                the Pay Audit
+                <span style={{ fontSize: '16px', verticalAlign: 'super' }}>
+                  ™
+                </span>
+                <br />
+                at Your Company
+              </Box>
+              <Box sx={{ display: { xs: 'none', md: 'block' } }}>
+                Learn How to Leverage Pay Audit to Simplify the
+                <br />
+                Year-End Pay Process at Your Company
+              </Box>
             </Typography>
           }
         />

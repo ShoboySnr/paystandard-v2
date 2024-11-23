@@ -17,8 +17,19 @@ import Icon5 from '~/assets/icons-common/core-benefits/icon_5.svg';
 import styles from '@/app/_scss/global.module.scss';
 import image from '~/assets/products/pay-index.png';
 
-const bannerCardContent: { title: string; paragraph: string } = {
-  title: 'Understand Your Pay with Acuity',
+const bannerCardContent: { title: React.ReactNode; paragraph: string } = {
+  title: (
+    <>
+      <Box sx={{ display: { xs: 'block', md: 'none' } }}>
+        Understand Your Pay <br />
+        with Acuity
+      </Box>
+      <Box sx={{ display: { xs: 'none', md: 'block' } }}>
+        Understand Your Pay with Acuity
+      </Box>
+    </>
+  ),
+
   paragraph:
     'Go beyond the traditional pay gap metrics and understand your true pay equity position. Assess pay equity beyond the enterprise level – looking across different geographies, job levels, business units, and more. A comprehensive view which will not only supercharge your disclosure, but also help you identify where to take action.',
 };
@@ -36,7 +47,13 @@ const coreBenefits = [
     icon: Icon1,
     text: (
       <>
-        Know Where <br /> You Stand
+        <Box sx={{ display: { xs: 'block', md: 'none' } }}>
+          Know Where <br />
+          You Stand
+        </Box>
+        <Box sx={{ display: { xs: 'none', md: 'block' } }}>
+          Know Where You Stand
+        </Box>
       </>
     ),
   },
@@ -44,7 +61,13 @@ const coreBenefits = [
     icon: Icon2,
     text: (
       <>
-        Automate Pay <br /> Gap Disclosure
+        <Box sx={{ display: { xs: 'block', md: 'none' } }}>
+          Automate Pay <br />
+          Gap Disclosure
+        </Box>
+        <Box sx={{ display: { xs: 'none', md: 'block' } }}>
+          Automate Pay Gap Disclosure
+        </Box>
       </>
     ),
   },
@@ -52,7 +75,11 @@ const coreBenefits = [
     icon: Icon3,
     text: (
       <>
-        Monitor <br /> Trends
+        <Box sx={{ display: { xs: 'block', md: 'none' } }}>
+          Monitor <br />
+          Trends
+        </Box>
+        <Box sx={{ display: { xs: 'none', md: 'block' } }}>Monitor Trends</Box>
       </>
     ),
   },
@@ -60,7 +87,13 @@ const coreBenefits = [
     icon: Icon4,
     text: (
       <>
-        Identify Root <br /> Causes
+        <Box sx={{ display: { xs: 'block', md: 'none' } }}>
+          Identify Root <br />
+          Causes
+        </Box>
+        <Box sx={{ display: { xs: 'none', md: 'block' } }}>
+          Identify Root Causes
+        </Box>
       </>
     ),
   },
@@ -68,7 +101,13 @@ const coreBenefits = [
     icon: Icon5,
     text: (
       <>
-        Harness Your <br /> Data
+        <Box sx={{ display: { xs: 'block', md: 'none' } }}>
+          Harness <br />
+          Your Data
+        </Box>
+        <Box sx={{ display: { xs: 'none', md: 'block' } }}>
+          Harness Your Data
+        </Box>
       </>
     ),
   },
@@ -151,10 +190,27 @@ const IndexProduct = () => {
                   mx: 'auto',
                   fontWeight: '400',
                   fontSize: { xs: '18px', md: '24px' },
+                  color: { xs: '#283167', md: 'black.main' },
                 }}
               >
-                Pay Index gives you standardized ratings, trends, and root-cause
-                analytics that illuminate your company’s pay equity position.
+                <Box
+                  sx={{
+                    display: { xs: 'block', md: 'none' },
+                    textAlign: 'center',
+                  }}
+                >
+                  Access standardized ratings, <br />
+                  trends, and root-cause <br />
+                  analytics that guide you <br />
+                  through your company&apos;s <br />
+                  current pay equity position.
+                </Box>
+
+                <Box sx={{ display: { xs: 'none', md: 'block' } }}>
+                  Pay Index gives you standardized ratings, trends, and
+                  root-cause analytics that illuminate your company&apos;s pay
+                  equity position.
+                </Box>
               </Box>
             </Box>
           </AppContainer>

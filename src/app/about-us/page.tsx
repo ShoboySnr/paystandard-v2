@@ -21,7 +21,6 @@ export const metadata: Metadata = {
 const AboutUs = () => {
   return (
     <>
-      {/*  heading and subtitle */}
       <Grid
         className={styles.removeHeaderMargin}
         container

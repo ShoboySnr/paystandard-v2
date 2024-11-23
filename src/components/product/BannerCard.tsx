@@ -11,7 +11,7 @@ const BannerCard = ({
   image,
   showBorder = false,
 }: {
-  title: string;
+  title: React.ReactNode;
   paragraph: string;
   src?: string;
   image?: any;
