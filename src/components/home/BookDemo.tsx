@@ -55,7 +55,8 @@ const BookDemo = () => {
                 fontSize: { md: '32px', xs: '28px' },
                 textAlign: { md: 'left', xs: 'center' },
                 fontWeight: '700',
-                color: 'black.main',
+                color: { xs: '#152461', md: 'black.main' },
+                lineHeight: { xs: '120%', md: 'initial' },
               }}
             >
               Learn how you can achieve true
@@ -66,7 +67,7 @@ const BookDemo = () => {
             <Box>
               <Link href={'/demo'}>
                 <Button
-                  className={'!tw-rounded-full'}
+                  className={'!tw-rounded-full sm:tw-font-bold'}
                   variant="contained"
                   sx={{ height: '44px', px: '25px' }}
                 >
@@ -82,25 +83,42 @@ const BookDemo = () => {
             xs: 12,
           }}
           sx={{
-            pr: '50px',
-            pl: { md: '20px', xs: '50px' },
+            pr: { md: '50px', xs: '20px' },
+            pl: { md: '20px', xs: '20px' },
             mt: { md: '30px', lg: '0px' },
             mb: { xs: '30px', md: '0' },
           }}
         >
           <Box
-            className="tw-relative tw-h-[214px] tw-w-full tw-rounded-[35px] md:tw-h-[200px] lg:tw-h-[238px] sm:tw-w-[510px] md:tw-w-[410px] lg:tw-w-[510px] tw-mx-auto"
+            className="tw-relative md:tw-h-[200px] lg:tw-h-[238px] md:tw-w-[410px] lg:tw-w-[510px] md:tw-mx-auto"
             sx={{
               display: 'flex',
               justifyContent: 'center',
-              background:
-                'radial-gradient(184.83% 144.26% at 27.98% -27.37%, #3860FF 0%, #152461 100%)',
+              alignItems: 'center',
+              height: { xs: '180px' },
+              width: { xs: '100%' },
+              borderRadius: { xs: '24px', md: '35px' },
+              background: {
+                xs: 'linear-gradient(248.66deg, #152461 -8.44%, #3860FF 139.9%)',
+                md: 'radial-gradient(184.83% 144.26% at 27.98% -27.37%, #3860FF 0%, #152461 100%)',
+              },
+              position: 'relative',
+              overflow: 'visible',
             }}
           >
             <Image
               src={ImageCover}
               alt="Book a Demo"
-              className="tw-absolute md:tw-w-[320px] lg:tw-w-[420px] tw-top-[-35px] tw-rounded-[35px] md:tw-h-[130%]"
+              className="md:tw-absolute md:tw-w-[320px] lg:tw-w-[420px] md:tw-top-[-35px] md:tw-rounded-[35px] md:tw-h-[130%]"
+              style={{
+                width: '85%',
+                height: '240px',
+                objectFit: 'cover',
+                borderRadius: '24px',
+                position: 'absolute',
+                top: '-30px',
+                bottom: '-30px',
+              }}
             />
           </Box>
         </Grid>
