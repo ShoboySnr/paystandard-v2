@@ -226,13 +226,25 @@ const AppFooter = () => {
               },
             }}
           >
-            <Box sx={{ display: 'flex', gap: '10px' }}>
+            <Box
+              sx={{
+                display: 'flex',
+                gap: '10px',
+                alignItems: 'center',
+                '& img': {
+                  height: { xs: '40px', md: '20px' },
+                  width: 'auto',
+                },
+              }}
+            >
               <Typography
                 sx={{
                   color: 'white.main',
                   fontSize: '18px',
                   fontWeight: '700px',
                   mr: '5px',
+                  display: 'flex',
+                  alignItems: 'center',
                 }}
               >
                 Follow Us:
@@ -242,7 +254,8 @@ const AppFooter = () => {
                 target="_blank"
               >
                 <Image
-                  height={20}
+                  height={40}
+                  width={40}
                   priority
                   src={LinkedInLogo}
                   alt="Pay Standards"
@@ -250,7 +263,8 @@ const AppFooter = () => {
               </Link>
               <Link href="https://x.com/PayStandards" target="_blank">
                 <Image
-                  height={20}
+                  height={40}
+                  width={40}
                   priority
                   src={TwitterLogo}
                   alt="Pay Standards"
@@ -261,7 +275,8 @@ const AppFooter = () => {
                 target="_blank"
               >
                 <Image
-                  height={20}
+                  height={40}
+                  width={40}
                   priority
                   src={YoutubeLogo}
                   alt="Pay Standards"

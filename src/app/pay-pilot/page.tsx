@@ -69,22 +69,34 @@ const IndexProduct = () => {
             <Box
               sx={{
                 textAlign: 'center',
-                pt: { xs: 6, md: 12 },
+                pt: { xs: 15, md: 12 },
                 color: 'black.main',
               }}
             >
-              <Image
-                width={71}
-                src={PayPilotIcon}
-                alt="Pay Index"
-                className="tw-m-auto"
-              />
+              <Box
+                sx={{
+                  width: { xs: '50px', md: '71px' },
+                  height: { xs: '50px', md: '71px' },
+                  margin: 'auto',
+                }}
+              >
+                <Image
+                  width={71}
+                  height={71}
+                  src={PayPilotIcon}
+                  alt="Pay Index"
+                  style={{
+                    width: '100%',
+                    height: '100%',
+                  }}
+                />
+              </Box>
               <Box
                 sx={{
                   fontSize: { xs: '32px', md: '40px' },
                   fontWeight: '700',
                   px: { xs: 6, md: 0 },
-                  mt: 5,
+                  mt: { xs: 2, md: 5 },
                   display: 'flex',
                   justifyContent: 'center',
                 }}
@@ -104,7 +116,7 @@ const IndexProduct = () => {
               <Box
                 sx={{
                   width: '75%',
-                  mt: 3.5,
+                  mt: { xs: 2, md: 3.5 },
                   mx: 'auto',
                   fontWeight: '400',
                   fontSize: { xs: '18px', md: '24px' },

@@ -28,7 +28,7 @@ const BannerCard = ({
         mt: { xs: -69, md: -64 },
         border: '1px solid #525252',
         backgroundColor: '#FFFFFF',
-        borderRadius: '35px',
+        borderRadius: { xs: '25px', md: '35px' },
       }}
     >
       <Grid container spacing={{ xs: 4, md: 6 }}>

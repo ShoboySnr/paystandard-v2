@@ -68,6 +68,7 @@ const ScheduleDemoForm = ({
               pt: 2.5,
               pb: 4,
               color: 'black.main',
+              fontWeight: { xs: '50', md: '400' },
             }}
           >
             Book your demo with PayStandards.
