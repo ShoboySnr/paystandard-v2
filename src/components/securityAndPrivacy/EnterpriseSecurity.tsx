@@ -18,7 +18,7 @@ const EnterpriseSecurity = () => {
         },
       }}
     >
-      {/*   heading */}
+      {/* heading */}
       <Grid
         size={{
           md: 6,
@@ -40,13 +40,13 @@ const EnterpriseSecurity = () => {
             fontWeight: '400',
             margin: 'auto 0 2px 0',
             padding: '0 0 10px 0',
-            color: 'gray.main',
+            color: '#283167',
           }}
         >
           Enterprise Security
         </Typography>
       </Grid>
-      {/*   content */}
+      {/* content */}
       <Grid size={12} container spacing={3}>
         <Grid
           size={{
@@ -65,7 +65,7 @@ const EnterpriseSecurity = () => {
               subtitle={
                 'All corporate devices are equipped with mobile device management software and anti-malware protection. Endpoint security is monitored with 24/7/365 coverage. We use MDM software to enforce secure configuration of endpoints, such as disk encryption, screen lock configuration, and software updates.'
               }
-              titleColor={'gray.main'}
+              titleColor={'#283167'}
             />
           </Grid>
           <Grid
@@ -77,9 +77,9 @@ const EnterpriseSecurity = () => {
             <TitleAndSubtitle
               title={'Secure remote access'}
               subtitle={
-                'PayStandards secures remote access to internal resources using AWS’ VPN platform. We also use malware-blocking DNS servers to protect employees and their endpoints while browsing the internet.'
+                'PayStandards secures remote access to internal resources using AWS&apos; VPN platform. We also use malware-blocking DNS servers to protect employees and their endpoints while browsing the internet.'
               }
-              titleColor={'gray.main'}
+              titleColor={'#283167'}
             />
           </Grid>
           <Grid
@@ -91,9 +91,9 @@ const EnterpriseSecurity = () => {
             <TitleAndSubtitle
               title={'Security education'}
               subtitle={
-                'PayStandards provides comprehensive security training to all employees upon onboarding and annually through educational modules. In addition, all new employees attend a mandatory live onboarding session centered around key security principles. All new engineers also attend a mandatory live onboarding session focused on secure coding principles and practices. PayStandards’ security team shares regular threat briefings with employees to inform them of important security and safety-related updates that require special attention or action.'
+                'PayStandards provides comprehensive security training to all employees upon onboarding and annually through educational modules. In addition, all new employees attend a mandatory live onboarding session centered around key security principles. All new engineers also attend a mandatory live onboarding session focused on secure coding principles and practices. PayStandards&apos; security team shares regular threat briefings with employees to inform them of important security and safety-related updates that require special attention or action.'
               }
-              titleColor={'gray.main'}
+              titleColor={'#283167'}
             />
           </Grid>
           <Grid size={12}>
@@ -102,7 +102,7 @@ const EnterpriseSecurity = () => {
               subtitle={
                 'PayStandards uses AWS to secure our identity and access management. We enforce the use of phishing-resistant authentication factors, using Cognito exclusively wherever possible.'
               }
-              titleColor={'gray.main'}
+              titleColor={'#283167'}
             />
             <Typography
               sx={{
@@ -111,7 +111,7 @@ const EnterpriseSecurity = () => {
                 },
                 fontWeight: '400',
                 margin: '10px 0 2px 0',
-                color: 'deep-blue-secondary.main',
+                color: '#283167',
               }}
             >
               PayStandards employees are granted access to applications based on
@@ -138,7 +138,7 @@ const EnterpriseSecurity = () => {
               subtitle={
                 'PayStandards uses a risk-based approach to vendor security. Factors which influence the inherent risk rating of a vendor include:'
               }
-              titleColor={'gray.main'}
+              titleColor={'#283167'}
             />
           </Grid>
           <Grid
@@ -201,7 +201,7 @@ const EnterpriseSecurity = () => {
                 },
                 fontWeight: '400',
                 margin: '10px 0 2px 0',
-                color: 'deep-blue-secondary.main',
+                color: '#283167',
               }}
             >
               Once the inherent risk rating has been determined, the security of

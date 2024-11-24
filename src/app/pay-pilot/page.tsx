@@ -16,8 +16,19 @@ import Icon13 from '~/assets/icons-common/core-benefits/icon_13.svg';
 import Icon14 from '~/assets/icons-common/core-benefits/icon_14.svg';
 import styles from '@/app/_scss/global.module.scss';
 
-const bannerCardContent: { title: string; paragraph: string } = {
-  title: 'Power Your Year-Round Pay',
+const bannerCardContent = {
+  title: (
+    <Box>
+      <Box sx={{ display: { xs: 'block', md: 'none' } }}>
+        Power Your Pay Year-{'\u00A0'}
+        <br />
+        Round Pay
+      </Box>
+      <Box sx={{ display: { xs: 'none', md: 'block' } }}>
+        Power Your Pay Year-Round Pay
+      </Box>
+    </Box>
+  ),
   paragraph:
     'Your one-stop-shop to pay transparency, the Pay Pilot helps you to publish pay ranges that are tailored to the job and empowers you to make better pay decisions from day one – including hiring, promotions, off-cycle salary increases, spot bonuses, and special incentives.',
 };

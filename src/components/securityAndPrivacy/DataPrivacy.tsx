@@ -1,4 +1,4 @@
-import { Grid } from '@mui/system';
+import { Grid, Box } from '@mui/system';
 import { Typography } from '@mui/material';
 import React from 'react';
 import TitleAndSubtitle from '@/components/securityAndPrivacy/TitleAndSubtitle';
@@ -39,7 +39,7 @@ const DataPrivacy = () => {
             fontWeight: '400',
             margin: 'auto 0 2px 0',
             padding: '0 0 10px 0',
-            color: 'gray.main',
+            color: '#283167',
           }}
         >
           Data Privacy
@@ -54,12 +54,59 @@ const DataPrivacy = () => {
             },
             fontWeight: '400',
             margin: 'auto 0 2px 0',
-            color: 'gray.main',
+            color: '#283167',
           }}
         >
           At PayStandards, data privacy is a first-class priority—we strive to
           be trustworthy stewards of all sensitive data.
         </Typography>
+        <Box sx={{ display: { md: 'none' }, paddingTop: '20px' }}>
+          <Typography
+            sx={{
+              fontSize: '20px',
+              fontWeight: 500,
+              color: '#283167',
+              mb: 1,
+            }}
+          >
+            Regulatory compliance
+          </Typography>
+
+          <Typography
+            sx={{
+              fontSize: '16px',
+              color: '#283167',
+              mb: 3,
+              lineHeight: 1.5,
+            }}
+          >
+            PayStandards evaluates updates to regulatory and emerging frameworks
+            continuously to evolve our program.
+          </Typography>
+
+          <Typography
+            sx={{
+              fontSize: '20px',
+              fontWeight: 500,
+              color: '#283167',
+              mb: 1,
+            }}
+          >
+            Privacy Policy and DPA
+          </Typography>
+
+          <Typography
+            sx={{
+              fontSize: '16px',
+              color: '#283167',
+              lineHeight: 1.5,
+            }}
+          >
+            View PayStandards&apos; Privacy Policy
+            <br />
+            View our DPA
+          </Typography>
+        </Box>
         <Grid
           container
           size={12}
@@ -72,6 +119,9 @@ const DataPrivacy = () => {
             size={{
               md: 6,
               xs: 12,
+            }}
+            sx={{
+              display: { xs: 'none', md: 'flex' },
             }}
           >
             <TitleAndSubtitle
@@ -88,6 +138,9 @@ const DataPrivacy = () => {
             size={{
               md: 6,
               xs: 12,
+            }}
+            sx={{
+              display: { xs: 'none', md: 'flex' },
             }}
           >
             <TitleAndSubtitle

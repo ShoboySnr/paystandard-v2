@@ -3,7 +3,7 @@ import { Typography } from '@mui/material';
 import React from 'react';
 import BorderedText from '@/components/securityAndPrivacy/BorderedText';
 
-const productSecurity = () => {
+const ProductSecurity = () => {
   return (
     <Grid
       size={12}
@@ -17,7 +17,7 @@ const productSecurity = () => {
         },
       }}
     >
-      {/*   heading */}
+      {/* heading */}
       <Grid
         size={{
           md: 6,
@@ -39,13 +39,13 @@ const productSecurity = () => {
             fontWeight: '400',
             margin: 'auto 0 2px 0',
             padding: '0 0 10px 0',
-            color: 'gray.main',
+            color: '#283167',
           }}
         >
           Product Security
         </Typography>
       </Grid>
-      {/*   content */}
+      {/* content */}
       <Grid size={12}>
         <Typography
           sx={{
@@ -54,7 +54,7 @@ const productSecurity = () => {
             },
             fontWeight: '700',
             margin: 'auto 0 2px 0',
-            color: 'gray.main',
+            color: '#283167',
           }}
         >
           Vulnerability scanning
@@ -66,7 +66,7 @@ const productSecurity = () => {
             },
             fontWeight: '400',
             margin: '10px 0 2px 0',
-            color: 'deep-blue-secondary.main',
+            color: '#283167',
           }}
         >
           PayStandards requires vulnerability scanning at key stages of our
@@ -163,4 +163,4 @@ const productSecurity = () => {
   );
 };
 
-export default productSecurity;
+export default ProductSecurity;
