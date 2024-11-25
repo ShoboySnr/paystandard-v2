@@ -74,17 +74,40 @@ const CoreBenefits = () => {
           }}
         >
           <Grid size={12}>
-            <Box sx={{ display: 'flex', gap: '26px' }}>
-              <Image
-                src={'/assets/home/circle1.svg'}
-                alt="image.png"
-                height={70}
-                width={70}
-              />
+            <Box
+              sx={{
+                display: 'flex',
+                gap: { xs: '16px', md: '26px' },
+                alignItems: { xs: 'flex-end', md: 'flex-start' },
+              }}
+            >
+              <Box
+                sx={{
+                  '& img': {
+                    height: {
+                      xs: '50px !important',
+                      md: '70px !important',
+                    },
+                    width: {
+                      xs: '50px !important',
+                      md: '70px !important',
+                    },
+                  },
+                  marginBottom: { xs: '2px', md: '0' },
+                  alignSelf: { xs: 'flex-end', md: 'flex-start' },
+                }}
+              >
+                <Image
+                  src={'/assets/home/circle1.svg'}
+                  alt="image.png"
+                  height={70}
+                  width={70}
+                />
+              </Box>
               <Box
                 sx={{
                   width: '100%',
-                  alignSelf: 'flex-end',
+                  alignSelf: { xs: 'flex-end', md: 'flex-end' },
                 }}
               >
                 <Typography
@@ -95,7 +118,7 @@ const CoreBenefits = () => {
                     width: '100%',
                     margin: 'auto 0 2px 0',
                     color: 'black.main',
-                    paddingBottom: '20px',
+                    paddingBottom: { md: '20px', xs: '10px' },
                   }}
                 >
                   Core Benefits
