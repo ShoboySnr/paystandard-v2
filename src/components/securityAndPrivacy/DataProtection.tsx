@@ -17,7 +17,7 @@ const DataProtection = () => {
         },
       }}
     >
-      {/* heading */}
+      {/*   heading */}
       <Grid
         size={{
           md: 6,
@@ -39,13 +39,13 @@ const DataProtection = () => {
             fontWeight: '400',
             margin: 'auto 0 2px 0',
             padding: '0 0 10px 0',
-            color: '#283167',
+            color: 'gray.main',
           }}
         >
           Data Protection
         </Typography>
       </Grid>
-      {/* content */}
+      {/*   content */}
       <Grid container size={12} columnSpacing={8} rowSpacing={4}>
         <Grid
           size={{
@@ -58,7 +58,7 @@ const DataProtection = () => {
             subtitle={
               'All datastores with customer data, in addition to S3 buckets, are encrypted at rest. Sensitive collections and tables also use row-level encryption.'
             }
-            titleColor={'#283167'}
+            titleColor={'gray.main'}
           />
           <Typography
             sx={{
@@ -67,7 +67,7 @@ const DataProtection = () => {
               },
               fontWeight: '400',
               margin: '10px 0 2px 0',
-              color: '#283167',
+              color: 'deep-blue-secondary.main',
             }}
           >
             This means the data is encrypted even before it hits the database so
@@ -86,7 +86,7 @@ const DataProtection = () => {
             subtitle={
               'PayStandards uses TLS 1.2 or higher everywhere data is transmitted over potentially insecure networks. We also use features such as HSTS (HTTP Strict Transport Security) to maximize the security of our data in transit. Server TLS keys and certificates are managed by AWS and deployed via Application Load Balancers.'
             }
-            titleColor={'#283167'}
+            titleColor={'gray.main'}
           />
         </Grid>
         <Grid
@@ -98,9 +98,9 @@ const DataProtection = () => {
           <TitleAndSubtitle
             title={'Secret management'}
             subtitle={
-              'Encryption keys are managed via AWS Key Management System (KMS). KMS stores key material in Hardware Security Modules (HSMs), which prevents direct access by any individuals, including employees of Amazon & PayStandards. The keys stored in HSMs are used for encryption and decryption via Amazon&apos;s KMS APIs.'
+              'Encryption keys are managed via AWS Key Management System (KMS). KMS stores key material in Hardware Security Modules (HSMs), which prevents direct access by any individuals, including employees of Amazon & PayStandards. The keys stored in HSMs are used for encryption and decryption via Amazon’s KMS APIs.'
             }
-            titleColor={'#283167'}
+            titleColor={'gray.main'}
           />
           <Typography
             sx={{
@@ -109,7 +109,7 @@ const DataProtection = () => {
               },
               fontWeight: '400',
               margin: '10px 0 2px 0',
-              color: '#283167',
+              color: 'deep-blue-secondary.main',
             }}
           >
             Application secrets are encrypted and stored securely via AWS

@@ -33,6 +33,7 @@ const SecurityAndPrivacy = () => {
           },
         }}
       >
+        {/* heading and subtitle  */}
         <Grid size={12} textAlign={'center'}>
           <Typography
             sx={{
@@ -42,7 +43,7 @@ const SecurityAndPrivacy = () => {
               },
               fontWeight: '400',
               margin: 'auto 0 2px 0',
-              color: '#283167',
+              color: 'gray.main',
             }}
           >
             Security and Privacy at
@@ -56,7 +57,7 @@ const SecurityAndPrivacy = () => {
               },
               fontWeight: '400',
               margin: 'auto 0 2px 0',
-              color: '#283167',
+              color: 'deep-blue-secondary.main',
             }}
           >
             Security is at the heart of what we do—our{' '}

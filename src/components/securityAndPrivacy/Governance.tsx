@@ -43,7 +43,7 @@ const Governance = () => {
               fontWeight: '400',
               margin: 'auto 0 2px 0',
               padding: '0 0 10px 0',
-              color: '#283167',
+              color: 'black.main',
             }}
           >
             Governance
@@ -62,10 +62,10 @@ const Governance = () => {
               fontSize: '24px',
               fontWeight: '400',
               margin: 'auto 0 2px 0',
-              color: '#283167',
+              color: 'deep-blue-secondary.main',
             }}
           >
-            PayStandards&apos; Security and Privacy teams establish policies and
+            PayStandards’ Security and Privacy teams establish policies and
             controls, monitor compliance with those controls, and prove our
             security and compliance to third-party auditors.
           </Typography>
@@ -76,7 +76,7 @@ const Governance = () => {
               },
               fontWeight: '400',
               margin: 'auto 0 2px 0',
-              color: '#283167',
+              color: 'deep-blue-secondary.main',
               pt: '18px',
             }}
           >
@@ -164,13 +164,11 @@ const Governance = () => {
               />
             </Grid>
           </Grid>
+          {/*  other information  */}
           <Grid
             size={{
               md: 4,
               xs: 12,
-            }}
-            sx={{
-              mt: { xs: 4, md: 0 },
             }}
           >
             <TitleAndSubtitle
@@ -178,7 +176,7 @@ const Governance = () => {
               subtitle={
                 'PayStandards maintains a SOC 2 Type II attestation and a GDPR compliance certification. Our SOC 2 Type II report and GDPR certificates are available on our Trust Report.'
               }
-              titleColor={'#283167'}
+              titleColor={'gray.main'}
             />
             <Typography
               sx={{
@@ -188,7 +186,7 @@ const Governance = () => {
                 },
                 fontWeight: '600',
                 margin: 'auto 0 2px 0',
-                color: '#283167',
+                color: 'gray.main',
                 pt: '18px',
               }}
             >

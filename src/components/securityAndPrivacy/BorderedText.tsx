@@ -14,7 +14,7 @@ const BorderedText = ({
       sx={{
         height: '100%',
         border: '1px solid',
-        borderColor: '#283167',
+        borderColor: 'gray.main',
         padding: '20px 24px 20px 24px',
         margin: '20 0 20px 0',
         borderRadius: '15px',
@@ -26,7 +26,7 @@ const BorderedText = ({
           fontWeight: textWeight ? textWeight : '400',
           margin: '0 0 0 0',
           padding: '0 0 0 0',
-          color: '#283167',
+          color: 'deep-blue-secondary.main',
         }}
       >
         {text}

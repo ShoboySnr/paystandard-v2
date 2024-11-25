@@ -50,36 +50,18 @@ const AboutUs = () => {
             },
           }}
         >
-          <Box>
-            <Typography
-              sx={{
-                display: { xs: 'block', md: 'none' },
-                fontSize: '32px',
-                fontWeight: '700',
-                textAlign: 'center',
-                lineHeight: 1.2,
-                color: '#283167',
-              }}
-            >
-              Our Mission is to
-              <br />
-              Raise the
-              <br />
-              Standard of Pay
-            </Typography>
-
-            <Typography
-              sx={{
-                display: { xs: 'none', md: 'block' },
-                fontSize: '40px',
-                fontWeight: '700',
-                textAlign: 'center',
-                color: '#283167',
-              }}
-            >
-              Our Mission is to Raise the Standard of Pay
-            </Typography>
-          </Box>
+          <Typography
+            sx={{
+              fontSize: {
+                md: '40px',
+                xs: '32px',
+              },
+              fontWeight: '700',
+              color: 'black.main',
+            }}
+          >
+            Our Mission is to Raise the Standard of Pay
+          </Typography>
           <Typography
             sx={{
               fontSize: {
@@ -277,7 +259,7 @@ const AboutUs = () => {
                   fontWeight: '700',
                   margin: 'auto 0 4px 0',
                   lineHeight: '44px',
-                  color: '#283167',
+                  color: 'deep-blue-secondary.main',
                 }}
               >
                 Join Our
@@ -288,7 +270,7 @@ const AboutUs = () => {
                   fontSize: '24px',
                   fontWeight: '400',
                   margin: 'auto 0 4px 0',
-                  color: '#283167',
+                  color: 'deep-blue-secondary.main',
                   mt: '16px',
                 }}
               >

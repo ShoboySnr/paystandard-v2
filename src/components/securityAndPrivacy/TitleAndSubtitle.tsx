@@ -31,7 +31,7 @@ const TitleAndSubtitle: React.FC<TitleAndSubtitleProps> = ({
           },
           fontWeight: titleWeight ? titleWeight : '700',
           margin: 'auto 0 2px 0',
-          color: titleColor ? titleColor : '#283167',
+          color: titleColor ? titleColor : 'deep-blue-primary.main',
         }}
       >
         {title}
@@ -43,7 +43,7 @@ const TitleAndSubtitle: React.FC<TitleAndSubtitleProps> = ({
           },
           fontWeight: subtitleWeight ? subtitleWeight : '400',
           margin: 'auto 0 2px 0',
-          color: '#283167',
+          color: 'deep-blue-secondary.main',
         }}
       >
         {subtitle}
