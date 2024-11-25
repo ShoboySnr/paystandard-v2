@@ -74,35 +74,53 @@ const CoreBenefits = () => {
           }}
         >
           <Grid size={12}>
-            <Box sx={{ display: 'flex', gap: '26px' }}>
-              <Image
-                src={'/assets/home/circle1.svg'}
-                alt="image.png"
-                height={70}
-                width={70}
-              />
+            <Box
+              sx={{
+                display: 'flex',
+                gap: { xs: '16px', md: '26px' },
+                alignItems: 'flex-end',
+              }}
+            >
+              <Box
+                sx={{
+                  width: { xs: '38px', md: '70px' },
+                  height: { xs: '44px', md: '70px' },
+                  position: 'relative',
+                  display: 'flex',
+                  alignItems: 'flex-end',
+                }}
+              >
+                <Image
+                  src={'/assets/home/circle1.svg'}
+                  alt="image.png"
+                  fill
+                  style={{
+                    objectFit: 'contain',
+                    objectPosition: 'bottom',
+                  }}
+                />
+              </Box>
               <Box
                 sx={{
                   width: '100%',
-                  alignSelf: 'flex-end',
+                  display: 'flex',
+                  flexDirection: 'column',
+                  gap: { xs: '4px', md: '8px' },
                 }}
               >
                 <Typography
                   sx={{
                     fontSize: { md: '32px', xs: '28px' },
-                    lineHeight: '140%',
-                    fontWeight: '400',
+                    lineHeight: '100%',
+                    fontWeight: '100',
                     width: '100%',
-                    margin: 'auto 0 2px 0',
                     color: 'black.main',
-                    paddingBottom: '20px',
                   }}
                 >
                   Core Benefits
                 </Typography>
                 <Divider
                   sx={{
-                    mb: '3px',
                     borderColor: 'primary.main',
                     width: '100%',
                     borderWidth: '2px',
