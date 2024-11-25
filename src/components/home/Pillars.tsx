@@ -91,15 +91,14 @@ const Pillars = () => {
           sx={{
             fontSize: { md: '32px', xs: '28px' },
             fontWeight: '500',
-            textAlign: { xs: 'left', md: 'center' },
-            mb: { xs: '4px', md: '5px' },
+            textAlign: { xs: 'center', md: 'left' },
           }}
         >
           The Three Pillars of PayStandards
         </Typography>
         <Divider
           sx={{
-            my: { xs: '0', md: '5px' },
+            my: '5px',
             borderColor: 'primary.main',
             width: '100%',
             borderWidth: '2px',
