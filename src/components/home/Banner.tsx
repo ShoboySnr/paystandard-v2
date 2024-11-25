@@ -45,43 +45,7 @@ const Banner = () => {
             lineHeight: '135%',
           }}
         >
-          <Box
-            component="span"
-            sx={{
-              display: {
-                xs: 'block',
-                md: 'inline',
-              },
-            }}
-          >
-            Pay for the Right
-          </Box>{' '}
-          <Box
-            component="span"
-            sx={{
-              display: {
-                xs: 'block',
-                md: 'inline',
-              },
-            }}
-          >
-            Things. Drive the
-          </Box>{' '}
-          <Box
-            component="span"
-            sx={{
-              display: {
-                xs: 'block',
-                md: 'inline',
-              },
-              textDecoration: {
-                xs: 'none',
-                md: 'underline',
-              },
-            }}
-          >
-            Bottom Line.
-          </Box>
+          Pay for the Right Things. Drive the <u> Bottom Line. </u>
         </Box>
         <Box
           sx={{
