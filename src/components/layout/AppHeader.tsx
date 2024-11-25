@@ -192,7 +192,6 @@ const AppHeader = () => {
                               px: { xs: '10px' },
                               mr: 0.5,
                               fontSize: { xs: '12px', md: '20px' },
-                              minWidth: 'unset',
                             }}
                             className={'!tw-bg-[#88A0FF1A] !tw-text-dark-gray'}
                             variant="outlined"
@@ -211,7 +210,6 @@ const AppHeader = () => {
                                 xs: '12px',
                                 md: '20px',
                               },
-                              px: { xs: '10px' },
                               mr: 0.5,
                             }}
                             variant="contained"
