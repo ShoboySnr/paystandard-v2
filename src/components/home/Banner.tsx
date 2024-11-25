@@ -42,10 +42,30 @@ const Banner = () => {
             },
             fontWeight: 'bold',
             color: 'black.main',
-            lineHeight: '135%',
+            lineHeight: {
+              md: '135%',
+              xs: '120%',
+            },
           }}
         >
-          Pay for the Right Things. Drive the <u> Bottom Line. </u>
+          <Box
+            sx={{
+              display: { md: 'block', xs: 'none' },
+            }}
+          >
+            Pay for the Right Things. Drive the <u>Bottom Line.</u>
+          </Box>
+          <Box
+            sx={{
+              display: { md: 'none', xs: 'block' },
+            }}
+          >
+            Pay for the Right
+            <br />
+            Things. Drive the
+            <br />
+            Bottom Line.
+          </Box>
         </Box>
         <Box
           sx={{

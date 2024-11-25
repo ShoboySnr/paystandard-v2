@@ -109,7 +109,22 @@ const Products = () => {
               fontWeight: '400',
             }}
           >
-            Raise the Standard <br /> of Pay at Your Company
+            <Box
+              sx={{
+                display: { md: 'block', xs: 'none' },
+              }}
+            >
+              Raise the Standard <br /> of Pay at Your Company
+            </Box>
+            <Box
+              sx={{
+                display: { md: 'none', xs: 'block' },
+              }}
+            >
+              Raise the Standard
+              <br />
+              of Your Pay
+            </Box>
           </Typography>
           <Typography sx={{ fontSize: '18px', mt: '22px', fontWeight: '400' }}>
             Powered by a market-leading pay algorithm, real-time analytics, and
@@ -121,9 +136,12 @@ const Products = () => {
           sx={{
             mt: '66px',
             display: 'flex',
-            justifyContent: 'space-between',
+            justifyContent: {
+              md: 'space-between',
+              xs: 'space-evenly',
+            },
             color: '#fff',
-            paddingRight: { md: '30px' },
+            paddingRight: { md: '30px', xs: '0' },
           }}
         >
           <Box sx={imageSectionStyling}>

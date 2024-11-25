@@ -87,15 +87,42 @@ const Pillars = () => {
       }}
     >
       <Grid size={12} sx={{ px: { md: '20px', xs: '15px' } }}>
-        <Typography
+        <Box
           sx={{
-            fontSize: { md: '32px', xs: '28px' },
-            fontWeight: '500',
-            textAlign: { xs: 'center', md: 'left' },
+            textAlign: {
+              md: 'center',
+              xs: 'left',
+            },
           }}
         >
-          The Three Pillars of PayStandards
-        </Typography>
+          <Typography
+            sx={{
+              fontSize: {
+                md: '40px',
+                xs: '32px',
+              },
+              lineHeight: '125%',
+              fontWeight: '400',
+            }}
+          >
+            <Box
+              sx={{
+                display: { md: 'block', xs: 'none' },
+              }}
+            >
+              The Three Pillars of PayStandards
+            </Box>
+            <Box
+              sx={{
+                display: { md: 'none', xs: 'block' },
+              }}
+            >
+              The Three Pillars of
+              <br />
+              PayStandards
+            </Box>
+          </Typography>
+        </Box>
         <Divider
           sx={{
             my: '5px',
