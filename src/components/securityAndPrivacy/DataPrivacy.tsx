@@ -103,7 +103,7 @@ const DataPrivacy = () => {
               lineHeight: '1.5',
             }}
           >
-            View PayStandards' Privacy Policy
+            View PayStandards&apos; Privacy Policy
             <br />
             View our DPA
           </Typography>

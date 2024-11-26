@@ -187,7 +187,7 @@ export default function Contact() {
                             sx={{ width: '25px', height: '25px' }}
                           />
                         }
-                        color="primary"
+                        color="#283167"
                         variant="outlined"
                       >
                         partner@paystandards.com
