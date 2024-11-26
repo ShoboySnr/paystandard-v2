@@ -1,12 +1,11 @@
-import { Grid } from '@mui/system';
-import { Typography } from '@mui/material';
+import { Grid, Typography } from '@mui/material';
 import React from 'react';
 import Link from 'next/link';
 
 const Concern = () => {
   return (
     <Grid
-      size={12}
+      container
       sx={{
         px: {
           xs: '10px',
@@ -17,20 +16,11 @@ const Concern = () => {
         },
       }}
     >
-      <Grid
-        container
-        size={12}
-        textAlign={'center'}
-        justifyContent={'center'}
-        sx={{}}
-      >
+      <Grid container textAlign={'center'} justifyContent={'center'}>
         <Grid item xs={12}>
           <Typography
             sx={{
-              fontSize: {
-                md: '18px',
-                xs: '18px',
-              },
+              fontSize: '18px',
               fontWeight: '400',
               margin: 'auto 0 2px 0',
               padding: '0 0 0 0',
@@ -49,6 +39,9 @@ const Concern = () => {
               margin: 'auto 0 2px 0',
               padding: '0 0 10px 0',
               color: 'gray.main',
+              '& br': {
+                display: { md: 'none', xs: 'inline' }, // Hide line break on desktop
+              },
             }}
           >
             Looking to report a<br />
@@ -56,22 +49,18 @@ const Concern = () => {
           </Typography>
           <Typography
             sx={{
-              fontSize: {
-                md: '18px',
-                xs: '18px',
-              },
+              fontSize: '18px',
               fontWeight: '400',
               margin: 'auto 0 2px 0',
               padding: '0 0 10px 0',
               color: 'gray.main',
             }}
           >
-            <span>Please visit our</span>&nbsp;
+            Please visit our{' '}
             <Link href="/contact-us" className={'tw-text-blue tw-underline'}>
               Contact Us
-            </Link>
-            &nbsp;
-            <span>page.</span>
+            </Link>{' '}
+            page.
           </Typography>
         </Grid>
       </Grid>

@@ -82,17 +82,18 @@ const BookDemo = () => {
             xs: 12,
           }}
           sx={{
-            pr: '50px',
-            pl: { md: '20px', xs: '50px' },
+            pr: { md: '50px', xs: '10px' },
+            pl: { md: '20px', xs: '10px' },
             mt: { md: '30px', lg: '0px' },
             mb: { xs: '30px', md: '0' },
           }}
         >
           <Box
-            className="tw-relative tw-h-[214px] tw-w-full tw-rounded-[35px] md:tw-h-[200px] lg:tw-h-[238px] sm:tw-w-[510px] md:tw-w-[410px] lg:tw-w-[510px] tw-mx-auto"
+            className="tw-relative tw-h-[204px] tw-w-full sm:tw-w-[510px] md:tw-w-[410px] lg:tw-w-[510px] tw-rounded-[35px] md:tw-rounded-[35px] md:tw-h-[200px] lg:tw-h-[238px] tw-mx-auto"
             sx={{
               display: 'flex',
               justifyContent: 'center',
+              alignItems: 'center',
               background:
                 'radial-gradient(184.83% 144.26% at 27.98% -27.37%, #3860FF 0%, #152461 100%)',
             }}
@@ -100,7 +101,7 @@ const BookDemo = () => {
             <Image
               src={ImageCover}
               alt="Book a Demo"
-              className="tw-absolute md:tw-w-[320px] lg:tw-w-[420px] tw-top-[-35px] tw-rounded-[35px] md:tw-h-[130%]"
+              className="tw-absolute md:tw-w-[320px] lg:tw-w-[420px] tw-w-[80%] md:tw-top-[-35px] tw-rounded-[35px] tw-h-[240px] md:tw-h-[130%]"
             />
           </Box>
         </Grid>

@@ -166,13 +166,13 @@ export default function Contact() {
 
                   <div className="tw-flex tw-justify-center">
                     <Link href="mailto:partner@paystandards.com">
-                      Button with Mail SVG Image
                       <Button
                         sx={{
                           mt: '20px',
                           fontSize: '16px',
                           px: '24px',
                           py: { xs: '16px', md: '10px' },
+                          color: '#283167',
                           borderRadius: '9999px',
                           border: '1px solid #E6E8F0',
                           '&:hover': {
@@ -187,7 +187,6 @@ export default function Contact() {
                             sx={{ width: '25px', height: '25px' }}
                           />
                         }
-                        color="#283167"
                         variant="outlined"
                       >
                         partner@paystandards.com

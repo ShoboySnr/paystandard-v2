@@ -1,12 +1,11 @@
-import { Grid } from '@mui/system';
-import { Typography, Box } from '@mui/material';
+import { Grid, Typography, Box } from '@mui/material'; // Update import to use Grid from @mui/material
 import React from 'react';
 import TitleAndSubtitle from '@/components/securityAndPrivacy/TitleAndSubtitle';
 
 const DataPrivacy = () => {
   return (
     <Grid
-      size={12}
+      container // Add container prop
       sx={{
         px: {
           xs: '10px',
@@ -19,11 +18,9 @@ const DataPrivacy = () => {
     >
       {/*   heading */}
       <Grid
-        size={{
-          md: 6,
-          xs: 12,
-        }}
-        textAlign={'start'}
+        item // Add item prop
+        xs={12} // Replace size with xs
+        md={6}
         sx={{
           pb: '24px',
         }}
@@ -46,7 +43,9 @@ const DataPrivacy = () => {
         </Typography>
       </Grid>
       {/*   content */}
-      <Grid size={12} container>
+      <Grid item xs={12}>
+        {' '}
+        {/* Update Grid props */}
         <Typography
           sx={{
             fontSize: {
@@ -83,7 +82,6 @@ const DataPrivacy = () => {
             continuously to evolve our program.
           </Typography>
         </Box>
-
         <Box sx={{ mb: 4, display: { xs: 'block', md: 'none' } }}>
           <Typography
             sx={{
@@ -110,7 +108,6 @@ const DataPrivacy = () => {
         </Box>
         <Grid
           container
-          size={12}
           spacing={8}
           sx={{
             mt: '30px',
@@ -118,8 +115,8 @@ const DataPrivacy = () => {
         >
           <Grid
             item
-            md={6}
             xs={12}
+            md={6}
             sx={{
               display: { xs: 'none', md: 'block' },
             }}
