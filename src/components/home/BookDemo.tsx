@@ -1,9 +1,25 @@
+'use client';
 import { Grid } from '@mui/system';
 import { Box, Button, Typography } from '@mui/material';
 import ImageCover from '~/assets/home/book-demo/image1.png';
 import Image from 'next/image';
+import Link from 'next/link';
+import React from 'react';
+// import HubspotForm from '@/components/models/HubspotFormDialog';
+// import { useState } from 'react';
 
 const BookDemo = () => {
+  // const isMobile = useMediaQuery(theme.breakpoints.down('md'));
+  // const [dialogOpen, setDialogOpen] = useState<boolean>(false);
+
+  // const handleDialogClose = () => {
+  //   setDialogOpen(false);
+  // };
+  //
+  // const handleDialogOpen = () => {
+  //   setDialogOpen(true);
+  // };
+
   return (
     <>
       <Grid
@@ -22,6 +38,7 @@ const BookDemo = () => {
             md: 6,
             xs: 12,
           }}
+          sx={{ px: { md: '20px', xs: '10px' } }}
           justifyContent={{ md: 'flex-end', xs: 'center' }}
         >
           <Box
@@ -30,7 +47,7 @@ const BookDemo = () => {
               flexDirection: 'column',
               alignItems: { md: 'flex-start', xs: 'center' },
               gap: '29px',
-              width: { md: 'fit-content', xs: '230px' },
+              width: { md: 'fit-content', xs: '240px', sm: '450px' },
             }}
           >
             <Typography
@@ -38,21 +55,24 @@ const BookDemo = () => {
                 fontSize: { md: '32px', xs: '28px' },
                 textAlign: { md: 'left', xs: 'center' },
                 fontWeight: '700',
-                color: 'deep-blue.main',
+                color: 'black.main',
               }}
             >
               Learn how you can achieve true
-              <br /> pay equity and pay transparency
-              <br /> – without the headache.
+              <br className="tw-hidden lg:tw-block" /> pay equity and pay
+              transparency
+              <br className="tw-hidden lg:tw-block" /> – without the headache.
             </Typography>
             <Box>
-              <Button
-                className={'!tw-rounded-full'}
-                variant="contained"
-                sx={{ height: '44px', px: '25px' }}
-              >
-                Book a Demo
-              </Button>
+              <Link href={'/demo'}>
+                <Button
+                  className={'!tw-rounded-full'}
+                  variant="contained"
+                  sx={{ height: '44px', px: '25px' }}
+                >
+                  Book a Demo
+                </Button>
+              </Link>
             </Box>
           </Box>
         </Grid>
@@ -62,34 +82,27 @@ const BookDemo = () => {
             xs: 12,
           }}
           sx={{
-            px: '50px',
+            pr: { md: '50px', xs: '10px' },
+            pl: { md: '20px', xs: '10px' },
+            mt: { md: '30px', lg: '0px' },
+            mb: { xs: '30px', md: '0' },
           }}
         >
           <Box
+            className="tw-relative tw-h-[204px] tw-w-full sm:tw-w-[510px] md:tw-w-[410px] lg:tw-w-[510px] tw-rounded-[35px] md:tw-rounded-[35px] md:tw-h-[200px] lg:tw-h-[238px] tw-mx-auto"
             sx={{
-              position: 'relative',
-              width: 'fit-content',
+              display: 'flex',
+              justifyContent: 'center',
+              alignItems: 'center',
+              background:
+                'radial-gradient(184.83% 144.26% at 27.98% -27.37%, #3860FF 0%, #152461 100%)',
             }}
           >
             <Image
-              className={'tw-rounded-[35px]'}
               src={ImageCover}
-              height={320}
               alt="Book a Demo"
+              className="tw-absolute md:tw-w-[320px] lg:tw-w-[420px] tw-w-[80%] md:tw-top-[-35px] tw-rounded-[35px] tw-h-[240px] md:tw-h-[130%]"
             />
-            <Box
-              sx={{
-                zIndex: -10,
-                borderRadius: '35px',
-                position: 'absolute',
-                height: 'fill-available',
-                width: 'fill-available',
-                background:
-                  'radial-gradient(184.83% 144.26% at 27.98% -27.37%, #3860FF 0%, #152461 100%)',
-                top: 0,
-                margin: '63px -43px 25px -43px',
-              }}
-            ></Box>
           </Box>
         </Grid>
       </Grid>

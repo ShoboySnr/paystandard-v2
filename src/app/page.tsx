@@ -2,10 +2,10 @@ import { Box } from '@mui/material';
 import Banner from '@/components/home/Banner';
 import Products from '@/components/home/Products';
 import CoreBenefits from '@/components/home/CoreBenefits';
-import CustomerQuote from '@/components/home/CustomerQuote';
 import AppContainer from '@/components/layout/AppContainer';
 import Pillars from '@/components/home/Pillars';
 import BookDemo from '@/components/home/BookDemo';
+import CustomerQuoteUpdated from '@/components/home/CustomerQuoteUpdated';
 
 const Home = () => {
   return (
@@ -24,9 +24,15 @@ const Home = () => {
           },
         }}
       >
-        <CustomerQuote />
+        <CustomerQuoteUpdated />
       </Box>
-      <AppContainer>
+      <AppContainer
+        sx={{
+          px: {
+            md: '20px',
+          },
+        }}
+      >
         <CoreBenefits />
       </AppContainer>
       <AppContainer>
@@ -43,3 +49,4 @@ const Home = () => {
   );
 };
 export default Home;
+// testing push s

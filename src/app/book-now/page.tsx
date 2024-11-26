@@ -1,9 +1,15 @@
+import type { Metadata } from 'next';
 import { Grid } from '@mui/system';
 import { Box, Typography } from '@mui/material';
 import React from 'react';
 import AppContainer from '@/components/layout/AppContainer';
 import CalenderImg from '~/assets/book-now/calender.png';
 import Image from 'next/image';
+
+export const metadata: Metadata = {
+  title: 'Book Now',
+  description: 'Booking a Discovery Call and Demo is Quick and Easy',
+};
 
 const BookNow = () => {
   return (
@@ -13,8 +19,8 @@ const BookNow = () => {
           container
           sx={{
             pb: {
-              md: '50px',
-              xs: '30px',
+              md: '60px',
+              xs: '60px',
             },
             pt: {
               md: '120px',
@@ -37,10 +43,14 @@ const BookNow = () => {
                   bottom: 0,
                   borderRadius: 'inherit', // Matches the parent border radius
                   padding: '1px', // Adjust padding to the border width you want
-                  background: 'linear-gradient(0deg, #525252 19.67%, #52525200 100%)',
-                  WebkitMask: 'linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0)',
+                  background:
+                    'linear-gradient(0deg, #525252 19.67%, #52525200 100%)',
+                  WebkitMask:
+                    'linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0)',
                   WebkitMaskComposite: 'destination-out',
                   maskComposite: 'exclude',
+                  zIndex: 0,
+                  pointerEvents: 'none',
                 },
                 backgroundColor: '#FAFAFA',
               }}
@@ -79,12 +89,27 @@ const BookNow = () => {
                       },
                       fontWeight: '700',
                       margin: '0 0 2px 0',
-                      marginBottom: '20px',
+                      marginBottom: { md: '36px', xs: '40px' },
                     }}
                   >
-                    Ready to <br className={'md:tw-hidden'} /> Schedule
-                    <br /> a Call Now?
+                    Booking a Discovery Call and Demo is Quick and Easy
+                    {/*Ready to <br className={'md:tw-hidden'} /> Schedule*/}
+                    {/*<br /> a Call Now?*/}
                   </Typography>
+                  {/*<Typography*/}
+                  {/*  sx={{*/}
+                  {/*    fontSize: {*/}
+                  {/*      md: '20px',*/}
+                  {/*      xs: '18px',*/}
+                  {/*    },*/}
+                  {/*    fontWeight: '400',*/}
+                  {/*    margin: 'auto 0 2px 0',*/}
+                  {/*    marginBottom: '20px',*/}
+                  {/*  }}*/}
+                  {/*>*/}
+                  {/*  We’d love to learn more about your compensation program and how we can help you*/}
+                  {/*  optimize your #1 expense.*/}
+                  {/*</Typography>*/}
                   <Typography
                     sx={{
                       fontSize: {
@@ -96,22 +121,8 @@ const BookNow = () => {
                       marginBottom: '20px',
                     }}
                   >
-                    We’d love to learn more about your compensation program and how we can help you
-                    optimize your #1 expense.
-                  </Typography>
-                  <Typography
-                    sx={{
-                      fontSize: {
-                        md: '20px',
-                        xs: '18px',
-                      },
-                      fontWeight: '400',
-                      margin: 'auto 0 2px 0',
-                      marginBottom: '20px',
-                    }}
-                  >
-                    Our goal is to help you deliver equitable, sustainable, efficient pay for your
-                    employees.
+                    Learn how PayStandards can help you optimize your company’s
+                    most important expense and asset—your people!
                   </Typography>
                   <Typography
                     sx={{
@@ -123,7 +134,8 @@ const BookNow = () => {
                       margin: 'auto 0 2px 0',
                     }}
                   >
-                    Please use the calendar to find a meeting time that works for you.
+                    Please use the calendar to find a meeting time that works
+                    for you.
                   </Typography>
                 </Grid>
                 {/*  image area */}

@@ -1,4 +1,5 @@
 import React from 'react';
+import type { Metadata } from 'next';
 import {
   Box,
   Button,
@@ -15,219 +16,187 @@ import { Grid } from '@mui/system';
 import Image from 'next/image';
 import LiveDemo from '~/assets/contact/contact-us.jpeg';
 import MailFrame from '~/assets/contact/mail.svg';
+import Link from 'next/link';
+import HubspotContactUs from '@/components/contact-us/HubspotContactUs';
+import NewsletterForm from './NewsletterForm';
+
+export const metadata: Metadata = {
+  title: `Let's·Connect`,
+  description: 'Have questions? Need support? Curious about PayStandards?',
+};
 
 export default function Contact() {
   return (
     <Box
       sx={{
-        color: 'deep-blue.secondary',
-        marginTop: { md: '200px' },
+        color: '#283167',
+        marginTop: { md: '44px' },
       }}
     >
       <AppContainer sx={{ px: { md: '45px', xs: '0' } }}>
         <Box
           sx={{
-            pb: { xs: '60px', md: '30px' },
             mb: '30px',
             borderRadius: '35px',
             position: 'relative',
             overflow: 'hidden',
             '&::before': {
+              zIndex: -1,
               content: '""',
               position: 'absolute',
               top: 0,
               left: 0,
               right: 0,
               bottom: 0,
-              borderRadius: 'inherit', // Matches the parent border radius
-              padding: '1px', // Adjust padding to the border width you want
-              background: 'linear-gradient(0deg, #525252 19.67%, #52525200 100%)',
-              WebkitMask: 'linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0)',
+              borderRadius: 'inherit',
+              padding: '1px',
+              background:
+                'linear-gradient(0deg, #525252 19.67%, #52525200 100%)',
+              WebkitMask:
+                'linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0)',
               WebkitMaskComposite: 'destination-out',
               maskComposite: 'exclude',
             },
-            backgroundColor: '#FAFAFA',
+            backgroundColor: 'transparent',
           }}
         >
-          <Grid container>
-            <Grid
-              size={{ xs: 12, md: 6 }}
-              sx={{
-                px: { md: '60px', xs: '15px' },
-              }}
-            >
-              <Box
+          <Box
+            sx={{
+              pb: { xs: '60px', md: '30px' },
+            }}
+          >
+            <Grid container>
+              <Grid
+                size={{ xs: 12, md: 6 }}
                 sx={{
-                  pt: { xs: 6, lg: 8 },
+                  px: { md: '40px', xs: '15px' },
                 }}
               >
                 <Box
                   sx={{
-                    fontSize: { xs: '32px' },
-                    fontWeight: '700',
-                    px: { xs: 6, lg: 0 },
-                    textAlign: { xs: 'center', lg: 'left' },
-                    color: 'deep-blue-secondary.main',
+                    pt: { xs: 6, md: 2 },
                   }}
                 >
-                  Let’s Connect
-                </Box>
-                <Box
-                  sx={{
-                    fontSize: { xs: '18px' },
-                    fontWeight: { xs: '400' },
-                    textAlign: { xs: 'center', lg: 'left' },
-                    color: 'dark-gray.main',
-                    my: { md: '16px', xs: '70px' },
-                  }}
-                >
-                  Have questions? Need support? Curious about PayStandards? <br />
-                  <br />
-                  We’d love to find out more about your unique compensation situation - and how we
-                  can help you attain and sustain pay equity.
-                </Box>
-              </Box>
-
-              <Box
-                component="form"
-                sx={{ '& .MuiTextField-root': { mb: '20px' } }}
-                noValidate
-                autoComplete="off"
-              >
-                <div>
-                  <TextField fullWidth required id="outlined-required" label="Email" />
-                </div>
-                <div>
-                  <TextField
-                    fullWidth
-                    multiline
-                    rows={4}
-                    required
-                    id="outlined-required"
-                    label="Enter your message..."
-                  />
-                </div>
-                <div>
-                  <FormControl fullWidth>
-                    <InputLabel id="demo-simple-select-autowidth-label">
-                      How did you hear about us? (Optional)
-                    </InputLabel>
-                    <Select
-                      labelId="demo-simple-select-autowidth-label"
-                      id="demo-simple-select-autowidth"
-                      style={{ marginBottom: '20px' }}
-                      fullWidth
-                      label=" How did you hear about us? (Optional)"
+                  <Box
+                    sx={{
+                      fontSize: { xs: '32px' },
+                      fontWeight: '700',
+                      px: { xs: 6, md: 0 },
+                      pb: { xs: 6, md: 0 },
+                      textAlign: { xs: 'center', md: 'left' },
+                      color: '#283167',
+                    }}
+                  >
+                    Let&apos;s Connect
+                  </Box>
+                  <Box
+                    sx={{
+                      fontSize: { xs: '18px' },
+                      fontWeight: { xs: '400' },
+                      textAlign: { xs: 'center', md: 'left' },
+                      color: '#283167',
+                      my: { md: '16px', xs: '30px' },
+                    }}
+                  >
+                    Have questions? Need support? Curious about PayStandards?
+                    <Box
+                      sx={{
+                        display: { xs: 'block', md: 'none' },
+                      }}
                     >
-                      <MenuItem value="">
-                        <em>None</em>
-                      </MenuItem>
-                      <MenuItem value={20}>Twenty</MenuItem>
-                      <MenuItem value={21}>Twenty one</MenuItem>
-                      <MenuItem value={22}>Twenty one and a half</MenuItem>
-                    </Select>
-                  </FormControl>
-                </div>
+                      <br />
+                      We&apos;d love to find out more about your unique
+                      compensation situation - and how we can help you attain
+                      and sustain pay equity.
+                    </Box>
+                  </Box>
+                </Box>
+
+                <Box
+                  component="form"
+                  sx={{ '& .MuiTextField-root': { mb: '20px' } }}
+                  noValidate
+                  autoComplete="off"
+                >
+                  <HubspotContactUs />
+                </Box>
+              </Grid>
+              <Grid
+                size={{ xs: 12, md: 6 }}
+                sx={{
+                  px: { md: '60px', xs: '15px' },
+                  textAlign: { xs: 'center', md: 'start' },
+                }}
+              >
+                <Image
+                  height={295}
+                  src={LiveDemo}
+                  alt="live demo"
+                  className="tw-rounded-3xl tw-border md:tw-h-[295px] md:tw-w-full md:tw-border-black"
+                />
 
                 <Box
                   sx={{
-                    display: { xs: 'flex', md: 'flex' },
-                    justifyContent: 'space-between',
-                    alignItems: 'center',
-                  }}
-                >
-                  <Button
-                    sx={{
-                      mb: 2.5,
-                      fontSize: '16px',
-                      px: '16px',
-                      py: 'md:10px md,v-12',
-                    }}
-                    className={'!tw-rounded-full'}
-                    variant="contained"
-                  >
-                    Submit
-                  </Button>
-                  <Typography
-                    sx={{
-                      mb: '20px',
-                      fontSize: '18px',
-                      color: '#7B83B2',
-                    }}
-                  >
-                    <span className="tw-inline tw-text-red">*</span> Indicates a required field.
-                  </Typography>
-                </Box>
-                {/*<Box*/}
-                {/*  sx={{*/}
-                {/*    py: { xs: '50px', md: '0' },*/}
-                {/*  }}*/}
-                {/*>*/}
-                {/*  <Grid container>*/}
-                {/*    <Grid size={3}>*/}
-                {/*      <Image src={Recaptcha} alt="live demo" className="" />*/}
-                {/*    </Grid>*/}
-                {/*    <Grid size={9}>*/}
-                {/*      <Typography sx={{ color: '#7B83B2' }}>*/}
-                {/*        By submitting the form you agree to the PayStandards terms of use and master*/}
-                {/*        service agreement.*/}
-                {/*      </Typography>*/}
-                {/*    </Grid>*/}
-                {/*  </Grid>*/}
-                {/*</Box>*/}
-              </Box>
-            </Grid>
-            <Grid
-              size={{ xs: 12, md: 6 }}
-              sx={{
-                px: { md: '60px', xs: '15px' },
-                textAlign: { xs: 'center', md: 'start' },
-              }}
-            >
-              <Image
-                height={295}
-                src={LiveDemo}
-                alt="live demo"
-                className="tw-rounded-3xl tw-border md:tw-h-[295px] md:tw-w-full md:tw-border-black"
-              />
-
-              <Box
-                sx={{
-                  mt: '24px',
-                  color: 'black.main',
-                }}
-              >
-                <Typography
-                  sx={{
-                    fontSize: '18px',
-                    fontWeight: '400',
+                    mt: '24px',
                     color: '#283167',
                   }}
                 >
-                  Looking for partnership opportunities? Think PayStandards would be a great
-                  complement to your solution or service?{' '}
-                </Typography>
-
-                <div className="tw-flex tw-justify-center">
-                  <Button
+                  <Typography
                     sx={{
-                      mt: '20px',
-                      fontSize: '16px',
-                      px: '16px',
-                      py: 'md:10px md,v-12',
+                      fontSize: '18px',
+                      fontWeight: '400',
+                      display: { xs: 'block', md: 'none' },
                     }}
-                    startIcon={<MailOutlineIcon />}
-                    // @ts-ignore
-                    color="black.main"
-                    className={'!tw-rounded-full tw-text-black'}
-                    variant="outlined"
                   >
-                    partner@paystandards.com
-                  </Button>
-                </div>
-              </Box>
+                    Looking for partnership opportunities? Think PayStandards
+                    would be a great complement to your solution or service?
+                  </Typography>
+
+                  <Typography
+                    sx={{
+                      fontSize: '18px',
+                      fontWeight: '400',
+                      display: { xs: 'none', md: 'block' },
+                    }}
+                  >
+                    Let&apos;s talk about how we might work together!
+                    PayStandards can be a great compliment to your solution or
+                    existing services.
+                  </Typography>
+
+                  <div className="tw-flex tw-justify-center">
+                    <Link href="mailto:partner@paystandards.com">
+                      <Button
+                        sx={{
+                          mt: '20px',
+                          fontSize: '16px',
+                          px: '24px',
+                          py: { xs: '16px', md: '10px' },
+                          color: '#283167',
+                          borderRadius: '9999px',
+                          border: '1px solid #E6E8F0',
+                          '&:hover': {
+                            border: '1px solid #E6E8F0',
+                          },
+                        }}
+                        startIcon={
+                          <Box
+                            component="img"
+                            src="/assets/contact/mail-01.svg"
+                            alt="mail icon"
+                            sx={{ width: '25px', height: '25px' }}
+                          />
+                        }
+                        variant="outlined"
+                      >
+                        partner@paystandards.com
+                      </Button>
+                    </Link>
+                  </div>
+                </Box>
+              </Grid>
             </Grid>
-          </Grid>
+          </Box>
         </Box>
 
         <Box
@@ -245,7 +214,11 @@ export default function Contact() {
                 xs: 12,
               }}
             >
-              <Image src={MailFrame} alt="live demo" className="tw-h-[70px] tw-w-[70px]" />
+              <Image
+                src={MailFrame}
+                alt="live demo"
+                className="tw-h-[70px] tw-w-[70px]"
+              />
             </Grid>
             <Grid
               container
@@ -259,15 +232,22 @@ export default function Contact() {
                 sx={{
                   fontSize: '24px',
                   fontWeight: '400',
-                  margin: 'auto 0 4px 0',
+                  margin: '0 0 4px 0',
                   color: '#283167',
                   textAlign: { xs: 'center', md: 'left' },
                 }}
               >
-                Join the growing PayStandards
-                <br className={'tw-block md:tw-hidden'} /> community
-                <br className={'tw-hidden md:tw-block'} /> and be the first to
-                <br className={'tw-block md:tw-hidden'} /> access new insight.
+                <Box sx={{ display: { xs: 'block', md: 'none' } }}>
+                  Join the growing PayStandards
+                  <br />
+                  community and be the first to
+                  <br />
+                  access new insights.
+                </Box>
+                <Box sx={{ display: { xs: 'none', md: 'block' } }}>
+                  Join our newsletter and be the first to access insights from
+                  PayStandards.
+                </Box>
               </Typography>
             </Grid>
             <Grid
@@ -277,40 +257,17 @@ export default function Contact() {
               }}
             >
               <Box
-                component="form"
                 sx={{
-                  '& .MuiTextField-root': { mb: 2.5 },
-                  display: 'flex',
-                  alignItems: 'center',
-                  gap: '10px',
-                  flexDirection: { xs: 'column', md: 'row' },
+                  padding: {
+                    md: 0,
+                  },
                 }}
-                noValidate
-                autoComplete="off"
                 className="tw-h-full"
               >
-                <div className="tw-flex tw-w-full tw-justify-center">
-                  <TextField
-                    fullWidth
-                    required
-                    id="outlined-required"
-                    label="Email"
-                    className="!tw-m-0"
-                    sx={{ width: { xs: '80%', md: '100%' } }}
+                <div className="tw-w-full tw-justify-center">
+                  <NewsletterForm
+                    hubspotFormId={'016bb2fc-a1f1-4005-a8e0-bc1ca5f2cac7'}
                   />
-                </div>
-                <div>
-                  <Button
-                    sx={{
-                      fontSize: '16px',
-                      px: '16px',
-                      py: 'md:10px md,v-12',
-                    }}
-                    className={'!tw-rounded-full'}
-                    variant="contained"
-                  >
-                    Subscribe
-                  </Button>
                 </div>
               </Box>
             </Grid>

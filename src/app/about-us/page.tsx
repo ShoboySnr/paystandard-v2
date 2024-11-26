@@ -1,38 +1,41 @@
-import { Grid } from '@mui/system';
+import type { Metadata } from 'next';
+import Grid from '@mui/material/Grid2';
 import { Box, Button, Typography } from '@mui/material';
-import Image from 'next/image';
-import React from 'react';
+import Image, { StaticImageData } from 'next/image';
+import Link from 'next/link';
 import ProfileCard from '@/components/aboutUs/ProfileCard';
-import leadingOrg1 from '~/assets/leading-organizations/image1.svg';
-import leadingOrg2 from '~/assets/leading-organizations/image2.svg';
-import leadingOrg3 from '~/assets/leading-organizations/image3.svg';
-import leadingOrg4 from '~/assets/leading-organizations/image4.svg';
-import leadingOrg5 from '~/assets/leading-organizations/image5.svg';
-import leadingOrg6 from '~/assets/leading-organizations/image6.svg';
+import leadingOrg1 from '~/assets/leading-organizations/image1_dark.svg';
+import leadingOrg2 from '~/assets/leading-organizations/image2_dark.svg';
+import leadingOrg3 from '~/assets/leading-organizations/image3_dark.svg';
+import leadingOrg4 from '~/assets/leading-organizations/image4_dark.svg';
+import leadingOrg5 from '~/assets/leading-organizations/image5_dark.svg';
+import leadingOrg6 from '~/assets/leading-organizations/image6_dark.svg';
 import AppContainer from '@/components/layout/AppContainer';
+import styles from '@/app/_scss/global.module.scss';
+
+export const metadata: Metadata = {
+  title: 'About PayStandards',
+  description: 'Pay for the Right Things. Drive the Bottom Line',
+};
 
 const AboutUs = () => {
   return (
     <>
-      {/*  heading and subtitle */}
       <Grid
+        className={styles.removeHeaderMargin}
         container
         size={12}
         sx={{
           background:
             'linear-gradient(180deg, rgba(56, 96, 255, 0.20) 0%, rgba(56, 96, 255, 0.00) 100%)',
-          mt: {
-            md: '-115px',
-            xs: '-50px',
-          },
         }}
       >
         <Grid
           justifyContent={'center'}
           alignItems={'center'}
-          offset={{ md: 3 }}
+          offset={{ lg: 2 }}
           size={{
-            md: 6,
+            lg: 8,
             xs: 12,
           }}
           sx={{
@@ -40,6 +43,10 @@ const AboutUs = () => {
             pt: {
               md: '235px',
               xs: '100px',
+            },
+            px: {
+              md: '40px',
+              xs: '10px',
             },
           }}
         >
@@ -50,12 +57,10 @@ const AboutUs = () => {
                 xs: '32px',
               },
               fontWeight: '700',
-              color: 'deep-blue-secondary.main',
+              color: 'black.main',
             }}
           >
-            Our Mission is to
-            <br className={'md:tw-hidden'} /> Raise the
-            <br className={'md:tw-hidden'} /> Standard of Pay
+            Our Mission is to Raise the Standard of Pay
           </Typography>
           <Typography
             sx={{
@@ -66,11 +71,11 @@ const AboutUs = () => {
               fontWeight: '400',
               margin: 'auto 2px 2px 2px',
               lineHeight: '33.6px',
-              color: 'deep-blue-secondary.main',
+              color: 'black.main',
             }}
           >
-            PayStandards is the bottom line-driven compensation software platform that delivers true
-            pay equity and pay transparency.
+            PayStandards is the bottom line-driven compensation software
+            platform that delivers true pay equity and pay transparency.
           </Typography>
         </Grid>
       </Grid>
@@ -99,10 +104,14 @@ const AboutUs = () => {
                   bottom: 0,
                   borderRadius: 'inherit', // Matches the parent border radius
                   padding: '1px', // Adjust padding to the border width you want
-                  background: 'linear-gradient(0deg, #525252 19.67%, #52525200 100%)',
-                  WebkitMask: 'linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0)',
+                  background:
+                    'linear-gradient(0deg, #525252 19.67%, #52525200 100%)',
+                  WebkitMask:
+                    'linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0)',
                   WebkitMaskComposite: 'destination-out',
                   maskComposite: 'exclude',
+                  zIndex: 0,
+                  pointerEvents: 'none',
                 },
                 backgroundColor: '#FAFAFA',
               }}
@@ -164,6 +173,7 @@ const AboutUs = () => {
                   <Grid
                     size={{
                       md: 'auto',
+                      xs: 6,
                     }}
                     container
                     justifyContent={'center'}
@@ -173,6 +183,7 @@ const AboutUs = () => {
                   <Grid
                     size={{
                       md: 'auto',
+                      xs: 6,
                     }}
                     container
                     justifyContent={'center'}
@@ -182,6 +193,7 @@ const AboutUs = () => {
                   <Grid
                     size={{
                       md: 'auto',
+                      xs: 6,
                     }}
                     container
                     justifyContent={'center'}
@@ -191,6 +203,7 @@ const AboutUs = () => {
                   <Grid
                     size={{
                       md: 'auto',
+                      xs: 6,
                     }}
                     container
                     justifyContent={'center'}
@@ -210,6 +223,7 @@ const AboutUs = () => {
                   <Grid
                     size={{
                       md: 'auto',
+                      xs: 6,
                     }}
                     container
                     justifyContent={'center'}
@@ -234,7 +248,7 @@ const AboutUs = () => {
           >
             <Grid
               size={{
-                md: 6,
+                md: 7,
                 xs: 12,
               }}
               sx={{ textAlign: 'center' }}
@@ -249,7 +263,7 @@ const AboutUs = () => {
                 }}
               >
                 Join Our
-                <br className={'tw-block md:tw-hidden'} /> Growing Team
+                <br className={'tw-block sm:tw-hidden'} /> Growing Team
               </Typography>
               <Typography
                 sx={{
@@ -261,18 +275,20 @@ const AboutUs = () => {
                 }}
               >
                 Passionate about using
-                <br className={'md:tw-hidden'} /> technology to help people?
-                <br /> Join our journey to raise the <br className={'md:tw-hidden'} /> standard of
-                pay worldwide.
+                <br className={'sm:tw-hidden'} /> technology to help people?
+                <br /> Join our journey to raise the{' '}
+                <br className={'sm:tw-hidden'} /> standard of pay worldwide.
               </Typography>
-              <Box sx={{ mt: '60px' }}>
-                <Button
-                  className={'!tw-rounded-full'}
-                  variant="contained"
-                  sx={{ height: '44px', px: '25px' }}
-                >
-                  Explore Openings
-                </Button>
+              <Box sx={{ mt: '45px' }}>
+                <Link href={'mailto: hello@paystandards.com'}>
+                  <Button
+                    className={'!tw-rounded-full'}
+                    variant="contained"
+                    sx={{ height: '44px', px: '25px' }}
+                  >
+                    Explore Openings
+                  </Button>
+                </Link>
               </Box>
             </Grid>
           </Grid>

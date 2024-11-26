@@ -1,0 +1,40 @@
+name: Build and Deploy Website to AWS S3 and Cloudfront
+on:
+    push:
+        branches: ['main']
+
+permissions:
+    id-token: write
+    contents: read
+jobs:
+    build-and-deploy:
+        name: Build and Deploy
+        runs-on: ubuntu-latest
+
+        steps:
+            - name: Checkout
+              uses: actions/checkout@v3
+
+            - name: Configure AWS credentials from AWS account
+              uses: aws-actions/configure-aws-credentials@v2
+              with:
+                role-to-assume: arn:aws:iam::774305608367:role/GitHubAction-AssumeRoleWithAction
+                role-session-name: GitHub_to_AWS_via_FederatedOIDC
+                aws-region: ${{ secrets.AWS_REGION }}
+
+            - name: Install Dependencies
+              run: |
+                node --version
+                npm ci --production
+                npm install @types/react
+                npm install @types/node
+
+            - name: Build Static Website
+              run: npm run build
+
+            - name: Copy files to the production website with the AWS CLI
+              run: |
+                aws s3 sync --delete ${{ secrets.NEXTJS_DIST }} s3://${{ secrets.S3_BUCKET }}
+
+            
+        

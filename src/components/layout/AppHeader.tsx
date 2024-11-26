@@ -1,6 +1,6 @@
 'use client';
 
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import Image from 'next/image';
 import AppLogo from '../../../public/logos/logo.svg';
 import {
@@ -15,49 +15,98 @@ import {
   ListItem,
   ListItemButton,
   ListItemText,
-  Menu,
   MenuItem,
   Toolbar,
+  Typography,
 } from '@mui/material';
-import { Close, KeyboardArrowDown, Menu as MenuIcon } from '@mui/icons-material';
+import {
+  Close,
+  KeyboardArrowDown,
+  Menu as MenuIcon,
+} from '@mui/icons-material';
 import { HeaderMenu as pages } from '@/utils/jsons/LayoutData';
 import { Grid } from '@mui/system';
 import Link from 'next/link';
+import {
+  bindHover,
+  bindMenu,
+  PopupState,
+  usePopupState,
+} from 'material-ui-popup-state/hooks';
+import HoverMenu from 'material-ui-popup-state/HoverMenu';
 
 const AppHeader = () => {
-  const [anchorElDropdown, setAnchorElDropdown] = useState(null);
-  const [selectedMenuIndex, setSelectedMenuIndex] = useState<number | null>(null);
+  const [selectedMenuIndex, setSelectedMenuIndex] = useState<number | null>(
+    null,
+  );
   const [drawerOpen, setDrawerOpen] = useState<boolean | undefined>(false);
+  const [isFloating, setIsFloating] = useState<boolean>(false);
 
-  const handleMenuOpen = (event: React.BaseSyntheticEvent, index: number) => {
-    setAnchorElDropdown(event.currentTarget);
+  const popupState: PopupState[] = [];
+  pages.forEach((page, index) => {
+    // eslint-disable-next-line react-hooks/rules-of-hooks
+    popupState[index] = usePopupState({
+      variant: 'popover',
+      popupId: `menu-${index}`,
+    });
+  });
+
+  const handleMenuOpen = (index: number) => {
     setSelectedMenuIndex(index);
   };
 
   const handleMenuClose = () => {
-    setAnchorElDropdown(null);
     setSelectedMenuIndex(null);
   };
 
-  const toggleDrawer = (open: boolean) => (event: React.KeyboardEvent | React.MouseEvent) => {
-    if (
-      event.type === 'keydown' &&
-      ((event as React.KeyboardEvent).key === 'Tab' ||
-        (event as React.KeyboardEvent).key === 'Shift')
-    ) {
-      return;
-    }
-    setDrawerOpen(open);
-  };
+  const toggleDrawer =
+    (open: boolean) => (event: React.KeyboardEvent | React.MouseEvent) => {
+      if (
+        event.type === 'keydown' &&
+        ((event as React.KeyboardEvent).key === 'Tab' ||
+          (event as React.KeyboardEvent).key === 'Shift')
+      ) {
+        return;
+      }
+      setDrawerOpen(open);
+    };
 
   const handleMenuItemClick = (link: String) => {
     if (link) {
       setDrawerOpen(false);
     }
   };
+
+  const handleScroll = () => {
+    if (window.scrollY > 100) {
+      setIsFloating(true);
+    } else {
+      setIsFloating(false);
+    }
+  };
+
+  useEffect(() => {
+    window.addEventListener('scroll', handleScroll);
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
+
   return (
     <header>
-      <AppBar position="fixed" sx={{ backgroundColor: 'transparent' }}>
+      <AppBar
+        position={isFloating ? 'fixed' : 'static'}
+        sx={{
+          backgroundColor: isFloating ? '#FFF' : 'transparent',
+          transform: isFloating ? 'translateX(-50%)' : 'none',
+          transition: 'top 0.5s ease',
+          width: isFloating ? '100%' : '100%',
+          top: isFloating ? '0px' : '-100px',
+          left: '50%',
+          zIndex: 1200,
+          px: { md: '20px', lg: '0px' },
+        }}
+      >
         <Container
           maxWidth="lg"
           sx={{
@@ -78,23 +127,28 @@ const AppHeader = () => {
             <Toolbar
               sx={{
                 width: '100%',
-                my: { xs: '10px', md: '20px' },
-                minHeight: { xs: '30px', md: '75px' },
-                height: { xs: '30px', md: '75px' },
-                border: '1px solid gray',
+                my: { xs: '10px', md: isFloating ? '10px' : '20px' },
+                minHeight: { xs: '45px', sm: '60px', md: '75px' },
+                height: { xs: '45px', sm: '60px', md: '75px' },
+                border: '1px solid transparent',
+                borderColor: 'gray.main',
                 borderRadius: '38px',
-                pl: { xs: '20px', md: '40px' },
-                backgroundColor: '#FAFAFA',
+                pl: { xs: '20px', lg: '40px' },
+                backgroundColor: '#FFF',
               }}
               disableGutters
             >
-              <Link href={'/'}>
-                <Image
-                  className={'tw-h-[18px] tw-w-auto md:tw-h-[40px]'}
-                  priority
-                  src={AppLogo}
-                  alt="Pay Standards"
-                />
+              <Link href={'/'} className={'tw-flex'}>
+                <>
+                  <Image
+                    className={
+                      'tw-h-[18px] tw-w-auto sm:tw-h-[30px] md:tw-h-[35px] lg:tw-h-[40px]'
+                    }
+                    priority
+                    src={AppLogo}
+                    alt="Pay Standards"
+                  />
+                </>
               </Link>
 
               <Box sx={{ flexGrow: 1, display: { xs: 'flex', md: 'none' } }}>
@@ -108,7 +162,13 @@ const AppHeader = () => {
                     },
                   }}
                 >
-                  <Box sx={{ width: '100%', padding: '16px 40px 40px 40px' }} role="presentation">
+                  <Box
+                    sx={{
+                      width: '100%',
+                      padding: '16px 30px 30px 30px',
+                    }}
+                    role="presentation"
+                  >
                     <Box
                       sx={{
                         display: 'flex',
@@ -116,25 +176,48 @@ const AppHeader = () => {
                         justifyContent: 'space-between',
                       }}
                     >
-                      <Image height={18} priority src={AppLogo} alt="Pay Standards" />
+                      <Image
+                        height={18}
+                        priority
+                        src={AppLogo}
+                        alt="Pay Standards"
+                      />
                       <Box>
-                        <Button
-                          sx={{
-                            height: {
-                              xs: '30px',
-                              md: '62px',
-                            },
-                            fontSize: {
-                              xs: '12px',
-                              md: '20px',
-                            },
-                            mr: 1.5,
-                          }}
-                          variant="contained"
-                          className={'!tw-rounded-full'}
-                        >
-                          Book a Demo
-                        </Button>
+                        <Link href={'https://login.paystandards.com/login'}>
+                          <Button
+                            sx={{
+                              height: '75%',
+                              border: 'none',
+                              borderRadius: '50px',
+                              px: { xs: '10px' },
+                              mr: 0.5,
+                              fontSize: { xs: '12px', md: '20px' },
+                            }}
+                            className={'!tw-bg-[#88A0FF1A] !tw-text-dark-gray'}
+                            variant="outlined"
+                          >
+                            Log In
+                          </Button>
+                        </Link>
+                        <Link href={'/demo'}>
+                          <Button
+                            sx={{
+                              height: {
+                                xs: '30px',
+                                md: '62px',
+                              },
+                              fontSize: {
+                                xs: '12px',
+                                md: '20px',
+                              },
+                              mr: 0.5,
+                            }}
+                            variant="contained"
+                            className={'!tw-rounded-full'}
+                          >
+                            Book a Demo
+                          </Button>
+                        </Link>
                         <IconButton
                           sx={{
                             height: '30px',
@@ -144,7 +227,7 @@ const AppHeader = () => {
                           aria-label="open drawer"
                           onClick={toggleDrawer(false)}
                         >
-                          <Close />
+                          <Close fontSize="small" />
                         </IconButton>
                       </Box>
                     </Box>
@@ -168,20 +251,27 @@ const AppHeader = () => {
                                   {page.name}
                                 </ListItem>
                                 {page.menuItems.map((item, i) => (
-                                  <ListItemButton
-                                    sx={{
-                                      paddingLeft: '0',
-                                    }}
+                                  <Link
                                     key={i}
-                                    component="a"
                                     href={item.link}
-                                    onClick={() => handleMenuItemClick(item.link)}
+                                    onClick={() =>
+                                      handleMenuItemClick(item.link)
+                                    }
                                   >
-                                    <ListItemText
-                                      primary={item.label}
-                                      className="tw-text-dark-gray"
-                                    />
-                                  </ListItemButton>
+                                    <ListItemButton
+                                      sx={{
+                                        paddingLeft: '0',
+                                      }}
+                                    >
+                                      <ListItemText
+                                        primary={item.label}
+                                        sx={{
+                                          color: 'black.main',
+                                        }}
+                                        className="tw-text-black"
+                                      />
+                                    </ListItemButton>
+                                  </Link>
                                 ))}
                               </React.Fragment>
                             ))}
@@ -204,20 +294,31 @@ const AppHeader = () => {
                                   {page.name}
                                 </ListItem>
                                 {page.menuItems.map((item, i) => (
-                                  <ListItemButton
-                                    sx={{
-                                      paddingLeft: '0',
-                                    }}
-                                    key={i}
-                                    component="a"
+                                  <Link
                                     href={item.link}
-                                    onClick={() => handleMenuItemClick(item.link)}
+                                    onClick={() =>
+                                      handleMenuItemClick(item.link)
+                                    }
+                                    target={item?.target}
+                                    rel={item?.rel}
+                                    key={i}
                                   >
-                                    <ListItemText
-                                      primary={item.label}
-                                      className="tw-text-dark-gray"
-                                    />
-                                  </ListItemButton>
+                                    <ListItemButton
+                                      sx={{
+                                        paddingLeft: '0',
+                                        color: 'black.main',
+                                      }}
+                                      component="a"
+                                    >
+                                      <ListItemText
+                                        primary={item.label}
+                                        sx={{
+                                          color: 'black.main',
+                                        }}
+                                        className="tw-text-black"
+                                      />
+                                    </ListItemButton>
+                                  </Link>
                                 ))}
                               </React.Fragment>
                             ))}
@@ -227,21 +328,35 @@ const AppHeader = () => {
                   </Box>
                 </Drawer>
               </Box>
-              <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' }, my: 1, ml: 4 }}>
+              <Box
+                sx={{
+                  flexGrow: 1,
+                  display: { xs: 'none', md: 'flex' },
+                  my: 1,
+                  ml: { md: 2, lg: 4 },
+                }}
+              >
                 {pages.map((page, index) => (
                   <React.Fragment key={index}>
                     <Button
-                      onClick={(event) => handleMenuOpen(event, index)}
+                      {...bindHover(popupState[index])}
+                      onMouseOver={(e: React.MouseEvent) => {
+                        bindHover(popupState[index]).onMouseOver(e);
+                        handleMenuOpen(index);
+                      }}
+                      onMouseLeave={(e: React.MouseEvent) => {
+                        bindHover(popupState[index]).onMouseLeave(e);
+                        handleMenuClose();
+                      }}
                       disableRipple
-                      className={`tw-flex !tw-text-lg !tw-text-dark-gray hover:tw-bg-transparent focus:tw-outline-none ${selectedMenuIndex === index ? '!tw-text-blue' : ''}`}
+                      style={{ minWidth: '150px' }}
+                      className={`tw-flex !tw-text-[20px] hover:tw-bg-transparent focus:tw-outline-none ${selectedMenuIndex === index ? '!tw-text-blue !tw-font-[600]' : '!tw-text-black'}`}
                     >
                       {page.name}
-                      <KeyboardArrowDown className="tw-ml-5" />
+                      <KeyboardArrowDown className="tw-ml-3" />
                     </Button>
-                    <Menu
-                      anchorEl={anchorElDropdown}
-                      open={selectedMenuIndex === index}
-                      onClose={handleMenuClose}
+                    <HoverMenu
+                      {...bindMenu(popupState[index])}
                       sx={{ minWidth: '200px' }}
                       MenuListProps={{
                         'aria-labelledby': 'basic-button',
@@ -251,82 +366,97 @@ const AppHeader = () => {
                           borderRadius: '0 0 14px 14px',
                         },
                       }}
-                      PaperProps={{
-                        sx: {
-                          minWidth: '170px',
-                          maxWidth: '250px',
-                          position: 'relative',
-                          padding: '1px', // Adjust based on your border width
-                          borderRadius: '0 0 15px 15px', // Adjust as needed
-                          background: 'linear-gradient(180deg, #FFFFFF, #3860FF)',
-                          boxShadow: 'none',
+                      slotProps={{
+                        paper: {
+                          sx: {
+                            minWidth: '170px !important',
+                            maxWidth: '250px',
+                            position: 'relative',
+                            padding: '1px', // Adjust based on your border width
+                            borderRadius: '0 0 15px 15px', // Adjust as needed
+                            background:
+                              'linear-gradient(180deg, #FFFFFF, #3860FF)',
+                            boxShadow: 'none',
+                          },
                         },
                       }}
                     >
                       {page.menuItems.map((item, i) => (
-                        <MenuItem
-                          key={i}
-                          onClick={handleMenuClose}
-                          component="a"
+                        <Link
                           href={item.link}
-                          sx={{
-                            '&:hover': {
-                              fontWeight: 'bold',
-                              color: 'black.main',
-                            },
-                          }}
+                          key={i}
+                          onClick={popupState[index]?.close}
+                          target={item?.target}
+                          rel={item?.rel}
                         >
-                          {item.label}
-                        </MenuItem>
+                          <MenuItem
+                            sx={{
+                              '&:hover': {
+                                fontWeight: 'bold',
+                                color: 'black.main',
+                              },
+                            }}
+                          >
+                            {item.label}
+                          </MenuItem>
+                        </Link>
                       ))}
-                    </Menu>
+                    </HoverMenu>
                   </React.Fragment>
                 ))}
               </Box>
               <Box className="tw-h-full">
-                <Button
-                  sx={{
-                    display: {
-                      xs: 'none',
-                      md: 'inline-block',
-                    },
-                    height: '75%',
-                    border: 'none',
-                    borderRadius: '50px',
-                    px: '40px',
-                    mr: '20px',
-                    fontSize: '20px',
-                  }}
-                  className={'!tw-bg-[#88A0FF1A] !tw-text-dark-gray'}
-                  variant="outlined"
-                >
-                  Log In
-                </Button>
-                <Button
-                  sx={{
-                    height: '100%',
-                    px: { xs: '20px', md: '40px' },
-                    fontSize: { xs: '12px', md: '20px' },
-                  }}
-                  className={'!tw-rounded-full'}
-                  variant="contained"
-                >
-                  Book a Demo
-                </Button>
+                <Link href={'https://login.paystandards.com/login'}>
+                  <Button
+                    sx={{
+                      display: {
+                        xs: 'none',
+                        md: 'inline-block',
+                      },
+                      height: '75%',
+                      border: 'none',
+                      borderRadius: '50px',
+                      px: { xs: '30px', md: '20px', lg: '40px' },
+                      mr: { xs: '10px', lg: '20px' },
+                      fontSize: { xs: '18px', md: '18px', lg: '20px' },
+                    }}
+                    className={'!tw-bg-[#88A0FF1A] !tw-text-dark-gray'}
+                    variant="outlined"
+                  >
+                    Log In
+                  </Button>
+                </Link>
+                <Link href={'/demo'}>
+                  <Button
+                    sx={{
+                      height: '100%',
+                      px: { xs: '30px', lg: '40px' },
+                      fontSize: { xs: '12px', sm: '16px', md: '20px' },
+                    }}
+                    className={'!tw-rounded-full'}
+                    variant="contained"
+                  >
+                    Book a Demo
+                  </Button>
+                </Link>
               </Box>
             </Toolbar>
             <Box sx={{ display: { xs: 'block', md: 'none' } }}>
               <IconButton
                 sx={{
-                  height: '30px',
-                  width: '30px',
+                  height: { xs: '45px', sm: '60px' },
+                  width: { xs: '45px', sm: '60px' },
                   padding: '10px',
                 }}
                 className="!tw-bg-light-gray"
                 aria-label="open drawer"
                 onClick={toggleDrawer(true)}
               >
-                <MenuIcon fontSize="small" />
+                <MenuIcon
+                  sx={{
+                    fontSize: { xs: '20px', sm: '20px' },
+                  }}
+                />
               </IconButton>
             </Box>
           </Box>
