@@ -75,11 +75,11 @@ const AppFooter = () => {
         spacing={2}
         sx={{
           py: {
-            xs: '58px',
+            xs: '15px',
             md: '75px',
           },
           px: {
-            xs: '55px',
+            xs: '50px',
             md: '0',
           },
         }}
@@ -97,7 +97,7 @@ const AppFooter = () => {
               ...descriptionStyle,
               display: 'flex',
               flexDirection: 'column',
-              gap: '24px',
+              gap: { xs: '10px', md: '24px' },
               alignItems: {
                 xs: 'center',
                 md: 'flex-start',
@@ -114,7 +114,7 @@ const AppFooter = () => {
             </div>
 
             <Box>
-              <p className="tw-mt-2">Built in New York, New York</p>
+              <p className="md:tw-mt-2">Built in New York, New York</p>
               <p className="tw-mt-2">© 2024 PayStandards Inc.</p>
               {/*<p className="tw-mt-2">All rights reserved.</p>*/}
             </Box>
