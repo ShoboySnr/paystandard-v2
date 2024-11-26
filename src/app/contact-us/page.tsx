@@ -29,7 +29,7 @@ export default function Contact() {
   return (
     <Box
       sx={{
-        color: 'deep-blue.secondary',
+        color: '#283167',
         marginTop: { md: '44px' },
       }}
     >
@@ -48,8 +48,8 @@ export default function Contact() {
               left: 0,
               right: 0,
               bottom: 0,
-              borderRadius: 'inherit', // Matches the parent border radius
-              padding: '1px', // Adjust padding to the border width you want
+              borderRadius: 'inherit',
+              padding: '1px',
               background:
                 'linear-gradient(0deg, #525252 19.67%, #52525200 100%)',
               WebkitMask:
@@ -84,7 +84,7 @@ export default function Contact() {
                       px: { xs: 6, md: 0 },
                       pb: { xs: 6, md: 0 },
                       textAlign: { xs: 'center', md: 'left' },
-                      color: 'deep-blue-secondary.main',
+                      color: '#283167',
                     }}
                   >
                     Let&apos;s Connect
@@ -94,7 +94,7 @@ export default function Contact() {
                       fontSize: { xs: '18px' },
                       fontWeight: { xs: '400' },
                       textAlign: { xs: 'center', md: 'left' },
-                      color: 'black.main',
+                      color: '#283167',
                       my: { md: '16px', xs: '30px' },
                     }}
                   >
@@ -138,7 +138,7 @@ export default function Contact() {
                 <Box
                   sx={{
                     mt: '24px',
-                    color: 'black.main',
+                    color: '#283167',
                   }}
                 >
                   <Typography
@@ -187,7 +187,7 @@ export default function Contact() {
                             sx={{ width: '25px', height: '25px' }}
                           />
                         }
-                        color="black.main"
+                        color="primary"
                         variant="outlined"
                       >
                         partner@paystandards.com
@@ -234,7 +234,7 @@ export default function Contact() {
                   fontSize: '24px',
                   fontWeight: '400',
                   margin: '0 0 4px 0',
-                  color: '#090C1A',
+                  color: '#283167',
                   textAlign: { xs: 'center', md: 'left' },
                 }}
               >
