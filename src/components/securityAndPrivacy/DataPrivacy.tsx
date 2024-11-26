@@ -1,5 +1,5 @@
 import { Grid } from '@mui/system';
-import { Typography } from '@mui/material';
+import { Typography, Box } from '@mui/material';
 import React from 'react';
 import TitleAndSubtitle from '@/components/securityAndPrivacy/TitleAndSubtitle';
 
@@ -60,6 +60,54 @@ const DataPrivacy = () => {
           At PayStandards, data privacy is a first-class priority—we strive to
           be trustworthy stewards of all sensitive data.
         </Typography>
+        <Box sx={{ my: 4, display: { xs: 'block', md: 'none' } }}>
+          <Typography
+            sx={{
+              fontSize: '18px',
+              fontWeight: '700',
+              color: 'gray.main',
+              mb: 1,
+            }}
+          >
+            Regulatory compliance
+          </Typography>
+          <Typography
+            sx={{
+              fontSize: '18px',
+              fontWeight: '400',
+              color: 'gray.main',
+              lineHeight: '1.5',
+            }}
+          >
+            PayStandards evaluates updates to regulatory and emerging frameworks{' '}
+            continuously to evolve our program.
+          </Typography>
+        </Box>
+
+        <Box sx={{ mb: 4, display: { xs: 'block', md: 'none' } }}>
+          <Typography
+            sx={{
+              fontSize: '18px',
+              fontWeight: '700',
+              color: 'gray.main',
+              mb: 1,
+            }}
+          >
+            Privacy Policy and DPA
+          </Typography>
+          <Typography
+            sx={{
+              fontSize: '18px',
+              fontWeight: '400',
+              color: 'gray.main',
+              lineHeight: '1.5',
+            }}
+          >
+            View PayStandards' Privacy Policy
+            <br />
+            View our DPA
+          </Typography>
+        </Box>
         <Grid
           container
           size={12}
@@ -69,9 +117,11 @@ const DataPrivacy = () => {
           }}
         >
           <Grid
-            size={{
-              md: 6,
-              xs: 12,
+            item
+            md={6}
+            xs={12}
+            sx={{
+              display: { xs: 'none', md: 'block' },
             }}
           >
             <TitleAndSubtitle
@@ -85,14 +135,16 @@ const DataPrivacy = () => {
             />
           </Grid>
           <Grid
-            size={{
-              md: 6,
-              xs: 12,
+            item
+            md={6}
+            xs={12}
+            sx={{
+              display: { xs: 'none', md: 'block' },
             }}
           >
             <TitleAndSubtitle
               title={'Privacy Policy and DPA'}
-              subtitle={'View PayStandards’ Privacy Policy View our DPA'}
+              subtitle={'View PayStandards Privacy Policy View our DPA'}
               titleColor={'gray.main'}
               titleSize={'18px'}
               subtitleSize={'18px'}

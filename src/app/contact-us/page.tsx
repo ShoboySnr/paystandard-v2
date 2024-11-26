@@ -82,11 +82,12 @@ export default function Contact() {
                       fontSize: { xs: '32px' },
                       fontWeight: '700',
                       px: { xs: 6, md: 0 },
+                      pb: { xs: 6, md: 0 },
                       textAlign: { xs: 'center', md: 'left' },
                       color: 'deep-blue-secondary.main',
                     }}
                   >
-                    Let’s Connect
+                    Let&apos;s Connect
                   </Box>
                   <Box
                     sx={{
@@ -94,14 +95,20 @@ export default function Contact() {
                       fontWeight: { xs: '400' },
                       textAlign: { xs: 'center', md: 'left' },
                       color: 'black.main',
-                      my: { md: '16px', xs: '70px' },
+                      my: { md: '16px', xs: '30px' },
                     }}
                   >
                     Have questions? Need support? Curious about PayStandards?
-                    {/*<br />*/}
-                    {/*<br />*/}
-                    {/*We’d love to find out more about your unique compensation situation - and how we*/}
-                    {/*can help you attain and sustain pay equity.*/}
+                    <Box
+                      sx={{
+                        display: { xs: 'block', md: 'none' },
+                      }}
+                    >
+                      <br />
+                      We&apos;d love to find out more about your unique
+                      compensation situation - and how we can help you attain
+                      and sustain pay equity.
+                    </Box>
                   </Box>
                 </Box>
 
@@ -138,26 +145,49 @@ export default function Contact() {
                     sx={{
                       fontSize: '18px',
                       fontWeight: '400',
+                      display: { xs: 'block', md: 'none' },
                     }}
                   >
-                    Let’s talk about how we might work together! PayStandards
-                    can be a great compliment to your solution or existing
-                    services.
+                    Looking for partnership opportunities? Think PayStandards
+                    would be a great complement to your solution or service?
+                  </Typography>
+
+                  <Typography
+                    sx={{
+                      fontSize: '18px',
+                      fontWeight: '400',
+                      display: { xs: 'none', md: 'block' },
+                    }}
+                  >
+                    Let&apos;s talk about how we might work together!
+                    PayStandards can be a great compliment to your solution or
+                    existing services.
                   </Typography>
 
                   <div className="tw-flex tw-justify-center">
                     <Link href="mailto:partner@paystandards.com">
+                      Button with Mail SVG Image
                       <Button
                         sx={{
                           mt: '20px',
                           fontSize: '16px',
-                          px: '16px',
-                          py: 'md:10px md,v-12',
+                          px: '24px',
+                          py: { xs: '16px', md: '10px' },
+                          borderRadius: '9999px',
+                          border: '1px solid #E6E8F0',
+                          '&:hover': {
+                            border: '1px solid #E6E8F0',
+                          },
                         }}
-                        startIcon={<MailOutlineIcon />}
-                        // @ts-ignore
+                        startIcon={
+                          <Box
+                            component="img"
+                            src="/assets/contact/mail-01.svg"
+                            alt="mail icon"
+                            sx={{ width: '25px', height: '25px' }}
+                          />
+                        }
                         color="black.main"
-                        className={'!tw-rounded-full tw-border-pink'}
                         variant="outlined"
                       >
                         partner@paystandards.com
@@ -208,12 +238,17 @@ export default function Contact() {
                   textAlign: { xs: 'center', md: 'left' },
                 }}
               >
-                Join our newsletter and be the first to access insights from
-                PayStandards.
-                {/*Join the growing PayStandards*/}
-                {/*<br className={'tw-block md:tw-hidden'} /> community*/}
-                {/*<br className={'tw-hidden md:tw-block'} /> and be the first to*/}
-                {/*<br className={'tw-block md:tw-hidden'} /> access new insight.*/}
+                <Box sx={{ display: { xs: 'block', md: 'none' } }}>
+                  Join the growing PayStandards
+                  <br />
+                  community and be the first to
+                  <br />
+                  access new insights.
+                </Box>
+                <Box sx={{ display: { xs: 'none', md: 'block' } }}>
+                  Join our newsletter and be the first to access insights from
+                  PayStandards.
+                </Box>
               </Typography>
             </Grid>
             <Grid

@@ -24,12 +24,12 @@ const Concern = () => {
         justifyContent={'center'}
         sx={{}}
       >
-        <Grid size={12}>
+        <Grid item xs={12}>
           <Typography
             sx={{
               fontSize: {
                 md: '18px',
-                xs: '28px',
+                xs: '18px',
               },
               fontWeight: '400',
               margin: 'auto 0 2px 0',
@@ -43,7 +43,7 @@ const Concern = () => {
             sx={{
               fontSize: {
                 md: '32px',
-                xs: '28px',
+                xs: '32px',
               },
               fontWeight: '700',
               margin: 'auto 0 2px 0',
@@ -51,13 +51,14 @@ const Concern = () => {
               color: 'gray.main',
             }}
           >
-            Looking to report a security concern?
+            Looking to report a<br />
+            security concern?
           </Typography>
           <Typography
             sx={{
               fontSize: {
                 md: '18px',
-                xs: '28px',
+                xs: '18px',
               },
               fontWeight: '400',
               margin: 'auto 0 2px 0',
