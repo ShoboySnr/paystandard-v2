@@ -9,7 +9,7 @@ const productSecurity = () => {
       size={12}
       sx={{
         px: {
-          xs: '10px',
+          xs: '15px',
         },
         pb: {
           md: '100px',
