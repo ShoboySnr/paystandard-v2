@@ -198,7 +198,7 @@ const AuditProduct = () => {
                 mt: { xs: 2, md: 3.5 },
                 mx: 'auto',
                 fontWeight: '400',
-                fontSize: { xs: '18px', lg: '24px' },
+                fontSize: { xs: '18px', lg: '20px' },
                 color: { xs: '#283167', md: 'black.main' },
               }}
             >

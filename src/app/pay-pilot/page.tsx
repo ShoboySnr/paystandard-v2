@@ -175,7 +175,7 @@ const IndexProduct = () => {
                   mt: { xs: 2, md: 3.5 },
                   mx: 'auto',
                   fontWeight: '400',
-                  fontSize: { xs: '20px', md: '24px' },
+                  fontSize: { xs: '18px', md: '20px' },
                   color: '#283167',
                 }}
               >
