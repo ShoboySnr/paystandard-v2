@@ -28,6 +28,7 @@ const AboutUs = () => {
         sx={{
           background:
             'linear-gradient(180deg, rgba(56, 96, 255, 0.20) 0%, rgba(56, 96, 255, 0.00) 100%)',
+          marginTop: '-100px',
         }}
       >
         <Grid
@@ -42,7 +43,7 @@ const AboutUs = () => {
             textAlign: 'center',
             pt: {
               md: '235px',
-              xs: '100px',
+              xs: '150px',
             },
             px: {
               md: '40px',

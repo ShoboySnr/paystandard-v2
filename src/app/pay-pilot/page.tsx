@@ -181,7 +181,7 @@ const IndexProduct = () => {
               >
                 <Box
                   sx={{
-                    display: { xs: 'block', md: 'none' },
+                    display: { xs: 'block', sm: 'none' },
                     textAlign: 'center',
                   }}
                 >
@@ -195,7 +195,7 @@ const IndexProduct = () => {
                   your pay equity progress.
                 </Box>
 
-                <Box sx={{ display: { xs: 'none', md: 'block' } }}>
+                <Box sx={{ display: { xs: 'none', sm: 'block' } }}>
                   Pay Pilot helps you make better everyday pay decisions to
                   sustain your pay equity progress through an easy-to-use
                   software platform.

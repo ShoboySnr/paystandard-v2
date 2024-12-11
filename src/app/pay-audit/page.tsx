@@ -204,7 +204,7 @@ const AuditProduct = () => {
             >
               <Box
                 sx={{
-                  display: { xs: 'block', md: 'none' },
+                  display: { xs: 'block', sm: 'none' },
                   textAlign: 'center',
                 }}
               >
@@ -218,7 +218,7 @@ const AuditProduct = () => {
                 visibility.
               </Box>
 
-              <Box sx={{ display: { xs: 'none', md: 'block' } }}>
+              <Box sx={{ display: { xs: 'none', sm: 'block' } }}>
                 Pay Audit empowers you to make data-driven pay decisions during
                 your annual year-end compensation process, optimizing your
                 compensation budget.

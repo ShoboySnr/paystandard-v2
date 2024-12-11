@@ -195,7 +195,7 @@ const IndexProduct = () => {
               >
                 <Box
                   sx={{
-                    display: { xs: 'block', md: 'none' },
+                    display: { xs: 'block', sm: 'none' },
                     textAlign: 'center',
                   }}
                 >
@@ -206,7 +206,7 @@ const IndexProduct = () => {
                   current pay equity position.
                 </Box>
 
-                <Box sx={{ display: { xs: 'none', md: 'block' } }}>
+                <Box sx={{ display: { xs: 'none', sm: 'block' } }}>
                   Pay Index gives you standardized ratings, trends, and
                   root-cause analytics that illuminate your company&apos;s pay
                   equity position.
