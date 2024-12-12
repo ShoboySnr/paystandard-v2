@@ -51,7 +51,7 @@ const BannerCard = ({
             </Box>
           ) : image ? (
             <Box
-              className="tw-relative tw-h-[214px] tw-w-full tw-rounded-[35px] md:tw-h-[278px] md:tw-w-full"
+              className="tw-relative tw-h-[214px] sm:tw-h-[300px] tw-w-full tw-rounded-[35px] md:tw-h-[278px] md:tw-w-full"
               sx={{
                 display: 'flex',
                 justifyContent: 'center',

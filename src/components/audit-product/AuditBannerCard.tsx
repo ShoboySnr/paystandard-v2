@@ -55,7 +55,7 @@ const AuditBannerCard = ({
               src={BannerImage}
               alt="emplyees for review"
               className={
-                'tw-absolute tw-bottom-0 tw-z-10 tw-w-[85%] lg:tw-w-[90%] tw-h-[110%]'
+                'tw-absolute tw-bottom-0 tw-z-10 tw-w-[50%] md:tw-w-[85%] lg:tw-w-[90%] tw-h-[110%]'
               }
             />
             {/*</Box>*/}

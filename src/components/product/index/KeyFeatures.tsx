@@ -104,7 +104,7 @@ const KeyFeatures = () => {
             }}
           >
             <Box
-              className="tw-relative tw-h-[314px] tw-w-full tw-rounded-[35px] md:tw-h-[300px] md:tw-w-full"
+              className="tw-relative tw-h-[214px] sm:tw-h-[314px] tw-w-full tw-rounded-[35px] md:tw-h-[300px] md:tw-w-full"
               sx={{
                 display: 'flex',
                 justifyContent: 'center',
@@ -116,7 +116,7 @@ const KeyFeatures = () => {
               <Image
                 src={Rating}
                 alt="standard rating"
-                className="tw-absolute tw-bottom-[0px] tw-h-[342px] tw-w-auto md:tw-h-[347px]"
+                className="tw-absolute tw-bottom-[0px] tw-h-[243px] sm:tw-h-[342px] tw-w-auto md:tw-h-[347px]"
               />
             </Box>
           </Grid>
@@ -146,9 +146,9 @@ const KeyFeatures = () => {
                 background:
                   'linear-gradient(258deg, #3860FF 1.93%, #090C1A 98.15%)',
                 borderRadius: '35px',
-                height: { xs: '326px', sm: '426px', md: '125%' },
-                width: '90%',
-                mt: -4,
+                height: { xs: '226px', sm: '426px', md: '125%' },
+                width: { xs: '100%', md: '90%' },
+                mt: { xs: 0, md: -4 },
                 position: 'relative',
               }}
             >
@@ -163,7 +163,7 @@ const KeyFeatures = () => {
                 <Image
                   src={Graphs}
                   alt="standard rating"
-                  className="tw-h-[222px] md:tw-h-[159px] md:tw-w-full"
+                  className="tw-h-[122px] sm:tw-h-[222px] md:tw-h-[159px] tw-w-[95%] md:tw-w-full"
                 />
               </Box>
             </Box>
@@ -180,7 +180,7 @@ const KeyFeatures = () => {
               sx={{
                 fontSize: '28px',
                 fontWeight: '700',
-                mb: 3,
+                mb: 2,
                 color: 'black.main',
               }}
             >
@@ -240,7 +240,7 @@ const KeyFeatures = () => {
               sx={{
                 fontSize: '28px',
                 fontWeight: '700',
-                mb: 3,
+                mb: 2,
                 color: 'black.main',
               }}
             >
@@ -272,7 +272,7 @@ const KeyFeatures = () => {
                   'linear-gradient(163deg, #3860FF 6.51%, #090C1A 95.97%)',
                 borderRadius: '35px',
                 mt: 1,
-                height: { xs: '315px', md: '112%' },
+                height: { xs: '215px', sm: '315px', md: '112%' },
                 position: 'relative',
               }}
             >
@@ -287,7 +287,7 @@ const KeyFeatures = () => {
                   src={Analysis}
                   height={310}
                   alt="standard rating"
-                  className="tw-absolute tw-top-[-34px] tw-h-[338px] tw-w-auto md:tw-h-[325px]"
+                  className="tw-absolute tw-top-[-34px] tw-h-[238px] sm:tw-h-[338px] tw-w-auto md:tw-h-[325px]"
                 />
               </Box>
             </Box>
@@ -318,17 +318,17 @@ const KeyFeatures = () => {
                 background:
                   'linear-gradient(241deg, #88A0FF 12.95%, #152461 95.37%)',
                 borderRadius: '35px',
-                height: { xs: '303px', md: '112%' },
+                height: { xs: '203px', sm: '303px', md: '112%' },
                 display: 'flex',
                 justifyContent: 'center',
               }}
             >
               <Box
-                className="tw-h-[300px] tw-w-[380px] tw-rounded-[35px] md:tw-h-[278px] md:tw-w-[420px]"
+                className="tw-h-[230px] sm:tw-h-[300px] tw-w-[400px] tw-rounded-[35px] md:tw-h-[278px] md:tw-w-[420px]"
                 sx={{
                   display: 'flex',
                   justifyContent: 'center',
-                  mt: -2.5,
+                  mt: { xs: -5.5, sm: -2.5 },
                 }}
               >
                 <Image src={Disclosure} alt="standard rating" />
@@ -347,7 +347,7 @@ const KeyFeatures = () => {
               sx={{
                 fontSize: '28px',
                 fontWeight: '700',
-                mb: 3,
+                mb: 2,
                 color: 'black.main',
               }}
             >

@@ -57,7 +57,7 @@ const KeyFeatures = () => {
                 fontSize: '20px',
                 fontWeight: '400',
                 color: 'black',
-                mb: 3.5,
+                mb: 2,
               }}
             >
               Go beyond market data with a new way to value your employees –
@@ -77,7 +77,7 @@ const KeyFeatures = () => {
             order={{ xs: 1, md: 2 }}
             sx={{
               position: 'relative',
-              display: 'flex',
+              display: { xs: 'none', md: 'flex' },
               flexDirection: 'column',
               justifyContent: 'end',
               pt: { xs: '16px', md: '0' },
@@ -101,6 +101,34 @@ const KeyFeatures = () => {
               />
             </Box>
           </Grid>
+          <Grid
+            size={{ xs: 12, md: 6 }}
+            order={{ xs: 1, md: 2 }}
+            sx={{
+              position: 'relative',
+              display: { xs: 'flex', md: 'none' },
+              flexDirection: 'column',
+              justifyContent: 'end',
+              pt: { xs: '16px', md: '0' },
+            }}
+          >
+            <Box
+              className="tw-relative tw-h-[214px] sm:tw-h-[314px] tw-w-full tw-rounded-[35px] md:tw-h-[300px] md:tw-w-full"
+              sx={{
+                display: 'flex',
+                justifyContent: 'center',
+                background:
+                  'linear-gradient(250deg, #3860FF 45.87%, #090C1A 96.34%)',
+                mb: -1.5,
+              }}
+            >
+              <Image
+                src={Offer}
+                alt="offer"
+                className="tw-absolute tw-bottom-[0px] tw-h-[243px] sm:tw-h-[342px] tw-w-auto md:tw-h-[347px]"
+              />
+            </Box>
+          </Grid>
         </Grid>
       </Paper>
 
@@ -121,13 +149,41 @@ const KeyFeatures = () => {
         }}
       >
         <Grid container spacing={6}>
+          {/* <Grid
+            size={{ xs: 12, md: 6 }}
+            order={{ xs: 1, md: 2 }}
+            sx={{
+              position: 'relative',
+              display: { xs: 'flex', md: 'none' },
+              flexDirection: 'column',
+              justifyContent: 'end',
+              pt: { xs: '16px', md: '0' },
+            }}
+          >
+            <Box
+              className="tw-relative tw-h-[214px] sm:tw-h-[314px] tw-w-full tw-rounded-[35px] md:tw-h-[300px] md:tw-w-full"
+              sx={{
+                display: 'flex',
+                justifyContent: 'center',
+                background:
+                  'linear-gradient(250deg, #3860FF 45.87%, #090C1A 96.34%)',
+                mb: -1.5,
+              }}
+            >
+              <Image
+                src={Range}
+                alt="Range"
+                className="tw-absolute tw-bottom-[20px] sm:tw-bottom-[80px] tw-h-[243px] sm:tw-h-[342px] tw-w-[70%] md:tw-w-auto md:tw-h-[347px]"
+              />
+            </Box>
+          </Grid> */}
           <Grid size={{ xs: 12, md: 6 }}>
             <Box
               sx={{
                 background:
                   'linear-gradient(117deg, #88A0FF 7.12%, #152461 90.58%)',
                 borderRadius: '35px',
-                height: { xs: '253px', md: '108%' },
+                height: { xs: '253px', sm: '353px', md: '108%' },
                 display: 'flex',
                 justifyContent: 'center',
               }}
@@ -135,7 +191,7 @@ const KeyFeatures = () => {
               <Box
                 className="tw-h-[227px] tw-w-[325px] tw-rounded-[35px] md:tw-h-[300px] md:tw-w-[422px]"
                 sx={{
-                  display: 'flex',
+                  display: { xs: 'none', md: 'flex' },
                   justifyContent: 'center',
                   mt: -2.5,
                 }}
@@ -144,6 +200,20 @@ const KeyFeatures = () => {
                   src={Range}
                   alt="range"
                   className="tw-w-full md:tw-w-[450px]"
+                />
+              </Box>
+              <Box
+                className="tw-relative tw-h-[214px] sm:tw-h-[314px] tw-w-full tw-rounded-[35px] md:tw-h-[300px] md:tw-w-full"
+                sx={{
+                  display: { xs: 'flex', md: 'none' },
+                  justifyContent: 'center',
+                  mb: -1.5,
+                }}
+              >
+                <Image
+                  src={Range}
+                  alt="Range"
+                  className="tw-absolute tw-bottom-[20px] sm:tw-bottom-[20px] tw-h-[243px] sm:tw-h-[342px] tw-w-[70%] md:tw-w-auto md:tw-h-[347px]"
                 />
               </Box>
             </Box>
@@ -160,7 +230,7 @@ const KeyFeatures = () => {
               sx={{
                 fontSize: '28px',
                 fontWeight: '700',
-                mb: 3,
+                mb: 2,
                 color: 'black',
               }}
             >
@@ -220,7 +290,7 @@ const KeyFeatures = () => {
               sx={{
                 fontSize: '28px',
                 fontWeight: '700',
-                mb: 3,
+                mb: 2,
                 color: 'black',
               }}
             >
@@ -265,7 +335,7 @@ const KeyFeatures = () => {
                 sx={{
                   display: 'flex',
                   justifyContent: 'center',
-                  height: { xs: '215px', md: '95%' },
+                  height: { xs: '215px', sm: '315px', md: '95%' },
                   borderRadius: '35px',
                   background:
                     'linear-gradient(135deg, #3860FF 0%, #090C1A 100%)',
@@ -275,7 +345,7 @@ const KeyFeatures = () => {
                 <Image
                   src={Manage}
                   alt="standard rating"
-                  className="tw-absolute tw-bottom-0 tw-h-[200px] md:tw-h-[250px] md:tw-bottom-[-14px] tw-w-[441px] tw-rounded-bl-[18px] tw-rounded-br-[25px] lg:tw-bottom-[-18px] lg:tw-h-full"
+                  className="tw-absolute tw-bottom-0 tw-h-[200px] sm:tw-h-[300px] md:tw-h-[250px] md:tw-bottom-[-14px] tw-w-[441px] tw-rounded-bl-[18px] tw-rounded-br-[25px] lg:tw-bottom-[-18px] lg:tw-h-full"
                 />
               </Box>
             </Box>
@@ -306,8 +376,8 @@ const KeyFeatures = () => {
                 background:
                   'linear-gradient(242deg, #88A0FF 5.89%, #152461 95.38%)',
                 borderRadius: '35px',
-                height: { xs: '246px', md: '95%' },
-                width: { xs: '90%', md: '95%' },
+                height: { xs: '246px', sm: '346px', md: '95%' },
+                width: { xs: '100%', md: '95%' },
                 mt: -4,
                 position: 'relative',
               }}
@@ -315,14 +385,14 @@ const KeyFeatures = () => {
               <Box
                 sx={{
                   position: 'absolute',
-                  left: 15,
+                  left: { xs: -15, md: 15 },
                   right: '-50px',
                 }}
               >
                 <Image
                   src={Graph}
                   alt="standard rating"
-                  className="tw-mt-[11px] tw-h-[224px] tw-w-full md:tw-mt-[14px] md:tw-h-[292px]"
+                  className="tw-mt-[11px] tw-h-[224px] sm:tw-h-[334px] tw-w-full md:tw-mt-[14px] md:tw-h-[292px]"
                 />
               </Box>
             </Box>
@@ -339,7 +409,7 @@ const KeyFeatures = () => {
               sx={{
                 fontSize: '28px',
                 fontWeight: '700',
-                mb: 3,
+                mb: 2,
                 color: 'black',
               }}
             >

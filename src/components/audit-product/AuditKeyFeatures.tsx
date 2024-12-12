@@ -104,19 +104,19 @@ const AuditKeyFeatures = () => {
             }}
           >
             <Box
-              className="tw-relative tw-h-[214px] tw-w-full tw-rounded-[35px] md:tw-h-[300px] md:tw-w-full"
+              className="tw-relative tw-h-[214px] sm:tw-h-[314px] tw-w-full tw-rounded-[35px] md:tw-h-[300px] md:tw-w-full"
               sx={{
                 display: 'flex',
                 justifyContent: 'center',
                 background:
                   'linear-gradient(162deg, #3860FF 6.11%, #090C1A 95.04%)',
-                mb: -0.5,
+                mb: -1.5,
               }}
             >
               <Image
                 src={Rating}
                 alt="standard rating"
-                className="tw-absolute tw-bottom-0 tw-h-[265px] md:tw-h-[339px] tw-w-full"
+                className="tw-absolute tw-bottom-[0px] tw-h-[243px] sm:tw-h-[342px] tw-w-auto md:tw-h-[347px]"
               />
             </Box>
           </Grid>
@@ -146,8 +146,8 @@ const AuditKeyFeatures = () => {
                 background:
                   'linear-gradient(243deg, #88A0FF 9.96%, #152461 97.23%)',
                 borderRadius: '35px',
-                height: { xs: '260px', md: '115%' },
-                width: '80%',
+                height: { xs: '260px', sm: '360px', md: '115%' },
+                width: { xs: '94%', sm: '96%', lg: '80%' },
                 mt: { md: -3, xs: 0 },
                 position: 'relative',
               }}
@@ -159,12 +159,13 @@ const AuditKeyFeatures = () => {
                   top: '50%',
                   transform: 'translate(-0%, -50%)',
                   right: '-40px',
+                  borderRadius: '35px',
                 }}
               >
                 <Image
                   src={Strategy}
                   alt="standard rating"
-                  className="tw-w-full tw-h-full"
+                  className="xs:tw-w-[97%] md:tw-w-full tw-h-full !tw-rounded-xl"
                 />
               </Box>
             </Box>
@@ -181,7 +182,7 @@ const AuditKeyFeatures = () => {
               sx={{
                 fontSize: '28px',
                 fontWeight: '700',
-                mb: 3,
+                mb: 2,
                 color: 'black.main',
               }}
             >
@@ -233,7 +234,7 @@ const AuditKeyFeatures = () => {
             order={{ xs: 2, md: 1 }}
             sx={{
               pl: { xs: 0, md: 6.5 },
-              pt: { xs: 0, md: 7.5 },
+              pt: { xs: 0, sm: 4, md: 7.5 },
               pb: 7.5,
             }}
           >
@@ -241,7 +242,7 @@ const AuditKeyFeatures = () => {
               sx={{
                 fontSize: '28px',
                 fontWeight: '700',
-                mb: 3,
+                mb: 2,
                 color: 'black.main',
               }}
             >
@@ -267,13 +268,18 @@ const AuditKeyFeatures = () => {
               }}
             />
           </Grid>
-          <Grid size={{ xs: 12, md: 6 }} order={{ xs: 1, md: 2 }}>
+          <Grid
+            size={{ xs: 12, md: 6 }}
+            order={{ xs: 1, md: 2 }}
+            sx={{ display: { xs: 'none', md: 'block' } }}
+          >
             <Box
               sx={{
                 mt: { md: '-30px', xs: '-15px' },
                 height: { xs: '250px', md: '125%' },
                 mr: -1,
                 position: 'relative',
+                display: { xs: 'none', md: 'block' },
               }}
             >
               <Box
@@ -281,8 +287,8 @@ const AuditKeyFeatures = () => {
                   background:
                     'linear-gradient(108deg, #3860FF 0%, #152461 100%)',
                   borderRadius: '35px',
-                  height: { xs: '250px', md: '345px' },
-                  width: { xs: '80%', sm: '90%', lg: '80%' },
+                  height: { xs: '250px', sm: '300px', md: '345px' },
+                  width: { xs: '80%', sm: '100%', lg: '80%' },
                   position: 'absolute',
                   top: '43.2%',
                   right: -1,
@@ -301,9 +307,37 @@ const AuditKeyFeatures = () => {
                 <Image
                   src={Decision}
                   alt="standard rating"
-                  className="tw-w-[366px] md:tw-w-[476px] md:tw-h-[343px] tw-h-[235px] "
+                  className="tw-w-[366px] sm:tw-w-[500px] md:tw-w-[476px] md:tw-h-[343px] tw-h-[235px] "
                 />
               </Box>
+            </Box>
+          </Grid>
+          <Grid
+            size={{ xs: 12, md: 6 }}
+            order={{ xs: 1, md: 2 }}
+            sx={{
+              position: 'relative',
+              display: { xs: 'flex', md: 'none' },
+              flexDirection: 'column',
+              justifyContent: 'end',
+              pt: { xs: '16px', md: '0' },
+            }}
+          >
+            <Box
+              className="tw-relative tw-h-[214px] sm:tw-h-[314px] tw-w-full tw-rounded-[35px] md:tw-h-[300px] md:tw-w-full"
+              sx={{
+                display: 'flex',
+                justifyContent: 'center',
+                background:
+                  'linear-gradient(162deg, #3860FF 6.11%, #090C1A 95.04%)',
+                mb: -1.5,
+              }}
+            >
+              <Image
+                src={Decision}
+                alt="standard rating"
+                className="tw-absolute tw-bottom-[0px] tw-h-[243px] sm:tw-h-[372px] tw-w-auto md:tw-h-[347px]"
+              />
             </Box>
           </Grid>
         </Grid>
@@ -345,10 +379,10 @@ const AuditKeyFeatures = () => {
                 mb: -2,
               }}
             >
-              <Box
+              {/* <Box
                 sx={{
                   width: { xs: '83%', sm: '50%', md: '87%' },
-                  height: { xs: '110%', sm: '115%', md: '110%' },
+                  height: { xs: '110%', sm: '150%', md: '110%' },
                   background: '#fff',
                   borderTopLeftRadius: '35px',
                   borderTopRightRadius: '35px',
@@ -364,6 +398,22 @@ const AuditKeyFeatures = () => {
                   alt="Equity"
                   className="tw-w-[90%] tw-m-auto tw-h-full tw-px-6 tw-pt-5 tw-pb-0"
                 />
+              </Box> */}
+              <Box
+                className="tw-relative tw-h-[214px] sm:tw-h-[314px] tw-w-full tw-rounded-[35px] md:tw-h-[300px] md:tw-w-full"
+                sx={{
+                  display: 'flex',
+                  justifyContent: 'center',
+                  background:
+                    'linear-gradient(162deg, #3860FF 6.11%, #090C1A 95.04%)',
+                  mb: -1.5,
+                }}
+              >
+                <Image
+                  src={Equity}
+                  alt="Equity"
+                  className="tw-absolute tw-bottom-[0px] tw-h-[243px] sm:tw-h-[342px] tw-w-auto md:tw-h-[347px]"
+                />
               </Box>
             </Box>
           </Grid>
@@ -371,7 +421,7 @@ const AuditKeyFeatures = () => {
             size={{ xs: 12, md: 6 }}
             sx={{
               pr: { xs: 0, md: 6.5 },
-              pt: { xs: 0, md: 7.5 },
+              pt: { xs: 0, sm: 10, md: 7.5 },
               pb: 7.5,
             }}
           >
@@ -379,7 +429,7 @@ const AuditKeyFeatures = () => {
               sx={{
                 fontSize: '28px',
                 fontWeight: '700',
-                mb: 3,
+                mb: 2,
                 color: 'black',
               }}
             >
