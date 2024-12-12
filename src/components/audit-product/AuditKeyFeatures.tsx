@@ -47,7 +47,7 @@ const AuditKeyFeatures = () => {
               sx={{
                 fontSize: '28px',
                 fontWeight: '700',
-                mb: 2.5,
+                mb: '6px',
                 mt: 1.5,
                 color: 'black',
               }}
@@ -182,7 +182,7 @@ const AuditKeyFeatures = () => {
               sx={{
                 fontSize: '28px',
                 fontWeight: '700',
-                mb: 2,
+                mb: '6px',
                 color: 'black.main',
               }}
             >
@@ -242,7 +242,7 @@ const AuditKeyFeatures = () => {
               sx={{
                 fontSize: '28px',
                 fontWeight: '700',
-                mb: 2,
+                mb: '6px',
                 color: 'black.main',
               }}
             >
@@ -429,7 +429,7 @@ const AuditKeyFeatures = () => {
               sx={{
                 fontSize: '28px',
                 fontWeight: '700',
-                mb: 2,
+                mb: '6px',
                 color: 'black',
               }}
             >

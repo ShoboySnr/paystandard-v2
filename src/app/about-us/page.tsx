@@ -29,6 +29,66 @@ const AboutUs = () => {
           background:
             'linear-gradient(180deg, rgba(56, 96, 255, 0.20) 0%, rgba(56, 96, 255, 0.00) 100%)',
           marginTop: '-100px',
+          display: { xs: 'block', md: 'none' },
+        }}
+      >
+        <Grid
+          justifyContent={'center'}
+          alignItems={'center'}
+          offset={{ lg: 2 }}
+          size={{
+            lg: 8,
+            xs: 12,
+          }}
+          sx={{
+            textAlign: 'center',
+            pt: {
+              md: '235px',
+              xs: '150px',
+            },
+            px: {
+              md: '40px',
+              xs: '10px',
+            },
+          }}
+        >
+          <Typography
+            sx={{
+              fontSize: {
+                md: '40px',
+                xs: '32px',
+              },
+              fontWeight: '700',
+              color: 'black.main',
+            }}
+          >
+            Our Mission is to Raise the Standard of Pay
+          </Typography>
+          <Typography
+            sx={{
+              fontSize: {
+                md: '24px',
+                xs: '18px',
+              },
+              fontWeight: '400',
+              margin: 'auto 2px 2px 2px',
+              lineHeight: '33.6px',
+              color: 'black.main',
+            }}
+          >
+            PayStandards is the bottom line-driven compensation software
+            platform that delivers true pay equity and pay transparency.
+          </Typography>
+        </Grid>
+      </Grid>
+      <Grid
+        className={styles.removeHeaderMargin}
+        container
+        size={12}
+        sx={{
+          background:
+            'linear-gradient(180deg, rgba(56, 96, 255, 0.20) 0%, rgba(56, 96, 255, 0.00) 100%)',
+          display: { xs: 'none', md: 'block' },
         }}
       >
         <Grid

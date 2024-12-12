@@ -47,7 +47,7 @@ const KeyFeatures = () => {
               sx={{
                 fontSize: '28px',
                 fontWeight: '700',
-                mb: 2.5,
+                mb: '6px',
                 mt: 1.5,
                 color: 'black.main',
               }}
@@ -60,7 +60,7 @@ const KeyFeatures = () => {
                 fontWeight: '400',
                 color: 'black.main',
                 mt: 2,
-                mb: 2,
+                mb: '6px',
               }}
             >
               Quantify company performance into verified metrics with
@@ -180,7 +180,7 @@ const KeyFeatures = () => {
               sx={{
                 fontSize: '28px',
                 fontWeight: '700',
-                mb: 2,
+                mb: '6px',
                 color: 'black.main',
               }}
             >
@@ -240,7 +240,7 @@ const KeyFeatures = () => {
               sx={{
                 fontSize: '28px',
                 fontWeight: '700',
-                mb: 2,
+                mb: '6px',
                 color: 'black.main',
               }}
             >
@@ -347,7 +347,7 @@ const KeyFeatures = () => {
               sx={{
                 fontSize: '28px',
                 fontWeight: '700',
-                mb: 2,
+                mb: '6px',
                 color: 'black.main',
               }}
             >
