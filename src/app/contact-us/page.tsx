@@ -82,7 +82,7 @@ export default function Contact() {
                       fontSize: { xs: '32px' },
                       fontWeight: '700',
                       px: { xs: 6, md: 0 },
-                      pb: { xs: 6, md: 0 },
+                      pb: { xs: '4px', md: 0 },
                       textAlign: { xs: 'center', md: 'left' },
                       color: '#283167',
                     }}
@@ -95,7 +95,7 @@ export default function Contact() {
                       fontWeight: { xs: '400' },
                       textAlign: { xs: 'center', md: 'left' },
                       color: '#283167',
-                      my: { md: '16px', xs: '30px' },
+                      my: { md: '4px', xs: '4px' },
                     }}
                   >
                     Have questions? Need support? Curious about PayStandards?

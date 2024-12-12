@@ -332,7 +332,7 @@ const AboutUs = () => {
                   fontWeight: '400',
                   margin: 'auto 0 4px 0',
                   color: 'deep-blue-secondary.main',
-                  mt: '16px',
+                  mt: '4px',
                 }}
               >
                 Passionate about using
