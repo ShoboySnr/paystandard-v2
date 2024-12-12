@@ -46,7 +46,7 @@ const KeyFeatures = () => {
               sx={{
                 fontSize: '28px',
                 fontWeight: '700',
-                mb: '6px',
+                mb: '4px',
                 mt: 1.5,
               }}
             >
@@ -57,7 +57,7 @@ const KeyFeatures = () => {
                 fontSize: '20px',
                 fontWeight: '400',
                 color: 'black',
-                mb: '6px',
+                mb: '4px',
               }}
             >
               Go beyond market data with a new way to value your employees –
@@ -230,7 +230,7 @@ const KeyFeatures = () => {
               sx={{
                 fontSize: '28px',
                 fontWeight: '700',
-                mb: '6px',
+                mb: '4px',
                 color: 'black',
               }}
             >
@@ -290,7 +290,7 @@ const KeyFeatures = () => {
               sx={{
                 fontSize: '28px',
                 fontWeight: '700',
-                mb: '6px',
+                mb: '4px',
                 color: 'black',
               }}
             >
@@ -409,7 +409,7 @@ const KeyFeatures = () => {
               sx={{
                 fontSize: '28px',
                 fontWeight: '700',
-                mb: '6px',
+                mb: '4px',
                 color: 'black',
               }}
             >

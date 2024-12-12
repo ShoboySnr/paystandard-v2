@@ -47,7 +47,7 @@ const KeyFeatures = () => {
               sx={{
                 fontSize: '28px',
                 fontWeight: '700',
-                mb: '6px',
+                mb: '4px',
                 mt: 1.5,
                 color: 'black.main',
               }}
@@ -60,7 +60,7 @@ const KeyFeatures = () => {
                 fontWeight: '400',
                 color: 'black.main',
                 mt: 2,
-                mb: '6px',
+                mb: '4px',
               }}
             >
               Quantify company performance into verified metrics with
@@ -150,6 +150,7 @@ const KeyFeatures = () => {
                 width: { xs: '100%', md: '90%' },
                 mt: { xs: 0, md: -4 },
                 position: 'relative',
+                overflow: { xs: 'hidden', md: 'visible' },
               }}
             >
               <Box
@@ -163,7 +164,7 @@ const KeyFeatures = () => {
                 <Image
                   src={Graphs}
                   alt="standard rating"
-                  className="tw-h-[122px] sm:tw-h-[222px] md:tw-h-[159px] tw-w-[95%] md:tw-w-full"
+                  className="tw-h-[122px] sm:tw-h-[222px] md:tw-h-[159px] tw-w-[92%] sm:tw-w-[95%] md:tw-w-full"
                 />
               </Box>
             </Box>
@@ -180,7 +181,7 @@ const KeyFeatures = () => {
               sx={{
                 fontSize: '28px',
                 fontWeight: '700',
-                mb: '6px',
+                mb: '4px',
                 color: 'black.main',
               }}
             >
@@ -240,7 +241,7 @@ const KeyFeatures = () => {
               sx={{
                 fontSize: '28px',
                 fontWeight: '700',
-                mb: '6px',
+                mb: '4px',
                 color: 'black.main',
               }}
             >
@@ -347,7 +348,7 @@ const KeyFeatures = () => {
               sx={{
                 fontSize: '28px',
                 fontWeight: '700',
-                mb: '6px',
+                mb: '4px',
                 color: 'black.main',
               }}
             >

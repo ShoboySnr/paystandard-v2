@@ -132,7 +132,7 @@ export default function Contact() {
                   height={295}
                   src={LiveDemo}
                   alt="live demo"
-                  className="tw-rounded-3xl tw-border md:tw-h-[295px] md:tw-w-full md:tw-border-black"
+                  className="tw-rounded-3xl tw-border tw-h-[250px] sm:tw-h-[455px] tw-w-full md:tw-h-[295px] md:tw-w-full md:tw-border-black"
                 />
 
                 <Box
