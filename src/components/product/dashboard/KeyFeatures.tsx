@@ -213,7 +213,7 @@ const KeyFeatures = () => {
                 <Image
                   src={Range}
                   alt="Range"
-                  className="tw-absolute tw-bottom-[20px] sm:tw-bottom-[20px] tw-h-[243px] sm:tw-h-[342px] tw-w-[70%] md:tw-w-auto md:tw-h-[347px]"
+                  className="tw-absolute tw-bottom-[-35px] sm:tw-bottom-[20px] tw-h-[243px] sm:tw-h-[342px] tw-w-[70%] md:tw-w-auto md:tw-h-[347px]"
                 />
               </Box>
             </Box>
@@ -393,7 +393,7 @@ const KeyFeatures = () => {
                 <Image
                   src={Graph}
                   alt="Range"
-                  className="tw-absolute tw-bottom-[20px] sm:tw-bottom-[20px] tw-h-[243px] sm:tw-h-[342px] tw-w-[70%] md:tw-w-auto md:tw-h-[347px]"
+                  className="tw-absolute  tw-bottom-[-30px] sm:tw-bottom-[20px] tw-h-[243px] sm:tw-h-[342px] tw-w-[70%] md:tw-w-auto md:tw-h-[347px]"
                 />
               </Box>
               <Box
