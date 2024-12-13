@@ -59,7 +59,10 @@ const Governance = () => {
         >
           <Typography
             sx={{
-              fontSize: '24px',
+              fontSize: {
+                md: '20px',
+                xs: '18px',
+              },
               fontWeight: '400',
               margin: 'auto 0 2px 0',
               color: 'deep-blue-secondary.main',
@@ -72,7 +75,8 @@ const Governance = () => {
           <Typography
             sx={{
               fontSize: {
-                md: '18px',
+                md: '20px',
+                xs: '18px',
               },
               fontWeight: '400',
               margin: 'auto 0 2px 0',

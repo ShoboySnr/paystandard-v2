@@ -63,7 +63,8 @@ const DataProtection = () => {
           <Typography
             sx={{
               fontSize: {
-                md: '18px',
+                md: '20px',
+                xs: '18px',
               },
               fontWeight: '400',
               margin: '10px 0 2px 0',

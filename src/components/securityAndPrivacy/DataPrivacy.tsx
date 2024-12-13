@@ -49,7 +49,8 @@ const DataPrivacy = () => {
         <Typography
           sx={{
             fontSize: {
-              md: '18px',
+              md: '20px',
+              xs: '18px',
             },
             fontWeight: '400',
             margin: 'auto 0 2px 0',
@@ -72,7 +73,10 @@ const DataPrivacy = () => {
           </Typography>
           <Typography
             sx={{
-              fontSize: '18px',
+              fontSize: {
+                md: '20px',
+                xs: '18px',
+              },
               fontWeight: '400',
               color: 'gray.main',
               lineHeight: '1.5',
@@ -85,7 +89,10 @@ const DataPrivacy = () => {
         <Box sx={{ mb: 4, display: { xs: 'block', md: 'none' } }}>
           <Typography
             sx={{
-              fontSize: '18px',
+              fontSize: {
+                md: '20px',
+                xs: '18px',
+              },
               fontWeight: '700',
               color: 'gray.main',
               mb: 1,

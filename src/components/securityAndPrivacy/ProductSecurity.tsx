@@ -51,6 +51,7 @@ const productSecurity = () => {
           sx={{
             fontSize: {
               md: '20px',
+              xs: '18px',
             },
             fontWeight: '700',
             margin: 'auto 0 2px 0',
@@ -62,7 +63,8 @@ const productSecurity = () => {
         <Typography
           sx={{
             fontSize: {
-              md: '18px',
+              md: '20px',
+              xs: '18px',
             },
             fontWeight: '400',
             margin: '10px 0 2px 0',

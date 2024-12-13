@@ -26,8 +26,8 @@ const TitleAndSubtitle: React.FC<TitleAndSubtitleProps> = ({
       <Typography
         sx={{
           fontSize: {
-            xs: '24px',
-            md: titleSize ? titleSize : '24px',
+            md: '20px',
+            xs: '18px',
           },
           fontWeight: titleWeight ? titleWeight : '700',
           margin: 'auto 0 2px 0',
@@ -39,7 +39,8 @@ const TitleAndSubtitle: React.FC<TitleAndSubtitleProps> = ({
       <Typography
         sx={{
           fontSize: {
-            md: subtitleSize ? subtitleSize : '18px',
+            md: '20px',
+            xs: '18px',
           },
           fontWeight: subtitleWeight ? subtitleWeight : '400',
           margin: 'auto 0 2px 0',

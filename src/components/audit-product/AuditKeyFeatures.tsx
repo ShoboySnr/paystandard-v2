@@ -147,9 +147,10 @@ const AuditKeyFeatures = () => {
                   'linear-gradient(243deg, #88A0FF 9.96%, #152461 97.23%)',
                 borderRadius: '35px',
                 height: { xs: '260px', sm: '360px', md: '115%' },
-                width: { xs: '94%', sm: '96%', lg: '80%' },
+                width: { xs: '100%', sm: '100%', lg: '80%' },
                 mt: { md: -3, xs: 0 },
                 position: 'relative',
+                overflow: { xs: 'hidden', md: 'visible' },
               }}
             >
               <Box
@@ -165,7 +166,7 @@ const AuditKeyFeatures = () => {
                 <Image
                   src={Strategy}
                   alt="standard rating"
-                  className="xs:tw-w-[97%] md:tw-w-full tw-h-full !tw-rounded-xl"
+                  className="xs:tw-w-[95%] sm:tw-w-full md:tw-w-full tw-h-full !tw-rounded-xl"
                 />
               </Box>
             </Box>

@@ -22,7 +22,10 @@ const BorderedText = ({
     >
       <Typography
         sx={{
-          fontSize: '17px',
+          fontSize: {
+            md: '20px',
+            xs: '18px',
+          },
           fontWeight: textWeight ? textWeight : '400',
           margin: '0 0 0 0',
           padding: '0 0 0 0',
