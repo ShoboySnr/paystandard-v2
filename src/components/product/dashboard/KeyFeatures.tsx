@@ -378,15 +378,30 @@ const KeyFeatures = () => {
                 borderRadius: '35px',
                 height: { xs: '246px', sm: '346px', md: '95%' },
                 width: { xs: '100%', md: '95%' },
-                mt: -4,
+                mt: { xs: 4, md: -4 },
                 position: 'relative',
               }}
             >
+              <Box
+                className="tw-relative tw-h-[214px] sm:tw-h-[314px] tw-w-full tw-rounded-[35px] md:tw-h-[300px] md:tw-w-full"
+                sx={{
+                  display: { xs: 'flex', md: 'none' },
+                  justifyContent: 'center',
+                  mb: -1.5,
+                }}
+              >
+                <Image
+                  src={Graph}
+                  alt="Range"
+                  className="tw-absolute tw-bottom-[20px] sm:tw-bottom-[20px] tw-h-[243px] sm:tw-h-[342px] tw-w-[70%] md:tw-w-auto md:tw-h-[347px]"
+                />
+              </Box>
               <Box
                 sx={{
                   position: 'absolute',
                   left: { xs: -15, md: 15 },
                   right: '-50px',
+                  display: { xs: 'none', md: 'block' },
                 }}
               >
                 <Image
