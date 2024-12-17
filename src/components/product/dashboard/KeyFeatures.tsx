@@ -282,7 +282,7 @@ const KeyFeatures = () => {
             order={{ xs: 2, md: 1 }}
             sx={{
               pl: { xs: 0, md: 6.5 },
-              pt: { xs: 0, md: 7.5 },
+              pt: { xs: 0, sm: 12, md: 7.5 },
               pb: 7.5,
             }}
           >
