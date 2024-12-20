@@ -75,7 +75,7 @@ const AppFooter = () => {
         spacing={2}
         sx={{
           py: {
-            xs: '15px',
+            xs: '30px',
             md: '75px',
           },
           px: {
@@ -114,11 +114,198 @@ const AppFooter = () => {
             </div>
 
             <Box>
-              <p className="md:tw-mt-2">Built in New York, New York</p>
-              <p className="tw-mt-2">© 2024 PayStandards Inc.</p>
-              {/*<p className="tw-mt-2">All rights reserved.</p>*/}
+              <p className="md:tw-mt-2 tw-text-slate-300">
+                Built in New York, New York
+              </p>
+              <p className="tw-mt-2 tw-text-slate-300">
+                © 2024 PayStandards Inc.
+              </p>
             </Box>
           </Box>
+        </Grid>
+        <Grid
+          container
+          className="tw-w-full"
+          sx={{ display: { xs: 'blick', md: 'none' } }}
+        >
+          <Grid
+            container
+            className="tw-flex tw-justify-center tw-items-center tw-w-full"
+          >
+            <Grid
+              container
+              spacing={{
+                xs: 1,
+                md: 4,
+              }}
+              size={{ xs: 12, md: 6 }}
+              sx={{
+                pt: {
+                  md: '28px',
+                },
+                width: { xs: '90%', sm: '70%' },
+              }}
+              className="tw-bg-red-500"
+            >
+              <Grid size={{ xs: 7, md: 'auto' }}>
+                <List
+                  sx={{
+                    py: '0',
+                  }}
+                >
+                  {FooterMenu.filter((page) => page.id === 'company').map(
+                    (page, index) => (
+                      <React.Fragment key={index}>
+                        <ListItem sx={listItemHeadingStyle}>
+                          {page.name}
+                        </ListItem>
+                        {page.menuItems.map((item, i) => (
+                          <Link
+                            key={i}
+                            href={item.link}
+                            passHref
+                            target={item?.target}
+                            rel={item?.rel}
+                          >
+                            <ListItemButton sx={itemSpacing}>
+                              <ListItemText
+                                sx={listItemButtonStyle}
+                                primary={item.label}
+                                className="tw-text-dark-gray"
+                              />
+                            </ListItemButton>
+                          </Link>
+                        ))}
+                      </React.Fragment>
+                    ),
+                  )}
+                </List>
+              </Grid>
+              <Grid size={{ xs: 5, md: 'auto' }}>
+                <List
+                  sx={{
+                    py: '0',
+                  }}
+                >
+                  {FooterMenu.filter((page) => page.id === 'solutions').map(
+                    (page, index) => (
+                      <React.Fragment key={index}>
+                        <ListItem sx={listItemHeadingStyle}>
+                          {page.name}
+                        </ListItem>
+                        {page.menuItems.map((item, i) => (
+                          <Link key={i} href={item.link} passHref>
+                            <ListItemButton sx={itemSpacing}>
+                              <ListItemText
+                                sx={listItemButtonStyle}
+                                primary={item.label}
+                                className="tw-text-dark-gray"
+                              />
+                            </ListItemButton>
+                          </Link>
+                        ))}
+                      </React.Fragment>
+                    ),
+                  )}
+                </List>
+              </Grid>
+              <Grid size={{ xs: 12, md: 'auto' }}>
+                <List
+                  sx={{
+                    py: '0',
+                  }}
+                >
+                  {FooterMenu.filter((page) => page.id === 'legal').map(
+                    (page, index) => (
+                      <React.Fragment key={index}>
+                        <ListItem sx={listItemHeadingStyle}>
+                          {page.name}
+                        </ListItem>
+                        {page.menuItems.map((item, i) => (
+                          <Link key={i} href={item.link} passHref>
+                            <ListItemButton sx={itemSpacing}>
+                              <ListItemText
+                                sx={listItemButtonStyle}
+                                primary={item.label}
+                                className="tw-text-dark-gray"
+                              />
+                            </ListItemButton>
+                          </Link>
+                        ))}
+                      </React.Fragment>
+                    ),
+                  )}
+                </List>
+              </Grid>
+              <Grid
+                size={{ xs: 12, md: 'auto' }}
+                sx={{
+                  mt: {
+                    xs: '44px',
+                    md: '0',
+                  },
+                }}
+              >
+                <Box
+                  sx={{
+                    display: 'flex',
+                    gap: '10px',
+                    alignItems: 'center',
+                    '& img': {
+                      height: { xs: '40px', md: '20px' },
+                      width: 'auto',
+                    },
+                  }}
+                >
+                  <Typography
+                    sx={{
+                      color: 'white.main',
+                      fontSize: '18px',
+                      fontWeight: '700px',
+                      mr: '5px',
+                      display: 'flex',
+                      alignItems: 'center',
+                    }}
+                  >
+                    Follow Us:
+                  </Typography>
+                  <Link
+                    href="https://www.linkedin.com/company/paystandards"
+                    target="_blank"
+                  >
+                    <Image
+                      height={40}
+                      width={40}
+                      priority
+                      src={LinkedInLogo}
+                      alt="Pay Standards"
+                    />
+                  </Link>
+                  <Link href="https://x.com/PayStandards" target="_blank">
+                    <Image
+                      height={40}
+                      width={40}
+                      priority
+                      src={TwitterLogo}
+                      alt="Pay Standards"
+                    />
+                  </Link>
+                  <Link
+                    href="https://www.youtube.com/@PayStandards"
+                    target="_blank"
+                  >
+                    <Image
+                      height={40}
+                      width={40}
+                      priority
+                      src={YoutubeLogo}
+                      alt="Pay Standards"
+                    />
+                  </Link>
+                </Box>
+              </Grid>
+            </Grid>
+          </Grid>
         </Grid>
         <Grid
           container
@@ -131,6 +318,7 @@ const AppFooter = () => {
             pt: {
               md: '28px',
             },
+            display: { xs: 'none', md: 'flex' },
           }}
         >
           <Grid size={{ xs: 7, md: 'auto' }}>
@@ -298,6 +486,7 @@ const AppFooter = () => {
               md: '54px',
             },
           }}
+          className="tw-flex tw-justify-center md:tw-justify-start"
         >
           <Box
             sx={{
@@ -321,7 +510,7 @@ const AppFooter = () => {
               src={BrandingLogo}
               alt="Pay Standards"
             />
-            <p className={'tw-text-center md:tw-text-left'}>
+            <p className={'tw-text-center md:tw-text-left tw-text-slate-300'}>
               PayStandards&#39; successful SOC 2 Type II report was issued by
               Prescient Assurance
               <br /> and is actively monitored by Vanta.
