@@ -100,6 +100,7 @@ const AppFooter = () => {
               gap: { xs: '10px', md: '24px' },
               alignItems: {
                 xs: 'center',
+                sm: 'flex-start',
                 md: 'flex-start',
               },
             }}
@@ -143,11 +144,11 @@ const AppFooter = () => {
                 pt: {
                   md: '28px',
                 },
-                width: { xs: '90%', sm: '70%' },
+                width: { xs: '90%', sm: '100%' },
               }}
-              className="tw-bg-red-500"
+              className="!tw-bg-red-500"
             >
-              <Grid size={{ xs: 7, md: 'auto' }}>
+              <Grid size={{ xs: 7, sm: 3, md: 'auto' }}>
                 <List
                   sx={{
                     py: '0',
@@ -181,7 +182,7 @@ const AppFooter = () => {
                   )}
                 </List>
               </Grid>
-              <Grid size={{ xs: 5, md: 'auto' }}>
+              <Grid size={{ xs: 5, sm: 3, md: 'auto' }}>
                 <List
                   sx={{
                     py: '0',
@@ -209,7 +210,7 @@ const AppFooter = () => {
                   )}
                 </List>
               </Grid>
-              <Grid size={{ xs: 12, md: 'auto' }}>
+              <Grid size={{ xs: 12, sm: 3, md: 'auto' }}>
                 <List
                   sx={{
                     py: '0',
