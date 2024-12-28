@@ -64,7 +64,7 @@ const Banner = () => {
             <br />
             Things. Drive the
             <br />
-            <span className='!tw-underline'>Bottom Line.</span>
+            <span className="!tw-underline">Bottom Line.</span>
           </Box>
         </Box>
         <Box

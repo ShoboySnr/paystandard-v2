@@ -219,7 +219,7 @@ const CoreBenefits = () => {
             xs: 12,
             md: 4,
           }}
-          className='!sm:tw-flex md:tw-block !tw-flex-row !tw-justify-center !tw-items-center !tw-h-full sm:!tw-w-full md:!tw-w-[30%]'
+          className="!sm:tw-flex md:tw-block !tw-flex-row !tw-justify-center !tw-items-center !tw-h-full sm:!tw-w-full md:!tw-w-[30%]"
         >
           <Grid
             sx={{
@@ -227,7 +227,7 @@ const CoreBenefits = () => {
             }}
             rowSpacing={5}
             container
-            size={{xs: 12, sm: 5, md: 12}}
+            size={{ xs: 12, sm: 5, md: 12 }}
           >
             <Grid size={12}>
               <Box
@@ -315,7 +315,7 @@ const CoreBenefits = () => {
               </Box>
             </Grid>
           </Grid>
-          <Grid size={{ xs: 12, sm: 5, md: 12}}>
+          <Grid size={{ xs: 12, sm: 5, md: 12 }}>
             <Box
               sx={{
                 height: { lg: '360px', sm: '300px', xs: '235px' },
@@ -409,7 +409,7 @@ const CoreBenefits = () => {
                   justifyContent: 'center',
                   color: 'black.main',
                   fontWeight: '300',
-                  display: {xs: 'flex', sm: 'none', md: 'flex'},
+                  display: { xs: 'flex', sm: 'none', md: 'flex' },
                   alignItems: 'center',
                 }}
               >
@@ -427,27 +427,27 @@ const CoreBenefits = () => {
             </Box>
           </Grid>
           <Box
-                sx={{
-                  fontSize: { xs: '11px', md: '13px' },
-                  my: { xs: 3, sm: 3.5, lg: 3 },
-                  justifyContent: 'center',
-                  color: 'black.main',
-                  fontWeight: '300',
-                  display: {xs: 'none', sm: 'flex', md: 'none'},
-                  alignItems: 'center',
-                }}
-              >
-                <Typography
-                  sx={{
-                    fontWeight: '500',
-                    mr: 1,
-                    marginTop: '1px',
-                  }}
-                >
-                  Note:
-                </Typography>
-                Above based on more than 200 simulations.
-              </Box>
+            sx={{
+              fontSize: { xs: '11px', md: '13px' },
+              my: { xs: 3, sm: 3.5, lg: 3 },
+              justifyContent: 'center',
+              color: 'black.main',
+              fontWeight: '300',
+              display: { xs: 'none', sm: 'flex', md: 'none' },
+              alignItems: 'center',
+            }}
+          >
+            <Typography
+              sx={{
+                fontWeight: '500',
+                mr: 1,
+                marginTop: '1px',
+              }}
+            >
+              Note:
+            </Typography>
+            Above based on more than 200 simulations.
+          </Box>
         </Grid>
       </Grid>
     </>
